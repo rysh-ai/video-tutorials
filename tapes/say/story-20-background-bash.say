@@ -1,0 +1,36 @@
+# Story 20: Background Bash (45s)
+# Hook: Run long commands in the background. Check on them whenever you want.
+# Duration: 45s
+# Source: story-20-background-bash.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:04.0]
+Start rysh -- you land in shell mode.
+
+[00:04.0 --> 00:08.0]
+Double-press Escape to enter prompt mode.
+
+[00:08.0 --> 00:18.0]
+Ask the AI to run a long-running command in the background. It won't block your terminal.
+
+[00:18.0 --> 00:23.0]
+While the command runs, you keep working. Check the output whenever you want.
+
+[00:23.0 --> 00:30.0]
+The AI retrieves the output from the background session.
+
+[00:30.0 --> 00:38.0]
+List all background sessions to see what's running.
+
+[00:38.0 --> 00:42.0]
+Every background session is tracked -- you never lose track of running tasks.
+
+[00:42.0 --> 00:45.0]
+Background bash -- fire and forget, check anytime.
+

@@ -1,0 +1,39 @@
+# Story 40: Pipeline Commands (40s)
+# Hook: Manage your pipelines -- load, list, run, and monitor from the terminal.
+# Duration: 40s
+# Source: story-40-pipeline-commands.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 9
+
+[00:00.0 --> 00:04.0]
+Start rysh -- pipelines are first-class citizens.
+
+[00:04.0 --> 00:08.0]
+The ##pipe family of commands manages your pipelines.
+
+[00:08.0 --> 00:12.0]
+##pipe help shows all available pipeline sub-commands.
+
+[00:12.0 --> 00:16.0]
+##pipe load reads a pipeline definition from a YAML file.
+
+[00:16.0 --> 00:20.0]
+##pipe list shows all loaded pipelines and their state.
+
+[00:20.0 --> 00:24.0]
+##pipe show inspects the steps inside a pipeline.
+
+[00:24.0 --> 00:28.0]
+##pipe run kicks off the pipeline execution.
+
+[00:28.0 --> 00:32.0]
+##pipe status shows which steps have completed or failed.
+
+[00:32.0 --> 00:40.0]
+Six commands to control the full pipeline lifecycle.
+

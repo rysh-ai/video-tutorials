@@ -1,0 +1,42 @@
+# Story 37: Hop Command (45s)
+# Hook: Transfer your AI context to another pane -- hop and resume seamlessly.
+# Duration: 45s
+# Source: story-37-hop-command.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 10
+
+[00:00.0 --> 00:04.0]
+Start rysh -- context follows you across panes.
+
+[00:04.0 --> 00:08.0]
+Build up some context in this pane.
+
+[00:08.0 --> 00:11.0]
+Run a few commands -- the AI remembers all of this.
+
+[00:11.0 --> 00:14.0]
+The conversation and shell history form a rich context.
+
+[00:14.0 --> 00:20.0]
+Split right and name the new pane 'target'.
+
+[00:20.0 --> 00:24.0]
+Go back to the original pane where your context lives.
+
+[00:24.0 --> 00:30.0]
+##hop target copies the full AI context to the target pane. Conversation history, tool results, everything transfers.
+
+[00:30.0 --> 00:34.0]
+Switch to the target pane to pick up where you left off.
+
+[00:34.0 --> 00:40.0]
+##hop resume tells the AI to continue with the transferred context -- no re-explaining needed.
+
+[00:40.0 --> 00:45.0]
+Hop -- move your AI brain between panes instantly.
+

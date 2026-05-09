@@ -1,0 +1,33 @@
+# Story 2: Installing Rysh (45s)
+# Hook: One command to install. One command to verify. Let's go.
+# Duration: 45s
+# Source: story-02-installing-rysh.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:02.0]
+One command to install. One command to verify. Let's go.
+
+[00:02.0 --> 00:10.0]
+On macOS, use Homebrew. Tap the repo, then install.
+
+[00:10.0 --> 00:16.0]
+On Ubuntu or Debian, use apt.
+
+[00:16.0 --> 00:22.0]
+On Fedora, use dnf.
+
+[00:22.0 --> 00:28.0]
+On Windows, use winget.
+
+[00:28.0 --> 00:35.0]
+After installing, verify with --version.
+
+[00:35.0 --> 00:42.0]
+That's it. You're ready to launch rysh.
+

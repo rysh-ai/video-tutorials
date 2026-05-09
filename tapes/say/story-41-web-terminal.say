@@ -1,0 +1,39 @@
+# Story 41: Web Terminal (55s)
+# Hook: Full TUI in the browser -- same shortcuts, same modes.
+# Duration: 55s
+# Source: story-41-web-terminal.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 9
+
+[00:00.0 --> 00:04.0]
+Start rysh -- the embedded web terminal awaits.
+
+[00:04.0 --> 00:08.0]
+The embedded web terminal brings rysh to your browser.
+
+[00:08.0 --> 00:12.0]
+Full TUI in the browser -- same shortcuts, same modes.
+
+[00:12.0 --> 00:18.0]
+##rysh web start launches the web terminal server.
+
+[00:18.0 --> 00:22.0]
+Open localhost:23232 in your browser to access rysh.
+
+[00:22.0 --> 00:26.0]
+All 13 interaction modes work in the browser.
+
+[00:26.0 --> 00:32.0]
+##rysh web status shows whether the web server is running.
+
+[00:32.0 --> 00:38.0]
+##rysh web stop gracefully shuts down the web server.
+
+[00:38.0 --> 00:55.0]
+Web terminal -- your full rysh TUI, accessible from any browser.
+

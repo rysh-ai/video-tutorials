@@ -1,0 +1,39 @@
+# Story 15: Running Vim Inside Rysh (50s)
+# Hook: Vim works inside rysh. Full raw mode, full key handling.
+# Duration: 50s
+# Source: story-15-vim-inside-rysh.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 9
+
+[00:00.0 --> 00:03.0]
+Vim works inside rysh. Full raw mode, full key handling.
+
+[00:03.0 --> 00:06.0]
+Start rysh in shell mode.
+
+[00:06.0 --> 00:12.0]
+Open vim -- rysh detects the TUI app and switches to raw mode automatically.
+
+[00:12.0 --> 00:15.0]
+Press i to enter insert mode. All keys pass through to vim.
+
+[00:15.0 --> 00:25.0]
+Type normally. Every keystroke goes to vim, not rysh.
+
+[00:25.0 --> 00:30.0]
+Press Escape to return to vim normal mode.
+
+[00:30.0 --> 00:36.0]
+Save and quit with :wq -- standard vim workflow.
+
+[00:36.0 --> 00:43.0]
+Back in shell mode. Cat the file to verify the content.
+
+[00:43.0 --> 00:50.0]
+Vim, nano, htop, any TUI app -- they all work inside rysh.
+

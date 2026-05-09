@@ -1,0 +1,36 @@
+# Story 9: Layout Mode (50s)
+# Hook: Resize panes on the fly -- arrow keys in layout mode.
+# Duration: 50s
+# Source: story-09-layout-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:03.0]
+Resize panes on the fly -- arrow keys in layout mode.
+
+[00:03.0 --> 00:06.0]
+Start rysh with a single pane.
+
+[00:06.0 --> 00:14.0]
+Build a 3-pane layout: two splits with Ctrl+P n.
+
+[00:14.0 --> 00:24.0]
+Ctrl+L enters layout mode. Right arrow grows the current pane's width.
+
+[00:24.0 --> 00:30.0]
+Left arrow shrinks it back.
+
+[00:30.0 --> 00:38.0]
+Down arrow grows height. Up arrow shrinks it.
+
+[00:38.0 --> 00:43.0]
+Press Escape to lock in your layout.
+
+[00:43.0 --> 00:50.0]
+Ctrl+L, arrow keys, Escape. Resize any pane to fit your workflow.
+

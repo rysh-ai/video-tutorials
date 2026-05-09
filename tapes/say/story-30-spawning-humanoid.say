@@ -1,0 +1,30 @@
+# Story 30: Spawning a Humanoid (50s)
+# Hook: Create a humanoid from a skill file -- define channels right in the Markdown.
+# Duration: 50s
+# Source: story-30-spawning-humanoid.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:04.0]
+Start rysh -- we'll spawn a humanoid with a chatbot channel.
+
+[00:04.0 --> 00:06.0]
+Double-press Escape to enter prompt mode.
+
+[00:06.0 --> 00:24.0]
+Write a skill file with channel config in the frontmatter. The contacts section defines which channels the humanoid uses.
+
+[00:24.0 --> 00:32.0]
+##humanoid spawn reads the file and creates the humanoid. Channel configuration is parsed from the frontmatter.
+
+[00:32.0 --> 00:40.0]
+##humanoid list shows the new humanoid and its channels.
+
+[00:40.0 --> 00:50.0]
+Humanoid spawned -- channels defined, ready to connect.
+

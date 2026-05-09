@@ -1,0 +1,39 @@
+# Story 35: Sharing Granularity (40s)
+# Hook: Share a pane, a group, a lane, or a whole tab -- pick the right scope.
+# Duration: 40s
+# Source: story-35-sharing-granularity.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 9
+
+[00:00.0 --> 00:04.0]
+Start rysh -- sharing works at multiple levels.
+
+[00:04.0 --> 00:08.0]
+Create a second pane to visualize sharing scopes.
+
+[00:08.0 --> 00:12.0]
+Rysh lets you share at any level of granularity.
+
+[00:12.0 --> 00:16.0]
+##share pane -- share just one pane.
+
+[00:16.0 --> 00:20.0]
+##share panegroup -- share all stacked panes together.
+
+[00:20.0 --> 00:24.0]
+##share lane -- share an entire column of panes.
+
+[00:24.0 --> 00:28.0]
+##share tab -- share the whole tab with all its panes.
+
+[00:28.0 --> 00:34.0]
+Each higher level includes all child panes automatically.
+
+[00:34.0 --> 00:40.0]
+Pick the scope that fits -- from a single pane to a whole tab.
+

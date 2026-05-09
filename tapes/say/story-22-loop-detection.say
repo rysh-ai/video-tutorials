@@ -1,0 +1,33 @@
+# Story 22: Loop Detection (30s)
+# Hook: Rysh detects when the AI gets stuck in a loop and breaks it out.
+# Duration: 30s
+# Source: story-22-loop-detection.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:04.0]
+Start rysh -- you land in shell mode.
+
+[00:04.0 --> 00:08.0]
+The orchestrator watches for repetitive tool calls.
+
+[00:08.0 --> 00:13.0]
+It tracks the last 20 tool calls in a sliding window.
+
+[00:13.0 --> 00:18.0]
+After 3 identical calls in a row, execution is blocked.
+
+[00:18.0 --> 00:23.0]
+The AI is told to try a different approach.
+
+[00:23.0 --> 00:27.0]
+The sliding window means no permanent penalty -- old calls age out naturally.
+
+[00:27.0 --> 00:30.0]
+Loop detection keeps the AI productive, not stuck.
+

@@ -1,0 +1,45 @@
+# Story 39: Softdev Pipeline (55s)
+# Hook: A full software development pipeline -- planning, coding, linting, testing.
+# Duration: 55s
+# Source: story-39-softdev-pipeline.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 11
+
+[00:00.0 --> 00:04.0]
+Start rysh -- orchestrate a full dev pipeline.
+
+[00:04.0 --> 00:08.0]
+The orchestrator pane drives the pipeline.
+
+[00:08.0 --> 00:14.0]
+A listener pane watches the pipeline progress.
+
+[00:14.0 --> 00:18.0]
+Switch back to the orchestrator to run the pipeline.
+
+[00:18.0 --> 00:22.0]
+The softdev pipeline has four phases.
+
+[00:22.0 --> 00:28.0]
+Phase 1 triggers the AI planning event. The AI analyzes requirements and creates a plan.
+
+[00:28.0 --> 00:34.0]
+Phase 2 triggers AI-driven code generation.
+
+[00:34.0 --> 00:40.0]
+Phase 3 runs shell-based linting on the generated code.
+
+[00:40.0 --> 00:46.0]
+Phase 4 runs shell-based unit tests.
+
+[00:46.0 --> 00:50.0]
+Each phase builds on context from previous phases. A 50KB buffer carries state across the pipeline.
+
+[00:50.0 --> 00:55.0]
+Softdev pipeline -- plan, code, lint, test, all orchestrated.
+

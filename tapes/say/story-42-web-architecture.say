@@ -1,0 +1,36 @@
+# Story 42: Web Architecture (40s)
+# Hook: Browser to NATS to actors -- one binary, zero runtime deps.
+# Duration: 40s
+# Source: story-42-web-architecture.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:04.0]
+Start rysh -- let's explore the web architecture.
+
+[00:04.0 --> 00:07.0]
+Web Terminal Architecture overview.
+
+[00:07.0 --> 00:12.0]
+Browser connects via WebSocket through the full actor pipeline.
+
+[00:12.0 --> 00:17.0]
+Snapshots are pushed every 200ms for smooth rendering.
+
+[00:17.0 --> 00:22.0]
+React + TypeScript frontend embedded via go:embed.
+
+[00:22.0 --> 00:27.0]
+CLI, web server, and React frontend in one binary.
+
+[00:27.0 --> 00:32.0]
+No external dependencies at runtime.
+
+[00:32.0 --> 00:40.0]
+One binary, full architecture -- browser to actors.
+

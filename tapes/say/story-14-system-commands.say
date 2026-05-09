@@ -1,0 +1,36 @@
+# Story 14: System Commands (45s)
+# Hook: System commands start with ##. Manage panes, tabs,
+# Duration: 45s
+# Source: story-14-system-commands.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:03.0]
+System commands start with ##. Control rysh from the input line.
+
+[00:03.0 --> 00:06.0]
+Start rysh.
+
+[00:06.0 --> 00:13.0]
+Type ##help to see all available system commands.
+
+[00:13.0 --> 00:20.0]
+##pane list shows all panes in the current tab.
+
+[00:20.0 --> 00:27.0]
+##tab list shows all tabs in the session.
+
+[00:27.0 --> 00:34.0]
+##pane name gives the active pane a descriptive name.
+
+[00:34.0 --> 00:41.0]
+##snap captures the current session state. Use it to save and restore your workspace.
+
+[00:41.0 --> 00:45.0]
+System commands give you full control over rysh internals.
+

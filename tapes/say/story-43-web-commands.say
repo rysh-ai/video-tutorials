@@ -1,0 +1,36 @@
+# Story 43: Web Commands (30s)
+# Hook: Three commands to manage the web terminal.
+# Duration: 30s
+# Source: story-43-web-commands.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:04.0]
+Start rysh -- web terminal commands.
+
+[00:04.0 --> 00:07.0]
+Web Terminal Commands overview.
+
+[00:07.0 --> 00:10.0]
+##rysh web start uses the default port 23232.
+
+[00:10.0 --> 00:13.0]
+Pass a port number for a custom port.
+
+[00:13.0 --> 00:16.0]
+##rysh web status checks if the server is running.
+
+[00:16.0 --> 00:19.0]
+##rysh web stop performs a graceful shutdown.
+
+[00:19.0 --> 00:24.0]
+The web server stops automatically when rysh exits.
+
+[00:24.0 --> 00:30.0]
+Three commands -- start, status, stop. That's it.
+

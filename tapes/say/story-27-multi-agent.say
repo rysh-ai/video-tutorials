@@ -1,0 +1,42 @@
+# Story 27: Multi-Agent Orchestration (55s)
+# Hook: Spawn multiple agents and orchestrate them -- planner, builder, tester working together.
+# Duration: 55s
+# Source: story-27-multi-agent.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 10
+
+[00:00.0 --> 00:04.0]
+Start rysh -- we'll build a multi-agent pipeline.
+
+[00:04.0 --> 00:06.0]
+Double-press Escape to enter prompt mode.
+
+[00:06.0 --> 00:10.0]
+First agent: a planner that creates implementation plans.
+
+[00:10.0 --> 00:14.0]
+Second agent: a builder that writes code.
+
+[00:14.0 --> 00:18.0]
+Third agent: a tester that validates the code.
+
+[00:18.0 --> 00:22.0]
+##agent list shows the full roster -- three agents ready.
+
+[00:22.0 --> 00:34.0]
+Ask the planner to create a plan. Each agent works independently with its own context.
+
+[00:34.0 --> 00:38.0]
+The planner drafts a step-by-step implementation plan.
+
+[00:38.0 --> 00:50.0]
+Now hand off to the builder -- implement the plan.
+
+[00:50.0 --> 00:55.0]
+Multiple agents, each with a role -- orchestrate as you wish.
+
