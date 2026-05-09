@@ -1,0 +1,30 @@
+# Story 8: Navigate Mode (40s)
+# Hook: Navigate your pane grid -- Tab cycles through them all.
+# Duration: 40s
+# Source: story-08-navigate-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Navigate your pane grid -- Tab cycles through them all.
+
+[00:03.0 --> 00:06.0]
+Start rysh with a single pane.
+
+[00:06.0 --> 00:16.0]
+Let's build a 2x2 grid. Ctrl+P n splits right, Ctrl+P v splits down.
+
+[00:16.0 --> 00:26.0]
+Label each quadrant so we can see focus change.
+
+[00:26.0 --> 00:36.0]
+Tab cycles focus through every pane. Watch the highlighted border move around the grid.
+
+[00:36.0 --> 00:40.0]
+Four panes, one key to navigate. Tab takes you through each pane in order.
+

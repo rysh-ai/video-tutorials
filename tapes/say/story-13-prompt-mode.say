@@ -1,0 +1,33 @@
+# Story 13: Prompt Mode (50s)
+# Hook: Prompt mode lets you talk to the AI with full context.
+# Duration: 50s
+# Source: story-13-prompt-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Prompt mode -- talk to the AI with full terminal context.
+
+[00:03.0 --> 00:06.0]
+Start rysh in shell mode.
+
+[00:06.0 --> 00:10.0]
+Double-Escape switches to prompt mode. The prompt changes to < -- now you're talking to AI.
+
+[00:10.0 --> 00:25.0]
+Ask a question in natural language. The AI sees your context.
+
+[00:25.0 --> 00:28.0]
+The AI responds with context-aware answers.
+
+[00:28.0 --> 00:45.0]
+Ask a follow-up -- the AI remembers the conversation.
+
+[00:45.0 --> 00:50.0]
+Prompt mode gives you an AI assistant that lives inside your terminal.
+

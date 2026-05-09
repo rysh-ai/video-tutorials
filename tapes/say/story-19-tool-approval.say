@@ -1,0 +1,39 @@
+# Story 19: Tool Approval (50s)
+# Hook: Every destructive tool call needs your approval. You stay in control.
+# Duration: 50s
+# Source: story-19-tool-approval.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 9
+
+[00:00.0 --> 00:04.0]
+Start rysh -- you land in shell mode.
+
+[00:04.0 --> 00:08.0]
+Double-press Escape to enter prompt mode.
+
+[00:08.0 --> 00:18.0]
+Ask the AI to write a file. It will propose a file_write tool call -- but first, it needs your approval.
+
+[00:18.0 --> 00:23.0]
+The approval dialog shows exactly what tool the AI wants to run and what arguments it will use. No surprises.
+
+[00:23.0 --> 00:27.0]
+Type y to approve. The file gets created.
+
+[00:27.0 --> 00:32.0]
+The AI confirms the file was created successfully.
+
+[00:32.0 --> 00:40.0]
+Now ask the AI to show the contents -- read tools are non-destructive, so they run without approval.
+
+[00:40.0 --> 00:45.0]
+There it is -- Hello World. Written by AI, approved by you.
+
+[00:45.0 --> 00:50.0]
+Every write, delete, and execute needs your say-so. You stay in control.
+

@@ -1,0 +1,39 @@
+# Story 21: Cross-Pane Coordination (50s)
+# Hook: Name your panes, then let AI inspect and coordinate across them.
+# Duration: 50s
+# Source: story-21-cross-pane.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 9
+
+[00:00.0 --> 00:04.0]
+Start rysh -- you land in shell mode.
+
+[00:04.0 --> 00:08.0]
+Open a second pane. Ctrl+P enters pane mode, then n splits right.
+
+[00:08.0 --> 00:13.0]
+We are in the left pane. Name it 'builder' with the ##pane name command.
+
+[00:13.0 --> 00:18.0]
+Tab moves to the next pane. Name this one 'tester'.
+
+[00:18.0 --> 00:23.0]
+Back in the builder pane. Run a build command.
+
+[00:23.0 --> 00:28.0]
+Double-press Escape to enter prompt mode.
+
+[00:28.0 --> 00:40.0]
+Ask the AI to look at another pane by name. It can read the content of any named pane.
+
+[00:40.0 --> 00:45.0]
+The AI reads the tester pane's content and reports back. Cross-pane coordination -- your AI sees the full workspace.
+
+[00:45.0 --> 00:50.0]
+Named panes + AI inspection = coordinated workflows.
+

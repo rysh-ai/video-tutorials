@@ -1,0 +1,13 @@
+[project]
+name = "rysh-video-tts"
+version = "0.1.0"
+description = "Generate voiceover MP3s from VHS tape files using OpenAI TTS"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.0",
+    "python-dotenv>=1.0",
+]
+
+[project.scripts]
+generate-say = "generate_say_files:main"
+tts = "tts_openai:main"

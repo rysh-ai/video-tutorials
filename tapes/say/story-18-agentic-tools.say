@@ -1,0 +1,36 @@
+# Story 18: 35+ Agentic Tools (60s)
+# Hook: Your AI co-pilot comes loaded with 35+ tools -- file ops, search, git, and more.
+# Duration: 60s
+# Source: story-18-agentic-tools.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:04.0]
+Start rysh -- you land in shell mode.
+
+[00:04.0 --> 00:08.0]
+Double-press Escape to enter prompt mode. The prompt changes to < -- now you're talking to AI.
+
+[00:08.0 --> 00:22.0]
+Ask the AI to show its full toolkit. 35+ tools covering file ops, search, git, web, and more.
+
+[00:22.0 --> 00:28.0]
+File read, file write, glob search, grep, bash execution, git operations, web fetch, context store -- the list goes on.
+
+[00:28.0 --> 00:38.0]
+Now put a tool to work -- read the first 10 lines of the nearest README.
+
+[00:38.0 --> 00:48.0]
+The AI calls its file_read tool behind the scenes and returns the content right in your terminal.
+
+[00:48.0 --> 00:55.0]
+Press Escape to drop back to shell mode.
+
+[00:55.0 --> 01:00.0]
+35+ tools, zero setup. Your AI is ready to work.
+
