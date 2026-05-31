@@ -1,1 +1,18 @@
 .env
+
+# Generated video files
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.gif
+
+# Generated sound files
+*.mp3
+*.wav
+*.aac
+*.flac
+*.ogg
+*.m4a
+*.aiff
