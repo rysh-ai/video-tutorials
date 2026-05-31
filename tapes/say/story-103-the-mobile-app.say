@@ -1,0 +1,30 @@
+# Story 103: The Mobile App (50s)
+# Hook: rysh in your pocket. Reach your panes from iOS or Android.
+# Duration: 50s
+# Source: story-103-the-mobile-app.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:05.0]
+rysh in your pocket. Reach your panes from iOS or Android.
+
+[00:05.0 --> 00:14.0]
+rysh-mobile is the native app for iOS and Android. You log in once, and your workspaces are right there on your phone.
+
+[00:14.0 --> 00:25.0]
+The flow is a simple drill-down: pick a workspace, see its list of panes, tap a pane to open the live pane view.
+
+[00:25.0 --> 00:36.0]
+Each pane renders with XTerm.js, so colors and ANSI look exactly like your desktop terminal.
+
+[00:36.0 --> 00:45.0]
+On shared panes you even get a fully interactive terminal -- run vim or htop from your phone and the keystrokes flow straight through.
+
+[00:45.0 --> 00:50.0]
+Your agentic terminal, anywhere you are.
+

@@ -1,0 +1,30 @@
+# Story 4: Configuring Rysh (50s)
+# Hook: One TOML file controls everything -- and every setting has an env-var override.
+# Duration: 50s
+# Source: story-004-configuring-rysh.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:05.0]
+Rysh reads one TOML config file -- and every setting also has an environment-variable override.
+
+[00:05.0 --> 00:13.0]
+The config lives at ~/.config/rysh/rysh.config, or rysh.config in your current directory.
+
+[00:13.0 --> 00:24.0]
+The provider section sets your model and API key. Set api_key to call the Anthropic API directly -- otherwise Rysh falls back to the claude CLI.
+
+[00:24.0 --> 00:34.0]
+The ui section controls your shell and how many tabs and panes open on a fresh start.
+
+[00:34.0 --> 00:42.0]
+The upstream section enables remote sharing -- point it at a rysh-server and drop in an API key.
+
+[00:42.0 --> 00:50.0]
+Every value has an env override. Just prefix your launch -- here, RYSH_API_KEY -- and rysh picks it up.
+

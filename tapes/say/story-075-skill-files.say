@@ -1,0 +1,33 @@
+# Story 75: Skill Files (50s)
+# Hook: Define an agent once in a file -- name, model, and system prompt -- then spawn it anywhere.
+# Duration: 50s
+# Source: story-075-skill-files.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Define an agent once in a file -- name, model, and system prompt -- then spawn it anywhere.
+
+[00:03.0 --> 00:08.0]
+Launch rysh. A skill file is just a markdown file with YAML frontmatter.
+
+[00:08.0 --> 00:16.0]
+Let's write one. The frontmatter sets name, description, and model; everything after it becomes the agent's system prompt.
+
+[00:16.0 --> 00:26.0]
+Cat the file to see the format: the YAML block between the dashes, then the prompt body. With no frontmatter, the whole file is the prompt and the name comes from the filename.
+
+[00:26.0 --> 00:36.0]
+Spawn straight from the file. Double-Escape into rysh mode, then point ##agent spawn at the SKILL.md path.
+
+[00:36.0 --> 00:47.0]
+##agent list confirms the agent, built entirely from the file -- reusable, version-controlled, shareable across your team.
+
+[00:47.0 --> 00:50.0]
+Skill files turn agents into code you can commit and reuse.
+

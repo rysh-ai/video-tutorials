@@ -1,0 +1,30 @@
+# Story 35: Shell Mode (40s)
+# Hook: Shell mode is a real terminal -- full color, full ANSI, nothing held back.
+# Duration: 40s
+# Source: story-035-shell-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Shell mode is a real terminal -- full color, full ANSI, nothing held back.
+
+[00:03.0 --> 00:08.0]
+Start rysh and you're already in shell mode. The greater-than marker is your cue.
+
+[00:08.0 --> 00:16.0]
+Every command runs in the pane's own PTY-backed shell, exactly like the terminal you already know.
+
+[00:16.0 --> 00:26.0]
+Color and ANSI escapes come through untouched -- git status, ls with color, anything that paints the screen.
+
+[00:26.0 --> 00:34.0]
+Pipes, redirects, environment variables -- it's a full shell, not a sandbox.
+
+[00:34.0 --> 00:40.0]
+Shell mode is home base. Everything else is one double-Escape away.
+

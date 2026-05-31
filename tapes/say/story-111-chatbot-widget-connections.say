@@ -1,0 +1,27 @@
+# Story 111: Chatbot Widget & Connections (45s)
+# Hook: Drop a rysh-powered chatbot on your website with one script tag.
+# Duration: 45s
+# Source: story-111-chatbot-widget-connections.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Drop a rysh-powered chatbot on your website with one script tag.
+
+[00:05.0 --> 00:15.0]
+Each workspace has its own chatbot config -- a system prompt, a model, and a list of allowed origins that may embed it.
+
+[00:15.0 --> 00:25.0]
+You embed it with a single script -- chatbot slash widget dot js -- and the widget appears on your site.
+
+[00:25.0 --> 00:35.0]
+Every visitor gets their own session, and at any point a human can step in and take over the conversation from the bot.
+
+[00:35.0 --> 00:45.0]
+Beyond the website, the same workspace can connect external channels -- Slack, WhatsApp, Email -- so every conversation lands in one place.
+

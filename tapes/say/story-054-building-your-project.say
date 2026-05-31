@@ -1,0 +1,30 @@
+# Story 54: Building Your Project (40s)
+# Hook: Ask the agent to build -- it compiles, parses the errors, and fixes them.
+# Duration: 40s
+# Source: story-054-building-your-project.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Ask the agent to build -- it compiles, parses the errors, and fixes them.
+
+[00:03.0 --> 00:08.0]
+Launch rysh inside a project you can compile.
+
+[00:08.0 --> 00:13.0]
+Double-press Escape for prompt mode.
+
+[00:13.0 --> 00:30.0]
+Ask it to build and fix any errors. The build tool compiles your project and returns structured, parsed errors -- file, line, and message -- so the agent knows exactly what broke. The build tool itself needs no approval.
+
+[00:30.0 --> 00:37.0]
+If it proposes a code change to fix an error, that file edit is the part that asks for approval -- you review the diff, approve, and it builds again.
+
+[00:37.0 --> 00:40.0]
+Build, read the errors, fix, repeat -- hands on the wheel.
+

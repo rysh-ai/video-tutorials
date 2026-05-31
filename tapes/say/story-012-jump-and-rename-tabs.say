@@ -1,0 +1,24 @@
+# Story 12: Jump & Rename Tabs (40s)
+# Hook: Jump to any tab by number, and give your tabs real names.
+# Duration: 40s
+# Source: story-012-jump-and-rename-tabs.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 4
+
+[00:00.0 --> 00:04.0]
+Jump to any tab by number, and give your tabs real, memorable names.
+
+[00:04.0 --> 00:16.0]
+In tab mode, the number keys 1 through 9 jump directly to a tab by its index.
+
+[00:16.0 --> 00:28.0]
+Switch to rysh mode and name the active tab with ##tab name. Here we call it backend.
+
+[00:28.0 --> 00:40.0]
+Add a tab ID before the name to rename any tab, not just the active one -- ##tab name, id, then name.
+

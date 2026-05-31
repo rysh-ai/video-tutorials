@@ -1,0 +1,30 @@
+# Story 58: Reading Background Output / Killing (40s)
+# Hook: Check on a background job with bash_output, and shut it down with kill_shell.
+# Duration: 40s
+# Source: story-058-reading-background-output-killing.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Check on a background job with bash_output, and shut it down with kill_shell.
+
+[00:03.0 --> 00:08.0]
+Start rysh -- assume a background job is already running here.
+
+[00:08.0 --> 00:13.0]
+Double-press Escape for prompt mode.
+
+[00:13.0 --> 00:28.0]
+Ask what the background jobs are doing. The bash_output tool reads from a session's ring buffer, or lists every running session if you don't name one. It's read-only, so there's no approval prompt.
+
+[00:28.0 --> 00:37.0]
+When you're done, ask it to stop the job. The kill_shell tool terminates the session and returns its final output. Killing is approval-gated -- press y to confirm.
+
+[00:37.0 --> 00:40.0]
+Watch it, then end it -- full control over background work.
+

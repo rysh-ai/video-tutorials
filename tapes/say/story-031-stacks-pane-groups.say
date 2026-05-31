@@ -1,0 +1,30 @@
+# Story 31: Stacks & Pane Groups (##new) (40s)
+# Hook: The new command isn't just grids -- it builds any piece of layout.
+# Duration: 40s
+# Source: story-031-stacks-pane-groups.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+The new command isn't just grids -- it builds any piece of layout.
+
+[00:03.0 --> 00:08.0]
+Start rysh and cycle into rysh mode with double-Escape.
+
+[00:08.0 --> 00:16.0]
+New stack with a count adds that many stacked panes on top of the active group -- like dealing cards into a deck.
+
+[00:16.0 --> 00:24.0]
+New pg builds pane groups -- the columns that hold your panes. Pass a count for several at once.
+
+[00:24.0 --> 00:32.0]
+New pane adds a single pane, optionally targeting a specific tab and lane.
+
+[00:32.0 --> 00:40.0]
+And new tab opens a fresh tab. One verb, every structural building block.
+

@@ -1,0 +1,27 @@
+# Story 22: Layout Tree (##pg layout) (40s)
+# Hook: See your whole tab at once -- ##pg layout draws the entire structure as a tree.
+# Duration: 40s
+# Source: story-022-layout-tree.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:04.0]
+See your whole tab at once -- ##pg layout draws the entire structure as a tree.
+
+[00:04.0 --> 00:16.0]
+Start rysh and build something with depth: split right for a column, split down for a row, then stack a pane on top.
+
+[00:16.0 --> 00:28.0]
+In rysh mode, ##pg layout prints the full tree: lanes, then groups, then the stacked panes inside them.
+
+[00:28.0 --> 00:36.0]
+Pair it with ##pg info to drill into just the group your active pane lives in.
+
+[00:36.0 --> 00:40.0]
+One command, the whole picture. ##pg layout is your map of any tab.
+

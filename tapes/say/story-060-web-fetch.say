@@ -1,0 +1,30 @@
+# Story 60: Web Fetch (40s)
+# Hook: Point the agent at a URL -- web_fetch pulls the page and summarizes it for you.
+# Duration: 40s
+# Source: story-060-web-fetch.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Point the agent at a URL -- web_fetch pulls the page and summarizes it for you.
+
+[00:03.0 --> 00:08.0]
+Start rysh.
+
+[00:08.0 --> 00:13.0]
+Double-press Escape for prompt mode.
+
+[00:13.0 --> 00:32.0]
+Give it a link and ask for a summary. The web_fetch tool pulls the URL's content and hands it to the agent, which reads it and distills the page into a few lines. Fetching is read-only -- no approval prompt.
+
+[00:32.0 --> 00:37.0]
+Pair web_fetch with web_search and the agent can find a source, open it, and bring the relevant details back into your terminal -- all from one prompt.
+
+[00:37.0 --> 00:40.0]
+Any page on the web, summarized in your pane.
+

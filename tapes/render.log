@@ -1,0 +1,81 @@
+Rendering 2 tapes -> /Users/halilagin/github/rysh/video-tutorials/tapes/out
+[  1/  2] story-002-installing-rysh ... File: /Users/halilagin/github/rysh/video-tutorials/tapes/tape/story-002-installing-rysh.tape
+Output .mp4 story-002-installing-rysh.mp4
+Output .gif story-002-installing-rysh.gif
+Set FontSize 16
+Set Width 1920
+Set Height 1080
+Set Theme Catppuccin Mocha
+Set Padding 20
+Set TypingSpeed 75ms
+Set Shell bash
+Sleep 1s
+Sleep 2s
+Type # brew tap rysh-works/rysh && brew install rysh
+Sleep 3s
+Enter 1
+Sleep 2s
+Type # sudo apt install rysh     (Debian / Ubuntu)
+Sleep 2s
+Enter 1
+Type # sudo dnf install rysh     (Fedora / RHEL)
+Sleep 2s
+Enter 1
+Sleep 1s
+Type # winget install RyshWorks.Rysh     (Windows)
+Sleep 2s
+Enter 1
+Sleep 1s
+Type # git clone https://github.com/rysh-works/rysh && cd rysh
+Sleep 2s
+Enter 1
+Type # make build && make install
+Sleep 2s
+Enter 1
+Sleep 1s
+Type rysh --version
+Enter 1
+Sleep 4s
+Creating story-002-installing-rysh.gif...
+Creating story-002-installing-rysh.mp4...
+Host your GIF on vhs.charm.sh: vhs publish <file>.gif
+OK
+[  2/  2] story-003-building-from-source ... File: /Users/halilagin/github/rysh/video-tutorials/tapes/tape/story-003-building-from-source.tape
+Output .mp4 story-003-building-from-source.mp4
+Output .gif story-003-building-from-source.gif
+Set FontSize 16
+Set Width 1920
+Set Height 1080
+Set Theme Catppuccin Mocha
+Set Padding 20
+Set TypingSpeed 75ms
+Set Shell bash
+Sleep 1s
+Sleep 2s
+Type # git clone https://github.com/rysh-works/rysh && cd rysh
+Sleep 2s
+Enter 1
+Sleep 2s
+Type # make build
+Sleep 2s
+Enter 1
+Sleep 2s
+Type # ./rysh --version
+Enter 1
+Sleep 2s
+Type # make install
+Sleep 2s
+Enter 1
+Sleep 2s
+Type # export PATH=$HOME/.local/bin:$PATH
+Sleep 2s
+Enter 1
+Sleep 1s
+Type rysh --version
+Enter 1
+Sleep 4s
+Creating story-003-building-from-source.gif...
+Creating story-003-building-from-source.mp4...
+Host your GIF on vhs.charm.sh: vhs publish <file>.gif
+OK
+Done. OK=2 FAIL=0 TOTAL=2

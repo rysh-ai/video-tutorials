@@ -1,0 +1,30 @@
+# Story 56: Linting (40s)
+# Hook: Lint and fix -- the agent runs go vet, staticcheck, and golangci-lint, then cleans up.
+# Duration: 40s
+# Source: story-056-linting.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Lint and fix -- the agent runs go vet, staticcheck, and golangci-lint, then cleans up.
+
+[00:03.0 --> 00:08.0]
+Launch rysh inside your project.
+
+[00:08.0 --> 00:13.0]
+Double-press Escape for prompt mode.
+
+[00:13.0 --> 00:30.0]
+Ask it to lint and fix. The lint tool runs the standard Go linters -- go vet, staticcheck, and golangci-lint -- and returns each finding. Running the linters needs no approval; the agent reads the warnings straight back.
+
+[00:30.0 --> 00:37.0]
+As with build and test, the actual code fixes are approval-gated -- you review the diff before any change is written, then it re-lints to verify.
+
+[00:37.0 --> 00:40.0]
+Clean code, on request -- linters run, fixes reviewed.
+

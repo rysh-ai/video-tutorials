@@ -1,0 +1,30 @@
+# Story 21: Pane Groups & Lanes (45s)
+# Hook: Beneath every layout is a tree -- lanes hold groups, groups hold panes.
+# Duration: 45s
+# Source: story-021-pane-groups-lanes.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:04.0]
+Beneath every layout is a tree -- lanes hold groups, groups hold panes.
+
+[00:04.0 --> 00:14.0]
+Start rysh and split right a couple of times. Each column you create is a pane group with its own flex weight.
+
+[00:14.0 --> 00:23.0]
+Switch to rysh mode and run ##pg list -- short for panegroup -- to see every group in the tab and its flex share.
+
+[00:23.0 --> 00:32.0]
+##pg info zooms in on the group holding the active pane.
+
+[00:32.0 --> 00:40.0]
+Lanes are the rows of columns that tile your tab. ##lane list shows them, with the panes they contain.
+
+[00:40.0 --> 00:45.0]
+Lanes, groups, panes -- a tidy hierarchy you can inspect any time from rysh mode.
+

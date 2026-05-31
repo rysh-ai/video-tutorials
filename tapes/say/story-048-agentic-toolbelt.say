@@ -1,0 +1,30 @@
+# Story 48: The Agentic Toolbelt (50s)
+# Hook: Every prompt-mode pane carries 35+ tools -- files, git, code, tests, build, web, and cross-pane coordination.
+# Duration: 50s
+# Source: story-048-agentic-toolbelt.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Every prompt-mode pane carries thirty-five-plus tools -- files, git, code, tests, build, web, and cross-pane coordination.
+
+[00:03.0 --> 00:08.0]
+Launch rysh. In any pane, the AI agent already has a full toolbelt wired up.
+
+[00:08.0 --> 00:16.0]
+Double-press Escape to enter prompt mode -- the marker turns into a less-than sign. Now you're talking to the agent.
+
+[00:16.0 --> 00:30.0]
+Ask it to list its tools. Under the hood it calls the list_tools tool and reports every capability it has -- no approval needed for that one.
+
+[00:30.0 --> 00:45.0]
+The tools fall into clear categories: file and shell, git, code intelligence, testing and build, background execution, and web. Read-only tools run freely; anything that writes, commits, or runs dangerous commands asks for approval first.
+
+[00:45.0 --> 00:50.0]
+One agent, one toolbelt, in every pane you open.
+

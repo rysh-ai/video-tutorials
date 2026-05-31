@@ -1,0 +1,27 @@
+# Story 66: Project Notes (40s)
+# Hook: A shared scratchpad your agent reads and writes for the whole project.
+# Duration: 40s
+# Source: story-066-project-notes.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:03.0]
+A shared scratchpad your agent reads and writes for the whole project.
+
+[00:03.0 --> 00:08.0]
+Start rysh and drop into prompt mode.
+
+[00:08.0 --> 00:22.0]
+Ask the agent to note a project decision. The project_notes tool appends it to a shared .rysh-notes.md file.
+
+[00:22.0 --> 00:32.0]
+Back in shell mode, the notes live in a plain markdown file you can open, edit, and commit alongside your code.
+
+[00:32.0 --> 00:40.0]
+project_notes is durable, file-backed memory that every pane and every agent on the project can share.
+

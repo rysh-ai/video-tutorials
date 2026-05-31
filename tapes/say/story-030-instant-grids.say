@@ -1,0 +1,33 @@
+# Story 30: Instant Grids (##new grid) (50s)
+# Hook: Spin up a whole grid of agent panes with a single command.
+# Duration: 50s
+# Source: story-030-instant-grids.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Spin up a whole grid of agent panes with a single command.
+
+[00:03.0 --> 00:08.0]
+Start rysh. Building layouts by hand is fine, but the new grid command does it in one shot.
+
+[00:08.0 --> 00:14.0]
+Double-press Escape until the prompt shows hash-hash -- that's rysh mode for system commands.
+
+[00:14.0 --> 00:24.0]
+Give it a single number and it stacks that many panes into the current lane. New grid four builds a four-pane stack instantly.
+
+[00:24.0 --> 00:36.0]
+Add a dimension. Three by four lays out three lanes, each holding four panes -- a twelve-pane wall in one keystroke.
+
+[00:36.0 --> 00:46.0]
+Go further with three dimensions: tabs, then lanes, then panes. Two by three by four creates two tabs, each with three lanes of four panes.
+
+[00:46.0 --> 00:50.0]
+From one pane to a whole agent grid -- instantly.
+

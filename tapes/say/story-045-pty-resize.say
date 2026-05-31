@@ -1,0 +1,33 @@
+# Story 45: PTY Resize (40s)
+# Hook: Resize the window and your programs follow -- SIGWINCH propagates and the emulator reflows.
+# Duration: 40s
+# Source: story-045-pty-resize.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Resize the window and your programs follow -- SIGWINCH propagates and the emulator reflows.
+
+[00:03.0 --> 00:08.0]
+Start rysh and check the terminal dimensions.
+
+[00:08.0 --> 00:15.0]
+Run tput to read the current columns and rows -- the values the PTY is reporting to your shell.
+
+[00:15.0 --> 00:23.0]
+Split a pane with Ctrl+P n. Splitting changes each pane's geometry, and Rysh sends a SIGWINCH so the shell learns its new size.
+
+[00:23.0 --> 00:30.0]
+Check again in the narrower pane -- the column count has dropped. The PTY was resized live, no restart needed.
+
+[00:30.0 --> 00:37.0]
+Interactive programs adapt too. Launch htop -- the vt10x emulator reflows its layout to whatever space the pane currently has.
+
+[00:37.0 --> 00:40.0]
+Resize freely. Your shells and full-screen apps reflow to fit.
+

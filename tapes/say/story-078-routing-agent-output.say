@@ -1,0 +1,30 @@
+# Story 78: Routing Agent Output (40s)
+# Hook: Send a headless agent's replies straight into a pane you can watch.
+# Duration: 40s
+# Source: story-078-routing-agent-output.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Send a headless agent's replies straight into a pane you can watch.
+
+[00:03.0 --> 00:08.0]
+Launch rysh and give this pane a name with ##pane name -- that's where we'll route the agent's output.
+
+[00:08.0 --> 00:16.0]
+Spawn an agent. Normally its output stays in the background -- it has no pane of its own.
+
+[00:16.0 --> 00:26.0]
+Register its output to a pane and every reply lands in that pane's chat buffer -- a live feed of the agent's work.
+
+[00:26.0 --> 00:34.0]
+When you're done watching, ##agent unregister-output stops the routing. The agent keeps running -- you just stop tailing it here.
+
+[00:34.0 --> 00:40.0]
+register-output turns any pane into a dashboard for your background agents.
+

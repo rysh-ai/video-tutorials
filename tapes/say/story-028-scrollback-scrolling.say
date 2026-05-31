@@ -1,0 +1,33 @@
+# Story 28: Scrollback & Scrolling (40s)
+# Hook: Long output scrolls off the top? Walk back through every line.
+# Duration: 40s
+# Source: story-028-scrollback-scrolling.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Long output scrolls off the top? Walk back through every line.
+
+[00:03.0 --> 00:08.0]
+Start rysh and generate a wall of output so we have a real scrollback buffer to explore.
+
+[00:08.0 --> 00:14.0]
+Each pane keeps its own scrollback. Let's fill it up.
+
+[00:14.0 --> 00:22.0]
+PageUp scrolls the active pane up one full page, PageDown brings you back down a page at a time.
+
+[00:22.0 --> 00:30.0]
+For fine control, Shift+Up and Shift+Down move a single line per press.
+
+[00:30.0 --> 00:37.0]
+Home snaps to the very top of the buffer, and End drops you straight back to the live prompt.
+
+[00:37.0 --> 00:40.0]
+Page, line, top, bottom -- you never lose a line of history.
+

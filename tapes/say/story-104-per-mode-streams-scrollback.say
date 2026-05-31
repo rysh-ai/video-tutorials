@@ -1,0 +1,27 @@
+# Story 104: Per-Mode Streams & Scrollback (45s)
+# Hook: Shell, AI, Chat, Rysh -- four streams, one pane, all on your phone.
+# Duration: 45s
+# Source: story-104-per-mode-streams-scrollback.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Shell, AI, Chat, Rysh -- four streams, one pane, all on your phone.
+
+[00:05.0 --> 00:15.0]
+At the bottom of a pane, mobile shows tabs for each mode: Shell, AI, Chat, and Rysh. Each one is its own independent output stream.
+
+[00:15.0 --> 00:25.0]
+When a mode you are not looking at produces output -- say the AI finishes a reply -- that tab gets an unread badge so nothing slips past you.
+
+[00:25.0 --> 00:36.0]
+Scrollback is kept per pane and per mode, so scrolling up in the AI stream never disturbs your shell history -- each thread stays separate.
+
+[00:36.0 --> 00:45.0]
+Switch modes with a tap, scroll each one on its own -- the full four-mode model, sized for a small screen.
+

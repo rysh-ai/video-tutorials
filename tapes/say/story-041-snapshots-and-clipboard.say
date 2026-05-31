@@ -1,0 +1,36 @@
+# Story 41: Snapshots & Clipboard (45s)
+# Hook: Grab a pane's output to your clipboard -- raw for you, redacted for sharing.
+# Duration: 45s
+# Source: story-041-snapshots-and-clipboard.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:03.0]
+Grab a pane's output to your clipboard -- raw for you, redacted for sharing.
+
+[00:03.0 --> 00:07.0]
+Launch rysh and generate some output worth capturing.
+
+[00:07.0 --> 00:13.0]
+Run a command -- its output fills the pane's buffer.
+
+[00:13.0 --> 00:18.0]
+Double-Escape over to rysh mode for the snapshot commands.
+
+[00:18.0 --> 00:25.0]
+##snap -- the same as ##snap private -- copies the pane's raw buffer straight to your clipboard.
+
+[00:25.0 --> 00:32.0]
+##snap public copies the redacted version -- secrets are stripped before they ever hit the clipboard.
+
+[00:32.0 --> 00:39.0]
+Prefer to see it inline? ##private pane print shows raw output; ##public pane print shows the redacted version right in the pane.
+
+[00:39.0 --> 00:45.0]
+Snapshots make it easy to copy, paste, and share -- safely.
+

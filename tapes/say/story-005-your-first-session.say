@@ -1,0 +1,30 @@
+# Story 5: Your First Session (50s)
+# Hook: Name a session, work in it, detach -- and it keeps running without you.
+# Duration: 50s
+# Source: story-005-your-first-session.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:05.0]
+Name a session, work in it, then detach -- and it keeps running without you.
+
+[00:05.0 --> 00:13.0]
+Pass a name to rysh and you get a named session. Here we open one called my-project.
+
+[00:13.0 --> 00:21.0]
+Work as usual -- run commands, build, test. This pane is a normal shell.
+
+[00:21.0 --> 00:30.0]
+Press Ctrl+O for prefix mode, then d to detach. You drop back to your shell, but the session lives on.
+
+[00:30.0 --> 00:39.0]
+rysh list-sessions shows it -- still alive, marked detached, with its process ID.
+
+[00:39.0 --> 00:50.0]
+Reattach any time with rysh attach my-project. Your output, history, and pane layout are all restored.
+

@@ -1,0 +1,36 @@
+# Story 15: Pane Mode (Ctrl+P) (50s)
+# Hook: Ctrl+P is your pane command center -- split, stack, close, and rename without leaving the keyboard.
+# Duration: 50s
+# Source: story-015-pane-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:04.0]
+Ctrl+P is your pane command center -- split, stack, close, and rename without leaving the keyboard.
+
+[00:04.0 --> 00:09.0]
+Start rysh, then press Ctrl+P to enter pane mode.
+
+[00:09.0 --> 00:14.0]
+The footer shows your pane-mode bindings. Every key now manages panes.
+
+[00:14.0 --> 00:20.0]
+Press n to split right -- a new pane opens in a new column.
+
+[00:20.0 --> 00:27.0]
+Press v to split down -- a new pane stacks below in the same column.
+
+[00:27.0 --> 00:34.0]
+Press s to stack a pane on top of the active group -- like dealing a new card onto the deck.
+
+[00:34.0 --> 00:42.0]
+Press r to rename the active pane. Type a name, hit Enter, and it becomes the pane's given-name.
+
+[00:42.0 --> 00:50.0]
+Press x to close a pane, and Escape to leave pane mode whenever you're done. Split, stack, rename -- all from Ctrl+P.
+

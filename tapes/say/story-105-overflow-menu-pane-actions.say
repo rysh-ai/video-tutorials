@@ -1,0 +1,27 @@
+# Story 105: Overflow Menu & Pane Actions (40s)
+# Hook: Long-press a pane on mobile and the full action menu opens up.
+# Duration: 40s
+# Source: story-105-overflow-menu-pane-actions.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Long-press a pane on mobile and the full action menu opens up.
+
+[00:05.0 --> 00:15.0]
+A long-press, or the overflow menu, gives you the common pane actions: copy the output, rename the pane, or share it.
+
+[00:15.0 --> 00:25.0]
+There is a terminal focus control too -- you decide when keystrokes go into the pane versus when you are just scrolling and reading.
+
+[00:25.0 --> 00:34.0]
+And rotating to landscape works cleanly -- the on-screen keyboard is handled with keyboard avoidance so it never covers the pane you are typing in.
+
+[00:34.0 --> 00:40.0]
+Everything you need to manage a pane -- one press away.
+

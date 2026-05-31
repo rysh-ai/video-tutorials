@@ -1,0 +1,33 @@
+# Story 69: Pane Listening (50s)
+# Hook: Pipe one pane's live output straight into another -- secrets redacted automatically.
+# Duration: 50s
+# Source: story-069-pane-listening.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Pipe one pane's live output straight into another -- secrets redacted automatically.
+
+[00:03.0 --> 00:08.0]
+Start rysh and split a second pane. We'll have one pane listen to the other.
+
+[00:08.0 --> 00:18.0]
+In the left pane, switch to rysh mode and give it a name so the listener has an alias to attach to.
+
+[00:18.0 --> 00:28.0]
+Move to the other pane and run pane listen builder. Now the builder's shared output flows here, prefixed [builder].
+
+[00:28.0 --> 00:40.0]
+Back in the builder, run a command. Its output appears in the listening pane in real time -- secrets stripped first.
+
+[00:40.0 --> 00:47.0]
+When you're done, the listening pane runs pane unlisten to detach the stream.
+
+[00:47.0 --> 00:50.0]
+Cross-pane awareness with redaction built in.
+

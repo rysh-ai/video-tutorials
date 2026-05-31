@@ -1,0 +1,33 @@
+# Story 27: Pane & Tab Navigation (45s)
+# Hook: Move through your workspace without lifting your hands from the keyboard.
+# Duration: 45s
+# Source: story-027-pane-tab-navigation.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Move through your workspace without lifting your hands from the keyboard.
+
+[00:03.0 --> 00:08.0]
+Start rysh. We'll build out a few panes and tabs so there is something to navigate.
+
+[00:08.0 --> 00:15.0]
+Ctrl+P then n splits a pane to the right. Ctrl+T then n opens a fresh tab.
+
+[00:15.0 --> 00:24.0]
+Press Tab to cycle to the next pane. Alt+Up and Alt+Down step between panes too.
+
+[00:24.0 --> 00:34.0]
+Brackets move between tabs -- left bracket back, right bracket forward. Alt+Left and Alt+Right do the same.
+
+[00:34.0 --> 00:42.0]
+On macOS, Option plus arrow can be tricky, so Alt+B and Alt+F also walk between your tabs.
+
+[00:42.0 --> 00:45.0]
+One muscle memory for panes, one for tabs. That is your whole workspace.
+

@@ -1,0 +1,33 @@
+# Story 96: Subscribing to a Remote Share (45s)
+# Hook: Discover what your teammates are sharing, then subscribe to watch it live.
+# Duration: 45s
+# Source: story-096-subscribing-remote-share.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Discover what your teammates are sharing, then subscribe to watch it live.
+
+[00:03.0 --> 00:09.0]
+Start rysh connected to your workspace and double-Escape into rysh mode.
+
+[00:09.0 --> 00:18.0]
+##upstream list-remote asks the server for every share in the workspace -- not just yours, but your teammates' too.
+
+[00:18.0 --> 00:28.0]
+Pick a share ID and ##upstream subscribe with view or control. A RemoteShareListenerActor pipes its output into your pane.
+
+[00:28.0 --> 00:36.0]
+##upstream my-shares now reflects what you're connected to, alongside anything you're publishing.
+
+[00:36.0 --> 00:42.0]
+Done watching? ##upstream unsubscribe stops the stream and tears down the listener.
+
+[00:42.0 --> 00:45.0]
+List, subscribe, unsubscribe -- the full remote-viewing loop.
+

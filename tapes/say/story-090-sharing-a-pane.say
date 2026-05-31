@@ -1,0 +1,33 @@
+# Story 90: Sharing a Pane (50s)
+# Hook: One command publishes a live pane to your workspace -- teammates watch it in real time.
+# Duration: 50s
+# Source: story-090-sharing-a-pane.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+One command publishes a live pane to your workspace -- teammates watch it in real time.
+
+[00:03.0 --> 00:09.0]
+Start rysh with an upstream workspace configured. Sharing registers your pane on the server for remote collaborators.
+
+[00:09.0 --> 00:16.0]
+Double-Escape into rysh mode. ##share status shows whether you're connected to the upstream server.
+
+[00:16.0 --> 00:26.0]
+##share pane view publishes this pane. The ShareRegistry spawns an UpstreamShareActor that registers it on the server.
+
+[00:26.0 --> 00:34.0]
+Now anything you do here streams to subscribers. Redacted output forwards to the share's output topic continuously.
+
+[00:34.0 --> 00:44.0]
+Back in rysh mode, ##share list shows every active share in this session, each with its own share ID.
+
+[00:44.0 --> 00:50.0]
+From local pane to shared workspace in a single command. Your collaborators are now watching live.
+

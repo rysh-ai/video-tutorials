@@ -1,0 +1,36 @@
+# Story 1: What Is Rysh? (60s)
+# Hook: A terminal that thinks. Shell mode runs commands. Prompt mode talks to AI.
+# Duration: 60s
+# Source: story-001-what-is-rysh.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:04.0]
+A terminal that thinks. Shell mode runs commands, prompt mode talks to AI -- and every pane is both.
+
+[00:04.0 --> 00:10.0]
+Just type rysh. You land in shell mode -- your familiar terminal, fully PTY-backed.
+
+[00:10.0 --> 00:18.0]
+In shell mode everything works like a normal terminal. Full color, full ANSI -- run any command you want.
+
+[00:18.0 --> 00:26.0]
+Double-press Escape to cycle the input mode. Watch the marker change to a less-than sign -- now you're talking to an AI agent.
+
+[00:26.0 --> 00:40.0]
+Ask anything. The agent sees your terminal context and answers right inside the pane, rendered as markdown.
+
+[00:40.0 --> 00:46.0]
+Escape again brings you back through the modes to shell. One pane, two ways to work.
+
+[00:46.0 --> 00:53.0]
+Ctrl+P enters pane mode. Press n to split right -- two independent panes, each its own shell and agent.
+
+[00:53.0 --> 00:60.0]
+Ctrl+T enters tab mode. Press n for a whole new tab. That's Rysh: every pane is a shell plus an AI agent.
+

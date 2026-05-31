@@ -1,0 +1,30 @@
+# Story 25: Equalize, Swap & Fullscreen (45s)
+# Hook: Three quick moves to reset chaos: equalize, swap lanes, and go fullscreen.
+# Duration: 45s
+# Source: story-025-equalize-swap-fullscreen.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:04.0]
+Three quick moves to reset chaos: equalize, swap lanes, and go fullscreen.
+
+[00:04.0 --> 00:16.0]
+Start rysh, split into columns, then grow one pane wide so we've got an uneven layout to fix.
+
+[00:16.0 --> 00:23.0]
+Still in layout mode, press h or equals to equalize all the widths -- instantly balanced columns.
+
+[00:23.0 --> 00:30.0]
+Press v to equalize heights the same way for stacked rows.
+
+[00:30.0 --> 00:37.0]
+Press s to swap lane positions and reorder your columns.
+
+[00:37.0 --> 00:45.0]
+And m fullscreens the active pane -- same as Alt+P f from normal mode. Press it again to restore, Escape to finish.
+

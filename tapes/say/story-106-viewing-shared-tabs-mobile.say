@@ -1,0 +1,27 @@
+# Story 106: Viewing Shared Tabs on Mobile (45s)
+# Hook: A teammate shares a tab -- you open the whole multi-pane layout on your phone.
+# Duration: 45s
+# Source: story-106-viewing-shared-tabs-mobile.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+A teammate shares a tab -- you open the whole multi-pane layout on your phone.
+
+[00:05.0 --> 00:14.0]
+It starts on the desktop: a teammate runs share tab, which publishes the tab and every pane inside it to the workspace.
+
+[00:14.0 --> 00:25.0]
+On mobile you subscribe to that share and the tab arrives as a full multi-pane layout -- not a flat list, the real arrangement of panes.
+
+[00:25.0 --> 00:36.0]
+Then you interact: read each shared pane, and if the share is in control mode, send input straight back into it from your phone.
+
+[00:36.0 --> 00:45.0]
+Shared tabs turn your phone into a live window onto a teammate's whole workspace.
+

@@ -1,0 +1,27 @@
+# Story 100: Web Terminal Architecture (45s)
+# Hook: No separate service. The web server is baked right into the rysh binary.
+# Duration: 45s
+# Source: story-100-web-terminal-architecture.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+No separate service. The web server is baked right into the rysh binary.
+
+[00:05.0 --> 00:13.0]
+When you run rysh web start, an embedded Go web server boots inside the same process -- nothing to install, zero external dependencies.
+
+[00:13.0 --> 00:23.0]
+The frontend does not run a second copy of your session. It connects to the very same embedded NATS bus and the very same actor hierarchy your terminal uses.
+
+[00:23.0 --> 00:33.0]
+State streams to the browser as a snapshot roughly every 200 milliseconds over a WebSocket -- so what you see in the browser stays in lockstep with the terminal.
+
+[00:33.0 --> 00:45.0]
+React on the front, Go and NATS on the back, all in one self-contained binary -- that is the whole web terminal stack.
+

@@ -1,0 +1,30 @@
+# Story 24: Resizing Panes (40s)
+# Hook: Give the important pane more room -- arrow keys in layout mode flex the space.
+# Duration: 40s
+# Source: story-024-resizing-panes.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:04.0]
+Give the important pane more room -- arrow keys in layout mode flex the space.
+
+[00:04.0 --> 00:14.0]
+Start rysh, split right for a second column, then split down so we can resize in both directions.
+
+[00:14.0 --> 00:19.0]
+Press Ctrl+L. Now the arrow keys resize the active pane.
+
+[00:19.0 --> 00:27.0]
+Right grows the pane's width, Left shrinks it. The neighbors give and take flex weight as you go.
+
+[00:27.0 --> 00:35.0]
+Up and Down adjust height within the column. It's all flex-based, so the layout always stays proportional.
+
+[00:35.0 --> 00:40.0]
+Escape when it looks right. Arrow keys -- the simplest way to tune every pane's size.
+

@@ -1,0 +1,27 @@
+# Story 38: Chat Mode (40s)
+# Hook: The at-sign prompt is chat mode -- a conversation lane separate from prompt mode.
+# Duration: 40s
+# Source: story-038-chat-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:03.0]
+The at-sign prompt is chat mode -- a conversation lane separate from prompt mode.
+
+[00:03.0 --> 00:09.0]
+Start rysh in shell mode, then we'll cycle all the way around to chat.
+
+[00:09.0 --> 00:20.0]
+Double-Escape moves through prompt and rysh, then lands on the at-sign marker -- that's chat mode, for sending messages to AI chat.
+
+[00:20.0 --> 00:32.0]
+Chat keeps its own per-mode buffer, distinct from prompt mode's stream. Type a message and send it.
+
+[00:32.0 --> 00:40.0]
+Chat and prompt are separate streams in the same pane -- one for quick conversation, one for agentic work. Double-Escape returns you to shell.
+

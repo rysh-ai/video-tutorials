@@ -1,0 +1,33 @@
+# Story 61: Tool Approval Flow (50s)
+# Hook: Your AI agent never touches a file or runs a destructive command without your say-so.
+# Duration: 50s
+# Source: story-061-tool-approval-flow.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Your AI agent never touches a file or runs a destructive command without your say-so.
+
+[00:03.0 --> 00:08.0]
+Start rysh. We are in shell mode -- your familiar terminal.
+
+[00:08.0 --> 00:16.0]
+Double-press Escape for prompt mode, then ask the agent to change a file. Tools like file_edit always need approval.
+
+[00:16.0 --> 00:30.0]
+Before anything is written, the footer shows the action and a diff preview. Nothing changes until you decide.
+
+[00:30.0 --> 00:40.0]
+Press y to approve. The edit applies and the agent continues. Press n to reject and the action is cancelled.
+
+[00:40.0 --> 00:47.0]
+Reads and searches run freely. But writes, patches, commits, and dangerous bash are all gated behind you.
+
+[00:47.0 --> 00:50.0]
+You are always the final approver.
+

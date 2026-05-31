@@ -1,0 +1,30 @@
+# Story 20: Stack Mode (Ctrl+S) (40s)
+# Hook: Ctrl+S turns a stack into a flip-book -- rotate through your panes with j and k.
+# Duration: 40s
+# Source: story-020-stack-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:04.0]
+Ctrl+S turns a stack into a flip-book -- rotate through your panes with j and k.
+
+[00:04.0 --> 00:14.0]
+Start rysh, then stack three panes with Ctrl+P, s -- twice over -- so the title reads one of three.
+
+[00:14.0 --> 00:19.0]
+Press Ctrl+S to enter stack mode. Now j and k rotate the deck.
+
+[00:19.0 --> 00:26.0]
+Press j to bring the next pane to the front. The counter ticks forward.
+
+[00:26.0 --> 00:33.0]
+Press k to rotate back the other way. You can fan through every pane in the group.
+
+[00:33.0 --> 00:40.0]
+Escape leaves stack mode. j and k -- that's all it takes to navigate a deck of stacked panes.
+

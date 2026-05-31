@@ -1,0 +1,33 @@
+# Story 14: Panes Overview (45s)
+# Hook: One window, many minds. Every pane is its own shell and its own AI agent.
+# Duration: 45s
+# Source: story-014-panes-overview.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:04.0]
+One window, many minds. Every pane is its own shell and its own AI agent.
+
+[00:04.0 --> 00:09.0]
+Start rysh and you get a single pane -- a full terminal backed by its own agent.
+
+[00:09.0 --> 00:16.0]
+Press Ctrl+N to create another pane. Instantly you have two independent terminals side by side.
+
+[00:16.0 --> 00:23.0]
+Add as many as you like. Each pane has its own working directory, its own history, its own AI context.
+
+[00:23.0 --> 00:33.0]
+Press Tab to cycle through your panes. The focused pane gets a highlighted border.
+
+[00:33.0 --> 00:40.0]
+Whatever you type lands only in the pane you've focused -- the others keep running on their own.
+
+[00:40.0 --> 00:45.0]
+Ctrl+N to add a pane, Tab to move between them. That's the foundation of every Rysh layout.
+

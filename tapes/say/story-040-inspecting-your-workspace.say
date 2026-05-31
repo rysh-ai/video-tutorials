@@ -1,0 +1,39 @@
+# Story 40: Inspecting Your Workspace (45s)
+# Hook: Lost track of your layout? A handful of ## commands map your entire workspace.
+# Duration: 45s
+# Source: story-040-inspecting-your-workspace.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 9
+
+[00:00.0 --> 00:03.0]
+Lost track of your layout? A handful of ## commands map your entire workspace.
+
+[00:03.0 --> 00:07.0]
+Start rysh and build a small layout to inspect.
+
+[00:07.0 --> 00:13.0]
+Ctrl+P then n splits right, giving us a second pane in a new group.
+
+[00:13.0 --> 00:18.0]
+Double-Escape over to rysh mode so we can issue inspection commands.
+
+[00:18.0 --> 00:24.0]
+##pane info shows the active pane's details -- id, mode, given-name, and status.
+
+[00:24.0 --> 00:30.0]
+##tab list shows every tab with its pane count; ##lane list shows the columns in this tab.
+
+[00:30.0 --> 00:36.0]
+##pg list -- short for panegroup list -- enumerates every pane group in the active tab.
+
+[00:36.0 --> 00:42.0]
+And ##pg layout prints the full tab tree: lanes, groups, and stacked panes, all in one view.
+
+[00:42.0 --> 00:45.0]
+Five commands, and you can see your whole workspace at a glance.
+

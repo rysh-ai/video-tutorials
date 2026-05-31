@@ -1,0 +1,27 @@
+# Story 11: Tab Mode (Ctrl+T) (45s)
+# Hook: Ctrl+T opens tab mode -- create, jump, and move between tabs without leaving the keyboard.
+# Duration: 45s
+# Source: story-011-tab-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Ctrl+T opens tab mode -- create, jump, and move between tabs without leaving the home row.
+
+[00:05.0 --> 00:18.0]
+Press Ctrl+T to enter tab mode. Now n creates a new tab. Press it a few times to build out a row of tabs.
+
+[00:18.0 --> 00:30.0]
+While in tab mode, h and k move to the previous tab, j and l move to the next -- no arrow keys needed.
+
+[00:30.0 --> 00:40.0]
+Press a number from 1 to 9 to jump straight to that tab.
+
+[00:40.0 --> 00:45.0]
+Escape exits tab mode and drops you back to normal mode.
+

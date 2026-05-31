@@ -1,0 +1,30 @@
+# Story 19: Stacked Panes (45s)
+# Hook: Stack panes like a deck of cards -- many terminals in the footprint of one.
+# Duration: 45s
+# Source: story-019-stacked-panes.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:04.0]
+Stack panes like a deck of cards -- many terminals in the footprint of one.
+
+[00:04.0 --> 00:09.0]
+Start rysh with a single pane.
+
+[00:09.0 --> 00:17.0]
+Press Ctrl+P then s to stack a new pane on top of the group. The border title now reads one of two.
+
+[00:17.0 --> 00:25.0]
+Stack another and the title shows one of three. Only the front pane is full-size.
+
+[00:25.0 --> 00:35.0]
+The panes behind it sit in the same slot, showing up as grey title bars at the bottom -- a deck you flip through.
+
+[00:35.0 --> 00:45.0]
+Stacking keeps related terminals together without crowding your screen. Next up: rotating through the stack.
+

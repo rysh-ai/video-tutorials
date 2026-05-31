@@ -1,0 +1,27 @@
+# Story 47: Configuring Voice Providers (40s)
+# Hook: Deepgram or Whisper, sox or ffmpeg -- pick your transcription provider and recorder.
+# Duration: 40s
+# Source: story-047-configuring-voice-providers.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:03.0]
+Deepgram or Whisper, sox or ffmpeg -- pick your transcription provider and recorder.
+
+[00:03.0 --> 00:13.0]
+The voice_control section chooses your speech-to-text provider. Set tts_provider_name to deepgram -- the default -- or to whisper, and supply that provider's api_key.
+
+[00:13.0 --> 00:22.0]
+Back in the voice section, recorder picks how audio is captured. auto chooses the first tool on your PATH -- sox, ffmpeg, afrecord, or arecord -- and max_seconds caps a single recording.
+
+[00:22.0 --> 00:31.0]
+Prefer environment variables? Every key has one -- like RYSH_VOICE_CONTROL_API_KEY and RYSH_VOICE_RECORDER. On macOS, grant your terminal Microphone access on first use.
+
+[00:31.0 --> 00:40.0]
+Set the provider, set the recorder, grant the mic -- and your voice becomes just another way to prompt.
+

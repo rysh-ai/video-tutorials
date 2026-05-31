@@ -1,0 +1,30 @@
+# Story 83: WhatsApp & Phone Channels (45s)
+# Hook: WhatsApp Cloud API and Twilio phone -- your humanoid reaches everyone's pocket.
+# Duration: 45s
+# Source: story-083-whatsapp-and-phone-channels.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+WhatsApp Cloud API and Twilio phone -- your humanoid reaches everyone's pocket.
+
+[00:03.0 --> 00:10.0]
+Launch rysh. WhatsApp uses the Cloud API; phone uses Twilio. Both go in the contacts block of the skill file.
+
+[00:10.0 --> 00:24.0]
+WhatsApp needs a phone, an api_key, and a business_id. Phone needs a number, the provider twilio, an account_sid, and an auth_token -- every secret pulled in with the ENV_VAR syntax.
+
+[00:24.0 --> 00:33.0]
+Double-Escape into rysh mode, spawn the humanoid, then start the WhatsApp channel.
+
+[00:33.0 --> 00:40.0]
+Start the phone channel the same way -- name, then the channel type.
+
+[00:40.0 --> 00:45.0]
+##humanoid channels support lists both channels, now live.
+

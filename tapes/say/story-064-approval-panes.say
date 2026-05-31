@@ -1,0 +1,30 @@
+# Story 64: Approval Panes (40s)
+# Hook: Route every approval request to one dedicated pane and triage them in one place.
+# Duration: 40s
+# Source: story-064-approval-panes.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Route every approval request to one dedicated pane and triage them in one place.
+
+[00:03.0 --> 00:08.0]
+Start rysh, then split a second pane that will collect approvals from across your workspace.
+
+[00:08.0 --> 00:18.0]
+Switch to rysh mode and register this pane as the approval pane. Now tool requests from other panes land right here.
+
+[00:18.0 --> 00:30.0]
+List pending approvals, clear the queue, and enable an attention indicator so you never miss a waiting action.
+
+[00:30.0 --> 00:37.0]
+A quick clear empties the queue when you're caught up.
+
+[00:37.0 --> 00:40.0]
+One pane, every decision, no context switching.
+

@@ -1,0 +1,30 @@
+# Story 76: Spawning From a Directory (40s)
+# Hook: A folder of skill files becomes a whole team of agents in one command.
+# Duration: 40s
+# Source: story-076-spawning-from-a-directory.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+A folder of skill files becomes a whole team of agents in one command.
+
+[00:03.0 --> 00:08.0]
+Launch rysh. Suppose you have a directory of agent skill files.
+
+[00:08.0 --> 00:18.0]
+Each markdown file in the directory describes one agent.
+
+[00:18.0 --> 00:28.0]
+Double-Escape into rysh mode and run ##agent spawn-all on the directory. Rysh creates one agent per markdown file -- instantly.
+
+[00:28.0 --> 00:37.0]
+##agent list shows the full roster -- a complete team bootstrapped from one folder.
+
+[00:37.0 --> 00:40.0]
+spawn-all: version your whole agent team in one directory.
+

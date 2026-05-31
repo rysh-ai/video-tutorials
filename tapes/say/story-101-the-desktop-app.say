@@ -1,0 +1,27 @@
+# Story 101: The Desktop App (45s)
+# Hook: The same rysh multiplexer, as a native desktop app.
+# Duration: 45s
+# Source: story-101-the-desktop-app.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+The same rysh multiplexer, as a native desktop app.
+
+[00:05.0 --> 00:13.0]
+rysh-cli-app is the desktop client -- an Electron and React app that wraps the exact same multiplexer you run in the terminal.
+
+[00:13.0 --> 00:23.0]
+You get every mode, full mouse support, and the same tabs and panes -- just in a resizable window instead of a terminal emulator.
+
+[00:23.0 --> 00:34.0]
+What the desktop app adds is dedicated side panels: one for Agents, one for Humanoids, one for Shares -- so you can manage them without typing a command.
+
+[00:34.0 --> 00:45.0]
+If you prefer a GUI, the desktop app gives you the full power of rysh with point-and-click access to its actors.
+

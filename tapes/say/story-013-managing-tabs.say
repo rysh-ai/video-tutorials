@@ -1,0 +1,27 @@
+# Story 13: Managing Tabs (##tab) (40s)
+# Hook: The ##tab command is your full tab control center -- list, inspect, delete, and pipeline.
+# Duration: 40s
+# Source: story-013-managing-tabs.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:04.0]
+The ##tab command is your tab control center -- list, inspect, delete, and toggle pipelines.
+
+[00:04.0 --> 00:14.0]
+##tab list shows every tab with its ID and how many panes it holds.
+
+[00:14.0 --> 00:23.0]
+##tab list-panes drills into the active tab and lists the panes inside it.
+
+[00:23.0 --> 00:31.0]
+##tab delete with an ID removes a tab you no longer need.
+
+[00:31.0 --> 00:40.0]
+And ##tab pipeline enable turns on pipeline mode for the tab; disable turns it back off.
+

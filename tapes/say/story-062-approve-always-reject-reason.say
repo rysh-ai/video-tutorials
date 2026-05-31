@@ -1,0 +1,30 @@
+# Story 62: Approve Always & Reject With Reason (45s)
+# Hook: Approve once and forever, or reject with a reason the agent can learn from.
+# Duration: 45s
+# Source: story-062-approve-always-reject-reason.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Approve once and forever, or reject with a reason the agent can learn from.
+
+[00:03.0 --> 00:08.0]
+Start rysh and switch into prompt mode to talk to the agent.
+
+[00:08.0 --> 00:16.0]
+Ask the agent to create a file. file_write is a gated tool, so an approval prompt appears in the footer.
+
+[00:16.0 --> 00:26.0]
+Press capital Y to approve always. Rysh remembers this decision so the same kind of action won't ask again.
+
+[00:26.0 --> 00:38.0]
+Now ask for something risky. Press capital N to reject with a reason -- type why, and the agent adapts.
+
+[00:38.0 --> 00:45.0]
+y approves, capital Y always approves, n rejects, capital N rejects with a reason, and Escape rejects silently.
+
