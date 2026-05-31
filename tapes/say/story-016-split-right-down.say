@@ -1,0 +1,33 @@
+# Story 16: Split Right & Split Down (45s)
+# Hook: Build any layout from two moves: split right for columns, split down for rows.
+# Duration: 45s
+# Source: story-016-split-right-down.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:04.0]
+Build any layout from two moves: split right for columns, split down for rows.
+
+[00:04.0 --> 00:09.0]
+Start with a single pane in a single column.
+
+[00:09.0 --> 00:16.0]
+Ctrl+P then n splits right. That's a second column, and the space divides between them by flex weight.
+
+[00:16.0 --> 00:23.0]
+Do it again for a third column. Each new pane shares the width evenly -- a clean three-column layout.
+
+[00:23.0 --> 00:32.0]
+Now press v to split down. The active column gets a second row, stacked vertically inside that same column.
+
+[00:32.0 --> 00:40.0]
+Split down again and the column packs in another row. Columns grow with n, rows grow with v.
+
+[00:40.0 --> 00:45.0]
+Two keys, endless layouts. Flex weights keep everything balanced as you build.
+

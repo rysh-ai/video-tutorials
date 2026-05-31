@@ -1,0 +1,27 @@
+# Story 107: Chrome Extension Browser Automation (50s)
+# Hook: A rysh pane that lives in your browser's side panel and drives the page.
+# Duration: 50s
+# Source: story-107-chrome-extension-browser-automation.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+A rysh pane that lives in your browser's side panel and drives the page.
+
+[00:05.0 --> 00:15.0]
+The Chrome extension's side panel is a real rysh pane -- same modes, same AI agent -- except its job is to drive the browser you are looking at.
+
+[00:15.0 --> 00:26.0]
+It connects to your session the same way every other client does: a NATS-over-WebSocket link back to the bus.
+
+[00:26.0 --> 00:38.0]
+Because the agent lives in the pane and not the page, your conversation persists across navigations -- click a link, load a new URL, the agent keeps its full context.
+
+[00:38.0 --> 00:50.0]
+Ask the agent to fill a form or pull data, and it acts on the live tab -- a browser copilot wired into your terminal.
+

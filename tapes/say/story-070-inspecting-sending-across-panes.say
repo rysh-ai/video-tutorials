@@ -1,0 +1,30 @@
+# Story 70: Inspecting & Sending Across Panes (45s)
+# Hook: Your agent can read another pane's state and even type into it -- with approval.
+# Duration: 45s
+# Source: story-070-inspecting-sending-across-panes.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Your agent can read another pane's state and even type into it -- with approval.
+
+[00:03.0 --> 00:09.0]
+Start rysh and split a second pane so the agent has a neighbor to inspect and drive.
+
+[00:09.0 --> 00:20.0]
+From prompt mode, ask the agent who else is around. The agents_list tool shows every pane and its status.
+
+[00:20.0 --> 00:32.0]
+Ask it to inspect that other pane. pane_inspect reads the pane's recent output and state without you switching focus.
+
+[00:32.0 --> 00:42.0]
+Now have it send a command into that pane. pane_send injects input -- and because it acts elsewhere, it asks for approval.
+
+[00:42.0 --> 00:45.0]
+Inspect, coordinate, and act across panes -- safely.
+

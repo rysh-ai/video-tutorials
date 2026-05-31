@@ -1,0 +1,30 @@
+# Story 32: Batch Commands (##cmd) (45s)
+# Hook: Run the same command across every pane in a scope at once.
+# Duration: 45s
+# Source: story-032-batch-commands.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Run the same command across every pane in a scope at once.
+
+[00:03.0 --> 00:09.0]
+Start rysh and create a few panes so the batch has something to fan out across.
+
+[00:09.0 --> 00:20.0]
+The cmd command takes a scope and a shell command. Cmd stack pwd runs pwd in every pane of the stack -- one line in, one line per pane out.
+
+[00:20.0 --> 00:30.0]
+Scopes range from a single pane up to the whole workspace: pane, pg, stack, lane, tab, and ws. Cmd lane echoes a build into every pane of the lane.
+
+[00:30.0 --> 00:40.0]
+Need to target somewhere you're not focused? Add selectors like --tab, --lane, --pg, or --pane to aim the batch precisely.
+
+[00:40.0 --> 00:45.0]
+One command, fanned out across your whole layout.
+

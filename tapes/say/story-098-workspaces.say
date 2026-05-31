@@ -1,0 +1,30 @@
+# Story 98: Workspaces (##ws) (40s)
+# Hook: A workspace is your shared space -- API-key-scoped, and managed right from rysh mode.
+# Duration: 40s
+# Source: story-098-workspaces.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+A workspace is your shared space -- API-key-scoped, and managed right from rysh mode.
+
+[00:03.0 --> 00:09.0]
+Start rysh and double-Escape into rysh mode. Workspaces are managed with the ##ws command.
+
+[00:09.0 --> 00:18.0]
+##ws list shows the workspaces you can reach. Each API key is scoped to exactly one workspace, so access stays isolated.
+
+[00:18.0 --> 00:28.0]
+##ws create takes a name and an API key, registering a new workspace you can share into.
+
+[00:28.0 --> 00:36.0]
+List once more to see it. The new workspace is keyed and ready for shares and subscribers.
+
+[00:36.0 --> 00:40.0]
+One API key, one workspace -- clean boundaries for every team you collaborate with.
+

@@ -1,0 +1,33 @@
+# Story 73: What Are Autonomous Agents? (50s)
+# Hook: Headless AI workers. No terminal, no pane -- just a brain with tools.
+# Duration: 50s
+# Source: story-073-what-are-autonomous-agents.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Headless AI workers. No terminal, no pane -- just a brain with tools.
+
+[00:03.0 --> 00:08.0]
+Launch rysh. Every pane is a shell plus an agent -- but autonomous agents live entirely in the background.
+
+[00:08.0 --> 00:14.0]
+Double-press Escape twice to reach rysh mode, where the double-hash system commands live.
+
+[00:14.0 --> 00:24.0]
+Spawn an agent with a name and a system prompt. It has no PTY and no terminal -- just its own AgenticActor running independently in the workspace.
+
+[00:24.0 --> 00:32.0]
+Check ##agent list to see every agent and its status. Created via ##agent spawn, prompted with @name, controlled with @@name.
+
+[00:32.0 --> 00:44.0]
+Talk to it with the at-sign prefix from any input mode. The agent runs the prompt with full tool access in the background.
+
+[00:44.0 --> 00:50.0]
+Autonomous agents: tireless workers you spawn, prompt, and command -- without ever opening a pane.
+

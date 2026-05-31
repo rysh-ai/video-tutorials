@@ -1,0 +1,27 @@
+# Story 6: Named & Detached Sessions (45s)
+# Hook: Create a session attached, or spin one up headless as a background daemon.
+# Duration: 45s
+# Source: story-006-named-detached-sessions.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Create a session attached, or spin one up headless as a background daemon.
+
+[00:05.0 --> 00:15.0]
+rysh create my-session builds a fresh session and attaches its TUI right away.
+
+[00:15.0 --> 00:27.0]
+Add --detached, or just -d, and the daemon spawns headlessly -- no TUI, control returns to your prompt.
+
+[00:27.0 --> 00:36.0]
+List your sessions and the headless one is right there, running in the background.
+
+[00:36.0 --> 00:45.0]
+Attach to it whenever you like with rysh attach. Detached now, fully interactive when you need it.
+

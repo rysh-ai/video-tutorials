@@ -1,0 +1,33 @@
+# Story 79: What Are Humanoids? (50s)
+# Hook: An agent that talks to the outside world -- WhatsApp, Slack, email, phone, chat.
+# Duration: 50s
+# Source: story-079-what-are-humanoids.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+An agent that talks to the outside world -- WhatsApp, Slack, email, phone, chat.
+
+[00:03.0 --> 00:09.0]
+Launch rysh. A humanoid is an autonomous agent plus bidirectional external communication channels.
+
+[00:09.0 --> 00:16.0]
+An inbound message becomes a prompt; the AI reply goes back out through the same channel. Double-Escape into rysh mode to spawn one.
+
+[00:16.0 --> 00:26.0]
+Spawn it just like an agent: a name and a system prompt. Use ##humanoid spawn instead of ##agent spawn.
+
+[00:26.0 --> 00:36.0]
+##humanoid list shows every humanoid, its status, and which channels it has connected.
+
+[00:36.0 --> 00:47.0]
+You can still talk to it directly with the at-sign prefix, exactly like any agent -- channels just add external reach on top.
+
+[00:47.0 --> 00:50.0]
+Humanoids: your AI, reachable wherever your users already are.
+

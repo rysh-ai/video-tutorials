@@ -1,0 +1,27 @@
+# Story 67: Todo Lists (40s)
+# Hook: Watch your agent break a big job into tracked, checkable steps.
+# Duration: 40s
+# Source: story-067-todo-lists.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:03.0]
+Watch your agent break a big job into tracked, checkable steps.
+
+[00:03.0 --> 00:08.0]
+Start rysh and switch to prompt mode.
+
+[00:08.0 --> 00:24.0]
+Hand the agent a multi-step task. It uses the todo tool to add items, then marks each one complete as it goes.
+
+[00:24.0 --> 00:34.0]
+The list lives in per-pane JetStream KV. Add, update, complete, or remove items -- the agent tracks its own work.
+
+[00:34.0 --> 00:40.0]
+The todo tool keeps long, multi-step work organized and visible from start to finish.
+

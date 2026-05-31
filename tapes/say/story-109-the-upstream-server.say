@@ -1,0 +1,27 @@
+# Story 109: The Upstream Server (50s)
+# Hook: rysh-server: the hub that routes shares between machines.
+# Duration: 50s
+# Source: story-109-the-upstream-server.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+rysh-server: the hub that routes shares between machines.
+
+[00:05.0 --> 00:15.0]
+rysh-server is the optional upstream hub. Local sessions connect to it to share panes, groups, and tabs with collaborators on other machines.
+
+[00:15.0 --> 00:26.0]
+Under the hood it is Go and Gin for the API, PostgreSQL for persistence, an embedded NATS server for real-time messaging, and nginx out front.
+
+[00:26.0 --> 00:37.0]
+The server handles authentication with JWT or Firebase, and it owns workspaces, members, API keys, and the routing and access control for every share.
+
+[00:37.0 --> 00:50.0]
+It ships as a Docker Compose stack -- make dev-up for development, make prod-up for production -- so you can stand up your own hub in minutes.
+

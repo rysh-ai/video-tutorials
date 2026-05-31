@@ -1,0 +1,27 @@
+# Story 68: Conversation History & Memory (45s)
+# Hook: Recall any pane's conversation, and let old turns compact into summaries.
+# Duration: 45s
+# Source: story-068-conversation-history-memory.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:03.0]
+Recall any pane's conversation, and let old turns compact into summaries.
+
+[00:03.0 --> 00:09.0]
+Start rysh and split a second pane so we have two agents with separate conversations.
+
+[00:09.0 --> 00:22.0]
+From prompt mode, ask the agent to retrieve the other pane's conversation. The session_history tool reads any pane's turns.
+
+[00:22.0 --> 00:36.0]
+Drop into rysh mode to print this pane's history directly -- shell and prompt turns are all kept.
+
+[00:36.0 --> 00:45.0]
+As conversations grow, memory compaction folds old turns into compact MemoryEntry summaries -- context stays small and sharp.
+

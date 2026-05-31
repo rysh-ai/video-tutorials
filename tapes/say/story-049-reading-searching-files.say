@@ -1,0 +1,30 @@
+# Story 49: Reading & Searching Files (45s)
+# Hook: Point the agent at your code -- ls, file_read, glob, and grep find anything, no approval required.
+# Duration: 45s
+# Source: story-049-reading-searching-files.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Point the agent at your code -- ls, file_read, glob, and grep find anything, no approval required.
+
+[00:03.0 --> 00:08.0]
+Start rysh in a project directory you want to explore.
+
+[00:08.0 --> 00:14.0]
+Double-press Escape to switch to prompt mode and talk to the agent.
+
+[00:14.0 --> 00:30.0]
+Ask it to find all the TODO comments. It reaches for grep with a regex, glob to walk the tree with double-star patterns, and file_read to peek inside. These are read-only tools, so they run without asking for approval.
+
+[00:30.0 --> 00:42.0]
+Behind that single request: ls for quick listings, glob for pattern matching, grep for content search, file_read for contents, and tree for structure -- the agent picks whichever fits, and shows you exactly what it found.
+
+[00:42.0 --> 00:45.0]
+Read and search the whole codebase, just by asking.
+

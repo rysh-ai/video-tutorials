@@ -1,0 +1,27 @@
+# Story 110: Stripe Billing & Plans (50s)
+# Hook: Four tiers, Stripe checkout, and limits enforced in three places.
+# Duration: 50s
+# Source: story-110-stripe-billing-plans.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Four tiers, Stripe checkout, and limits enforced in three places.
+
+[00:05.0 --> 00:16.0]
+The server has four plans. Free, Solo at nineteen dollars a month, Team at forty-nine, and Enterprise with custom pricing -- each raises your limits.
+
+[00:16.0 --> 00:27.0]
+The limits cap three resources: how many workspaces you can create, how many concurrent sessions, and how many panes -- so Free is one workspace, three sessions, thirty panes; Team jumps to twenty, two hundred, two thousand.
+
+[00:27.0 --> 00:38.0]
+Payments run through Stripe. The billing page offers monthly or yearly with Stripe Checkout, a Billing Portal for managing the subscription, and webhooks that keep the server in sync.
+
+[00:38.0 --> 00:50.0]
+And limits are enforced at three layers: workspaces server-side at creation, sessions server-side at the WebSocket upgrade, and panes daemon-side in the WorkspaceActor before a pane is spawned.
+

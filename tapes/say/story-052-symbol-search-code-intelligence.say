@@ -1,0 +1,30 @@
+# Story 52: Symbol Search & Code Intelligence (40s)
+# Hook: Ask where something is defined -- symbol_search and tree map your code instantly.
+# Duration: 40s
+# Source: story-052-symbol-search-code-intelligence.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Ask where something is defined -- symbol_search and tree map your code instantly.
+
+[00:03.0 --> 00:08.0]
+Launch rysh inside a codebase you want to understand.
+
+[00:08.0 --> 00:13.0]
+Double-press Escape to talk to the agent.
+
+[00:13.0 --> 00:30.0]
+Ask where a function or type lives. The agent uses symbol_search to find declarations -- functions, types, methods -- and tree to show the directory structure around it. Both are read-only, so they run without approval.
+
+[00:30.0 --> 00:37.0]
+Instead of grepping by hand, you just ask. Code intelligence tools turn a vague question into a precise file and line, with the surrounding structure.
+
+[00:37.0 --> 00:40.0]
+Find any declaration, understand any tree -- conversationally.
+

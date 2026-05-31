@@ -1,0 +1,27 @@
+# Story 108: Browser Tools (45s)
+# Hook: Navigate, click, type, screenshot -- the agent's browser toolbelt.
+# Duration: 45s
+# Source: story-108-browser-tools.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Navigate, click, type, screenshot -- the agent's browser toolbelt.
+
+[00:05.0 --> 00:15.0]
+The core tool is browser_action -- it can navigate to a URL, type into a field, or click an element on the page.
+
+[00:15.0 --> 00:26.0]
+To read the page, the agent uses get_text to pull content, and screenshot to capture the view as a base64 image it can reason over.
+
+[00:26.0 --> 00:36.0]
+It can run arbitrary page JavaScript with execute_js -- which always requires your approval -- and manage tabs: get_tabs, switch_tab, new_tab, close_tab.
+
+[00:36.0 --> 00:45.0]
+And to find elements reliably, it has six selector strategies to choose from -- so it can target the right thing even on messy pages.
+

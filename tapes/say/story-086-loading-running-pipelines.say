@@ -1,0 +1,36 @@
+# Story 86: Loading & Running Pipelines (50s)
+# Hook: Define a pipeline in a file, load it, run it -- ##pipe drives the whole lifecycle.
+# Duration: 50s
+# Source: story-086-loading-running-pipelines.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:03.0]
+Define a pipeline in a file, load it, run it -- ##pipe drives the whole lifecycle.
+
+[00:03.0 --> 00:08.0]
+Start rysh. Pipelines live as files under .rysh/pipelines in your project.
+
+[00:08.0 --> 00:14.0]
+Double-Escape into rysh mode. ##pipe help lists everything the pipeline command can do.
+
+[00:14.0 --> 00:22.0]
+##pipe load build.pipeline reads the file from .rysh/pipelines and registers it in this tab.
+
+[00:22.0 --> 00:28.0]
+##pipe list shows what's loaded; ##pipe show prints a pipeline's steps and details.
+
+[00:28.0 --> 00:38.0]
+##pipe run executes it -- defaulting to the first loaded pipeline when you omit the name.
+
+[00:38.0 --> 00:45.0]
+##pipe status reports execution progress phase by phase.
+
+[00:45.0 --> 00:50.0]
+And ##pipe clear wipes the pipeline output when you're done. Load, run, status, clear -- the full loop.
+

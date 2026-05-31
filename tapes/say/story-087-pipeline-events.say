@@ -1,0 +1,33 @@
+# Story 87: Pipeline Events (##>) (45s)
+# Hook: Lines starting with double-hash-greater-than bypass the shell and fly straight to NATS.
+# Duration: 45s
+# Source: story-087-pipeline-events.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Lines starting with double-hash-greater-than bypass the shell and fly straight to NATS.
+
+[00:03.0 --> 00:09.0]
+Start rysh and split a second pane. We'll have this worker listen to the first pane's shared output.
+
+[00:09.0 --> 00:18.0]
+In rysh mode, ##pane listen forwards another pane's shared output here. Event payloads arrive without an alias prefix.
+
+[00:18.0 --> 00:25.0]
+Hop to the orchestrator pane and switch it to rysh mode so we can emit a pipeline event.
+
+[00:25.0 --> 00:34.0]
+##>event:print: takes a payload. This line never touches the PTY -- it publishes straight to the pane's NATS output topic.
+
+[00:34.0 --> 00:42.0]
+Send as many as you like. Each event is a clean line in the shared output buffer, visible to every listening pane.
+
+[00:42.0 --> 00:45.0]
+##> is your event bus -- shell-free messages between panes.
+

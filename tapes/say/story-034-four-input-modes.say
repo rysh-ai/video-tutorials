@@ -1,0 +1,33 @@
+# Story 34: Four Input Modes (50s)
+# Hook: One pane, four modes. Double-Escape cycles through them all.
+# Duration: 50s
+# Source: story-034-four-input-modes.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+One pane, four modes. Double-Escape cycles through them all.
+
+[00:03.0 --> 00:08.0]
+Start rysh and you land in shell mode -- the greater-than prompt runs commands in your PTY.
+
+[00:08.0 --> 00:18.0]
+Double-press Escape. The prompt becomes a less-than sign -- that's prompt mode, where input goes to your AI agent with its own output stream.
+
+[00:18.0 --> 00:28.0]
+Double-Escape again and the prompt turns to hash-hash. This is rysh mode for built-in system commands.
+
+[00:28.0 --> 00:38.0]
+Once more and the prompt shows an at-sign -- chat mode, a separate AI chat with its own buffer.
+
+[00:38.0 --> 00:46.0]
+A final double-Escape brings you full circle back to shell. Greater-than, less-than, hash-hash, at-sign.
+
+[00:46.0 --> 00:50.0]
+Four markers, one key. Each mode keeps its own stream.
+

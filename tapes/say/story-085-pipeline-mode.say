@@ -1,0 +1,33 @@
+# Story 85: Pipeline Mode (45s)
+# Hook: A tab can become a pipeline. One key flips it on and your events start flowing.
+# Duration: 45s
+# Source: story-085-pipeline-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+A tab can become a pipeline. One key flips it on and your events start flowing.
+
+[00:03.0 --> 00:08.0]
+Start rysh. Any tab can be promoted into a pipeline tab, where events orchestrate work across panes.
+
+[00:08.0 --> 00:16.0]
+Press Ctrl+P to enter pane mode, then p to toggle pipeline mode for this tab.
+
+[00:16.0 --> 00:24.0]
+You can also do it from rysh mode. Double-Escape over, then ##tab pipeline enable turns it on explicitly.
+
+[00:24.0 --> 00:32.0]
+##tab list confirms the tab is now pipeline-enabled, ready to load and run pipelines.
+
+[00:32.0 --> 00:40.0]
+When you're done, ##tab pipeline disable turns it back off -- or just double-Escape, which toggles pipeline mode off.
+
+[00:40.0 --> 00:45.0]
+Pipeline mode is the on-switch for event-driven orchestration across your panes.
+

@@ -1,0 +1,30 @@
+# Story 29: Mouse Support (40s)
+# Hook: Keyboard-first, but the mouse is right there when you want it.
+# Duration: 40s
+# Source: story-029-mouse-support.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Keyboard-first, but the mouse is right there when you want it.
+
+[00:03.0 --> 00:08.0]
+Rysh has full mouse support built in. Let's walk through what it can do.
+
+[00:08.0 --> 00:14.0]
+Split into two panes. With the mouse, a single click on any pane focuses it instantly.
+
+[00:14.0 --> 00:24.0]
+Click and drag across text to select it. When you release the button, the selection is copied straight to your system clipboard.
+
+[00:24.0 --> 00:33.0]
+The mouse wheel scrolls the pane under your cursor, three lines per step, through the same scrollback buffer.
+
+[00:33.0 --> 00:40.0]
+Click to focus, drag to select, release to copy, wheel to scroll. The mouse and keyboard work together.
+

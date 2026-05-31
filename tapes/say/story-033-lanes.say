@@ -1,0 +1,30 @@
+# Story 33: Lanes (##lane / ##new lane) (40s)
+# Hook: Lanes are the columns that organize your panes -- manage them directly.
+# Duration: 40s
+# Source: story-033-lanes.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Lanes are the columns that organize your panes -- manage them directly.
+
+[00:03.0 --> 00:09.0]
+Start rysh and cycle into rysh mode with double-Escape.
+
+[00:09.0 --> 00:16.0]
+New lane adds a fresh column to the tab, ready to hold its own panes.
+
+[00:16.0 --> 00:24.0]
+Lane list shows every lane in the active tab with its identifier and contents.
+
+[00:24.0 --> 00:31.0]
+Lane info zooms into the lane holding your active pane -- its panes, groups, and flex weight.
+
+[00:31.0 --> 00:40.0]
+Lane name gives a lane a readable label, and lane delete removes one you no longer need. Lanes give your layout real structure.
+

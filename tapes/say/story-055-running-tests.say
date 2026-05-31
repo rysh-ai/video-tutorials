@@ -1,0 +1,30 @@
+# Story 55: Running Tests (45s)
+# Hook: Run the tests and fix the failures -- test_run gives structured pass/fail the agent can act on.
+# Duration: 45s
+# Source: story-055-running-tests.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Run the tests and fix the failures -- test_run gives structured pass/fail the agent can act on.
+
+[00:03.0 --> 00:08.0]
+Start rysh inside a project that has a test suite.
+
+[00:08.0 --> 00:13.0]
+Double-press Escape to enter prompt mode.
+
+[00:13.0 --> 00:32.0]
+Ask it to run the tests and fix what fails. The test_run tool executes your suite and returns structured results -- which tests passed, which failed, and why. No approval needed to run them; the agent reads the failures directly.
+
+[00:32.0 --> 00:42.0]
+When the agent proposes a fix, the file edit is approval-gated -- you see the diff, approve it, and it reruns the suite to confirm everything's green.
+
+[00:42.0 --> 00:45.0]
+Structured test results in, fixes out -- one prompt at a time.
+

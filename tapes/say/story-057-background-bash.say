@@ -1,0 +1,30 @@
+# Story 57: Background Bash (45s)
+# Hook: Long-running jobs don't block the agent -- bash_background returns a session id and keeps running.
+# Duration: 45s
+# Source: story-057-background-bash.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Long-running jobs don't block the agent -- bash_background returns a session id and keeps running.
+
+[00:03.0 --> 00:08.0]
+Start rysh in a project with something long-running, like a dev server.
+
+[00:08.0 --> 00:13.0]
+Double-press Escape for prompt mode.
+
+[00:13.0 --> 00:32.0]
+Ask it to start a long-running command in the background. The bash_background tool launches it and immediately returns a session id, so the agent stays free to keep working. Starting a background job is approval-gated -- press y to allow it.
+
+[00:32.0 --> 00:42.0]
+Output is captured in a 256-kilobyte ring buffer, and the session persists until you kill it or close the pane -- perfect for dev servers, watchers, and build daemons you want to leave running.
+
+[00:42.0 --> 00:45.0]
+Fire it off, get a session id, and move on.
+

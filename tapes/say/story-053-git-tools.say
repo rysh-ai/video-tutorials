@@ -1,0 +1,30 @@
+# Story 53: Git Tools (45s)
+# Hook: Summarize your changes and commit -- the agent reads git for free, but the commit waits for you.
+# Duration: 45s
+# Source: story-053-git-tools.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Summarize your changes and commit -- the agent reads git for free, but the commit waits for you.
+
+[00:03.0 --> 00:08.0]
+Start rysh inside a git repository that has a few uncommitted changes.
+
+[00:08.0 --> 00:13.0]
+Double-press Escape to reach prompt mode.
+
+[00:13.0 --> 00:30.0]
+Ask it to summarize your work and commit. The agent calls git_status, git_diff, and git_log -- all read-only -- to understand what changed, then drafts a commit message for you.
+
+[00:30.0 --> 00:40.0]
+The git_commit tool is the one that needs approval. The footer shows the proposed message; press y to approve, and the commit lands. Capital N lets you reject with a reason if you want a different message.
+
+[00:40.0 --> 00:45.0]
+Reads are instant, writes are gated -- git, the safe way.
+

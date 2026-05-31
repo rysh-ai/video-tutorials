@@ -1,0 +1,27 @@
+# Story 9: Session Persistence (45s)
+# Hook: Detach, reboot, reattach -- your panes come back exactly as you left them.
+# Duration: 45s
+# Source: story-009-session-persistence.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Detach, reattach -- your panes come back exactly as you left them.
+
+[00:05.0 --> 00:15.0]
+Every session's state lives on disk under ~/.local/state/rysh/nats, one directory per session.
+
+[00:15.0 --> 00:26.0]
+Inside, two JetStream key-value buckets hold everything: rysh-workspace stores your tab and pane layout...
+
+[00:26.0 --> 00:36.0]
+...and rysh-panes stores each pane's output buffer, mode, and last command, keyed by pane ID.
+
+[00:36.0 --> 00:45.0]
+On attach, the workspace restores straight from KV. Detach freely -- nothing is lost.
+

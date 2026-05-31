@@ -1,0 +1,33 @@
+# Story 71: The Hop Command (50s)
+# Hook: Hop a pane's output into another and let a fresh agent pick up right where you left off.
+# Duration: 50s
+# Source: story-071-the-hop-command.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Hop a pane's output into another and let a fresh agent pick up right where you left off.
+
+[00:03.0 --> 00:08.0]
+Start rysh and split a target pane to hop into.
+
+[00:08.0 --> 00:18.0]
+Name the right-hand pane so we can hop to it by name.
+
+[00:18.0 --> 00:30.0]
+Back in the source pane, generate some work, then run hop reviewer to transfer this pane's output to that one.
+
+[00:30.0 --> 00:40.0]
+Check hop status to confirm. In the reviewer pane, run hop resume and the agent continues with the copied text.
+
+[00:40.0 --> 00:47.0]
+When the handoff is done, hop clear wipes the copied content from the pane.
+
+[00:47.0 --> 00:50.0]
+Hand work from pane to pane in one command.
+

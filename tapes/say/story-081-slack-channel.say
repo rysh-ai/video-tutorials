@@ -1,0 +1,30 @@
+# Story 81: Slack Channel (45s)
+# Hook: Drop your humanoid into Slack and let it answer threads on its own.
+# Duration: 45s
+# Source: story-081-slack-channel.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Drop your humanoid into Slack and let it answer threads on its own.
+
+[00:03.0 --> 00:10.0]
+Launch rysh. The Slack channel is configured under contacts.slack: a bot token, an app token, and the channels to join.
+
+[00:10.0 --> 00:20.0]
+Tokens use the ENV_VAR syntax so they never sit in plaintext. Channels list the rooms the humanoid listens and replies in.
+
+[00:20.0 --> 00:28.0]
+Double-Escape into rysh mode and spawn it from the file.
+
+[00:28.0 --> 00:36.0]
+Start the Slack adapter explicitly with ##humanoid channel start, the humanoid's name, and the channel type slack.
+
+[00:36.0 --> 00:45.0]
+##humanoid channels support shows the connection details -- which channels it joined and whether the adapter is live.
+

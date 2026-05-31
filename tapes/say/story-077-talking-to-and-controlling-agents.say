@@ -1,0 +1,30 @@
+# Story 77: Talking To & Controlling Agents (45s)
+# Hook: @name to prompt it, @@name to command it.
+# Duration: 45s
+# Source: story-077-talking-to-and-controlling-agents.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+At-name to prompt it, double-at-name to command it.
+
+[00:03.0 --> 00:10.0]
+Launch rysh, drop into rysh mode, and spawn a reviewer to work with.
+
+[00:10.0 --> 00:22.0]
+A single at-sign plus the name sends a prompt. The agent runs it with its full toolbelt and reports back.
+
+[00:22.0 --> 00:31.0]
+Two at-signs send a control command instead of a prompt. Deactivate pauses the agent -- it keeps its state but ignores prompts.
+
+[00:31.0 --> 00:38.0]
+Activate brings it right back to life.
+
+[00:38.0 --> 00:45.0]
+And ##agent delete removes it entirely when you're done. Prompt, pause, resume, delete -- you're always in control.
+

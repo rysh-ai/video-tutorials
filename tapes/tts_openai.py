@@ -40,8 +40,14 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-# Load .env from the same directory as this script
-load_dotenv(Path(__file__).parent / ".env")
+# Load .env, searching this script's directory and its parent directories.
+# This finds video-tutorials/.env even though the script lives in tapes/.
+_script_dir = Path(__file__).resolve().parent
+for _candidate in [_script_dir, *_script_dir.parents]:
+    _env_path = _candidate / ".env"
+    if _env_path.exists():
+        load_dotenv(_env_path)
+        break
 
 from openai import OpenAI
 

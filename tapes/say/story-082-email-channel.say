@@ -1,0 +1,30 @@
+# Story 82: Email Channel (45s)
+# Hook: Give your humanoid an inbox -- it reads incoming mail and writes the replies.
+# Duration: 45s
+# Source: story-082-email-channel.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Give your humanoid an inbox -- it reads incoming mail and writes the replies.
+
+[00:03.0 --> 00:10.0]
+Launch rysh. The email channel lives under contacts.email with IMAP for reading and SMTP for sending.
+
+[00:10.0 --> 00:22.0]
+Set the address, IMAP host and port, SMTP host and port, and the username and password as ENV_VARs. Cat it to see the shape.
+
+[00:22.0 --> 00:31.0]
+Double-Escape into rysh mode and spawn it. The humanoid gains email_list, email_read, and email_send tools.
+
+[00:31.0 --> 00:39.0]
+Start the email adapter and the humanoid begins polling the inbox, turning each new message into a prompt and mailing back its answer.
+
+[00:39.0 --> 00:45.0]
+##humanoid channels support confirms the inbox is connected and live.
+

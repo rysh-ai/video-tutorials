@@ -1,0 +1,30 @@
+# Story 23: Layout Mode (Ctrl+L) (45s)
+# Hook: Ctrl+L is where you shape your workspace -- resize, equalize, swap, and fullscreen.
+# Duration: 45s
+# Source: story-023-layout-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:04.0]
+Ctrl+L is where you shape your workspace -- resize, equalize, swap, and fullscreen.
+
+[00:04.0 --> 00:14.0]
+Start rysh and split into a few columns so we have something to rearrange.
+
+[00:14.0 --> 00:20.0]
+Press Ctrl+L to enter layout mode. The footer lists every shaping key.
+
+[00:20.0 --> 00:28.0]
+Arrow keys resize the active pane -- Right and Left for width, Up and Down for height.
+
+[00:28.0 --> 00:36.0]
+Press equals to balance the widths back out, and m to fullscreen the active pane.
+
+[00:36.0 --> 00:45.0]
+Press m again to restore, then Escape to leave layout mode. Resize, equalize, swap, fullscreen -- all under Ctrl+L.
+

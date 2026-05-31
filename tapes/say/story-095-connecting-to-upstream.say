@@ -1,0 +1,33 @@
+# Story 95: Connecting to Upstream (50s)
+# Hook: Point Rysh at a workspace URL and an API key -- now your session can join the hub.
+# Duration: 50s
+# Source: story-095-connecting-to-upstream.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Point Rysh at a workspace URL and an API key -- now your session can join the hub.
+
+[00:03.0 --> 00:11.0]
+Upstream lives in your rysh.config under the [upstream] section: enabled, the server url, and your api_key.
+
+[00:11.0 --> 00:19.0]
+Start rysh with --shared and it auto-shares the first pane to the workspace as soon as it boots.
+
+[00:19.0 --> 00:28.0]
+Double-Escape into rysh mode. ##upstream status shows your configuration and whether the connection is live.
+
+[00:28.0 --> 00:38.0]
+The client connects over NATS-over-WebSocket to rysh-server. ##upstream my-shares lists what this session has published.
+
+[00:38.0 --> 00:46.0]
+Prefer env vars? RYSH_UPSTREAM_ENABLED, RYSH_UPSTREAM_URL, and RYSH_UPSTREAM_API_KEY override the config at launch.
+
+[00:46.0 --> 00:50.0]
+Config or flags, you're connected to the workspace -- ready to share and subscribe.
+

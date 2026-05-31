@@ -1,0 +1,27 @@
+# Story 10: Tabs Overview (45s)
+# Hook: Tabs hold panes, panes hold agents -- and switching between them is one keystroke.
+# Duration: 45s
+# Source: story-010-tabs-overview.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Tabs hold panes, panes hold agents -- and switching between tabs is one keystroke.
+
+[00:05.0 --> 00:13.0]
+Start rysh and you get one tab with one pane. That's your starting point.
+
+[00:13.0 --> 00:22.0]
+Let's add a tab so we have something to move between -- Ctrl+T, then n.
+
+[00:22.0 --> 00:32.0]
+The bracket keys move between tabs: left bracket for previous, right bracket for next.
+
+[00:32.0 --> 00:45.0]
+Alt plus the left and right arrows do the same thing. Each tab is its own workspace of panes and agents.
+

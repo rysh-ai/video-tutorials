@@ -1,0 +1,30 @@
+# Story 3: Building From Source (40s)
+# Hook: Rysh is just Go. Clone it, make build, and run your own binary.
+# Duration: 40s
+# Source: story-003-building-from-source.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:04.0]
+Rysh is written in Go, so building from source takes just a few commands.
+
+[00:04.0 --> 00:12.0]
+Start by cloning the repository and stepping in.
+
+[00:12.0 --> 00:20.0]
+Run make build. The Go toolchain compiles a local rysh binary right here.
+
+[00:20.0 --> 00:28.0]
+make install copies it into ~/.local/bin so you can run rysh from anywhere.
+
+[00:28.0 --> 00:36.0]
+If needed, add ~/.local/bin to your PATH.
+
+[00:36.0 --> 00:40.0]
+Confirm with rysh --version and you're building from your own source.
+

@@ -1,0 +1,30 @@
+# Story 80: Spawning a Humanoid (45s)
+# Hook: Inline prompt or a skill file with a contacts block -- either way, it's one command.
+# Duration: 45s
+# Source: story-080-spawning-a-humanoid.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Inline prompt or a skill file with a contacts block -- either way, it's one command.
+
+[00:03.0 --> 00:08.0]
+Launch rysh. The quickest way is an inline system prompt.
+
+[00:08.0 --> 00:18.0]
+For real channels, write a skill file. It looks like an agent skill file but adds a contacts section -- here, a Slack block with tokens and channels.
+
+[00:18.0 --> 00:28.0]
+Cat it: name, description, model, then the contacts block. The ENV_VAR syntax pulls secrets from the environment at parse time.
+
+[00:28.0 --> 00:38.0]
+Double-Escape into rysh mode and spawn from the file with ##humanoid spawn. Rysh wires up every channel in the contacts block.
+
+[00:38.0 --> 00:45.0]
+##humanoid list shows it running, with its Slack channel attached.
+

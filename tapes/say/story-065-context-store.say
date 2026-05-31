@@ -1,0 +1,27 @@
+# Story 65: Context Store (45s)
+# Hook: Give your agent a memory that survives across the whole session.
+# Duration: 45s
+# Source: story-065-context-store.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:03.0]
+Give your agent a memory that survives across the whole session.
+
+[00:03.0 --> 00:08.0]
+Start rysh and switch to prompt mode.
+
+[00:08.0 --> 00:22.0]
+Tell the agent to remember something. The context_store tool writes a key and value into JetStream KV for this session.
+
+[00:22.0 --> 00:38.0]
+Later -- in any turn -- ask it back. The agent recalls the value straight from the store, no re-explaining needed.
+
+[00:38.0 --> 00:45.0]
+context_store is durable key-value memory that any prompt in the session can read and write.
+

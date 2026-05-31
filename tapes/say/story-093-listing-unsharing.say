@@ -1,0 +1,30 @@
+# Story 93: Listing & Unsharing (40s)
+# Hook: See everything you're sharing, and pull any of it back with one command.
+# Duration: 40s
+# Source: story-093-listing-unsharing.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+See everything you're sharing, and pull any of it back with one command.
+
+[00:03.0 --> 00:09.0]
+Start rysh, double-Escape into rysh mode, and share a pane so we have something to manage.
+
+[00:09.0 --> 00:18.0]
+##share list is your single source of truth -- every active share in the session, with its scope, mode, and share ID.
+
+[00:18.0 --> 00:28.0]
+##unshare pane stops sharing the active pane. The matching commands exist for panegroup, lane, and tab.
+
+[00:28.0 --> 00:37.0]
+List again -- the share is gone. Unregistering tears down the UpstreamShareActor and notifies the server.
+
+[00:37.0 --> 00:40.0]
+List to audit, unshare to revoke. You stay in control of what leaves your session.
+

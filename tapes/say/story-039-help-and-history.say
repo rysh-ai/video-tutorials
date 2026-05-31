@@ -1,0 +1,33 @@
+# Story 39: Help & History (40s)
+# Hook: Forget a command? Rysh tells you. ##help lists everything, ##history recalls what you typed.
+# Duration: 40s
+# Source: story-039-help-and-history.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+Forget a command? Rysh tells you. ##help lists everything, ##history recalls what you typed.
+
+[00:03.0 --> 00:07.0]
+Launch rysh and run a couple of shell commands to build up some history.
+
+[00:07.0 --> 00:14.0]
+Every command you run is remembered, per input mode.
+
+[00:14.0 --> 00:20.0]
+Double-press Escape twice to reach rysh mode -- the prompt becomes a double-hash, ready for system commands.
+
+[00:20.0 --> 00:28.0]
+Type ##help to list every system command Rysh understands -- tabs, panes, lanes, sharing, snapshots, and more.
+
+[00:28.0 --> 00:37.0]
+Type ##history -- or just ##h -- to see the command history for the current input mode. Nothing gets lost.
+
+[00:37.0 --> 00:40.0]
+Help and history: your two-command safety net inside any pane.
+

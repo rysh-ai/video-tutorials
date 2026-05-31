@@ -1,0 +1,30 @@
+# Story 37: Rysh Mode (## commands) (40s)
+# Hook: Hash-hash is rysh mode -- the control panel for your whole workspace.
+# Duration: 40s
+# Source: story-037-rysh-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Hash-hash is rysh mode -- the control panel for your whole workspace.
+
+[00:03.0 --> 00:09.0]
+Start rysh, then double-Escape until the prompt shows hash-hash. System commands inject their output right into the active pane.
+
+[00:09.0 --> 00:18.0]
+Help lists every system command -- panes, tabs, lanes, sharing, agents, and more.
+
+[00:18.0 --> 00:28.0]
+Try one: pane info reports the active pane's details, all without leaving the keyboard.
+
+[00:28.0 --> 00:38.0]
+One caution: a line starting with hash-hash-greater-than is not a command. Those are pipeline events, forwarded straight to NATS instead of being run.
+
+[00:38.0 --> 00:40.0]
+Rysh mode is how you drive the multiplexer itself.
+

@@ -16,6 +16,13 @@ import glob
 import sys
 
 TAPE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Tapes live in tape/ and narration scripts are written to say/.
+# Fall back to the flat layout if the subdirectories do not exist.
+TAPE_SRC_DIR = os.path.join(TAPE_DIR, "tape")
+if not os.path.isdir(TAPE_SRC_DIR):
+    TAPE_SRC_DIR = TAPE_DIR
+SAY_OUT_DIR = os.path.join(TAPE_DIR, "say")
+os.makedirs(SAY_OUT_DIR, exist_ok=True)
 
 
 def parse_time(t: str) -> float:
@@ -142,8 +149,8 @@ def generate_say_file(tape_path: str) -> tuple[str, int]:
     title, hook, duration = extract_metadata(lines)
     sections = extract_sections(lines)
 
-    say_path = tape_path.replace(".tape", ".say")
     basename = os.path.basename(tape_path)
+    say_path = os.path.join(SAY_OUT_DIR, basename.replace(".tape", ".say"))
 
     with open(say_path, "w") as f:
         f.write(f"# {title}\n")
@@ -171,10 +178,10 @@ def generate_say_file(tape_path: str) -> tuple[str, int]:
 
 
 def main():
-    tape_files = sorted(glob.glob(os.path.join(TAPE_DIR, "story-*.tape")))
+    tape_files = sorted(glob.glob(os.path.join(TAPE_SRC_DIR, "story-*.tape")))
 
     if not tape_files:
-        print(f"No story-*.tape files found in {TAPE_DIR}")
+        print(f"No story-*.tape files found in {TAPE_SRC_DIR}")
         sys.exit(1)
 
     total_segments = 0

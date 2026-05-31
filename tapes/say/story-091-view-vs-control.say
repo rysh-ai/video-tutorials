@@ -1,0 +1,33 @@
+# Story 91: View vs Control Mode (45s)
+# Hook: View lets them watch. Control lets them type. You decide at share time.
+# Duration: 45s
+# Source: story-091-view-vs-control.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:03.0]
+View lets them watch. Control lets them type. You decide at share time.
+
+[00:03.0 --> 00:09.0]
+Start rysh and double-Escape into rysh mode. Every share command takes an optional mode: view or control.
+
+[00:09.0 --> 00:18.0]
+##share pane view is the default. Remote users observe live output but cannot send any input -- read-only.
+
+[00:18.0 --> 00:26.0]
+##unshare pane stops it. Now ##share pane control grants full control: subscribers can send shell commands and prompts.
+
+[00:26.0 --> 00:36.0]
+##share status reflects the current mode. Control-mode commands are validated server-side against a blocklist.
+
+[00:36.0 --> 00:42.0]
+The default share mode also comes from your [upstream] config, so --shared sessions start in view unless you change it.
+
+[00:42.0 --> 00:45.0]
+View to demo, control to pair. The choice is yours, pane by pane.
+

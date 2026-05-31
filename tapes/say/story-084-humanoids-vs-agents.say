@@ -1,0 +1,30 @@
+# Story 84: Humanoids vs Agents (40s)
+# Hook: Same brain, same skill format -- agents face inward, humanoids face the world.
+# Duration: 40s
+# Source: story-084-humanoids-vs-agents.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Same brain, same skill format -- agents face inward, humanoids face the world.
+
+[00:03.0 --> 00:09.0]
+Launch rysh and drop into rysh mode. Let's spawn one of each and compare them side by side.
+
+[00:09.0 --> 00:17.0]
+An agent is an internal worker -- no terminal, no external reach. Perfect for reviewing code or running tasks inside the workspace.
+
+[00:17.0 --> 00:25.0]
+A humanoid is the same agent plus external channels. Same skill file format -- it just adds a contacts block.
+
+[00:25.0 --> 00:34.0]
+And the at-sign and double-at-sign prefixes work for both -- Rysh resolves the name across both registries automatically.
+
+[00:34.0 --> 00:40.0]
+Agents are your internal team; humanoids are your public face. One format, two reaches.
+

@@ -1,0 +1,36 @@
+# Story 42: Running Vim & Htop (50s)
+# Hook: vim, htop, less, nano -- full-screen programs just work, right inside a Rysh pane.
+# Duration: 50s
+# Source: story-042-running-vim-and-htop.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 8
+
+[00:00.0 --> 00:03.0]
+vim, htop, less, nano -- full-screen programs just work, right inside a Rysh pane.
+
+[00:03.0 --> 00:07.0]
+Start rysh -- a pane is a full PTY-backed shell.
+
+[00:07.0 --> 00:14.0]
+Open a file in vim. The moment vim switches to its alternate screen, Rysh detects it and enters raw mode automatically.
+
+[00:14.0 --> 00:24.0]
+Now every keystroke flows straight to the terminal emulator. Insert mode, normal mode -- vim behaves exactly as it should.
+
+[00:24.0 --> 00:30.0]
+Write and quit with colon-w-q. Back to the shell, no surprises.
+
+[00:30.0 --> 00:40.0]
+Run htop -- another alternate-screen program. Rysh's vt10x emulator renders the live process view inside the pane.
+
+[00:40.0 --> 00:47.0]
+Press q to quit htop and return to your shell prompt.
+
+[00:47.0 --> 00:50.0]
+Interactive terminal apps, no configuration, no caveats.
+

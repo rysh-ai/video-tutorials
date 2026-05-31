@@ -1,0 +1,30 @@
+# Story 36: Prompt Mode AI (50s)
+# Hook: Prompt mode turns your pane into an AI agent that sees your terminal.
+# Duration: 50s
+# Source: story-036-prompt-mode-ai.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Prompt mode turns your pane into an AI agent that sees your terminal.
+
+[00:03.0 --> 00:09.0]
+Start rysh and run a command so the agent has some context to work with.
+
+[00:09.0 --> 00:16.0]
+Double-press Escape. The prompt becomes a less-than sign -- input now goes to the configured LLM provider, Claude over the API or the claude CLI.
+
+[00:16.0 --> 00:32.0]
+Ask it anything. The agent sees your terminal context and answers with rendered markdown -- and it has thirty-five-plus tools for files, git, and the web.
+
+[00:32.0 --> 00:44.0]
+Follow up naturally -- the conversation carries forward within the pane's own AI output stream.
+
+[00:44.0 --> 00:50.0]
+Press Escape to return to shell mode. Your agent is always one double-Escape away.
+

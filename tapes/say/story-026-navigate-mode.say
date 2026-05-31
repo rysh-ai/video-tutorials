@@ -1,0 +1,30 @@
+# Story 26: Navigate Mode (Ctrl+Space) (40s)
+# Hook: Move by direction, not by order -- Ctrl+Space lets you focus panes with arrows.
+# Duration: 40s
+# Source: story-026-navigate-mode.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:04.0]
+Move by direction, not by order -- Ctrl+Space lets you focus panes with arrows.
+
+[00:04.0 --> 00:16.0]
+Start rysh and build a small grid: split right for a column, then split down in each so panes sit above and beside each other.
+
+[00:16.0 --> 00:21.0]
+Press Ctrl+Space to enter navigate mode.
+
+[00:21.0 --> 00:30.0]
+Arrow keys or h, j, k, l move focus by direction -- left, down, up, right -- jumping to the pane that's actually there.
+
+[00:30.0 --> 00:36.0]
+Escape leaves navigate mode with that pane focused, ready for input.
+
+[00:36.0 --> 00:40.0]
+Tab cycles in order; Ctrl+Space moves by direction. Pick whichever feels natural.
+

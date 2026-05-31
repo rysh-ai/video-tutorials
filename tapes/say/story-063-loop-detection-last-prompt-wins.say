@@ -1,0 +1,30 @@
+# Story 63: Loop Detection & Last-Prompt-Wins (45s)
+# Hook: Runaway agents get stopped, and a new prompt always interrupts the old one.
+# Duration: 45s
+# Source: story-063-loop-detection-last-prompt-wins.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Runaway agents get stopped, and a new prompt always interrupts the old one.
+
+[00:03.0 --> 00:08.0]
+Start rysh and drop into prompt mode.
+
+[00:08.0 --> 00:20.0]
+Give the agent a big task. The orchestrator watches a sliding window of twenty tool calls as it works.
+
+[00:20.0 --> 00:34.0]
+Change your mind mid-thought. Send a new prompt and the in-flight LLM call is cancelled -- last prompt wins.
+
+[00:34.0 --> 00:42.0]
+And if the agent repeats the same tool call three times, loop detection blocks it so it can never spin forever.
+
+[00:42.0 --> 00:45.0]
+Safe by design: no infinite loops, always interruptible.
+

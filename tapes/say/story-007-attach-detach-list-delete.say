@@ -1,0 +1,27 @@
+# Story 7: Attach, Detach, List, Delete (45s)
+# Hook: Four commands manage every session's whole lifecycle from outside.
+# Duration: 45s
+# Source: story-007-attach-detach-list-delete.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Four commands manage a session's whole lifecycle from outside the TUI.
+
+[00:05.0 --> 00:14.0]
+rysh list-sessions shows every session, its state, and its process ID.
+
+[00:14.0 --> 00:22.0]
+rysh attach reopens a session's TUI exactly where you left it.
+
+[00:22.0 --> 00:31.0]
+And rysh detach gracefully detaches a running session from outside -- no need to be inside it.
+
+[00:31.0 --> 00:45.0]
+rysh delete-session tears it all down: it kills the process and purges the session's NATS data directory.
+

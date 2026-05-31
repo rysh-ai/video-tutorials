@@ -1,0 +1,30 @@
+# Story 89: Pipeline Placeholders (40s)
+# Hook: Placeholders are lanes reserved for pipeline output -- name them, add them, watch results land.
+# Duration: 40s
+# Source: story-089-pipeline-placeholders.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+Placeholders are lanes reserved for pipeline output -- name them, add them, watch results land.
+
+[00:03.0 --> 00:08.0]
+Start rysh. A pipeline can route its output into named placeholder lanes so each phase has a home.
+
+[00:08.0 --> 00:15.0]
+Double-Escape into rysh mode. ##pipe name labels the current pipeline so its output is easy to identify.
+
+[00:15.0 --> 00:24.0]
+##pipe placeholder add creates a new placeholder lane -- a dedicated column for one slice of pipeline output.
+
+[00:24.0 --> 00:32.0]
+Add as many as your pipeline needs, then ##pipe placeholder list shows every placeholder currently defined.
+
+[00:32.0 --> 00:40.0]
+Placeholders turn a pipeline into a structured dashboard -- one lane per stage, output flowing into place.
+

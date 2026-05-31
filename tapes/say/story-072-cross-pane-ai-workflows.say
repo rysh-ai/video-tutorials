@@ -1,0 +1,27 @@
+# Story 72: Cross-Pane AI Workflows (40s)
+# Hook: Combine listening, inspection, and sending to solve problems across many panes at once.
+# Duration: 40s
+# Source: story-072-cross-pane-ai-workflows.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:03.0]
+Combine listening, inspection, and sending to solve problems across many panes at once.
+
+[00:03.0 --> 00:10.0]
+Start rysh and create a couple of panes -- think of one as a server and one as a coordinator.
+
+[00:10.0 --> 00:18.0]
+From the coordinator pane, the agent lists every pane with agents_list to see what's running and where.
+
+[00:18.0 --> 00:32.0]
+Now it inspects a failing pane and uses pane_send to apply a fix there -- a full multi-pane workflow from one prompt.
+
+[00:32.0 --> 00:40.0]
+Listen, inspect, and send -- together they turn separate panes into one coordinated agentic team.
+

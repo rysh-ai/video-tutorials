@@ -1,0 +1,27 @@
+# Story 102: Multi-Workspace in Desktop (40s)
+# Hook: Many workspaces, one window. The desktop app stacks them two rows high.
+# Duration: 40s
+# Source: story-102-multi-workspace-desktop.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:05.0]
+Many workspaces, one window. The desktop app stacks them two rows high.
+
+[00:05.0 --> 00:14.0]
+The desktop header has two rows. The top row lists your workspaces; the row below lists the tabs inside the workspace you have selected.
+
+[00:14.0 --> 00:23.0]
+Click a workspace up top to switch your entire context -- a different project, a different upstream, a different set of tabs and panes.
+
+[00:23.0 --> 00:32.0]
+The desktop app also surfaces voice prompting and a dedicated pipeline output panel, so multi-stage runs are visible right beside your panes.
+
+[00:32.0 --> 00:40.0]
+One window, every workspace -- the desktop app is built for juggling projects.
+

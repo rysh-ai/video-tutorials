@@ -1,0 +1,30 @@
+# Story 74: Spawning an Agent (45s)
+# Hook: One command, one prompt, and your agent is alive.
+# Duration: 45s
+# Source: story-074-spawning-an-agent.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 6
+
+[00:00.0 --> 00:03.0]
+One command, one prompt, and your agent is alive.
+
+[00:03.0 --> 00:08.0]
+Launch rysh and double-press Escape into rysh mode to run the agent system commands.
+
+[00:08.0 --> 00:18.0]
+Use ##agent spawn, then a name, then the system prompt in quotes. That prompt defines the agent's whole personality and job.
+
+[00:18.0 --> 00:28.0]
+Spawn as many as you need. Here's a second agent for writing tests.
+
+[00:28.0 --> 00:40.0]
+Then ##agent list shows every agent with its current status -- active, deactivated, or working a prompt right now.
+
+[00:40.0 --> 00:45.0]
+Spawn, name, prompt, list. That's the whole lifecycle of an agent.
+
