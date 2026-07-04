@@ -506,7 +506,7 @@ Each story includes:
 3. Ask "explain what this directory contains"; response renders as markdown.
 4. Follow up naturally; press Escape to return to shell.
 
-**Key takeaway:** Prompt mode sends input to the LLM provider with terminal context and 35+ tools, rendering markdown responses in the pane's AI stream.
+**Key takeaway:** Prompt mode sends input to the LLM provider with terminal context and 40+ tools, rendering markdown responses in the pane's AI stream.
 
 ---
 
@@ -666,14 +666,14 @@ Each story includes:
 
 ### Story 48: The Agentic Toolbelt
 **Duration:** 50s  
-**Hook:** "Every prompt-mode pane carries 35+ tools -- files, git, code, tests, build, web, and cross-pane coordination."  
+**Hook:** "Every prompt-mode pane carries 40+ tools -- files, git, code, tests, build, web, and cross-pane coordination."  
 **What to show:**
 1. Launch `rysh`; double-Esc to prompt mode (`<`).
 2. Type a prompt asking the agent to list its tools (invokes `list_tools`, no approval).
 3. Agent reports the categories: file & shell, git, code intelligence, testing/build, background, web, workspace awareness.
 4. Narrate the rule: read-only tools run freely; writes, commits, and dangerous bash are approval-gated.
 
-**Key takeaway:** Every prompt-mode pane is backed by an AgenticActor with 35+ tools, gated by an approval flow for anything destructive.
+**Key takeaway:** Every prompt-mode pane is backed by an AgenticActor with 40+ tools, gated by an approval flow for anything destructive.
 
 ---
 
