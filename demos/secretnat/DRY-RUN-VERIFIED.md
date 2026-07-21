@@ -4,6 +4,14 @@ Real rysh daemon (v0.1.25-90-g8b75c48, SNAT build) with all LLM traffic routed
 through `wireproxy.go` (tees every request body to wire.log before forwarding to
 api.anthropic.com). Fake demo keys only.
 
+> **Redaction note (2026-07-21):** the fake Stripe key used in this run was
+> shaped like a real `sk_live_` credential, which is exactly why it exercised the
+> detector — and also why GitHub secret scanning blocked this file from being
+> published. It has been replaced throughout with `sk_live_DEMOKEY_REDACTED`.
+> The `sk_live_SNAT…` tokens below are **not** redacted: they are the tool's
+> output and the substance of the proof. The evidence is unchanged — what the
+> wire did or did not carry never depended on the key's literal value.
+
 ## Verified facts (all real, from the daemon + the wire)
 
 1. **On by default** — daemon startup log: `secretnat: known-secret set updated count=0`.
