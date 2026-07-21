@@ -1,0 +1,8 @@
+rysh:
+  session_name: "story-ad07"
+
+provider:
+  name: "claude"
+
+logging:
+  log_level: "off"

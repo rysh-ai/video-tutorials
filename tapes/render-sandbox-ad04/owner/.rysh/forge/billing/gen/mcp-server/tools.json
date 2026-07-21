@@ -1,0 +1,74 @@
+[
+  {
+    "name": "billing_getHealth",
+    "description": "Liveness probe",
+    "inputSchema": {
+      "properties": {},
+      "type": "object"
+    }
+  },
+  {
+    "name": "billing_getInvoice",
+    "description": "Fetch a single invoice by id",
+    "inputSchema": {
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "type": "object"
+    }
+  },
+  {
+    "name": "billing_getInvoiceSummary",
+    "description": "Count and total of invoices, optionally filtered by status",
+    "inputSchema": {
+      "properties": {
+        "status": {
+          "enum": [
+            "unpaid",
+            "paid",
+            "void"
+          ],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  },
+  {
+    "name": "billing_listInvoices",
+    "description": "List invoices, optionally filtered by status",
+    "inputSchema": {
+      "properties": {
+        "status": {
+          "enum": [
+            "unpaid",
+            "paid",
+            "void"
+          ],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  },
+  {
+    "name": "billing_voidInvoice",
+    "description": "Void an invoice (mutating)",
+    "inputSchema": {
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "type": "object"
+    }
+  }
+]

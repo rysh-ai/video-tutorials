@@ -1,0 +1,100 @@
+{
+  "name": "Acme Billing API (mock)",
+  "version": "1.0.0",
+  "description": "Tiny internal billing service used for the rysh Forge demo. Dummy data only.",
+  "base_url": "http://localhost:8099",
+  "tools": [
+    {
+      "name": "billing_getHealth",
+      "operation_id": "getHealth",
+      "method": "GET",
+      "path": "/health",
+      "summary": "Liveness probe",
+      "mutating": false,
+      "input_schema": {
+        "properties": {},
+        "type": "object"
+      }
+    },
+    {
+      "name": "billing_listInvoices",
+      "operation_id": "listInvoices",
+      "method": "GET",
+      "path": "/invoices",
+      "summary": "List invoices, optionally filtered by status",
+      "mutating": false,
+      "input_schema": {
+        "properties": {
+          "status": {
+            "enum": [
+              "unpaid",
+              "paid",
+              "void"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "name": "billing_getInvoiceSummary",
+      "operation_id": "getInvoiceSummary",
+      "method": "GET",
+      "path": "/invoices/summary",
+      "summary": "Count and total of invoices, optionally filtered by status",
+      "mutating": false,
+      "input_schema": {
+        "properties": {
+          "status": {
+            "enum": [
+              "unpaid",
+              "paid",
+              "void"
+            ],
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    },
+    {
+      "name": "billing_getInvoice",
+      "operation_id": "getInvoice",
+      "method": "GET",
+      "path": "/invoices/{id}",
+      "summary": "Fetch a single invoice by id",
+      "mutating": false,
+      "input_schema": {
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "type": "object"
+      }
+    },
+    {
+      "name": "billing_voidInvoice",
+      "operation_id": "voidInvoice",
+      "method": "DELETE",
+      "path": "/invoices/{id}",
+      "summary": "Void an invoice (mutating)",
+      "mutating": true,
+      "input_schema": {
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "type": "object"
+      }
+    }
+  ]
+}

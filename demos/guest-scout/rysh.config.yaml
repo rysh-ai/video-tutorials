@@ -1,0 +1,12 @@
+rysh:
+    session_name: "guest-scout-demo"
+    upgrade_on_attach: "warn"
+nats:
+    mode: "embedded"
+    port: 0   # auto -- never collide with the user's live sessions
+provider:
+    name: "claude"
+    # api_key empty -> falls back to ANTHROPIC_API_KEY from the environment
+ui:
+    initial_tabs: 1
+    initial_panes: 1

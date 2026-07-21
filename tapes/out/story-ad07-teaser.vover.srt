@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:05,000
+An AI agent on your company Slack. Scary? Watch.
+
+2
+00:00:05,000 --> 00:00:15,000
+Governance: human — every reply is a draft a person approves. Until you type send, Slack sees nothing.
+
+3
+00:00:15,000 --> 00:00:24,000
+Type send — it posts. One reply in the thread: the one you approved.
+
+4
+00:00:24,000 --> 00:00:35,000
+Earned trust? Flip it. Autonomous — and still fully observable. Autonomy is a dial, not a leap. rysh.ai

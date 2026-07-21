@@ -1,0 +1,27 @@
+1
+00:00:00,300 --> 00:00:07,800
+This is not a staged demo. A real automation on a real Instagram account, finding podcast guests.
+
+2
+00:00:08,200 --> 00:00:19,700
+First move: it reads its own last shortlist — marked partial — so this pass hunts only for NEW candidates. The task is a file; the state is a file too.
+
+3
+00:00:20,200 --> 00:00:37,700
+The pane becomes a real browser inside the desktop app. Discovery only — it never follows, likes, or messages. And it narrates its own reasoning as it reads the feed: promising leads, worth investigating.
+
+4
+00:00:38,200 --> 00:00:51,700
+Dead end? It corrects itself — pivots to a profile it already trusts and mines the similar-accounts graph instead. Nobody is steering.
+
+5
+00:00:52,200 --> 00:01:03,700
+All on a leash: three books of budget per pass, a wrap-up leg at ninety percent, and an LLM judge that decides when the shortlist is done.
+
+6
+00:01:04,200 --> 00:01:11,700
+The output isn't a chat transcript. It's a shortlist file — merged, de-duplicated, versioned.
+
+7
+00:01:12,200 --> 00:01:17,500
+Agents that work while you sleep. rysh.ai

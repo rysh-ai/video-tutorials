@@ -1,0 +1,25 @@
+# 
+# Source: story-ad04-forge-owner.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:12.0]
+Your internal API runs on localhost, behind the firewall -- where it belongs. Now your teammate's agent needs it. The usual answer: expose it, tunnel it, or paste keys around. Here's a fourth answer.
+
+[00:12.0 --> 00:30.0]
+Point Forge at the OpenAPI spec. It generates the whole integration surface: agent tools, an MCP server, SDKs in four languages, docs. One command.
+
+[00:30.0 --> 00:48.0]
+Enable it -- five operations become agent tools. Share it through the rysh upstream. Note what did NOT happen: no port opened, no gateway deployed, no API key mailed around. And the policy line says it out loud: mutating operations are denied unless the owner allows them.
+
+[00:48.0 --> 01:50.0]
+Watch the owner's machine. A teammate's agent -- another session, another terminal -- is calling this API right now. Only the operation name and arguments travel over the upstream. The HTTP call executes here, inside the firewall, and the response goes back. The API never left this box.
+
+[01:50.0 --> 02:00.0]
+And the API itself? Loopback only. No public listener. It was never on the internet -- not for a second.
+

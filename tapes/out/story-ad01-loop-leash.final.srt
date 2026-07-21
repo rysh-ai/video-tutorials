@@ -1,0 +1,27 @@
+1
+00:00:00,200 --> 00:00:09,400
+Everyone is running agents in loops now. And everyone has the same fear: you walk away, and the loop runs away — with your API bill. Rysh puts the loop on a leash.
+
+2
+00:00:09,600 --> 00:00:18,000
+Any prompt becomes a reusable automation. Bind a page, save a recipe. It's a file on disk — your automations live in git, not in a vendor's dashboard.
+
+3
+00:00:24,000 --> 00:00:36,500
+Now the leash. Twenty pages — rysh counts spend like reading: a page is a thousand tokens, two hundred pages make a book, twenty books a shelf. Twenty pages, ten minutes, hard ceilings. Not suggestions — the run cannot outspend them.
+
+4
+00:00:44,000 --> 00:00:56,900
+At eighty percent spent, the takeover prompt takes the wheel — with the reserved twenty percent as its own budget — to wrap up cleanly and save results. No clipped runs. No silent overspend. And status shows you the leash, live.
+
+5
+00:00:57,200 --> 00:01:07,400
+When a pass ends, an LLM judge decides: goal fulfilled, the loop ends — not yet, and it goes again. Stop it any time; continue resumes from the last checkpoint, budget re-armed. Interruptible by design.
+
+6
+00:01:07,600 --> 00:01:13,400
+Schedule it. Cron takes any rysh input — even whole automations. Headless, on a server, while you sleep.
+
+7
+00:01:13,600 --> 00:01:20,500
+Agents that work while you sleep — on a leash you define. rysh.ai — now onboarding design partners.

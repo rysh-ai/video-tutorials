@@ -1,0 +1,13 @@
+{
+  "name": "guest-scout",
+  "path": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/guest-scout",
+  "state": "detached",
+  "pid": 87942,
+  "nats_port": 24245,
+  "updated_at": "2026-07-17T12:36:17.24879Z",
+  "version": "dev",
+  "bin_hash": "768568a125fc",
+  "config_file": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/guest-scout/rysh.config.yaml",
+  "rysh_dir": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/guest-scout/.rysh",
+  "source": "app"
+}

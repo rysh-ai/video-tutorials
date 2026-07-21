@@ -1,0 +1,36 @@
+1
+00:00:00,000 --> 00:00:09,000
+Your internal API lives on localhost, behind the firewall. Now your teammate's agent needs it. Expose it? Tunnel it? Paste keys around? Here's a fourth answer.
+
+2
+00:00:09,000 --> 00:00:22,000
+Point Forge at the OpenAPI spec. One command — and it generates the whole integration surface: agent tools, an MCP server, SDKs in four languages, and docs.
+
+3
+00:00:22,000 --> 00:00:38,000
+Enable it — five operations become agent tools. Share it through the rysh upstream. No port opened, no gateway deployed, no API key mailed around. And the policy says it out loud: mutations are denied unless the owner allows them.
+
+4
+00:00:38,000 --> 00:00:48,000
+Now the teammate's machine. List what the team shares — one subscribe, and their agent has your billing API as a set of tools.
+
+5
+00:00:48,000 --> 00:01:07,000
+Ask their agent for this month's unpaid invoices. It picks the billing tools, the call tunnels to the owner's box, and live data comes back — from an API this machine could never reach directly.
+
+6
+00:01:07,000 --> 00:01:15,000
+The owner's machine, that same moment: the HTTP calls execute inside the firewall. Only op-name and arguments crossed the wire.
+
+7
+00:01:15,000 --> 00:01:35,000
+Now watch the teammate try to void an invoice. The agent double-checks — then the owner's policy answers: denied. Mutations are denied by default. The owner decides which writes are ever allowed.
+
+8
+00:01:35,000 --> 00:01:43,000
+And the API itself? Loopback only. No public listener. Never on the internet — not for a second.
+
+9
+00:01:43,000 --> 00:01:47,000
+rysh, at rysh dot A I — onboarding design partners now.
+

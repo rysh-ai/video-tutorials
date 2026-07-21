@@ -1,0 +1,117 @@
+openapi: 3.0.3
+info:
+  title: Acme Billing API (mock)
+  description: Tiny internal billing service used for the rysh Forge demo. Dummy data only.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8099
+paths:
+  /health:
+    get:
+      operationId: getHealth
+      summary: Liveness probe
+      responses:
+        "200":
+          description: Service is up
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string }
+                  service: { type: string }
+  /invoices:
+    get:
+      operationId: listInvoices
+      summary: List invoices, optionally filtered by status
+      parameters:
+        - name: status
+          in: query
+          required: false
+          description: Filter by invoice status
+          schema:
+            type: string
+            enum: [unpaid, paid, void]
+      responses:
+        "200":
+          description: Invoice list
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count: { type: integer }
+                  invoices:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Invoice"
+  /invoices/summary:
+    get:
+      operationId: getInvoiceSummary
+      summary: Count and total of invoices, optionally filtered by status
+      parameters:
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [unpaid, paid, void]
+      responses:
+        "200":
+          description: Summary
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status_filter: { type: string }
+                  count: { type: integer }
+                  total_usd: { type: string }
+  /invoices/{id}:
+    get:
+      operationId: getInvoice
+      summary: Fetch a single invoice by id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: The invoice
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Invoice"
+        "404":
+          description: Not found
+    delete:
+      operationId: voidInvoice
+      summary: Void an invoice (mutating)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        "200":
+          description: Invoice voided
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  voided: { type: string }
+        "404":
+          description: Not found
+components:
+  schemas:
+    Invoice:
+      type: object
+      properties:
+        id: { type: string }
+        customer: { type: string }
+        amount_usd: { type: number }
+        status: { type: string, enum: [unpaid, paid, void] }
+        issued_at: { type: string }
+        due_at: { type: string }

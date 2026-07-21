@@ -1,0 +1,38 @@
+# Story AD-04: Forge private-API tunneling — HERO CUT (107s)
+# Hook: Your API. Their agent. Never public.
+# Source: hand-timed against render-sandbox-ad04/edit/story-ad04-forge.mp4
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 9
+
+[00:00.0 --> 00:09.0]
+Your internal API lives on localhost, behind the firewall. Now your teammate's agent needs it. Expose it? Tunnel it? Paste keys around? Here's a fourth answer.
+
+[00:09.0 --> 00:22.0]
+Point Forge at the OpenAPI spec. One command — and it generates the whole integration surface: agent tools, an MCP server, SDKs in four languages, and docs.
+
+[00:22.0 --> 00:38.0]
+Enable it — five operations become agent tools. Share it through the rysh upstream. No port opened, no gateway deployed, no API key mailed around. And the policy says it out loud: mutations are denied unless the owner allows them.
+
+[00:38.0 --> 00:48.0]
+Now the teammate's machine. List what the team shares — one subscribe, and their agent has your billing API as a set of tools.
+
+[00:48.0 --> 01:07.0]
+Ask their agent for this month's unpaid invoices. It picks the billing tools, the call tunnels to the owner's box, and live data comes back — from an API this machine could never reach directly.
+
+[01:07.0 --> 01:15.0]
+The owner's machine, that same moment: the HTTP calls execute inside the firewall. Only op-name and arguments crossed the wire.
+
+[01:15.0 --> 01:35.0]
+Now watch the teammate try to void an invoice. The agent double-checks — then the owner's policy answers: denied. Mutations are denied by default. The owner decides which writes are ever allowed.
+
+[01:35.0 --> 01:43.0]
+And the API itself? Loopback only. No public listener. Never on the internet — not for a second.
+
+[01:43.0 --> 01:47.0]
+rysh, at rysh dot A I — onboarding design partners now.
+

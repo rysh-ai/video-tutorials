@@ -1,0 +1,18 @@
+# ad10 shoot config (working dir e.g. ~/northwind-demo). NO real keys in this file.
+rysh:
+    session_name: "northwind"
+    upgrade_on_attach: "off"
+    working_directory: "<shoot-dir>"
+nats:
+    mode: "embedded"
+    port: 0            # auto — never collide with live sessions
+provider:
+    name: "claude"     # api key from ANTHROPIC_API_KEY env
+ui:
+    initial_tabs: 1
+    initial_panes: 1
+upstream:
+    enabled: true
+    url: "https://rysh.ai"
+    api_key: "<rysh workspace api key — Free plan caps sessions at 3>"
+    auto_share: false

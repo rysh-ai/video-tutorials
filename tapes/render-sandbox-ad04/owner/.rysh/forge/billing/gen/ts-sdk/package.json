@@ -1,0 +1,9 @@
+{
+  "name": "billing",
+  "version": "1.0.0",
+  "description": "Tiny internal billing service used for the rysh Forge demo. Dummy data only.",
+  "type": "module",
+  "main": "client.ts",
+  "types": "client.ts",
+  "license": "MIT"
+}

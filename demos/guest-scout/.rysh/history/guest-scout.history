@@ -1,0 +1,5 @@
+ls .rysh/
+ls .rysh/automations/
+ls .rysh/automations/webs/
+ls .rysh/automations/webs/guest-scout.md
+cat .rysh/automations/webs/guest-scout.md

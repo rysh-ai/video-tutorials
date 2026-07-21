@@ -1,0 +1,25 @@
+# 
+# Source: story-ad04-forge-team.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:10.0]
+Now the teammate's side. A different rysh session -- think different machine. No spec file here, no credentials, nothing running on port eighty-ninety-nine.
+
+[00:10.0 --> 00:28.0]
+List what the team shares... there's the billing API. One subscribe -- and MY agent now has YOUR localhost API as a set of tools.
+
+[00:28.0 --> 01:25.0]
+Ask the agent for this month's unpaid invoices. It picks the billing tools, the call tunnels to the owner's machine, executes there, and the answer comes back -- live data from an API this machine could never reach directly.
+
+[01:25.0 --> 02:05.0]
+Now try to void one. The agent confirms -- then the owner's policy answers: mutating operations are denied by default. The owner decides which writes are ever allowed, and the server enforces it. Paranoid defaults, on purpose.
+
+[02:05.0 --> 02:12.0]
+Expose your internal API to agents -- not to the internet. rysh, at rysh-dot-A-I -- onboarding design partners now.
+

@@ -1,0 +1,29 @@
+# 
+# Hook: Agents on your channels. Humans in the loop.
+# Source: story-ad07-slack-humanoid.tape — RE-TIMED v2 (85.76s cut w/ Slack stills)
+# Windows: A 0-10 hook · B 10-30 spawn/scope · C+D 30-61 money shot ·
+#          S1 61-64.4 approved-reply still · E 64.4-70 ai flip ·
+#          S2 70-73 ai-thread still · F+close 73-85.7 observable + CTA
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+#
+# Total segments: 6
+
+[00:00.0 --> 00:10.0]
+Everyone wants an AI agent answering on the company Slack. Nobody wants to explain the day it answered wrong. Here's how you get the first -- without risking the second.
+
+[00:10.0 --> 00:29.0]
+A humanoid is an agent from a markdown file -- wired to a real channel. Spawn it, register its pane, start its Slack channel, and scope it: it only replies when it's mentioned.
+
+[00:29.0 --> 00:60.5]
+Governance: human. Now every reply is a draft. A teammate asks -- and Slack stays silent. The agent does the work; the draft waits in your terminal, clearly marked: not yet posted. A person approves the words before they leave the building. Type send -- and only then, it posts.
+
+[00:60.5 --> 00:64.4]
+One reply lands in the thread. The one you approved.
+
+[00:64.4 --> 00:70.0]
+When it's earned trust -- flip the switch. Governance: A I. Same agent, now autonomous on that channel.
+
+[00:70.0 --> 00:85.5]
+The next question gets answered on its own -- and every exchange still lands in a pane you can read. Autonomy is a dial, not a leap. Slack today -- email and website chat too. rysh dot A I -- we're onboarding design partners now.

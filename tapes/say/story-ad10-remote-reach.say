@@ -1,0 +1,34 @@
+# ad10 — Remote Reach in Minutes (hero cut, ~97s)
+# Master plan: marketing/assets/videos/remote-reach.md
+#
+# Total segments: 10
+
+[00:00.0 --> 00:02.6]
+Here's the whole setup -- on a real clock.
+
+[00:02.6 --> 00:11.2]
+One brew install. One self-contained binary -- the message broker is embedded. No runtime to stage, no gateway daemon, no pairing.
+
+[00:11.2 --> 00:15.4]
+Run it, and the terminal itself is the platform.
+
+[00:15.4 --> 00:32.9]
+Your agent is a markdown file -- persona in the body, channels in the frontmatter, secrets as env tokens that never touch the file. Spawn it, start its Slack channel... connected.
+
+[00:32.9 --> 00:44.4]
+A teammate asks on Slack. The agent answers from its skill file -- a real reply, on the channel your team already uses. Email and website chat ride the same engine.
+
+[00:44.4 --> 00:52.8]
+Under two minutes in: share the agent's terminal, live. One command -- and any session you authorize can watch this pane.
+
+[00:52.8 --> 01:07.2]
+A second rysh session subscribes and watches the same pane, live -- that's the owner's terminal, mirrored. View or control: you decide, per share.
+
+[01:07.2 --> 01:16.1]
+And managing it doesn't need a seat at the box. Any shell injects commands headlessly with rysh send...
+
+[01:16.1 --> 01:31.5]
+...or attaches to the running session: stop the Slack channel, unshare the pane, detach. The session keeps running. Start, stop, govern -- from wherever you are.
+
+[01:31.5 --> 01:36.6]
+One binary. One markdown file. Reachable from everywhere. rysh, at rysh dot A I.
