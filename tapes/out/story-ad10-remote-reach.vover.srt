@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:02,640
+Here's the whole setup — on a real clock.
+
+2
+00:00:02,640 --> 00:00:11,280
+One brew install. One self-contained binary — the message broker is embedded. No runtime to stage, no gateway daemon, no pairing.
+
+3
+00:00:11,280 --> 00:00:15,460
+Run it, and the terminal itself is the platform.
+
+4
+00:00:15,460 --> 00:00:32,960
+Your agent is a markdown file — persona in the body, channels in the frontmatter, secrets as env tokens that never touch the file. Spawn it, start its Slack channel... connected.
+
+5
+00:00:32,960 --> 00:00:44,460
+A teammate asks on Slack. The agent answers from its skill file — a real reply, on the channel your team already uses. Email and website chat ride the same engine.
+
+6
+00:00:44,460 --> 00:00:52,860
+Under two minutes in: share the agent's terminal, live. One command — and any session you authorize can watch this pane.
+
+7
+00:00:52,860 --> 00:01:07,250
+A second rysh session subscribes and watches the same pane, live — that's the owner's terminal, mirrored. View or control: you decide, per share.
+
+8
+00:01:07,250 --> 00:01:16,170
+And managing it doesn't need a seat at the box. Any shell injects commands headlessly with rysh send...
+
+9
+00:01:16,170 --> 00:01:31,560
+...or attaches to the running session: stop the Slack channel, unshare the pane, detach. The session keeps running. Start, stop, govern — from wherever you are.
+
+10
+00:01:31,560 --> 00:01:36,600
+One binary. One markdown file. Reachable from everywhere. rysh, at rysh dot A I.

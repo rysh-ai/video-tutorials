@@ -1,0 +1,32 @@
+# 
+# Hook: Everyone runs agents in loops. Rysh puts the loop on a leash.
+# Source: story-ad01-loop-leash.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 7
+
+[00:00.0 --> 00:08.0]
+Everyone is running agents in loops now. And everyone has the same fear: you walk away, and the loop runs away -- with your API bill. Rysh puts the loop on a leash.
+
+[00:08.0 --> 00:24.0]
+Any prompt becomes a reusable automation. Bind a page, save a recipe. It's a file on disk -- your automations live in git, not in a vendor's dashboard.
+
+[00:24.0 --> 00:44.0]
+Now the leash. Twenty pages -- rysh counts spend like reading: a page is a thousand tokens, two hundred pages make a book, twenty books a shelf. Twenty pages, ten minutes, hard ceilings. Not suggestions -- the run cannot outspend them.
+
+[00:44.0 --> 00:56.0]
+At eighty percent spent, the takeover prompt takes the wheel -- with the reserved twenty percent as its own budget -- to wrap up cleanly and save results. No clipped runs. No silent overspend. And status shows you the leash, live.
+
+[00:56.0 --> 01:06.0]
+When a pass ends, an LLM judge decides: goal fulfilled, the loop ends -- not yet, and it goes again. Stop it any time; continue resumes from the last checkpoint, budget re-armed. Interruptible by design.
+
+[01:06.0 --> 01:12.0]
+Schedule it. Cron takes any rysh input -- even whole automations. Headless, on a server, while you sleep.
+
+[01:12.0 --> 01:19.0]
+Agents that work while you sleep -- on a leash you define. rysh dot A I -- now onboarding design partners.
+

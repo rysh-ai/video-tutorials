@@ -1,0 +1,24 @@
+# Story AD-04: Forge private-API tunneling — TEASER (32s)
+# Hook: Your API. Their agent. Never public.
+# Source: hand-timed against render-sandbox-ad04/edit/story-ad04-teaser.mp4
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+#
+# Total segments: 5
+
+[00:00.0 --> 00:08.5]
+Point Forge at an OpenAPI spec. Agent tools, an MCP server, SDKs, docs — generated. One command.
+
+[00:08.5 --> 00:14.5]
+Share it through the rysh upstream; a teammate subscribes.
+
+[00:14.5 --> 00:24.5]
+Their agent now calls your localhost API — only op-name and arguments cross the wire; the HTTP call runs on your machine.
+
+[00:24.5 --> 00:28.5]
+Mutations? Denied by default.
+
+[00:28.5 --> 00:32.0]
+Your API. Never public. rysh dot A I.
+

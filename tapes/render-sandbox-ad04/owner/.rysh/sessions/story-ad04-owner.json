@@ -1,0 +1,12 @@
+{
+  "name": "story-ad04-owner",
+  "path": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/tapes/render-sandbox-ad04/owner",
+  "state": "stopped",
+  "nats_port": 24242,
+  "updated_at": "2026-07-15T01:09:04.991941Z",
+  "version": "v0.1.25-90-g8b75c48",
+  "bin_hash": "27046998424d",
+  "config_file": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/tapes/render-sandbox-ad04/owner/rysh.config.yaml",
+  "rysh_dir": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/tapes/render-sandbox-ad04/owner/.rysh",
+  "source": "cli"
+}

@@ -1,0 +1,26 @@
+# 
+# Hook: Trust is a mechanism, not a promise.
+# Source: story-ad08-trust-toolkit.tape
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 5
+
+[00:00.0 --> 00:08.0]
+Every agent demo shows you what the agent can do. This one shows you what it can't do -- without you.
+
+[00:08.0 --> 00:32.0]
+A secret enters rysh exactly once -- the moment you type it. Even that line is masked before it reaches the buffer, or the history. It's stored scoped to this workspace -- persist it, and it lands in a folder rysh git-ignores for you. The only way to see the value again is to ask for it. Explicitly.
+
+[00:32.0 --> 00:57.0]
+Before an agent may change anything here, it has to read. Enforced grounding -- the default -- starts every run with mutating tools locked. Exploration only, until the agent files a grounding report naming what it read. And if it doesn't understand, it doesn't guess. It stops, and it asks you.
+
+[00:57.0 --> 01:14.0]
+The gate is open -- and the edit still doesn't execute. It queues. Here's the diff; here's the prompt. It's been waiting five seconds now. It would wait all day -- that's the point. Approve it, and only then does it touch the file. Or reject it, with a reason the agent reads.
+
+[01:14.0 --> 01:21.0]
+Masked secrets. A grounding gate. A human approval. One runtime, not three plugins. rysh, at rysh-dot-A-I -- onboarding design partners now.
+

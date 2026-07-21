@@ -1,0 +1,25 @@
+# ad09 — Guest Scout: a real agent doing a real job (hero cut, 78s)
+# Edit plan: marketing/assets/videos/guest-scout-real-run.md
+#
+# Total segments: 7
+
+[00:00.0 --> 00:08.0]
+This is not a staged demo. A real automation on a real Instagram account, finding podcast guests.
+
+[00:08.0 --> 00:20.0]
+First move: it reads its own last shortlist -- marked partial -- so this pass hunts only for NEW candidates. The task is a file; the state is a file too.
+
+[00:20.0 --> 00:38.0]
+The pane becomes a real browser inside the desktop app. Discovery only -- it never follows, likes, or messages. And it narrates its own reasoning as it reads the feed: promising leads, worth investigating.
+
+[00:38.0 --> 00:52.0]
+Dead end? It corrects itself -- pivots to a profile it already trusts and mines the similar-accounts graph instead. Nobody is steering.
+
+[00:52.0 --> 01:04.0]
+All on a leash: three books of budget per pass, a wrap-up leg at ninety percent, and an LLM judge that decides when the shortlist is done.
+
+[01:04.0 --> 01:12.0]
+The output isn't a chat transcript. It's a shortlist file -- merged, de-duplicated, versioned.
+
+[01:12.0 --> 01:18.0]
+Agents that work while you sleep. rysh dot A I.

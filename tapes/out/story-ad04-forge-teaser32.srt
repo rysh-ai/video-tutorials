@@ -1,0 +1,20 @@
+1
+00:00:00,000 --> 00:00:08,500
+Point Forge at an OpenAPI spec. Agent tools, an MCP server, SDKs, docs — generated. One command.
+
+2
+00:00:08,500 --> 00:00:14,500
+Share it through the rysh upstream; a teammate subscribes.
+
+3
+00:00:14,500 --> 00:00:24,500
+Their agent now calls your localhost API — only op-name and arguments cross the wire; the HTTP call runs on your machine.
+
+4
+00:00:24,500 --> 00:00:28,500
+Mutations? Denied by default.
+
+5
+00:00:28,500 --> 00:00:32,000
+Your API. Never public. rysh dot A I.
+

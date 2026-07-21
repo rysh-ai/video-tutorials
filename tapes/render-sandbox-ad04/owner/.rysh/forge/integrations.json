@@ -1,0 +1,13 @@
+[
+  {
+    "name": "billing",
+    "source": "openapi",
+    "spec_file": ".rysh/forge/billing/spec.yaml",
+    "policy": {
+      "mode": "auto",
+      "prefix": "billing_"
+    },
+    "enabled": true,
+    "scope": "tab:f5cabc56-58ca-45f4-8ba5-17c23714ffad"
+  }
+]

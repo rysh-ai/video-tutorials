@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:10,000
+Everyone wants an AI agent answering on the company Slack. Nobody wants to explain the day it answered wrong. Here's how you get the first — without risking the second.
+
+2
+00:00:10,000 --> 00:00:29,000
+A humanoid is an agent from a markdown file — wired to a real channel. Spawn it, register its pane, start its Slack channel, and scope it: it only replies when it's mentioned.
+
+3
+00:00:29,000 --> 00:01:00,500
+Governance: human. Now every reply is a draft. A teammate asks — and Slack stays silent. The agent does the work; the draft waits in your terminal, clearly marked: not yet posted. A person approves the words before they leave the building. Type send — and only then, it posts.
+
+4
+00:01:00,500 --> 00:01:04,400
+One reply lands in the thread. The one you approved.
+
+5
+00:01:04,400 --> 00:01:10,000
+When it's earned trust — flip the switch. Governance: ai. Same agent, now autonomous on that channel.
+
+6
+00:01:10,000 --> 00:01:25,500
+The next question gets answered on its own — and every exchange still lands in a pane you can read. Autonomy is a dial, not a leap. Slack today — email and website chat too. rysh.ai — we're onboarding design partners now.

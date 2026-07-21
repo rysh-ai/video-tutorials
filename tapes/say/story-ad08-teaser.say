@@ -1,0 +1,22 @@
+#
+# Hook: What the agent can't do without you (30s teaser)
+# Source: story-ad08-trust-toolkit.tape (teaser cut)
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Each entry should be spoken within its time window.
+# Gaps between entries are silent (viewer watches the demo).
+#
+# Total segments: 4
+
+[00:00.0 --> 00:04.0]
+What the agent can't do without you:
+
+[00:04.0 --> 00:15.0]
+A secret enters rysh once -- even the line you typed is masked, in the buffer and in the history. Persisted, git-ignored.
+
+[00:15.0 --> 00:26.0]
+And every edit queues behind a human gate. This one is still waiting. That's the point.
+
+[00:26.0 --> 00:30.0]
+Trust is a mechanism. rysh dot A I.
