@@ -33,14 +33,20 @@ Each story includes:
 **Duration:** 45s  
 **Hook:** "One command to install. Every platform."  
 **What to show:**
-1. macOS: `brew tap rysh-works/rysh && brew install rysh`.
-2. Debian/Ubuntu: `sudo apt install rysh`.
-3. Fedora/RHEL: `sudo dnf install rysh`.
-4. Windows: `winget install RyshWorks.Rysh`.
-5. From source: `git clone ... && make build && make install`.
+1. Any platform: `curl -fsSL https://rysh.ai/install.sh | sh`.
+2. macOS or Linux via Homebrew: `brew install rysh-ai/rysh/rysh`.
+3. Debian/Ubuntu: add the signed APT repo at packages.rysh.ai, then `sudo apt install rysh`.
+4. Fedora/RHEL: add the RPM repo at packages.rysh.ai, then `sudo dnf install rysh`.
+5. Windows: install WSL2, then run the curl installer inside it.
 6. Verify with `rysh --version`.
 
-**Key takeaway:** Rysh installs via Homebrew, apt, dnf, WinGet, or from source -- it runs anywhere Go runs.
+**Key takeaway:** Rysh installs via the curl installer, Homebrew, APT, or DNF -- and on Windows through WSL2.
+
+> **NOTE (2026-07-21):** the rendered narration for this story still describes the
+> old, incorrect commands (`brew tap rysh-works/rysh`, `winget install
+> RyshWorks.Rysh`). The published tap is `rysh-ai/homebrew-rysh` and there is no
+> WinGet/Chocolatey/Snap package. **story-002 must be re-recorded** — the text
+> above and the site copy have been corrected, the audio has not.
 
 ---
 
@@ -48,7 +54,7 @@ Each story includes:
 **Duration:** 40s  
 **Hook:** "Rysh is just Go. Clone it, make build, and run your own binary."  
 **What to show:**
-1. `git clone https://github.com/rysh-works/rysh && cd rysh`.
+1. `git clone https://github.com/rysh-ai/rysh-cli && cd rysh`.
 2. `make build` -- the Go toolchain produces the local `./rysh` binary.
 3. `make install` -- copies it into `~/.local/bin`.
 4. Add `~/.local/bin` to your `PATH` if needed.
