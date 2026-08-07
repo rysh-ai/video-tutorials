@@ -2,7 +2,7 @@
 # Teaser (~28s): title card -> ##snat status -> paste+answer -> grep reveal -> end card.
 # Segments cut to their own files (VFR-safe) then concat with the concat demuxer.
 set -euo pipefail
-T=/Users/halilagin/root/github/agentic-zellij/video-tutorials/tapes
+T="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../tapes" && pwd)"
 MAIN="$T/render-sandbox/demo-snat/story-ad11-secretnat.mp4"
 VO="$T/say/story-ad11-teaser.mp3"
 TITLE="$T/cards/title-ad11.png"

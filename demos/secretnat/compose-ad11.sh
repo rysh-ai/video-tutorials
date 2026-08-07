@@ -3,7 +3,7 @@
 # an appended end card, and the timed voiceover. Keeps the grep money-shot
 # visible during the closing narration (end card is appended, not overlaid).
 set -euo pipefail
-T=/Users/halilagin/root/github/agentic-zellij/video-tutorials/tapes
+T="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../tapes" && pwd)"
 MAIN="$T/render-sandbox/demo-snat/story-ad11-secretnat.mp4"
 VO="$T/say/story-ad11-secretnat.mp3"
 TITLE="$T/cards/title-ad11.png"

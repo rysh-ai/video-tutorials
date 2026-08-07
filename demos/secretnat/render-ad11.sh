@@ -4,9 +4,9 @@
 # cleared, so its file handle points at the live file the on-camera grep reads.
 set -euo pipefail
 
-REPO=/Users/halilagin/root/github/agentic-zellij
-SANDBOX="$REPO/video-tutorials/tapes/render-sandbox/demo-snat"
-PROXYDIR="$REPO/video-tutorials/demos/secretnat"
+PROXYDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+VT="$(cd "$PROXYDIR/../.." && pwd)"          # video-tutorials checkout root
+SANDBOX="$VT/tapes/render-sandbox/demo-snat"
 WLOG="$SANDBOX/wire.log"
 SESSION=story-ad11
 
