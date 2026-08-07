@@ -4,23 +4,28 @@ Merge MP3 voiceover audio onto MP4 video to produce .vover.mp4 files.
 
 Usage:
     # Single file (auto-matches mp3 by name)
-    python merge_voiceover.py story-05-tabs-and-panes.mp4
-
-    # Multiple files
-    python merge_voiceover.py story-01-*.mp4 story-02-*.mp4
+    python merge_voiceover.py out/story-001-what-is-rysh.mp4
 
     # All files
-    python merge_voiceover.py story-*.mp4
+    python merge_voiceover.py out/story-*.mp4 --output-dir final/
 
-    # Custom output directory
-    python merge_voiceover.py story-*.mp4 --output-dir ../final/
+    # Explicit audio location
+    python merge_voiceover.py out/story-*.mp4 --audio-dir say/ --output-dir final/
 
     # Adjust voiceover volume (default 1.0)
-    python merge_voiceover.py story-*.mp4 --volume 1.2
+    python merge_voiceover.py out/story-*.mp4 --volume 1.2
+
+Audio resolution:
+    Videos render to out/ but their TTS mp3s are written to say/, so the mp3 is
+    NOT a sibling of the mp4. For each video the matching <basename>.mp3 is looked
+    for in order: --audio-dir, then beside the video, then a sibling say/ directory.
+    Before this fallback existed the merge silently skipped all 111 stories.
 
 Requirements:
     brew install ffmpeg
 """
+
+from __future__ import annotations
 
 import argparse
 import json
@@ -36,6 +41,32 @@ def check_ffmpeg():
         print("Error: ffmpeg is not installed.")
         print("  brew install ffmpeg")
         sys.exit(1)
+
+
+def resolve_audio(video_path: str, audio_dir: str | None) -> str | None:
+    """
+    Find the .mp3 voiceover matching a video.
+
+    The rendered videos live in out/ while the TTS output lives in say/, so the
+    mp3 is not a sibling of the mp4. Search, in order:
+      1. <audio_dir>/<basename>.mp3   (when --audio-dir was given)
+      2. <video dir>/<basename>.mp3   (flat layout)
+      3. <video dir>/../say/<basename>.mp3
+    Returns the first path that exists, or None.
+    """
+    stem = os.path.basename(video_path).rsplit(".mp4", 1)[0] + ".mp3"
+    vdir = os.path.dirname(os.path.abspath(video_path))
+
+    candidates = []
+    if audio_dir:
+        candidates.append(os.path.join(audio_dir, stem))
+    candidates.append(os.path.join(vdir, stem))
+    candidates.append(os.path.join(os.path.dirname(vdir), "say", stem))
+
+    for c in candidates:
+        if os.path.exists(c):
+            return c
+    return None
 
 
 def get_duration(path: str) -> float:
@@ -169,6 +200,12 @@ Examples:
         default=None,
         help="Output directory (default: same directory as input file)",
     )
+    parser.add_argument(
+        "--audio-dir",
+        default=None,
+        help="Directory holding the .mp3 voiceovers "
+             "(default: beside the video, then a sibling say/ directory)",
+    )
 
     args = parser.parse_args()
 
@@ -188,12 +225,14 @@ Examples:
         if mp4_file.endswith(".vover.mp4"):
             continue
 
-        # Derive the matching MP3 path
+        # Find the matching MP3 (out/ video, say/ audio — see resolve_audio)
         base = mp4_file.rsplit(".mp4", 1)[0]
-        mp3_file = f"{base}.mp3"
+        mp3_file = resolve_audio(mp4_file, args.audio_dir)
 
-        if not os.path.exists(mp3_file):
-            print(f"  Audio not found: {mp3_file} — skipping")
+        if mp3_file is None:
+            stem = os.path.basename(base) + ".mp3"
+            print(f"  Audio not found for {os.path.basename(mp4_file)} "
+                  f"(looked for {stem} in --audio-dir, beside the video, and ../say/) — skipping")
             skipped += 1
             continue
 
