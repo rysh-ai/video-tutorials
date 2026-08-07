@@ -8,26 +8,40 @@
 #   make install           # install Python dependencies
 #   make say               # generate .say files from .tape files
 #   make tts               # generate MP3 voiceovers from all .say files
-#   make tts-one F=story-01-what-is-rysh.say   # single file
-#   make vover             # merge voiceover onto first 30 videos
-#   make vover-all         # merge voiceover onto all videos
-#   make vover-one F=story-05-tabs-and-panes.mp4  # single file
-#   make clean             # remove all generated files
+#   make tts-one F=say/story-001-what-is-rysh.say   # single file
+#   make vover-all         # merge voiceover onto every video -> final/
+#   make vover-one F=out/story-005-your-first-session.mp4  # single file
+#   make qc                # quality-gate the voiced masters in final/
+#   make clean             # remove generated .say and .vover.mp4 (keeps .mp3)
 
 # --- Config ---
 VOICE   ?= nova
 MODEL   ?= tts-1-hd
 SPEED   ?= 1.0
 VOLUME  ?= 1.0
-UV      := uv run
+# Interpreter. `uv run python` by default; override to test or to use a
+# system interpreter, e.g. `make vover-all PY=python3`.
+PY      ?= uv run python
 
-SAY_FILES  := $(wildcard story-*.say)
-TAPE_FILES := $(wildcard story-*.tape)
+# --- Layout ---
+# Sources and artifacts live in subdirectories, not in tapes/ itself:
+#   tape/  story-NNN-*.tape   VHS sources          (tracked)
+#   say/   story-NNN-*.say    narration scripts    (tracked)
+#          story-NNN-*.mp3    TTS audio            (gitignored, costs an API run)
+#   out/   story-NNN-*.mp4    rendered, silent     (gitignored)
+#   final/ story-NNN-*.vover.mp4  voiced masters   (gitignored) — what gets published
+# Story ids are THREE digits. This block used to glob story-*.{say,mp4} in tapes/
+# and hardcode two-digit ids, so every target silently expanded to nothing.
+TAPE_DIR  := tape
+SAY_DIR   := say
+OUT_DIR   := out
+FINAL_DIR := final
 
-# First 30 MP4 files (stories 01-30)
-VOVER_MP4S := $(shell ls -1 story-{01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30}-*.mp4 2>/dev/null | grep -v '.vover.mp4')
+SAY_FILES  := $(wildcard $(SAY_DIR)/story-*.say)
+TAPE_FILES := $(wildcard $(TAPE_DIR)/story-*.tape)
+VOVER_MP4S := $(shell ls -1 $(OUT_DIR)/story-[0-9][0-9][0-9]-*.mp4 2>/dev/null | grep -v '.vover.mp4')
 
-.PHONY: help install say tts tts-one vover vover-all vover-one clean clean-say clean-mp3 clean-vover list voices
+.PHONY: help install say tts tts-one vover vover-all vover-one qc clean clean-say clean-mp3 clean-vover list voices
 
 # --- Default ---
 help:
@@ -45,9 +59,11 @@ help:
 	@echo "  make tts-one F=<file>     Generate MP3 for a single .say file"
 	@echo ""
 	@echo "Merge voiceover onto video:"
-	@echo "  make vover                Merge voiceover onto first 30 videos"
-	@echo "  make vover-all            Merge voiceover onto all videos"
+	@echo "  make vover-all            Merge voiceover onto every video -> $(FINAL_DIR)/"
 	@echo "  make vover-one F=<file>   Merge voiceover onto a single video"
+	@echo ""
+	@echo "Verify:"
+	@echo "  make qc                   Quality-gate the voiced masters in $(FINAL_DIR)/"
 	@echo ""
 	@echo "Options (override via env):"
 	@echo "  VOICE=nova                TTS voice (default: nova)"
@@ -60,12 +76,12 @@ help:
 	@echo ""
 	@echo "Cleanup:"
 	@echo "  make clean-say            Remove all .say files"
-	@echo "  make clean-mp3            Remove all generated .mp3 files"
+	@echo "  make clean-mp3 FORCE=1    Remove .mp3 files (costs a paid TTS run to redo)"
 	@echo "  make clean-vover          Remove all .vover.mp4 files"
-	@echo "  make clean                Remove all generated files"
+	@echo "  make clean                Remove .say + .vover.mp4 (keeps .mp3)"
 	@echo ""
 	@echo "Info:"
-	@echo "  make list                 List all .tape / .say / .mp3 / .vover.mp4 files"
+	@echo "  make list                 Count .tape / .say / .mp3 / .mp4 / .vover.mp4"
 	@echo "  make voices               Show available TTS voices"
 	@echo ""
 
@@ -75,11 +91,11 @@ install:
 
 # --- Generate .say files from .tape files ---
 say:
-	$(UV) python generate_say_files.py
+	$(PY) generate_say_files.py
 
 # --- Generate MP3 voiceovers ---
 tts: say
-	$(UV) python tts_openai.py story-*.say \
+	$(PY) tts_openai.py $(SAY_DIR)/story-*.say \
 		--voice $(VOICE) \
 		--model $(MODEL) \
 		--speed $(SPEED)
@@ -91,61 +107,75 @@ ifndef F
 	@echo "  make tts-one F=story-01-what-is-rysh.say"
 	@exit 1
 endif
-	$(UV) python tts_openai.py $(F) \
+	$(PY) tts_openai.py $(F) \
 		--voice $(VOICE) \
 		--model $(MODEL) \
 		--speed $(SPEED)
 
-# --- Merge voiceover onto first 30 videos ---
-vover:
-	$(UV) python merge_voiceover.py \
-		$(VOVER_MP4S) \
-		--volume $(VOLUME)
-
 # --- Merge voiceover onto all videos ---
+# `vover` used to mean "first 30", selected by a two-digit glob that matched
+# nothing once ids went to three digits. Dead code with a misleading name, so it
+# is now an alias for the real thing rather than a second, subtly different path.
+vover: vover-all
+
 vover-all:
-	$(UV) python merge_voiceover.py \
-		$$(ls -1 story-*.mp4 2>/dev/null | grep -v '.vover.mp4') \
+	$(PY) merge_voiceover.py \
+		$(VOVER_MP4S) \
+		--audio-dir $(SAY_DIR) \
+		--output-dir $(FINAL_DIR) \
 		--volume $(VOLUME)
 
 # --- Merge voiceover onto a single video ---
 vover-one:
 ifndef F
 	@echo "Error: specify file with F=<filename>"
-	@echo "  make vover-one F=story-05-tabs-and-panes.mp4"
+	@echo "  make vover-one F=out/story-005-your-first-session.mp4"
 	@exit 1
 endif
-	$(UV) python merge_voiceover.py $(F) \
+	$(PY) merge_voiceover.py $(F) \
+		--audio-dir $(SAY_DIR) \
+		--output-dir $(FINAL_DIR) \
 		--volume $(VOLUME)
+
+# --- Quality gate on the voiced masters ---
+qc:
+	./qc_videos.sh $(FINAL_DIR) $(SAY_DIR)
 
 # --- Cleanup ---
 clean-say:
-	rm -f story-*.say
+	rm -f $(SAY_DIR)/story-*.say
 	@echo "Removed all .say files"
 
+# The 111 .mp3 files cost a paid OpenAI TTS run to regenerate, so this is not
+# part of `clean` and asks before deleting. Use FORCE=1 to skip the prompt.
 clean-mp3:
-	rm -f story-*.mp3
+ifndef FORCE
+	@echo "This deletes $(words $(wildcard $(SAY_DIR)/story-*.mp3)) .mp3 files that cost a paid TTS run to regenerate."
+	@echo "Re-run as: make clean-mp3 FORCE=1"
+	@exit 1
+endif
+	rm -f $(SAY_DIR)/story-*.mp3
 	@echo "Removed all .mp3 files"
 
 clean-vover:
-	rm -f story-*.vover.mp4
+	rm -f $(FINAL_DIR)/story-*.vover.mp4
 	@echo "Removed all .vover.mp4 files"
 
-clean: clean-say clean-mp3 clean-vover
+# Deliberately excludes clean-mp3 — see above.
+clean: clean-say clean-vover
 
 # --- Info ---
 list:
-	@echo "=== Tape files ==="
-	@ls -1 story-*.tape 2>/dev/null || echo "  (none)"
-	@echo ""
-	@echo "=== Say files ==="
-	@ls -1 story-*.say 2>/dev/null || echo "  (none)"
-	@echo ""
-	@echo "=== MP3 files ==="
-	@ls -1 story-*.mp3 2>/dev/null || echo "  (none)"
-	@echo ""
-	@echo "=== Voiceover videos ==="
-	@ls -1 story-*.vover.mp4 2>/dev/null || echo "  (none)"
+	@echo "=== Tape files ($(TAPE_DIR)/) ==="
+	@ls -1 $(TAPE_DIR)/story-*.tape 2>/dev/null | wc -l | tr -d ' '
+	@echo "=== Say files ($(SAY_DIR)/) ==="
+	@ls -1 $(SAY_DIR)/story-*.say 2>/dev/null | wc -l | tr -d ' '
+	@echo "=== MP3 files ($(SAY_DIR)/) ==="
+	@ls -1 $(SAY_DIR)/story-*.mp3 2>/dev/null | wc -l | tr -d ' '
+	@echo "=== Rendered videos ($(OUT_DIR)/) ==="
+	@ls -1 $(OUT_DIR)/story-*.mp4 2>/dev/null | grep -v '.vover.mp4' | wc -l | tr -d ' '
+	@echo "=== Voiced masters ($(FINAL_DIR)/) ==="
+	@ls -1 $(FINAL_DIR)/story-*.vover.mp4 2>/dev/null | wc -l | tr -d ' '
 
 voices:
 	@echo "Available OpenAI TTS voices:"
