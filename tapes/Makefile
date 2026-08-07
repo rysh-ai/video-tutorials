@@ -139,7 +139,7 @@ endif
 
 # --- Quality gate on the voiced masters ---
 qc:
-	./qc_videos.sh $(FINAL_DIR)
+	./qc_videos.sh $(FINAL_DIR) $(SAY_DIR)
 
 # --- Cleanup ---
 clean-say:
