@@ -5,3 +5,11 @@
 .venv/
 __pycache__/
 uv.lock
+
+# Run artifacts a render leaves in its sandbox: one rysh session per tape means
+# every render writes history, reports and session state here. Regenerated on
+# demand, never a deliverable.
+render-sandbox*/.rysh/history/
+render-sandbox*/.rysh/reports/
+render-sandbox*/.rysh/sessions/
+render-control.log
