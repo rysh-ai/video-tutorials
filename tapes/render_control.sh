@@ -43,7 +43,7 @@ fi
 load1() { uptime | sed 's/.*load averages*: //' | awk '{print $1}'; }
 
 mkdir -p "$OUT_DIR" "$SANDBOX"
-# Some tapes cat these fixtures. Seed them only when ABSENT — render_all.sh:29
+# Some tapes cat these fixtures. Seed them only when ABSENT — render_all.sh:26
 # does an unconditional `cp -f`, which silently overwrites the sandbox's own
 # tracked hello.go with tapes/hello.go and leaves the repo dirty after every
 # render. Copy-if-missing gives the same guarantee without the churn.
