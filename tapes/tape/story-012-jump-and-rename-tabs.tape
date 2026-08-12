@@ -23,21 +23,21 @@ Sleep 1s
 # "Jump to any tab by number, and give your tabs
 #  real, memorable names."
 # ============================================================
-Sleep 2s
+Sleep 0.7s
 
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 1.06s
 
 # Build a few tabs to work with
 Ctrl+t
-Sleep 1s
+Sleep 0.35s
 Type "n"
-Sleep 1s
+Sleep 0.35s
 Type "n"
-Sleep 1s
+Sleep 0.35s
 Type "n"
-Sleep 1.5s
+Sleep 0.53s
 
 # ============================================================
 # 0:04-0:16  Jump by index
@@ -45,13 +45,13 @@ Sleep 1.5s
 #  directly to a tab by its index."
 # ============================================================
 Type "1"
-Sleep 1.5s
+Sleep 3.21s
 Type "4"
-Sleep 1.5s
+Sleep 3.2s
 Type "2"
-Sleep 1.5s
+Sleep 3.2s
 Escape
-Sleep 1s
+Sleep 2.14s
 
 # ============================================================
 # 0:16-0:28  Rename the active tab
@@ -59,15 +59,15 @@ Sleep 1s
 #  ##tab name. Here we call it backend."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.47s
 Escape
-Sleep 0.3s
+Sleep 0.47s
 Escape
-Sleep 1s
+Sleep 1.58s
 Type "##tab name backend"
-Sleep 2s
+Sleep 3.15s
 Enter
-Sleep 3s
+Sleep 4.73s
 
 # ============================================================
 # 0:28-0:40  Rename a tab by id
@@ -75,6 +75,6 @@ Sleep 3s
 #  not just the active one -- ##tab name, id, then name."
 # ============================================================
 Type "##tab name 2 frontend"
-Sleep 2s
+Sleep 3.47s
 Enter
-Sleep 4s
+Sleep 6.93s

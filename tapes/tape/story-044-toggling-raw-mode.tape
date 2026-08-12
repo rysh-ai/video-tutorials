@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Need raw mode without an interactive program?
 #  ##raw flips it on and off by hand."
 # ============================================================
-Sleep 1s
+Sleep 3.3s
 
 # ============================================================
 # 0:03-0:07  Launch rysh
@@ -33,20 +33,20 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.03s
 
 # ============================================================
 # 0:07-0:13  Enter rysh mode
 # "Double-Escape to rysh mode, where ## system commands live."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.79s
 Escape
-Sleep 0.3s
+Sleep 0.79s
 Escape
-Sleep 0.3s
+Sleep 0.79s
 Escape
-Sleep 1.5s
+Sleep 3.93s
 
 # ============================================================
 # 0:13-0:22  Toggle raw on
@@ -56,7 +56,7 @@ Sleep 1.5s
 # ============================================================
 Type "##raw"
 Enter
-Sleep 4s
+Sleep 9.45s
 
 # ============================================================
 # 0:22-0:30  Toggle raw off
@@ -64,13 +64,13 @@ Sleep 4s
 #  then run ##raw again to turn it back off."
 # ============================================================
 Ctrl+o
-Sleep 1s
+Sleep 2.07s
 Type "##raw"
 Enter
-Sleep 3s
+Sleep 6.21s
 
 # ============================================================
 # 0:30-0:35  Hold final frame
 # "One command, full manual control over the interactive terminal."
 # ============================================================
-Sleep 3s
+Sleep 5.5s

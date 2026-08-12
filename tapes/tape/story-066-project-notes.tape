@@ -26,7 +26,7 @@ Set Shell "bash"
 # "A shared scratchpad your agent reads and writes
 #  for the whole project."
 # ============================================================
-Sleep 1s
+Sleep 3.16s
 
 # ============================================================
 # 0:03-0:08  Launch rysh into prompt mode
@@ -34,11 +34,11 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.68s
 Escape
-Sleep 0.3s
+Sleep 0.27s
 Escape
-Sleep 2s
+Sleep 1.79s
 
 # ============================================================
 # 0:08-0:22  Ask the agent to record a project note
@@ -47,7 +47,7 @@ Sleep 2s
 # ============================================================
 Type "add a project note: we standardized on Go 1.22 and golangci-lint"
 Enter
-Sleep 10s
+Sleep 9.86s
 
 # ============================================================
 # 0:22-0:32  Read the notes file in shell mode
@@ -55,14 +55,14 @@ Sleep 10s
 #  you can open, edit, and commit alongside your code."
 # ============================================================
 Escape
-Sleep 2s
+Sleep 3.01s
 Type "cat .rysh-notes.md"
 Enter
-Sleep 4s
+Sleep 6.02s
 
 # ============================================================
 # 0:32-0:40  Recap
 # "project_notes is durable, file-backed memory that every pane
 #  and every agent on the project can share."
 # ============================================================
-Sleep 4s
+Sleep 8.42s

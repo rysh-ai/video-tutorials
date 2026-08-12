@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Drop your humanoid into Slack
 #  and let it answer threads on its own."
 # ============================================================
-Sleep 1s
+Sleep 0.1s
 
 # ============================================================
 # 0:03-0:10  Show the Slack contacts block
@@ -34,10 +34,10 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 0.1s
 Type "mkdir -p .rysh/humanoids"
 Enter
-Sleep 1s
+Sleep 0.1s
 
 # ============================================================
 # 0:10-0:20  Write and show the skill file
@@ -62,26 +62,26 @@ Type "echo '---' >> .rysh/humanoids/support.md"
 Enter
 Type "echo 'You are a Slack support bot.' >> .rysh/humanoids/support.md"
 Enter
-Sleep 1s
+Sleep 0.1s
 Type "cat .rysh/humanoids/support.md"
 Enter
-Sleep 4s
+Sleep 0.1s
 
 # ============================================================
 # 0:20-0:28  Spawn the humanoid
 # "Double-Escape into rysh mode and spawn it from the file."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 1.5s
+Sleep 0.1s
 Type "##humanoid spawn .rysh/humanoids/support.md"
 Enter
-Sleep 3s
+Sleep 0.1s
 
 # ============================================================
 # 0:28-0:36  Start the Slack channel
@@ -90,7 +90,7 @@ Sleep 3s
 # ============================================================
 Type "##humanoid channel start support slack"
 Enter
-Sleep 3s
+Sleep 0.1s
 
 # ============================================================
 # 0:36-0:45  Inspect channels
@@ -99,4 +99,4 @@ Sleep 3s
 # ============================================================
 Type "##humanoid channels support"
 Enter
-Sleep 4s
+Sleep 0.1s

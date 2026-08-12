@@ -23,16 +23,16 @@ Sleep 1s
 # "Rysh is written in Go, so building from source
 #  takes just a few commands."
 # ============================================================
-Sleep 2s
+Sleep 4.04s
 
 # ============================================================
 # 0:04-0:12  Clone the repo
 # "Start by cloning the repository and stepping in."
 # ============================================================
 Type "# git clone https://github.com/rysh-works/rysh && cd rysh"
-Sleep 2s
+Sleep 1.87s
 Enter
-Sleep 2s
+Sleep 1.86s
 
 # ============================================================
 # 0:12-0:20  Build the binary
@@ -40,12 +40,12 @@ Sleep 2s
 #  a local rysh binary right here."
 # ============================================================
 Type "# make build"
-Sleep 2s
+Sleep 1.9s
 Enter
-Sleep 2s
+Sleep 1.89s
 Type "# ./rysh --version"
 Enter
-Sleep 2s
+Sleep 1.89s
 
 # ============================================================
 # 0:20-0:28  Install it
@@ -53,18 +53,18 @@ Sleep 2s
 #  so you can run rysh from anywhere."
 # ============================================================
 Type "# make install"
-Sleep 2s
+Sleep 3.48s
 Enter
-Sleep 2s
+Sleep 3.47s
 
 # ============================================================
 # 0:28-0:36  Add to PATH
 # "If needed, add ~/.local/bin to your PATH."
 # ============================================================
 Type "# export PATH=$HOME/.local/bin:$PATH"
-Sleep 2s
+Sleep 3.53s
 Enter
-Sleep 1s
+Sleep 1.77s
 
 # ============================================================
 # 0:36-0:40  Confirm
@@ -73,4 +73,4 @@ Sleep 1s
 # ============================================================
 Type "rysh --version"
 Enter
-Sleep 4s
+Sleep 2.91s

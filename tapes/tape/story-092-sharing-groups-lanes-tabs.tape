@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Share one pane, or a whole tab.
 #  Each level brings its children along."
 # ============================================================
-Sleep 1s
+Sleep 3.16s
 
 # ============================================================
 # 0:03-0:10  Launch rysh and build a layout
@@ -35,15 +35,15 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.36s
 Ctrl+p
-Sleep 1s
+Sleep 0.79s
 Type "n"
-Sleep 1.5s
+Sleep 1.18s
 Type "v"
-Sleep 2s
+Sleep 1.58s
 Escape
-Sleep 1s
+Sleep 0.79s
 
 # ============================================================
 # 0:10-0:16  Enter rysh mode
@@ -51,13 +51,13 @@ Sleep 1s
 #  four scopes: pane, panegroup, lane, and tab."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.76s
 Escape
-Sleep 0.3s
+Sleep 0.75s
 Escape
-Sleep 0.3s
+Sleep 0.75s
 Escape
-Sleep 1.5s
+Sleep 3.76s
 
 # ============================================================
 # 0:16-0:24  Share the pane group
@@ -66,7 +66,7 @@ Sleep 1.5s
 # ============================================================
 Type "##share panegroup control"
 Enter
-Sleep 3s
+Sleep 6.48s
 
 # ============================================================
 # 0:24-0:31  Share the lane
@@ -75,7 +75,7 @@ Sleep 3s
 # ============================================================
 Type "##share lane view"
 Enter
-Sleep 3s
+Sleep 6.03s
 
 # ============================================================
 # 0:31-0:39  Share the tab
@@ -84,7 +84,7 @@ Sleep 3s
 # ============================================================
 Type "##share tab view"
 Enter
-Sleep 3s
+Sleep 7.15s
 
 # ============================================================
 # 0:39-0:45  List and hold
@@ -93,4 +93,4 @@ Sleep 3s
 # ============================================================
 Type "##share list"
 Enter
-Sleep 3s
+Sleep 5.35s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Recall any pane's conversation, and let old turns
 #  compact into summaries."
 # ============================================================
-Sleep 1s
+Sleep 3.16s
 
 # ============================================================
 # 0:03-0:09  Launch rysh and split a second pane
@@ -35,13 +35,13 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.65s
 Ctrl+p
-Sleep 0.5s
+Sleep 0.44s
 Type "n"
-Sleep 2s
+Sleep 1.76s
 Escape
-Sleep 1s
+Sleep 0.88s
 
 # ============================================================
 # 0:09-0:22  Ask one agent to pull another pane's history
@@ -49,12 +49,12 @@ Sleep 1s
 #  conversation. The session_history tool reads any pane's turns."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.19s
 Escape
-Sleep 2s
+Sleep 1.29s
 Type "use session_history to summarize what the other pane has discussed"
 Enter
-Sleep 11s
+Sleep 7.06s
 
 # ============================================================
 # 0:22-0:36  Inspect this pane's own history
@@ -62,18 +62,18 @@ Sleep 11s
 #  shell and prompt turns are all kept."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.59s
 Escape
-Sleep 0.3s
+Sleep 0.58s
 Escape
-Sleep 2s
+Sleep 3.91s
 Type "##pane history prompt"
 Enter
-Sleep 4s
+Sleep 7.81s
 
 # ============================================================
 # 0:36-0:45  Memory compaction
 # "As conversations grow, memory compaction folds old turns into
 #  compact MemoryEntry summaries -- context stays small and sharp."
 # ============================================================
-Sleep 5s
+Sleep 9.49s

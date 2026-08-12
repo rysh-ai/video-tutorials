@@ -26,7 +26,7 @@ Set Shell "bash"
 # "One command publishes a live pane to your workspace --
 #  teammates watch it in real time."
 # ============================================================
-Sleep 1s
+Sleep 3.29s
 
 # ============================================================
 # 0:03-0:09  Launch rysh
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 6.21s
 
 # ============================================================
 # 0:09-0:16  Check upstream status
@@ -43,16 +43,16 @@ Sleep 3s
 #  you're connected to the upstream server."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.35s
 Escape
-Sleep 0.3s
+Sleep 0.35s
 Escape
-Sleep 0.3s
+Sleep 0.35s
 Escape
-Sleep 1.5s
+Sleep 1.74s
 Type "##share status"
 Enter
-Sleep 3s
+Sleep 3.47s
 
 # ============================================================
 # 0:16-0:26  Share the pane
@@ -61,7 +61,7 @@ Sleep 3s
 # ============================================================
 Type "##share pane view"
 Enter
-Sleep 4s
+Sleep 9.63s
 
 # ============================================================
 # 0:26-0:34  Run a command so the share carries output
@@ -69,18 +69,18 @@ Sleep 4s
 #  output forwards to the share's output topic continuously."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.42s
 Escape
-Sleep 0.3s
+Sleep 0.42s
 Escape
-Sleep 0.3s
+Sleep 0.41s
 Escape
-Sleep 0.3s
+Sleep 0.41s
 Escape
-Sleep 1.5s
+Sleep 2.07s
 Type "ls -la"
 Enter
-Sleep 3s
+Sleep 4.15s
 
 # ============================================================
 # 0:34-0:44  List shares
@@ -88,20 +88,20 @@ Sleep 3s
 #  in this session, each with its own share ID."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.46s
 Escape
-Sleep 0.3s
+Sleep 0.46s
 Escape
-Sleep 0.3s
+Sleep 0.45s
 Escape
-Sleep 1.5s
+Sleep 2.27s
 Type "##share list"
 Enter
-Sleep 4s
+Sleep 6.06s
 
 # ============================================================
 # 0:44-0:50  Hold final frame
 # "From local pane to shared workspace in a single command.
 #  Your collaborators are now watching live."
 # ============================================================
-Sleep 3s
+Sleep 6.59s

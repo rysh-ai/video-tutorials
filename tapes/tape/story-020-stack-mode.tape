@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Ctrl+S turns a stack into a flip-book --
 #  rotate through your panes with j and k."
 # ============================================================
-Sleep 1s
+Sleep 4.2s
 
 # ============================================================
 # 0:04-0:14  Launch rysh and build a 3-pane stack
@@ -35,15 +35,15 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.68s
 Ctrl+p
-Sleep 1s
+Sleep 1.23s
 Type "s"
-Sleep 1s
+Sleep 1.23s
 Ctrl+p
-Sleep 1s
+Sleep 1.23s
 Type "s"
-Sleep 2s
+Sleep 2.46s
 
 # ============================================================
 # 0:14-0:19  Enter stack mode
@@ -51,7 +51,7 @@ Sleep 2s
 #  Now j and k rotate the deck."
 # ============================================================
 Ctrl+S
-Sleep 2s
+Sleep 5.18s
 
 # ============================================================
 # 0:19-0:26  j -- rotate next
@@ -59,9 +59,9 @@ Sleep 2s
 #  The counter ticks forward."
 # ============================================================
 Type "j"
-Sleep 2s
+Sleep 3.61s
 Type "j"
-Sleep 2s
+Sleep 3.6s
 
 # ============================================================
 # 0:26-0:33  k -- rotate previous
@@ -69,9 +69,9 @@ Sleep 2s
 #  You can fan through every pane in the group."
 # ============================================================
 Type "k"
-Sleep 2s
+Sleep 3.61s
 Type "k"
-Sleep 2s
+Sleep 3.6s
 
 # ============================================================
 # 0:33-0:40  Esc -- exit, hold frame
@@ -79,4 +79,4 @@ Sleep 2s
 #  to navigate a deck of stacked panes."
 # ============================================================
 Escape
-Sleep 3s
+Sleep 7.28s

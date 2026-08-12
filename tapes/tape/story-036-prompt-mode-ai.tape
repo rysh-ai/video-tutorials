@@ -27,7 +27,7 @@ Set Shell "bash"
 # "Prompt mode turns your pane into an AI agent
 #  that sees your terminal."
 # ============================================================
-Sleep 1s
+Sleep 3.24s
 
 # ============================================================
 # 0:03-0:09  Launch rysh and set context
@@ -36,10 +36,10 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.34s
 Type "ls -la"
 Enter
-Sleep 2s
+Sleep 2.23s
 
 # ============================================================
 # 0:09-0:16  Switch to prompt mode
@@ -48,9 +48,9 @@ Sleep 2s
 #  Claude over the API or the claude CLI."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.97s
 Escape
-Sleep 2s
+Sleep 6.43s
 
 # ============================================================
 # 0:16-0:32  Ask the AI
@@ -60,7 +60,7 @@ Sleep 2s
 # ============================================================
 Type "explain what this directory contains"
 Enter
-Sleep 10s
+Sleep 14.48s
 
 # ============================================================
 # 0:32-0:44  A follow-up
@@ -69,7 +69,7 @@ Sleep 10s
 # ============================================================
 Type "which file is the entry point?"
 Enter
-Sleep 10s
+Sleep 10.62s
 
 # ============================================================
 # 0:44-0:50  Back to shell, hold
@@ -77,4 +77,4 @@ Sleep 10s
 #  Your agent is always one double-Escape away."
 # ============================================================
 Escape
-Sleep 3s
+Sleep 6.4s

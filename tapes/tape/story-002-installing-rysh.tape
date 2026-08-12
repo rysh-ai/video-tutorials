@@ -22,7 +22,7 @@ Sleep 1s
 # 0:00-0:04  Title / Hook
 # "One command to install -- on every platform Rysh supports."
 # ============================================================
-Sleep 2s
+Sleep 4s
 
 # ============================================================
 # 0:04-0:12  macOS via Homebrew
@@ -30,9 +30,9 @@ Sleep 2s
 #  Two commands and you're done."
 # ============================================================
 Type "# brew tap rysh-works/rysh && brew install rysh"
-Sleep 3s
+Sleep 2.64s
 Enter
-Sleep 2s
+Sleep 1.76s
 
 # ============================================================
 # 0:12-0:20  Linux package managers
@@ -40,21 +40,21 @@ Sleep 2s
 #  On Fedora or RHEL, dnf install rysh."
 # ============================================================
 Type "# sudo apt install rysh     (Debian / Ubuntu)"
-Sleep 2s
+Sleep 0.5s
 Enter
 Type "# sudo dnf install rysh     (Fedora / RHEL)"
-Sleep 2s
+Sleep 0.5s
 Enter
-Sleep 1s
+Sleep 0.25s
 
 # ============================================================
 # 0:20-0:27  Windows
 # "On Windows, install with WinGet."
 # ============================================================
 Type "# winget install RyshWorks.Rysh     (Windows)"
-Sleep 2s
+Sleep 2.37s
 Enter
-Sleep 1s
+Sleep 1.18s
 
 # ============================================================
 # 0:27-0:36  From source
@@ -62,12 +62,12 @@ Sleep 1s
 #  make build, then make install."
 # ============================================================
 Type "# git clone https://github.com/rysh-works/rysh && cd rysh"
-Sleep 2s
+Sleep 0.99s
 Enter
 Type "# make build && make install"
-Sleep 2s
+Sleep 0.99s
 Enter
-Sleep 1s
+Sleep 0.5s
 
 # ============================================================
 # 0:36-0:45  Verify the install
@@ -75,4 +75,4 @@ Sleep 1s
 # ============================================================
 Type "rysh --version"
 Enter
-Sleep 4s
+Sleep 7.88s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "A workspace is your shared space -- API-key-scoped,
 #  and managed right from rysh mode."
 # ============================================================
-Sleep 1s
+Sleep 3.26s
 
 # ============================================================
 # 0:03-0:09  Launch rysh, enter rysh mode
@@ -35,15 +35,15 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.25s
 Escape
-Sleep 0.3s
+Sleep 0.33s
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 1.5s
+Sleep 1.62s
 
 # ============================================================
 # 0:09-0:18  List workspaces
@@ -52,7 +52,7 @@ Sleep 1.5s
 # ============================================================
 Type "##ws list"
 Enter
-Sleep 4s
+Sleep 9.02s
 
 # ============================================================
 # 0:18-0:28  Create a workspace
@@ -61,7 +61,7 @@ Sleep 4s
 # ============================================================
 Type "##ws create team-rocket sk-ws-abc123"
 Enter
-Sleep 4s
+Sleep 8.08s
 
 # ============================================================
 # 0:28-0:36  List again to confirm
@@ -70,11 +70,11 @@ Sleep 4s
 # ============================================================
 Type "##ws list"
 Enter
-Sleep 4s
+Sleep 7.93s
 
 # ============================================================
 # 0:36-0:40  Hold final frame
 # "One API key, one workspace -- clean boundaries for every
 #  team you collaborate with."
 # ============================================================
-Sleep 3s
+Sleep 4.34s

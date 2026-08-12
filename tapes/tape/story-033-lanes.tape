@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Lanes are the columns that organize your panes --
 #  manage them directly."
 # ============================================================
-Sleep 1s
+Sleep 3.16s
 
 # ============================================================
 # 0:03-0:09  Launch rysh and enter rysh mode
@@ -35,15 +35,15 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.13s
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 0.3s
+Sleep 0.31s
 Escape
-Sleep 0.3s
+Sleep 0.31s
 Escape
-Sleep 1.5s
+Sleep 1.57s
 
 # ============================================================
 # 0:09-0:16  ##new lane
@@ -52,7 +52,7 @@ Sleep 1.5s
 # ============================================================
 Type "##new lane"
 Enter
-Sleep 3s
+Sleep 6.55s
 
 # ============================================================
 # 0:16-0:24  ##lane list
@@ -61,7 +61,7 @@ Sleep 3s
 # ============================================================
 Type "##lane list"
 Enter
-Sleep 3s
+Sleep 7.53s
 
 # ============================================================
 # 0:24-0:31  ##lane info
@@ -70,7 +70,7 @@ Sleep 3s
 # ============================================================
 Type "##lane info"
 Enter
-Sleep 3s
+Sleep 6.47s
 
 # ============================================================
 # 0:31-0:40  ##lane name and ##lane delete
@@ -80,7 +80,7 @@ Sleep 3s
 # ============================================================
 Type "##lane name backend"
 Enter
-Sleep 2.5s
+Sleep 3.22s
 Type "##lane list"
 Enter
-Sleep 3s
+Sleep 3.86s

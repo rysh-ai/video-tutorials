@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Ctrl+P is your pane command center --
 #  split, stack, close, and rename without leaving the keyboard."
 # ============================================================
-Sleep 1s
+Sleep 4.25s
 
 # ============================================================
 # 0:04-0:09  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.94s
 
 # ============================================================
 # 0:09-0:14  Enter pane mode
@@ -42,14 +42,14 @@ Sleep 3s
 #  Every key now manages panes."
 # ============================================================
 Ctrl+p
-Sleep 2s
+Sleep 5.24s
 
 # ============================================================
 # 0:14-0:20  n = split right
 # "Press n to split right -- a new pane opens in a new column."
 # ============================================================
 Type "n"
-Sleep 2s
+Sleep 6.3s
 
 # ============================================================
 # 0:20-0:27  v = split down
@@ -57,9 +57,9 @@ Sleep 2s
 #  same column."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 2.43s
 Type "v"
-Sleep 2s
+Sleep 4.86s
 
 # ============================================================
 # 0:27-0:34  s = stack
@@ -67,9 +67,9 @@ Sleep 2s
 #  like dealing a new card onto the deck."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 2.43s
 Type "s"
-Sleep 2s
+Sleep 4.86s
 
 # ============================================================
 # 0:34-0:42  r = rename
@@ -77,12 +77,12 @@ Sleep 2s
 #  and it becomes the pane's given-name."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 1.94s
 Type "r"
-Sleep 1s
+Sleep 1.94s
 Type "builder"
 Enter
-Sleep 2s
+Sleep 3.87s
 
 # ============================================================
 # 0:42-0:50  x = close, Esc = exit
@@ -90,8 +90,8 @@ Sleep 2s
 #  whenever you're done. Split, stack, rename -- all from Ctrl+P."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 1.38s
 Type "x"
-Sleep 2s
+Sleep 2.76s
 Escape
-Sleep 3s
+Sleep 4.13s

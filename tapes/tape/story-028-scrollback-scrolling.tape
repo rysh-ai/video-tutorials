@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Long output scrolls off the top?
 #  Walk back through every line."
 # ============================================================
-Sleep 1s
+Sleep 3.16s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.9s
 
 # ============================================================
 # 0:08-0:14  Produce lots of output
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "seq 1 200"
 Enter
-Sleep 3s
+Sleep 5.58s
 
 # ============================================================
 # 0:14-0:22  Page up and down
@@ -52,11 +52,11 @@ Sleep 3s
 #  PageDown brings you back down a page at a time."
 # ============================================================
 PageUp
-Sleep 1.5s
+Sleep 2.46s
 PageUp
-Sleep 1.5s
+Sleep 2.46s
 PageDown
-Sleep 2s
+Sleep 3.29s
 
 # ============================================================
 # 0:22-0:30  Line-by-line with Shift+Up / Shift+Down
@@ -64,11 +64,11 @@ Sleep 2s
 #  move a single line per press."
 # ============================================================
 PageUp
-Sleep 1s
+Sleep 2.05s
 PageUp
-Sleep 1s
+Sleep 2.05s
 PageDown
-Sleep 2s
+Sleep 4.11s
 
 # ============================================================
 # 0:30-0:37  Home and End jump to top / bottom
@@ -76,12 +76,12 @@ Sleep 2s
 #  and End drops you straight back to the live prompt."
 # ============================================================
 PageUp
-Sleep 2s
+Sleep 3.62s
 PageDown
-Sleep 2s
+Sleep 3.61s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "Page, line, top, bottom -- you never lose a line of history."
 # ============================================================
-Sleep 3s
+Sleep 3.16s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Shell, AI, Chat, Rysh -- four streams,
 #  one pane, all on your phone."
 # ============================================================
-Sleep 1s
+Sleep 5.11s
 
 # ============================================================
 # 0:05-0:15  Bottom mode tabs
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'Bottom mode tabs: [ Shell ] [ AI ] [ Chat ] [ Rysh ]'"
 Enter
-Sleep 3s
+Sleep 5.72s
 
 # ============================================================
 # 0:15-0:25  Unread badges
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Background output -> unread badge on its mode tab'"
 Enter
-Sleep 3s
+Sleep 5.95s
 
 # ============================================================
 # 0:25-0:36  Per-pane per-mode scrollback
@@ -53,7 +53,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Scrollback is tracked per pane AND per mode -- threads never mix'"
 Enter
-Sleep 3s
+Sleep 5.84s
 
 # ============================================================
 # 0:36-0:45  Wrap
@@ -62,4 +62,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'Tap to switch modes, scroll each independently'"
 Enter
-Sleep 4s
+Sleep 5.15s

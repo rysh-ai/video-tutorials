@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Beneath every layout is a tree --
 #  lanes hold groups, groups hold panes."
 # ============================================================
-Sleep 1s
+Sleep 4.11s
 
 # ============================================================
 # 0:04-0:14  Launch rysh and build a couple of columns
@@ -35,17 +35,17 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.17s
 Ctrl+p
-Sleep 1s
+Sleep 1.06s
 Type "n"
-Sleep 1s
+Sleep 1.06s
 Ctrl+p
-Sleep 1s
+Sleep 1.06s
 Type "n"
-Sleep 2s
+Sleep 2.12s
 Escape
-Sleep 1s
+Sleep 1.06s
 
 # ============================================================
 # 0:14-0:23  ##pg list
@@ -54,7 +54,7 @@ Sleep 1s
 # ============================================================
 Type "##pg list"
 Enter
-Sleep 3s
+Sleep 8.5s
 
 # ============================================================
 # 0:23-0:32  ##pg info
@@ -62,7 +62,7 @@ Sleep 3s
 # ============================================================
 Type "##pg info"
 Enter
-Sleep 3s
+Sleep 8.5s
 
 # ============================================================
 # 0:32-0:40  ##lane list
@@ -71,11 +71,11 @@ Sleep 3s
 # ============================================================
 Type "##lane list"
 Enter
-Sleep 3s
+Sleep 7.33s
 
 # ============================================================
 # 0:40-0:45  Hold frame
 # "Lanes, groups, panes -- a tidy hierarchy you can inspect
 #  any time from rysh mode."
 # ============================================================
-Sleep 4s
+Sleep 5.14s

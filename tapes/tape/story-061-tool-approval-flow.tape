@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Your AI agent never touches a file or runs
 #  a destructive command without your say-so."
 # ============================================================
-Sleep 1s
+Sleep 3.19s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.94s
 
 # ============================================================
 # 0:08-0:16  Switch to prompt mode and ask for an edit
@@ -42,19 +42,19 @@ Sleep 3s
 #  to change a file. Tools like file_edit always need approval."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.11s
 Escape
-Sleep 2s
+Sleep 0.75s
 Type "add a hello world comment to the top of README.md"
 Enter
-Sleep 10s
+Sleep 3.74s
 
 # ============================================================
 # 0:16-0:30  Approval prompt with diff preview
 # "Before anything is written, the footer shows the action
 #  and a diff preview. Nothing changes until you decide."
 # ============================================================
-Sleep 4s
+Sleep 14.88s
 
 # ============================================================
 # 0:30-0:40  Approve with y
@@ -62,17 +62,17 @@ Sleep 4s
 #  Press n to reject and the action is cancelled."
 # ============================================================
 Type "y"
-Sleep 6s
+Sleep 10.55s
 
 # ============================================================
 # 0:40-0:47  Recap the gate
 # "Reads and searches run freely. But writes, patches,
 #  commits, and dangerous bash are all gated behind you."
 # ============================================================
-Sleep 3s
+Sleep 7.44s
 
 # ============================================================
 # 0:47-0:50  Hold final frame
 # "You are always the final approver."
 # ============================================================
-Sleep 3s
+Sleep 3.19s

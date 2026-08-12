@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Runaway agents get stopped, and a new prompt
 #  always interrupts the old one."
 # ============================================================
-Sleep 1s
+Sleep 3.16s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,11 +34,11 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.69s
 Escape
-Sleep 0.3s
+Sleep 0.27s
 Escape
-Sleep 2s
+Sleep 1.79s
 
 # ============================================================
 # 0:08-0:20  Kick off a long-running prompt
@@ -47,7 +47,7 @@ Sleep 2s
 # ============================================================
 Type "analyze every file in this repo and summarize the architecture"
 Enter
-Sleep 8s
+Sleep 7.93s
 
 # ============================================================
 # 0:20-0:34  Last-prompt-wins: a new prompt cancels the in-flight call
@@ -56,7 +56,7 @@ Sleep 8s
 # ============================================================
 Type "actually, just tell me the Go version in go.mod"
 Enter
-Sleep 9s
+Sleep 11.16s
 
 # ============================================================
 # 0:34-0:42  Loop detection explained
@@ -64,13 +64,13 @@ Sleep 9s
 #  loop detection blocks it so it can never spin forever."
 # ============================================================
 Escape
-Sleep 1s
+Sleep 0.7s
 Type "echo 'loop detection: blocks after 3 identical calls in a 20-call window'"
 Enter
-Sleep 3s
+Sleep 2.11s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "Safe by design: no infinite loops, always interruptible."
 # ============================================================
-Sleep 3s
+Sleep 3.16s

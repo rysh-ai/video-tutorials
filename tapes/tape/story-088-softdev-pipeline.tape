@@ -25,7 +25,7 @@ Set Shell "bash"
 # "One event line can trigger an AI agent to plan, build,
 #  lint, and test -- automatically."
 # ============================================================
-Sleep 1s
+Sleep 3.44s
 
 # ============================================================
 # 0:03-0:09  Launch rysh and split a worker
@@ -34,13 +34,13 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.69s
 Ctrl+p
-Sleep 1s
+Sleep 0.9s
 Type "n"
-Sleep 2s
+Sleep 1.8s
 Escape
-Sleep 1s
+Sleep 0.9s
 
 # ============================================================
 # 0:09-0:16  Worker listens
@@ -48,16 +48,16 @@ Sleep 1s
 #  so softdev events fire its AgenticActor."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.39s
 Escape
-Sleep 0.3s
+Sleep 0.39s
 Escape
-Sleep 0.3s
+Sleep 0.39s
 Escape
-Sleep 1.5s
+Sleep 1.95s
 Type "##pane listen orchestrator"
 Enter
-Sleep 2s
+Sleep 2.59s
 
 # ============================================================
 # 0:16-0:24  Back to orchestrator, rysh mode
@@ -65,15 +65,15 @@ Sleep 2s
 #  schema is ai or sh, softdev, language, then phase."
 # ============================================================
 Tab
-Sleep 1.5s
+Sleep 3.39s
 Escape
-Sleep 0.3s
+Sleep 0.68s
 Escape
-Sleep 0.3s
+Sleep 0.68s
 Escape
-Sleep 0.3s
+Sleep 0.67s
 Escape
-Sleep 1.5s
+Sleep 3.39s
 
 # ============================================================
 # 0:24-0:33  Fire the planning AI event
@@ -82,7 +82,7 @@ Sleep 1.5s
 # ============================================================
 Type "##>event:ai:softdev:golang:planning"
 Enter
-Sleep 4s
+Sleep 7.63s
 
 # ============================================================
 # 0:33-0:41  Fire a shell build event
@@ -91,7 +91,7 @@ Sleep 4s
 # ============================================================
 Type "##>event:sh:softdev:golang:development"
 Enter
-Sleep 3s
+Sleep 6.26s
 
 # ============================================================
 # 0:41-0:47  Fire unit testing
@@ -100,11 +100,11 @@ Sleep 3s
 # ============================================================
 Type "##>event:ai:softdev:golang:unit_testing"
 Enter
-Sleep 3s
+Sleep 3.89s
 
 # ============================================================
 # 0:47-0:50  Hold final frame
 # "Planning, development, linting, testing, deployment, monitoring --
 #  an autonomous build pipeline, one event at a time."
 # ============================================================
-Sleep 3s
+Sleep 3.44s

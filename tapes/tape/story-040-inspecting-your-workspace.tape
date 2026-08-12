@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Lost track of your layout?
 #  A handful of ## commands map your entire workspace."
 # ============================================================
-Sleep 1s
+Sleep 3.19s
 
 # ============================================================
 # 0:03-0:07  Launch rysh
@@ -33,31 +33,31 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.88s
 
 # ============================================================
 # 0:07-0:13  Split to create structure
 # "Ctrl+P then n splits right, giving us a second pane in a new group."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 1.54s
 Type "n"
-Sleep 2s
+Sleep 3.08s
 Escape
-Sleep 1s
+Sleep 1.54s
 
 # ============================================================
 # 0:13-0:18  Enter rysh mode
 # "Double-Escape over to rysh mode so we can issue inspection commands."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.63s
 Escape
-Sleep 0.3s
+Sleep 0.63s
 Escape
-Sleep 0.3s
+Sleep 0.62s
 Escape
-Sleep 1.5s
+Sleep 3.14s
 
 # ============================================================
 # 0:18-0:24  ##pane info
@@ -66,7 +66,7 @@ Sleep 1.5s
 # ============================================================
 Type "##pane info"
 Enter
-Sleep 3s
+Sleep 5.48s
 
 # ============================================================
 # 0:24-0:30  ##tab list and ##lane list
@@ -75,10 +75,10 @@ Sleep 3s
 # ============================================================
 Type "##tab list"
 Enter
-Sleep 2s
+Sleep 2.33s
 Type "##lane list"
 Enter
-Sleep 2s
+Sleep 2.33s
 
 # ============================================================
 # 0:30-0:36  ##pg list
@@ -87,7 +87,7 @@ Sleep 2s
 # ============================================================
 Type "##pg list"
 Enter
-Sleep 3s
+Sleep 5.63s
 
 # ============================================================
 # 0:36-0:42  ##pg layout
@@ -96,10 +96,10 @@ Sleep 3s
 # ============================================================
 Type "##pg layout"
 Enter
-Sleep 4s
+Sleep 5.48s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "Five commands, and you can see your whole workspace at a glance."
 # ============================================================
-Sleep 3s
+Sleep 3.19s

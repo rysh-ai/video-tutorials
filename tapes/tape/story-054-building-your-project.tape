@@ -25,7 +25,7 @@ Set Shell "bash"
 # 0:00-0:03  Title / Hook
 # "Ask the agent to build -- it compiles, parses the errors, and fixes them."
 # ============================================================
-Sleep 1s
+Sleep 3.33s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -33,16 +33,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.18s
 
 # ============================================================
 # 0:08-0:13  Switch to prompt mode
 # "Double-press Escape for prompt mode."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.7s
 Escape
-Sleep 2s
+Sleep 4.7s
 
 # ============================================================
 # 0:13-0:30  Ask the agent to build and fix
@@ -52,17 +52,17 @@ Sleep 2s
 # ============================================================
 Type "build the project and fix any compile errors"
 Enter
-Sleep 10s
+Sleep 15.5s
 
 # ============================================================
 # 0:30-0:37  Narrate the loop
 # "If it proposes a code change to fix an error, that file edit is the part
 #  that asks for approval -- you review the diff, approve, and it builds again."
 # ============================================================
-Sleep 4s
+Sleep 7.77s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "Build, read the errors, fix, repeat -- hands on the wheel."
 # ============================================================
-Sleep 3s
+Sleep 3.33s

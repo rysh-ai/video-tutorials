@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Drop a rysh-powered chatbot on your website
 #  with one script tag."
 # ============================================================
-Sleep 1s
+Sleep 5.11s
 
 # ============================================================
 # 0:05-0:15  Per-workspace config
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'Chatbot config (per workspace): system prompt | model | allowed origins'"
 Enter
-Sleep 3s
+Sleep 4.3s
 
 # ============================================================
 # 0:15-0:25  The embeddable widget
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "echo '<script src=https://rysh.works/chatbot/widget.js></script>'"
 Enter
-Sleep 3s
+Sleep 5.27s
 
 # ============================================================
 # 0:25-0:35  Per-visitor sessions and takeover
@@ -53,7 +53,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Per-visitor sessions + human takeover at any time'"
 Enter
-Sleep 3s
+Sleep 5.95s
 
 # ============================================================
 # 0:35-0:45  External connections
@@ -62,4 +62,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'External connections: Slack | WhatsApp | Email -> one inbox'"
 Enter
-Sleep 4s
+Sleep 5.2s
