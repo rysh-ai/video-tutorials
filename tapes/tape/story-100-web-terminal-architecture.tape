@@ -26,7 +26,7 @@ Set Shell "bash"
 # "No separate service. The web server is baked right
 #  into the rysh binary."
 # ============================================================
-Sleep 1s
+Sleep 5.23s
 
 # ============================================================
 # 0:05-0:13  The embedded server
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'rysh web = embedded Go server + React frontend, in one binary'"
 Enter
-Sleep 3s
+Sleep 3.2s
 
 # ============================================================
 # 0:13-0:23  Shared bus and actors
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Browser  <-WebSocket->  embedded NATS bus  <->  Workspace/Tab/Pane actors'"
 Enter
-Sleep 3s
+Sleep 4.39s
 
 # ============================================================
 # 0:23-0:33  Snapshot streaming
@@ -53,7 +53,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Live snapshot pushed over WebSocket every ~200ms -> React renders the TUI'"
 Enter
-Sleep 3s
+Sleep 4.39s
 
 # ============================================================
 # 0:33-0:45  Wrap
@@ -62,4 +62,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'React frontend | embedded Go web server | shared NATS + actors'"
 Enter
-Sleep 4s
+Sleep 7.31s

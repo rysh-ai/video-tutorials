@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Define a pipeline in a file, load it, run it --
 #  ##pipe drives the whole lifecycle."
 # ============================================================
-Sleep 1s
+Sleep 3.18s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.93s
 
 # ============================================================
 # 0:08-0:14  Enter rysh mode and show help
@@ -43,16 +43,16 @@ Sleep 3s
 #  everything the pipeline command can do."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.29s
 Escape
-Sleep 0.3s
+Sleep 0.29s
 Escape
-Sleep 0.3s
+Sleep 0.29s
 Escape
-Sleep 1.5s
+Sleep 1.43s
 Type "##pipe help"
 Enter
-Sleep 3s
+Sleep 2.87s
 
 # ============================================================
 # 0:14-0:22  Load a pipeline from .rysh/pipelines
@@ -61,7 +61,7 @@ Sleep 3s
 # ============================================================
 Type "##pipe load build.pipeline"
 Enter
-Sleep 3s
+Sleep 6.47s
 
 # ============================================================
 # 0:22-0:28  List and show
@@ -70,10 +70,10 @@ Sleep 3s
 # ============================================================
 Type "##pipe list"
 Enter
-Sleep 2s
+Sleep 1.65s
 Type "##pipe show build"
 Enter
-Sleep 3s
+Sleep 2.47s
 
 # ============================================================
 # 0:28-0:38  Run the pipeline
@@ -82,7 +82,7 @@ Sleep 3s
 # ============================================================
 Type "##pipe run build"
 Enter
-Sleep 4s
+Sleep 9.34s
 
 # ============================================================
 # 0:38-0:45  Check status
@@ -90,7 +90,7 @@ Sleep 4s
 # ============================================================
 Type "##pipe status"
 Enter
-Sleep 3s
+Sleep 6.38s
 
 # ============================================================
 # 0:45-0:50  Clear and hold
@@ -99,4 +99,4 @@ Sleep 3s
 # ============================================================
 Type "##pipe clear"
 Enter
-Sleep 3s
+Sleep 4.33s

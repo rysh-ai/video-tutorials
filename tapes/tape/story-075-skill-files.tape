@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Define an agent once in a file -- name, model, and system prompt --
 #  then spawn it anywhere."
 # ============================================================
-Sleep 1s
+Sleep 2.37s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.57s
 
 # ============================================================
 # 0:08-0:16  Create a skill file
@@ -43,10 +43,10 @@ Sleep 3s
 # ============================================================
 Type "mkdir -p .rysh/agents/reviewer"
 Enter
-Sleep 1s
+Sleep 0.1s
 Type "printf -- '---\\nname: code-reviewer\\ndescription: Reviews code for quality\\nmodel: claude-sonnet-4-20250514\\n---\\nYou are a code reviewer. Review code for quality, correctness, and adherence to best practices.\\n' > .rysh/agents/reviewer/SKILL.md"
 Enter
-Sleep 2s
+Sleep 0.1s
 
 # ============================================================
 # 0:16-0:26  Show the skill file
@@ -56,7 +56,7 @@ Sleep 2s
 # ============================================================
 Type "cat .rysh/agents/reviewer/SKILL.md"
 Enter
-Sleep 4s
+Sleep 5.27s
 
 # ============================================================
 # 0:26-0:36  Spawn from the skill file
@@ -64,16 +64,16 @@ Sleep 4s
 #  then point ##agent spawn at the SKILL.md path."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.24s
 Escape
-Sleep 0.3s
+Sleep 0.24s
 Escape
-Sleep 0.3s
+Sleep 0.23s
 Escape
-Sleep 1.5s
+Sleep 1.17s
 Type "##agent spawn .rysh/agents/reviewer/SKILL.md"
 Enter
-Sleep 3s
+Sleep 2.34s
 
 # ============================================================
 # 0:36-0:47  Confirm it spawned
@@ -82,10 +82,10 @@ Sleep 3s
 # ============================================================
 Type "##agent list"
 Enter
-Sleep 4s
+Sleep 7.71s
 
 # ============================================================
 # 0:47-0:50  Hold final frame
 # "Skill files turn agents into code you can commit and reuse."
 # ============================================================
-Sleep 3s
+Sleep 2.37s

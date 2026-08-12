@@ -23,11 +23,11 @@ Sleep 1s
 # "Ctrl+T opens tab mode -- create, jump, and move
 #  between tabs without leaving the home row."
 # ============================================================
-Sleep 2s
+Sleep 1.88s
 
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.82s
 
 # ============================================================
 # 0:05-0:18  Enter tab mode and create tabs
@@ -35,13 +35,13 @@ Sleep 3s
 #  Press it a few times to build out a row of tabs."
 # ============================================================
 Ctrl+t
-Sleep 1s
+Sleep 2.15s
 Type "n"
-Sleep 1.5s
+Sleep 3.22s
 Type "n"
-Sleep 1.5s
+Sleep 3.22s
 Type "n"
-Sleep 2s
+Sleep 4.29s
 
 # ============================================================
 # 0:18-0:30  Move with h j k l
@@ -49,26 +49,26 @@ Sleep 2s
 #  j and l move to the next -- no arrow keys needed."
 # ============================================================
 Type "h"
-Sleep 1.5s
+Sleep 3.99s
 Type "h"
-Sleep 1.5s
+Sleep 3.98s
 Type "l"
-Sleep 1.5s
+Sleep 3.98s
 
 # ============================================================
 # 0:30-0:40  Jump by number
 # "Press a number from 1 to 9 to jump straight to that tab."
 # ============================================================
 Type "1"
-Sleep 1.5s
+Sleep 3.31s
 Type "3"
-Sleep 1.5s
+Sleep 3.31s
 Type "2"
-Sleep 1.5s
+Sleep 3.3s
 
 # ============================================================
 # 0:40-0:45  Exit tab mode
 # "Escape exits tab mode and drops you back to normal mode."
 # ============================================================
 Escape
-Sleep 4s
+Sleep 5s

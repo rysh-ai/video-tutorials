@@ -23,7 +23,7 @@ Sleep 1s
 # "Rysh reads one TOML config file --
 #  and every setting also has an environment-variable override."
 # ============================================================
-Sleep 2s
+Sleep 5.04s
 
 # ============================================================
 # 0:05-0:13  Where the config lives
@@ -31,9 +31,9 @@ Sleep 2s
 #  or rysh.config in your current directory."
 # ============================================================
 Type "cat ~/.config/rysh/rysh.config"
-Sleep 2s
+Sleep 2.3s
 Enter
-Sleep 3s
+Sleep 3.44s
 
 # ============================================================
 # 0:13-0:24  The [provider] section
@@ -46,9 +46,9 @@ Enter
 Type "echo 'model = claude-sonnet-4-20250514'"
 Enter
 Type "echo 'api_key = sk-ant-...'"
-Sleep 2s
+Sleep 1.86s
 Enter
-Sleep 3s
+Sleep 2.78s
 
 # ============================================================
 # 0:24-0:34  The [ui] section
@@ -62,9 +62,9 @@ Enter
 Type "echo 'initial_tabs = 2'"
 Enter
 Type "echo 'initial_panes = 1'"
-Sleep 2s
+Sleep 1.46s
 Enter
-Sleep 3s
+Sleep 2.18s
 
 # ============================================================
 # 0:34-0:42  The [upstream] section
@@ -78,9 +78,9 @@ Enter
 Type "echo 'url = https://rysh.works/workspaces/team'"
 Enter
 Type "echo 'api_key = ...'"
-Sleep 2s
+Sleep 0.1s
 Enter
-Sleep 3s
+Sleep 0.1s
 
 # ============================================================
 # 0:42-0:50  Environment override
@@ -88,6 +88,6 @@ Sleep 3s
 #  launch -- here, RYSH_API_KEY -- and rysh picks it up."
 # ============================================================
 Type "RYSH_API_KEY=sk-ant-xxxx rysh"
-Sleep 3s
+Sleep 2.49s
 Enter
-Sleep 4s
+Sleep 3.33s

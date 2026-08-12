@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Pipe one pane's live output straight into another --
 #  secrets redacted automatically."
 # ============================================================
-Sleep 1s
+Sleep 3.2s
 
 # ============================================================
 # 0:03-0:08  Launch rysh and split a pane
@@ -35,13 +35,13 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.19s
 Ctrl+p
-Sleep 0.5s
+Sleep 0.36s
 Type "n"
-Sleep 2s
+Sleep 1.46s
 Escape
-Sleep 1s
+Sleep 0.73s
 
 # ============================================================
 # 0:08-0:18  Name the source pane
@@ -49,16 +49,16 @@ Sleep 1s
 #  so the listener has an alias to attach to."
 # ============================================================
 Tab
-Sleep 1s
+Sleep 1.35s
 Escape
-Sleep 0.3s
+Sleep 0.4s
 Escape
-Sleep 0.3s
+Sleep 0.4s
 Escape
-Sleep 2s
+Sleep 2.69s
 Type "##pane name builder"
 Enter
-Sleep 3s
+Sleep 4.03s
 
 # ============================================================
 # 0:18-0:28  Start listening from the other pane
@@ -66,16 +66,16 @@ Sleep 3s
 #  Now the builder's shared output flows here, prefixed [builder]."
 # ============================================================
 Tab
-Sleep 1s
+Sleep 1.32s
 Escape
-Sleep 0.3s
+Sleep 0.4s
 Escape
-Sleep 0.3s
+Sleep 0.4s
 Escape
-Sleep 2s
+Sleep 2.64s
 Type "##pane listen builder"
 Enter
-Sleep 3s
+Sleep 3.96s
 
 # ============================================================
 # 0:28-0:40  Generate output in the source pane
@@ -83,16 +83,16 @@ Sleep 3s
 #  the listening pane in real time -- secrets stripped first."
 # ============================================================
 Tab
-Sleep 1s
+Sleep 1.4s
 Escape
-Sleep 0.3s
+Sleep 0.42s
 Escape
-Sleep 0.3s
+Sleep 0.42s
 Escape
-Sleep 2s
+Sleep 2.8s
 Type "echo 'build started'; ls"
 Enter
-Sleep 4s
+Sleep 5.59s
 
 # ============================================================
 # 0:40-0:47  Stop listening
@@ -100,13 +100,13 @@ Sleep 4s
 #  to detach the stream."
 # ============================================================
 Tab
-Sleep 1s
+Sleep 1.55s
 Type "##pane unlisten"
 Enter
-Sleep 3s
+Sleep 4.64s
 
 # ============================================================
 # 0:47-0:50  Hold final frame
 # "Cross-pane awareness with redaction built in."
 # ============================================================
-Sleep 3s
+Sleep 3.2s

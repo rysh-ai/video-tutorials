@@ -25,7 +25,7 @@ Set Shell "bash"
 # "A folder of skill files becomes a whole team of agents
 #  in one command."
 # ============================================================
-Sleep 1s
+Sleep 2.63s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -33,7 +33,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.01s
 
 # ============================================================
 # 0:08-0:18  Create a directory of skill files
@@ -41,16 +41,16 @@ Sleep 3s
 # ============================================================
 Type "mkdir -p .rysh/agents"
 Enter
-Sleep 1s
+Sleep 0.1s
 Type "printf -- '---\\nname: reviewer\\n---\\nYou review code.\\n' > .rysh/agents/reviewer.md"
 Enter
-Sleep 1s
+Sleep 0.1s
 Type "printf -- '---\\nname: tester\\n---\\nYou write tests.\\n' > .rysh/agents/tester.md"
 Enter
-Sleep 1s
+Sleep 0.1s
 Type "ls .rysh/agents"
 Enter
-Sleep 2s
+Sleep 0.1s
 
 # ============================================================
 # 0:18-0:28  Spawn them all at once
@@ -58,16 +58,16 @@ Sleep 2s
 #  Rysh creates one agent per markdown file -- instantly."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.34s
 Escape
-Sleep 0.3s
+Sleep 0.34s
 Escape
-Sleep 0.3s
+Sleep 0.34s
 Escape
-Sleep 1.5s
+Sleep 1.71s
 Type "##agent spawn-all .rysh/agents"
 Enter
-Sleep 3s
+Sleep 3.42s
 
 # ============================================================
 # 0:28-0:37  List the spawned agents
@@ -76,10 +76,10 @@ Sleep 3s
 # ============================================================
 Type "##agent list"
 Enter
-Sleep 4s
+Sleep 6.92s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "spawn-all: version your whole agent team in one directory."
 # ============================================================
-Sleep 3s
+Sleep 2.63s

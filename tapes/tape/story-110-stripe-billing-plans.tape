@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Four tiers, Stripe checkout,
 #  and limits enforced in three places."
 # ============================================================
-Sleep 1s
+Sleep 5.42s
 
 # ============================================================
 # 0:05-0:16  The four tiers
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "printf 'Free \\$0 | Solo \\$19/mo | Team \\$49/mo | Enterprise custom\\n'"
 Enter
-Sleep 3s
+Sleep 6.37s
 
 # ============================================================
 # 0:16-0:27  What the limits cover
@@ -45,7 +45,7 @@ Sleep 3s
 # ============================================================
 Type "printf 'Limits: workspaces / sessions / panes -- Free 1/3/30 ... Team 20/200/2000\\n'"
 Enter
-Sleep 3s
+Sleep 5.47s
 
 # ============================================================
 # 0:27-0:38  Stripe integration
@@ -55,7 +55,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Stripe: Checkout + Billing Portal + webhooks (monthly/yearly)'"
 Enter
-Sleep 3s
+Sleep 6.74s
 
 # ============================================================
 # 0:38-0:50  Three layers of enforcement
@@ -65,4 +65,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'Enforced 3x: workspaces (create) | sessions (WS upgrade) | panes (daemon)'"
 Enter
-Sleep 4s
+Sleep 6.93s

@@ -23,7 +23,7 @@ Sleep 1s
 # "Detach, reattach -- your panes come back
 #  exactly as you left them."
 # ============================================================
-Sleep 2s
+Sleep 5s
 
 # ============================================================
 # 0:05-0:15  Where state lives
@@ -31,9 +31,9 @@ Sleep 2s
 #  ~/.local/state/rysh/nats, one directory per session."
 # ============================================================
 Type "ls ~/.local/state/rysh/nats/"
-Sleep 2s
+Sleep 3.13s
 Enter
-Sleep 3s
+Sleep 4.69s
 
 # ============================================================
 # 0:15-0:26  JetStream KV buckets
@@ -41,9 +41,9 @@ Sleep 3s
 #  rysh-workspace stores your tab and pane layout..."
 # ============================================================
 Type "ls ~/.local/state/rysh/nats/my-project/"
-Sleep 2s
+Sleep 3.2s
 Enter
-Sleep 3s
+Sleep 4.8s
 
 # ============================================================
 # 0:26-0:36  Panes bucket
@@ -51,9 +51,9 @@ Sleep 3s
 #  mode, and last command, keyed by pane ID."
 # ============================================================
 Type "echo 'rysh-workspace -> layout   |   rysh-panes -> per-pane state'"
-Sleep 2s
+Sleep 1.99s
 Enter
-Sleep 3s
+Sleep 2.98s
 
 # ============================================================
 # 0:36-0:45  Restore on attach
@@ -62,4 +62,4 @@ Sleep 3s
 # ============================================================
 Type "rysh attach my-project"
 Enter
-Sleep 4s
+Sleep 7.28s

@@ -27,7 +27,7 @@ Set Shell "bash"
 # "The at-sign prompt is chat mode --
 #  a conversation lane separate from prompt mode."
 # ============================================================
-Sleep 1s
+Sleep 3.2s
 
 # ============================================================
 # 0:03-0:09  Launch rysh
@@ -36,7 +36,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 6.03s
 
 # ============================================================
 # 0:09-0:20  Cycle to chat mode
@@ -45,17 +45,17 @@ Sleep 3s
 #  for sending messages to AI chat."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.69s
 Escape
-Sleep 1s
+Sleep 2.31s
 Escape
-Sleep 0.3s
+Sleep 0.69s
 Escape
-Sleep 1s
+Sleep 2.3s
 Escape
-Sleep 0.3s
+Sleep 0.69s
 Escape
-Sleep 2s
+Sleep 4.61s
 
 # ============================================================
 # 0:20-0:32  Send a chat message
@@ -64,7 +64,7 @@ Sleep 2s
 # ============================================================
 Type "give me one tip for using rysh effectively"
 Enter
-Sleep 10s
+Sleep 9.58s
 
 # ============================================================
 # 0:32-0:40  Distinct from prompt mode
@@ -73,6 +73,6 @@ Sleep 10s
 #  Double-Escape returns you to shell."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.76s
 Escape
-Sleep 3s
+Sleep 7.63s

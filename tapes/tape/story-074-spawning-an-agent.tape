@@ -25,7 +25,7 @@ Set Shell "bash"
 # "One command, one prompt,
 #  and your agent is alive."
 # ============================================================
-Sleep 1s
+Sleep 3.08s
 
 # ============================================================
 # 0:03-0:08  Launch rysh and enter rysh mode
@@ -34,15 +34,15 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.47s
 Escape
-Sleep 0.3s
+Sleep 0.25s
 Escape
-Sleep 0.3s
+Sleep 0.25s
 Escape
-Sleep 0.3s
+Sleep 0.25s
 Escape
-Sleep 1.5s
+Sleep 1.24s
 
 # ============================================================
 # 0:08-0:18  Spawn the agent
@@ -51,7 +51,7 @@ Sleep 1.5s
 # ============================================================
 Type "##agent spawn code-reviewer 'You are a meticulous code reviewer focused on bugs and clarity.'"
 Enter
-Sleep 3s
+Sleep 3.22s
 
 # ============================================================
 # 0:18-0:28  Spawn a second agent
@@ -59,7 +59,7 @@ Sleep 3s
 # ============================================================
 Type "##agent spawn test-writer 'You write thorough unit tests for Go code.'"
 Enter
-Sleep 3s
+Sleep 4.94s
 
 # ============================================================
 # 0:28-0:40  List agents and their status
@@ -68,10 +68,10 @@ Sleep 3s
 # ============================================================
 Type "##agent list"
 Enter
-Sleep 4s
+Sleep 11.35s
 
 # ============================================================
 # 0:40-0:45  Hold final frame
 # "Spawn, name, prompt, list. That's the whole lifecycle of an agent."
 # ============================================================
-Sleep 3s
+Sleep 5.13s

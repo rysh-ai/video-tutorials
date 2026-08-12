@@ -26,7 +26,7 @@ Set Shell "bash"
 # "rysh in your pocket.
 #  Reach your panes from iOS or Android."
 # ============================================================
-Sleep 1s
+Sleep 5.1s
 
 # ============================================================
 # 0:05-0:14  Introduce rysh-mobile
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'rysh-mobile: native iOS / Android client -- login, then your workspaces'"
 Enter
-Sleep 3s
+Sleep 3.25s
 
 # ============================================================
 # 0:14-0:25  Navigation drill-down
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Workspace list  ->  pane list  ->  pane view'"
 Enter
-Sleep 3s
+Sleep 7.32s
 
 # ============================================================
 # 0:25-0:36  Rendering
@@ -53,7 +53,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Panes rendered with XTerm.js -> full color, full ANSI on mobile'"
 Enter
-Sleep 3s
+Sleep 5.9s
 
 # ============================================================
 # 0:36-0:45  Interactive on shared panes
@@ -62,7 +62,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Shared panes are interactive: vim, htop, anything -- from your phone'"
 Enter
-Sleep 3s
+Sleep 3.48s
 
 # ============================================================
 # 0:45-0:50  Wrap
@@ -70,4 +70,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'rysh-mobile: your agentic terminal, anywhere'"
 Enter
-Sleep 4s
+Sleep 1.2s

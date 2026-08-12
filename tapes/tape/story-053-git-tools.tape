@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Summarize your changes and commit -- the agent reads git for free,
 #  but the commit waits for you."
 # ============================================================
-Sleep 1s
+Sleep 3.44s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,16 +34,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.37s
 
 # ============================================================
 # 0:08-0:13  Switch to prompt mode
 # "Double-press Escape to reach prompt mode."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.73s
 Escape
-Sleep 2s
+Sleep 4.86s
 
 # ============================================================
 # 0:13-0:30  Ask the agent to summarize and commit
@@ -53,7 +53,7 @@ Sleep 2s
 # ============================================================
 Type "summarize my changes and commit them"
 Enter
-Sleep 10s
+Sleep 16.75s
 
 # ============================================================
 # 0:30-0:40  Approve the commit
@@ -62,10 +62,10 @@ Sleep 10s
 #  you reject with a reason if you want a different message."
 # ============================================================
 Type "y"
-Sleep 5s
+Sleep 11.41s
 
 # ============================================================
 # 0:40-0:45  Hold final frame
 # "Reads are instant, writes are gated -- git, the safe way."
 # ============================================================
-Sleep 3s
+Sleep 5.74s

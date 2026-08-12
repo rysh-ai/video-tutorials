@@ -26,7 +26,7 @@ Set Shell "bash"
 # "A teammate shares a tab -- you open the whole
 #  multi-pane layout on your phone."
 # ============================================================
-Sleep 1s
+Sleep 5.11s
 
 # ============================================================
 # 0:05-0:14  Sharing a tab from the desktop
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'Owner runs: ##share tab   -> publishes the tab and all its panes'"
 Enter
-Sleep 3s
+Sleep 3.8s
 
 # ============================================================
 # 0:14-0:25  Receiving as a layout
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Mobile subscribes -> receives the tab as its real multi-pane layout'"
 Enter
-Sleep 3s
+Sleep 5.62s
 
 # ============================================================
 # 0:25-0:36  Interacting
@@ -53,7 +53,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Read each shared pane; control-mode shares accept your input'"
 Enter
-Sleep 3s
+Sleep 6.14s
 
 # ============================================================
 # 0:36-0:45  Wrap
@@ -61,4 +61,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'Shared tabs on mobile: a live window into a teammate workspace'"
 Enter
-Sleep 4s
+Sleep 3.95s

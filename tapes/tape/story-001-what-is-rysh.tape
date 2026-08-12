@@ -23,7 +23,7 @@ Sleep 1s
 # "A terminal that thinks. Shell mode runs commands,
 #  prompt mode talks to AI -- and every pane is both."
 # ============================================================
-Sleep 2s
+Sleep 4.15s
 
 # ============================================================
 # 0:04-0:10  Launch rysh
@@ -32,7 +32,7 @@ Sleep 2s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.85s
 
 # ============================================================
 # 0:10-0:18  Run a shell command
@@ -41,7 +41,7 @@ Sleep 3s
 # ============================================================
 Type "ls -la"
 Enter
-Sleep 3s
+Sleep 7.77s
 
 # ============================================================
 # 0:18-0:26  Switch to prompt mode with double-Escape
@@ -50,9 +50,9 @@ Sleep 3s
 #  now you're talking to an AI agent."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 1.06s
 Escape
-Sleep 2s
+Sleep 7.09s
 
 # ============================================================
 # 0:26-0:40  Type an AI prompt and wait for response
@@ -61,7 +61,7 @@ Sleep 2s
 # ============================================================
 Type "explain this directory structure"
 Enter
-Sleep 10s
+Sleep 12.05s
 
 # ============================================================
 # 0:40-0:46  Return to shell mode
@@ -69,11 +69,11 @@ Sleep 10s
 #  to shell. One pane, two ways to work."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.69s
 Escape
-Sleep 0.3s
+Sleep 0.69s
 Escape
-Sleep 2s
+Sleep 4.62s
 
 # ============================================================
 # 0:46-0:53  Split a pane with Ctrl+P n
@@ -81,11 +81,11 @@ Sleep 2s
 #  two independent panes, each its own shell and agent."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 2.01s
 Type "n"
-Sleep 2s
+Sleep 4.02s
 Escape
-Sleep 0.5s
+Sleep 1.01s
 
 # ============================================================
 # 0:53-0:60  Create a new tab with Ctrl+T n
@@ -93,8 +93,8 @@ Sleep 0.5s
 #  That's Rysh: every pane is a shell plus an AI agent."
 # ============================================================
 Ctrl+t
-Sleep 1s
+Sleep 1.17s
 Type "n"
-Sleep 2s
+Sleep 2.35s
 Escape
-Sleep 3s
+Sleep 3.52s

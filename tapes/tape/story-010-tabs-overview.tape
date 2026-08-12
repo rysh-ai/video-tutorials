@@ -23,7 +23,7 @@ Sleep 1s
 # "Tabs hold panes, panes hold agents --
 #  and switching between tabs is one keystroke."
 # ============================================================
-Sleep 2s
+Sleep 5s
 
 # ============================================================
 # 0:05-0:13  Launch with the default layout
@@ -32,7 +32,7 @@ Sleep 2s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 7.63s
 
 # ============================================================
 # 0:13-0:22  Make a couple of tabs to switch between
@@ -40,17 +40,17 @@ Sleep 3s
 #  Ctrl+T, then n."
 # ============================================================
 Ctrl+t
-Sleep 1s
+Sleep 1.14s
 Type "n"
-Sleep 2s
+Sleep 2.29s
 Escape
-Sleep 0.5s
+Sleep 0.57s
 Ctrl+t
-Sleep 1s
+Sleep 1.14s
 Type "n"
-Sleep 2s
+Sleep 2.28s
 Escape
-Sleep 1s
+Sleep 1.14s
 
 # ============================================================
 # 0:22-0:32  Switch tabs with brackets
@@ -58,11 +58,11 @@ Sleep 1s
 #  left bracket for previous, right bracket for next."
 # ============================================================
 Type "["
-Sleep 2s
+Sleep 3.26s
 Type "["
-Sleep 2s
+Sleep 3.26s
 Type "]"
-Sleep 2s
+Sleep 3.26s
 
 # ============================================================
 # 0:32-0:45  Switch tabs with Alt+Arrows
@@ -70,8 +70,8 @@ Sleep 2s
 #  Each tab is its own workspace of panes and agents."
 # ============================================================
 Type "["
-Sleep 2s
+Sleep 3.2s
 Type "]"
-Sleep 2s
+Sleep 3.2s
 Type "]"
-Sleep 4s
+Sleep 6.39s

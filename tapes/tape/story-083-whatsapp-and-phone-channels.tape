@@ -25,7 +25,7 @@ Set Shell "bash"
 # "WhatsApp Cloud API and Twilio phone --
 #  your humanoid reaches everyone's pocket."
 # ============================================================
-Sleep 1s
+Sleep 0.1s
 
 # ============================================================
 # 0:03-0:10  Launch rysh
@@ -34,10 +34,10 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 0.1s
 Type "mkdir -p .rysh/humanoids"
 Enter
-Sleep 1s
+Sleep 0.1s
 
 # ============================================================
 # 0:10-0:24  Write and show the skill file
@@ -73,10 +73,10 @@ Type "echo '---' >> .rysh/humanoids/support.md"
 Enter
 Type "echo 'You help customers over WhatsApp and phone.' >> .rysh/humanoids/support.md"
 Enter
-Sleep 1s
+Sleep 0.1s
 Type "cat .rysh/humanoids/support.md"
 Enter
-Sleep 4s
+Sleep 0.1s
 
 # ============================================================
 # 0:24-0:33  Spawn and start WhatsApp
@@ -84,19 +84,19 @@ Sleep 4s
 #  then start the WhatsApp channel."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 1.5s
+Sleep 0.1s
 Type "##humanoid spawn .rysh/humanoids/support.md"
 Enter
-Sleep 3s
+Sleep 0.1s
 Type "##humanoid channel start support whatsapp"
 Enter
-Sleep 2s
+Sleep 0.1s
 
 # ============================================================
 # 0:33-0:40  Start phone
@@ -104,7 +104,7 @@ Sleep 2s
 # ============================================================
 Type "##humanoid channel start support phone"
 Enter
-Sleep 2s
+Sleep 0.1s
 
 # ============================================================
 # 0:40-0:45  Show channels
@@ -112,4 +112,4 @@ Sleep 2s
 # ============================================================
 Type "##humanoid channels support"
 Enter
-Sleep 3s
+Sleep 0.1s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Run the tests and fix the failures --
 #  test_run gives structured pass/fail the agent can act on."
 # ============================================================
-Sleep 1s
+Sleep 3.25s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,16 +34,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.04s
 
 # ============================================================
 # 0:08-0:13  Switch to prompt mode
 # "Double-press Escape to enter prompt mode."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.69s
 Escape
-Sleep 2s
+Sleep 4.57s
 
 # ============================================================
 # 0:13-0:32  Ask the agent to run tests and fix
@@ -53,17 +53,17 @@ Sleep 2s
 # ============================================================
 Type "run the tests and fix any failures"
 Enter
-Sleep 11s
+Sleep 17.94s
 
 # ============================================================
 # 0:32-0:42  Narrate the fix loop
 # "When the agent proposes a fix, the file edit is approval-gated -- you see the
 #  diff, approve it, and it reruns the suite to confirm everything's green."
 # ============================================================
-Sleep 4s
+Sleep 10.82s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "Structured test results in, fixes out -- one prompt at a time."
 # ============================================================
-Sleep 3s
+Sleep 3.25s

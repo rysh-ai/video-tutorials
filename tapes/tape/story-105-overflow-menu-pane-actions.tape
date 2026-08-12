@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Long-press a pane on mobile and the full
 #  action menu opens up."
 # ============================================================
-Sleep 1s
+Sleep 5.14s
 
 # ============================================================
 # 0:05-0:15  Overflow menu actions
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'Overflow / long-press menu: Copy output | Rename | Share'"
 Enter
-Sleep 3s
+Sleep 5.47s
 
 # ============================================================
 # 0:15-0:25  Terminal focus control
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Terminal focus control: type into the pane vs. scroll & read'"
 Enter
-Sleep 3s
+Sleep 5.17s
 
 # ============================================================
 # 0:25-0:34  Landscape keyboard avoidance
@@ -53,7 +53,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Landscape: keyboard avoidance keeps the active pane in view'"
 Enter
-Sleep 3s
+Sleep 4.22s
 
 # ============================================================
 # 0:34-0:40  Wrap
@@ -61,4 +61,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'Pane actions on mobile: one long-press away'"
 Enter
-Sleep 4s
+Sleep 2.34s

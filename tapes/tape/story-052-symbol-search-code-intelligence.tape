@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Ask where something is defined --
 #  symbol_search and tree map your code instantly."
 # ============================================================
-Sleep 1s
+Sleep 3.37s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -33,16 +33,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.25s
 
 # ============================================================
 # 0:08-0:13  Switch to prompt mode
 # "Double-press Escape to talk to the agent."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.71s
 Escape
-Sleep 2s
+Sleep 4.76s
 
 # ============================================================
 # 0:13-0:30  Ask where a function is defined
@@ -52,17 +52,17 @@ Sleep 2s
 # ============================================================
 Type "where is the main function defined in this project"
 Enter
-Sleep 10s
+Sleep 15.29s
 
 # ============================================================
 # 0:30-0:37  Narrate the value
 # "Instead of grepping by hand, you just ask. Code intelligence tools turn
 #  a vague question into a precise file and line, with the surrounding structure."
 # ============================================================
-Sleep 4s
+Sleep 7.87s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "Find any declaration, understand any tree -- conversationally."
 # ============================================================
-Sleep 3s
+Sleep 3.37s

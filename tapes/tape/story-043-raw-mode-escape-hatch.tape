@@ -26,7 +26,7 @@ Set Shell "bash"
 # "In raw mode every key goes to the program.
 #  Ctrl+O is your escape hatch back to Rysh."
 # ============================================================
-Sleep 1s
+Sleep 3.2s
 
 # ============================================================
 # 0:03-0:07  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.9s
 
 # ============================================================
 # 0:07-0:15  Open vim, raw mode engages
@@ -43,13 +43,13 @@ Sleep 3s
 # ============================================================
 Type "vim notes.txt"
 Enter
-Sleep 3s
+Sleep 2.09s
 Type "i"
-Sleep 0.5s
+Sleep 0.35s
 Type "raw mode forwards every keystroke"
-Sleep 2s
+Sleep 1.39s
 Escape
-Sleep 1.5s
+Sleep 1.04s
 
 # ============================================================
 # 0:15-0:27  The escape hatch
@@ -58,7 +58,7 @@ Sleep 1.5s
 #  to prefix mode, even while a program owns the screen."
 # ============================================================
 Ctrl+o
-Sleep 2s
+Sleep 12.74s
 
 # ============================================================
 # 0:27-0:34  From prefix mode
@@ -66,7 +66,7 @@ Sleep 2s
 #  to cancel and drop right back into the program."
 # ============================================================
 Type "q"
-Sleep 2s
+Sleep 7.4s
 
 # ============================================================
 # 0:34-0:42  Quit vim normally
@@ -74,10 +74,10 @@ Sleep 2s
 # ============================================================
 Type ":q!"
 Enter
-Sleep 3s
+Sleep 8.24s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "Raw mode keeps programs happy; Ctrl+O keeps you in control."
 # ============================================================
-Sleep 3s
+Sleep 3.2s

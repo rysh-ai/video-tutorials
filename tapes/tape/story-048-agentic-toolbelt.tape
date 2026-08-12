@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Every prompt-mode pane carries thirty-five-plus tools --
 #  files, git, code, tests, build, web, and cross-pane coordination."
 # ============================================================
-Sleep 1s
+Sleep 3.32s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -33,7 +33,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.16s
 
 # ============================================================
 # 0:08-0:16  Switch to prompt mode
@@ -41,9 +41,9 @@ Sleep 3s
 #  less-than sign. Now you're talking to the agent."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 1.13s
 Escape
-Sleep 2s
+Sleep 7.57s
 
 # ============================================================
 # 0:16-0:30  Ask the agent to list its tools
@@ -52,7 +52,7 @@ Sleep 2s
 # ============================================================
 Type "list all the tools you have available"
 Enter
-Sleep 10s
+Sleep 12.64s
 
 # ============================================================
 # 0:30-0:45  Narrate the categories
@@ -60,10 +60,10 @@ Sleep 10s
 #  testing and build, background execution, and web. Read-only tools run freely;
 #  anything that writes, commits, or runs dangerous commands asks for approval first."
 # ============================================================
-Sleep 4s
+Sleep 16.6s
 
 # ============================================================
 # 0:45-0:50  Hold final frame
 # "One agent, one toolbelt, in every pane you open."
 # ============================================================
-Sleep 3s
+Sleep 5.53s
