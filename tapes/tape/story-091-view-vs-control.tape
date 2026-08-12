@@ -26,7 +26,7 @@ Set Shell "bash"
 # "View lets them watch. Control lets them type.
 #  You decide at share time."
 # ============================================================
-Sleep 1s
+Sleep 3.26s
 
 # ============================================================
 # 0:03-0:09  Launch rysh, enter rysh mode
@@ -35,15 +35,15 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.25s
 Escape
-Sleep 0.3s
+Sleep 0.33s
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 1.5s
+Sleep 1.62s
 
 # ============================================================
 # 0:09-0:18  Share in view mode
@@ -52,7 +52,7 @@ Sleep 1.5s
 # ============================================================
 Type "##share pane view"
 Enter
-Sleep 3s
+Sleep 8.42s
 
 # ============================================================
 # 0:18-0:26  Unshare, then re-share in control
@@ -61,10 +61,10 @@ Sleep 3s
 # ============================================================
 Type "##unshare pane"
 Enter
-Sleep 2s
+Sleep 2.39s
 Type "##share pane control"
 Enter
-Sleep 3s
+Sleep 3.59s
 
 # ============================================================
 # 0:26-0:36  Show status
@@ -73,7 +73,7 @@ Sleep 3s
 # ============================================================
 Type "##share status"
 Enter
-Sleep 4s
+Sleep 9.73s
 
 # ============================================================
 # 0:36-0:42  Note on safety
@@ -82,11 +82,11 @@ Sleep 4s
 # ============================================================
 Type "##share list"
 Enter
-Sleep 3s
+Sleep 5.54s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "View to demo, control to pair. The choice is yours,
 #  pane by pane."
 # ============================================================
-Sleep 3s
+Sleep 3.26s

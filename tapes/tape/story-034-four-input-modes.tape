@@ -26,7 +26,7 @@ Set Shell "bash"
 # "One pane, four modes.
 #  Double-Escape cycles through them all."
 # ============================================================
-Sleep 1s
+Sleep 3.14s
 
 # ============================================================
 # 0:03-0:08  Launch rysh in shell mode
@@ -35,10 +35,10 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.2s
 Type "echo shell mode"
 Enter
-Sleep 2s
+Sleep 1.47s
 
 # ============================================================
 # 0:08-0:18  Double-Escape to prompt mode
@@ -47,9 +47,9 @@ Sleep 2s
 #  with its own output stream."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 1.35s
 Escape
-Sleep 2s
+Sleep 8.98s
 
 # ============================================================
 # 0:18-0:28  Double-Escape to rysh mode
@@ -57,12 +57,12 @@ Sleep 2s
 #  This is rysh mode for built-in system commands."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.61s
 Escape
-Sleep 1.5s
+Sleep 3.07s
 Type "##help"
 Enter
-Sleep 3s
+Sleep 6.13s
 
 # ============================================================
 # 0:28-0:38  Double-Escape to chat mode
@@ -70,9 +70,9 @@ Sleep 3s
 #  chat mode, a separate AI chat with its own buffer."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 1.35s
 Escape
-Sleep 2s
+Sleep 8.98s
 
 # ============================================================
 # 0:38-0:46  Double-Escape back to shell
@@ -80,12 +80,12 @@ Sleep 2s
 #  back to shell. Greater-than, less-than, hash-hash, at-sign."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 1.07s
 Escape
-Sleep 2s
+Sleep 7.17s
 
 # ============================================================
 # 0:46-0:50  Hold final frame
 # "Four markers, one key. Each mode keeps its own stream."
 # ============================================================
-Sleep 3s
+Sleep 4.19s

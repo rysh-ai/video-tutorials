@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Discover what your teammates are sharing,
 #  then subscribe to watch it live."
 # ============================================================
-Sleep 1s
+Sleep 3.16s
 
 # ============================================================
 # 0:03-0:09  Launch rysh, enter rysh mode
@@ -35,15 +35,15 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.13s
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 0.3s
+Sleep 0.31s
 Escape
-Sleep 0.3s
+Sleep 0.31s
 Escape
-Sleep 1.5s
+Sleep 1.57s
 
 # ============================================================
 # 0:09-0:18  List remote shares
@@ -52,7 +52,7 @@ Sleep 1.5s
 # ============================================================
 Type "##upstream list-remote"
 Enter
-Sleep 4s
+Sleep 7.74s
 
 # ============================================================
 # 0:18-0:28  Subscribe to a share
@@ -61,7 +61,7 @@ Sleep 4s
 # ============================================================
 Type "##upstream subscribe abc123 view"
 Enter
-Sleep 4s
+Sleep 8.05s
 
 # ============================================================
 # 0:28-0:36  Check my-shares
@@ -70,7 +70,7 @@ Sleep 4s
 # ============================================================
 Type "##upstream my-shares"
 Enter
-Sleep 4s
+Sleep 6.84s
 
 # ============================================================
 # 0:36-0:42  Unsubscribe
@@ -79,10 +79,10 @@ Sleep 4s
 # ============================================================
 Type "##upstream unsubscribe"
 Enter
-Sleep 3s
+Sleep 4.59s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "List, subscribe, unsubscribe -- the full remote-viewing loop."
 # ============================================================
-Sleep 3s
+Sleep 3.16s

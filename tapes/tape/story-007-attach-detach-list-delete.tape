@@ -23,7 +23,7 @@ Sleep 1s
 # "Four commands manage a session's whole lifecycle
 #  from outside the TUI."
 # ============================================================
-Sleep 2s
+Sleep 5s
 
 # ============================================================
 # 0:05-0:14  List
@@ -32,7 +32,7 @@ Sleep 2s
 # ============================================================
 Type "rysh list-sessions"
 Enter
-Sleep 4s
+Sleep 7.58s
 
 # ============================================================
 # 0:14-0:22  Attach
@@ -40,14 +40,14 @@ Sleep 4s
 #  where you left it."
 # ============================================================
 Type "rysh attach my-project"
-Sleep 2s
+Sleep 1.75s
 Enter
-Sleep 2s
+Sleep 1.75s
 # Detach again from inside
 Ctrl+o
-Sleep 1s
+Sleep 0.87s
 Type "d"
-Sleep 2s
+Sleep 1.75s
 
 # ============================================================
 # 0:22-0:31  Detach from outside
@@ -56,7 +56,7 @@ Sleep 2s
 # ============================================================
 Type "rysh detach my-project"
 Enter
-Sleep 3s
+Sleep 7.28s
 
 # ============================================================
 # 0:31-0:45  Delete
@@ -65,7 +65,7 @@ Sleep 3s
 # ============================================================
 Type "rysh delete-session my-project"
 Enter
-Sleep 3s
+Sleep 4.39s
 Type "rysh list-sessions"
 Enter
-Sleep 4s
+Sleep 5.86s

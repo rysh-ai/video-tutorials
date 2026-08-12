@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Placeholders are lanes reserved for pipeline output --
 #  name them, add them, watch results land."
 # ============================================================
-Sleep 1s
+Sleep 3.36s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.23s
 
 # ============================================================
 # 0:08-0:15  Enter rysh mode and name the pipeline
@@ -42,16 +42,16 @@ Sleep 3s
 #  current pipeline so its output is easy to identify."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 0.3s
+Sleep 0.31s
 Escape
-Sleep 1.5s
+Sleep 1.57s
 Type "##pipe name release-flow"
 Enter
-Sleep 3s
+Sleep 3.15s
 
 # ============================================================
 # 0:15-0:24  Add a placeholder
@@ -60,7 +60,7 @@ Sleep 3s
 # ============================================================
 Type "##pipe placeholder add"
 Enter
-Sleep 3s
+Sleep 8.36s
 
 # ============================================================
 # 0:24-0:32  Add another and list
@@ -69,14 +69,14 @@ Sleep 3s
 # ============================================================
 Type "##pipe placeholder add"
 Enter
-Sleep 2s
+Sleep 2.18s
 Type "##pipe placeholder list"
 Enter
-Sleep 3s
+Sleep 3.26s
 
 # ============================================================
 # 0:32-0:40  Hold final frame
 # "Placeholders turn a pipeline into a structured dashboard --
 #  one lane per stage, output flowing into place."
 # ============================================================
-Sleep 3s
+Sleep 8.96s

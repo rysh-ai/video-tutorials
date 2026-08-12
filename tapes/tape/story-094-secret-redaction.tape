@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Your secrets never leave your machine --
 #  redaction happens before output is shared."
 # ============================================================
-Sleep 1s
+Sleep 3.28s
 
 # ============================================================
 # 0:03-0:09  Launch rysh and print something sensitive
@@ -35,10 +35,10 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 1.82s
 Type "echo API_KEY=sk-ant-secret-123456"
 Enter
-Sleep 3s
+Sleep 1.81s
 
 # ============================================================
 # 0:09-0:18  Show private vs public output in rysh mode
@@ -46,16 +46,16 @@ Sleep 3s
 #  raw buffer -- everything, secrets included, on your screen."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.44s
 Escape
-Sleep 0.3s
+Sleep 0.44s
 Escape
-Sleep 0.3s
+Sleep 0.44s
 Escape
-Sleep 1.5s
+Sleep 2.21s
 Type "##private pane print"
 Enter
-Sleep 3s
+Sleep 4.42s
 
 # ============================================================
 # 0:18-0:28  Show the redacted public view
@@ -64,7 +64,7 @@ Sleep 3s
 # ============================================================
 Type "##public pane print"
 Enter
-Sleep 4s
+Sleep 9.42s
 
 # ============================================================
 # 0:28-0:38  Explain the guarantee
@@ -73,11 +73,11 @@ Sleep 4s
 # ============================================================
 Type "##share pane view"
 Enter
-Sleep 4s
+Sleep 9.57s
 
 # ============================================================
 # 0:38-0:45  Hold final frame
 # "Redaction plus a command blocklist means collaboration without
 #  leaking credentials. Share with confidence."
 # ============================================================
-Sleep 3s
+Sleep 7.64s

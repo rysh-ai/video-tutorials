@@ -25,7 +25,7 @@ Set Shell "bash"
 # 0:00-0:05  Title / Hook
 # "The same rysh multiplexer, as a native desktop app."
 # ============================================================
-Sleep 1s
+Sleep 5.12s
 
 # ============================================================
 # 0:05-0:13  Introduce rysh-cli-app
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'rysh-cli-app: Electron + React desktop client'"
 Enter
-Sleep 3s
+Sleep 4.21s
 
 # ============================================================
 # 0:13-0:23  Same engine, native feel
@@ -43,7 +43,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Same modes, mouse, tabs, panes -- in a native window'"
 Enter
-Sleep 3s
+Sleep 5.73s
 
 # ============================================================
 # 0:23-0:34  Side panels
@@ -52,7 +52,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Side panels: Agents | Humanoids | Shares'"
 Enter
-Sleep 3s
+Sleep 7.65s
 
 # ============================================================
 # 0:34-0:45  Wrap
@@ -61,4 +61,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'Desktop app = full rysh power, GUI-first'"
 Enter
-Sleep 4s
+Sleep 7.65s

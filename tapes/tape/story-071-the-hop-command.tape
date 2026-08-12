@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Hop a pane's output into another and let a fresh agent
 #  pick up right where you left off."
 # ============================================================
-Sleep 1s
+Sleep 3.22s
 
 # ============================================================
 # 0:03-0:08  Launch rysh and split a pane
@@ -34,27 +34,27 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.2s
 Ctrl+p
-Sleep 0.5s
+Sleep 0.37s
 Type "n"
-Sleep 2s
+Sleep 1.46s
 Escape
-Sleep 1s
+Sleep 0.73s
 
 # ============================================================
 # 0:08-0:18  Name the target pane
 # "Name the right-hand pane so we can hop to it by name."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.48s
 Escape
-Sleep 0.3s
+Sleep 0.48s
 Escape
-Sleep 2s
+Sleep 3.19s
 Type "##pane name reviewer"
 Enter
-Sleep 3s
+Sleep 4.78s
 
 # ============================================================
 # 0:18-0:30  Produce some output, then hop it
@@ -62,21 +62,21 @@ Sleep 3s
 #  hop reviewer to transfer this pane's output to that one."
 # ============================================================
 Tab
-Sleep 1s
+Sleep 0.85s
 Escape
-Sleep 2s
+Sleep 1.69s
 Type "git log --oneline -5"
 Enter
-Sleep 3s
+Sleep 2.54s
 Escape
-Sleep 0.3s
+Sleep 0.25s
 Escape
-Sleep 0.3s
+Sleep 0.25s
 Escape
-Sleep 2s
+Sleep 1.69s
 Type "##hop reviewer"
 Enter
-Sleep 3s
+Sleep 2.53s
 
 # ============================================================
 # 0:30-0:40  Check status, then resume in the target pane
@@ -85,12 +85,12 @@ Sleep 3s
 # ============================================================
 Type "##hop status"
 Enter
-Sleep 3s
+Sleep 3.26s
 Tab
-Sleep 1s
+Sleep 1.09s
 Type "##hop resume"
 Enter
-Sleep 4s
+Sleep 4.35s
 
 # ============================================================
 # 0:40-0:47  Clear the hop
@@ -99,10 +99,10 @@ Sleep 4s
 # ============================================================
 Type "##hop clear"
 Enter
-Sleep 3s
+Sleep 6.61s
 
 # ============================================================
 # 0:47-0:50  Hold final frame
 # "Hand work from pane to pane in one command."
 # ============================================================
-Sleep 3s
+Sleep 3.22s

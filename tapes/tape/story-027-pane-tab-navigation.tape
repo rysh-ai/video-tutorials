@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Move through your workspace without lifting
 #  your hands from the keyboard."
 # ============================================================
-Sleep 1s
+Sleep 3.16s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.89s
 
 # ============================================================
 # 0:08-0:15  Build panes and a tab
@@ -43,17 +43,17 @@ Sleep 3s
 #  Ctrl+T then n opens a fresh tab."
 # ============================================================
 Ctrl+p
-Sleep 0.5s
+Sleep 0.63s
 Type "n"
-Sleep 1.5s
+Sleep 1.89s
 Escape
-Sleep 0.5s
+Sleep 0.63s
 Ctrl+t
-Sleep 0.5s
+Sleep 0.63s
 Type "n"
-Sleep 1.5s
+Sleep 1.88s
 Escape
-Sleep 1s
+Sleep 1.26s
 
 # ============================================================
 # 0:15-0:24  Cycle panes with Tab and Alt arrows
@@ -61,11 +61,11 @@ Sleep 1s
 #  Alt+Up and Alt+Down step between panes too."
 # ============================================================
 Tab
-Sleep 1.5s
+Sleep 2.78s
 Tab
-Sleep 1.5s
+Sleep 2.77s
 Tab
-Sleep 2s
+Sleep 3.7s
 
 # ============================================================
 # 0:24-0:34  Switch tabs with brackets and Alt arrows
@@ -73,13 +73,13 @@ Sleep 2s
 #  right bracket forward. Alt+Left and Alt+Right do the same."
 # ============================================================
 Type "["
-Sleep 1.5s
+Sleep 2.36s
 Type "]"
-Sleep 1.5s
+Sleep 2.36s
 Type "["
-Sleep 1.5s
+Sleep 2.36s
 Type "]"
-Sleep 2s
+Sleep 3.15s
 
 # ============================================================
 # 0:34-0:42  macOS-friendly Alt+B / Alt+F
@@ -87,13 +87,13 @@ Sleep 2s
 #  so Alt+B and Alt+F also walk between your tabs."
 # ============================================================
 Alt+b
-Sleep 1.5s
+Sleep 3.55s
 Alt+f
-Sleep 2s
+Sleep 4.73s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "One muscle memory for panes, one for tabs.
 #  That is your whole workspace."
 # ============================================================
-Sleep 3s
+Sleep 3.16s

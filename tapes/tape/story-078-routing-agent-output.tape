@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Send a headless agent's replies
 #  straight into a pane you can watch."
 # ============================================================
-Sleep 1s
+Sleep 3.28s
 
 # ============================================================
 # 0:03-0:08  Launch rysh and name the pane
@@ -34,18 +34,18 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 1.21s
 Escape
-Sleep 0.3s
+Sleep 0.12s
 Escape
-Sleep 0.3s
+Sleep 0.12s
 Escape
-Sleep 0.3s
+Sleep 0.12s
 Escape
-Sleep 1.5s
+Sleep 0.61s
 Type "##pane name review-feed"
 Enter
-Sleep 2s
+Sleep 0.81s
 
 # ============================================================
 # 0:08-0:16  Spawn an agent
@@ -54,7 +54,7 @@ Sleep 2s
 # ============================================================
 Type "##agent spawn code-reviewer 'You review code and report findings clearly.'"
 Enter
-Sleep 3s
+Sleep 3.12s
 
 # ============================================================
 # 0:16-0:26  Register output to the pane
@@ -63,7 +63,7 @@ Sleep 3s
 # ============================================================
 Type "##agent register-output code-reviewer review-feed"
 Enter
-Sleep 3s
+Sleep 7.18s
 
 # ============================================================
 # 0:26-0:34  Unregister
@@ -72,10 +72,10 @@ Sleep 3s
 # ============================================================
 Type "##agent unregister-output code-reviewer review-feed"
 Enter
-Sleep 3s
+Sleep 4.84s
 
 # ============================================================
 # 0:34-0:40  Hold final frame
 # "register-output turns any pane into a dashboard for your background agents."
 # ============================================================
-Sleep 3s
+Sleep 6.56s

@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Forget a command? Rysh tells you.
 #  ##help lists everything, ##history recalls what you typed."
 # ============================================================
-Sleep 1s
+Sleep 3.37s
 
 # ============================================================
 # 0:03-0:07  Launch rysh
@@ -33,7 +33,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.11s
 
 # ============================================================
 # 0:07-0:14  Build some history
@@ -41,10 +41,10 @@ Sleep 3s
 # ============================================================
 Type "ls -la"
 Enter
-Sleep 2s
+Sleep 3.52s
 Type "pwd"
 Enter
-Sleep 2s
+Sleep 3.51s
 
 # ============================================================
 # 0:14-0:20  Switch to rysh mode
@@ -52,13 +52,13 @@ Sleep 2s
 #  the prompt becomes a double-hash, ready for system commands."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.81s
 Escape
-Sleep 0.3s
+Sleep 0.8s
 Escape
-Sleep 0.3s
+Sleep 0.8s
 Escape
-Sleep 1.5s
+Sleep 4.02s
 
 # ============================================================
 # 0:20-0:28  Run ##help
@@ -67,7 +67,7 @@ Sleep 1.5s
 # ============================================================
 Type "##help"
 Enter
-Sleep 4s
+Sleep 8.45s
 
 # ============================================================
 # 0:28-0:37  Run ##history
@@ -76,10 +76,10 @@ Sleep 4s
 # ============================================================
 Type "##history"
 Enter
-Sleep 4s
+Sleep 9.35s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "Help and history: your two-command safety net inside any pane."
 # ============================================================
-Sleep 3s
+Sleep 3.37s

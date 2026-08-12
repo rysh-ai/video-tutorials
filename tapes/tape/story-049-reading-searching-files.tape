@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Point the agent at your code -- ls, file_read, glob, and grep
 #  find anything, no approval required."
 # ============================================================
-Sleep 1s
+Sleep 3.32s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -33,16 +33,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.16s
 
 # ============================================================
 # 0:08-0:14  Switch to prompt mode
 # "Double-press Escape to switch to prompt mode and talk to the agent."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.85s
 Escape
-Sleep 2s
+Sleep 5.65s
 
 # ============================================================
 # 0:14-0:30  Ask it to find TODO comments
@@ -52,7 +52,7 @@ Sleep 2s
 # ============================================================
 Type "find all the TODO comments in this project and list the files"
 Enter
-Sleep 10s
+Sleep 13.07s
 
 # ============================================================
 # 0:30-0:42  Narrate the toolset
@@ -60,10 +60,10 @@ Sleep 10s
 #  grep for content search, file_read for contents, and tree for structure --
 #  the agent picks whichever fits, and shows you exactly what it found."
 # ============================================================
-Sleep 4s
+Sleep 13.29s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "Read and search the whole codebase, just by asking."
 # ============================================================
-Sleep 3s
+Sleep 3.32s

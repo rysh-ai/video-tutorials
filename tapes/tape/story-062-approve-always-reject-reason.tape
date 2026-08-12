@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Approve once and forever, or reject with a reason
 #  the agent can learn from."
 # ============================================================
-Sleep 1s
+Sleep 3.17s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.9s
 
 # ============================================================
 # 0:08-0:16  Ask for a file write to trigger approval
@@ -42,12 +42,12 @@ Sleep 3s
 #  so an approval prompt appears in the footer."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.12s
 Escape
-Sleep 2s
+Sleep 0.77s
 Type "create a file notes.txt with a short todo list"
 Enter
-Sleep 10s
+Sleep 3.88s
 
 # ============================================================
 # 0:16-0:26  Approve always with capital Y
@@ -55,7 +55,7 @@ Sleep 10s
 #  decision so the same kind of action won't ask again."
 # ============================================================
 Type "Y"
-Sleep 6s
+Sleep 10.48s
 
 # ============================================================
 # 0:26-0:38  Reject with reason on a second prompt
@@ -64,16 +64,16 @@ Sleep 6s
 # ============================================================
 Type "now delete notes.txt"
 Enter
-Sleep 9s
+Sleep 4.36s
 Type "N"
-Sleep 2s
+Sleep 0.97s
 Type "keep the file, just empty it instead"
 Enter
-Sleep 6s
+Sleep 2.91s
 
 # ============================================================
 # 0:38-0:45  Recap the keys
 # "y approves, capital Y always approves, n rejects,
 #  capital N rejects with a reason, and Escape rejects silently."
 # ============================================================
-Sleep 4s
+Sleep 7.39s

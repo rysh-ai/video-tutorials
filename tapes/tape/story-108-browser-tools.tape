@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Navigate, click, type, screenshot --
 #  the agent's browser toolbelt."
 # ============================================================
-Sleep 1s
+Sleep 5.11s
 
 # ============================================================
 # 0:05-0:15  browser_action
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'browser_action: navigate | type | click'"
 Enter
-Sleep 3s
+Sleep 6.7s
 
 # ============================================================
 # 0:15-0:26  Reading the page
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'get_text -> page content   |   screenshot -> base64 image'"
 Enter
-Sleep 3s
+Sleep 6.37s
 
 # ============================================================
 # 0:26-0:36  execute_js and tabs
@@ -53,7 +53,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'execute_js (approval) | tabs: get_tabs / switch_tab / new_tab / close_tab'"
 Enter
-Sleep 3s
+Sleep 4.15s
 
 # ============================================================
 # 0:36-0:45  Selectors
@@ -62,4 +62,4 @@ Sleep 3s
 # ============================================================
 Type "echo '6 selector strategies -> robust element targeting'"
 Enter
-Sleep 4s
+Sleep 4.92s

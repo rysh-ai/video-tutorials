@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Many workspaces, one window.
 #  The desktop app stacks them two rows high."
 # ============================================================
-Sleep 1s
+Sleep 5.12s
 
 # ============================================================
 # 0:05-0:14  Two-row header
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'Header row 1: workspaces   |   Header row 2: tabs of the active workspace'"
 Enter
-Sleep 3s
+Sleep 3.15s
 
 # ============================================================
 # 0:14-0:23  Switching
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Switch workspace -> swap the whole project context'"
 Enter
-Sleep 3s
+Sleep 4.88s
 
 # ============================================================
 # 0:23-0:32  Voice and pipeline panel
@@ -53,7 +53,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Plus: voice prompting + a pipeline output panel'"
 Enter
-Sleep 3s
+Sleep 5.1s
 
 # ============================================================
 # 0:32-0:40  Wrap
@@ -61,4 +61,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'Multi-workspace desktop: juggle projects without leaving the window'"
 Enter
-Sleep 4s
+Sleep 2.57s

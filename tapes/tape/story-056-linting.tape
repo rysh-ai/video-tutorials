@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Lint and fix -- the agent runs go vet, staticcheck, and golangci-lint,
 #  then cleans up."
 # ============================================================
-Sleep 1s
+Sleep 3.38s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,16 +34,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.26s
 
 # ============================================================
 # 0:08-0:13  Switch to prompt mode
 # "Double-press Escape for prompt mode."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.72s
 Escape
-Sleep 2s
+Sleep 4.77s
 
 # ============================================================
 # 0:13-0:30  Ask the agent to lint and fix
@@ -53,17 +53,17 @@ Sleep 2s
 # ============================================================
 Type "lint this project and fix the warnings"
 Enter
-Sleep 10s
+Sleep 16.25s
 
 # ============================================================
 # 0:30-0:37  Narrate the fix step
 # "As with build and test, the actual code fixes are approval-gated --
 #  you review the diff before any change is written, then it re-lints to verify."
 # ============================================================
-Sleep 4s
+Sleep 7.89s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "Clean code, on request -- linters run, fixes reviewed."
 # ============================================================
-Sleep 3s
+Sleep 3.38s

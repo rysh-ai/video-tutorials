@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Run the same command across every pane
 #  in a scope at once."
 # ============================================================
-Sleep 1s
+Sleep 3.11s
 
 # ============================================================
 # 0:03-0:09  Launch rysh and build a stack
@@ -35,18 +35,18 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 1.85s
 Escape
-Sleep 0.3s
+Sleep 0.19s
 Escape
-Sleep 0.3s
+Sleep 0.19s
 Escape
-Sleep 0.3s
+Sleep 0.18s
 Escape
-Sleep 1s
+Sleep 0.62s
 Type "##new grid 3"
 Enter
-Sleep 2.5s
+Sleep 1.54s
 
 # ============================================================
 # 0:09-0:20  ##cmd stack pwd
@@ -56,7 +56,7 @@ Sleep 2.5s
 # ============================================================
 Type "##cmd stack pwd"
 Enter
-Sleep 3s
+Sleep 10.2s
 
 # ============================================================
 # 0:20-0:30  Other scopes
@@ -66,7 +66,7 @@ Sleep 3s
 # ============================================================
 Type "##cmd lane echo building"
 Enter
-Sleep 3s
+Sleep 8.49s
 
 # ============================================================
 # 0:30-0:40  Selectors
@@ -76,10 +76,10 @@ Sleep 3s
 # ============================================================
 Type "##cmd tab git status"
 Enter
-Sleep 3s
+Sleep 8.79s
 
 # ============================================================
 # 0:40-0:45  Hold final frame
 # "One command, fanned out across your whole layout."
 # ============================================================
-Sleep 3s
+Sleep 5.18s

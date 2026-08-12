@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Headless AI workers. No terminal, no pane --
 #  just a brain with tools."
 # ============================================================
-Sleep 1s
+Sleep 3.24s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.02s
 
 # ============================================================
 # 0:08-0:14  Switch to rysh mode
@@ -42,13 +42,13 @@ Sleep 3s
 #  where the double-hash system commands live."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.77s
 Escape
-Sleep 0.3s
+Sleep 0.77s
 Escape
-Sleep 0.3s
+Sleep 0.77s
 Escape
-Sleep 1.5s
+Sleep 3.86s
 
 # ============================================================
 # 0:14-0:24  Spawn an agent
@@ -58,7 +58,7 @@ Sleep 1.5s
 # ============================================================
 Type "##agent spawn code-reviewer 'You review code for quality, correctness, and best practices.'"
 Enter
-Sleep 3s
+Sleep 3.88s
 
 # ============================================================
 # 0:24-0:32  List agents
@@ -67,7 +67,7 @@ Sleep 3s
 # ============================================================
 Type "##agent list"
 Enter
-Sleep 3s
+Sleep 7.65s
 
 # ============================================================
 # 0:32-0:44  Prompt the agent
@@ -76,11 +76,11 @@ Sleep 3s
 # ============================================================
 Type "@code-reviewer summarize what a good code review checks for"
 Enter
-Sleep 9s
+Sleep 8.44s
 
 # ============================================================
 # 0:44-0:50  Hold final frame
 # "Autonomous agents: tireless workers you spawn, prompt, and command --
 #  without ever opening a pane."
 # ============================================================
-Sleep 3s
+Sleep 6.47s

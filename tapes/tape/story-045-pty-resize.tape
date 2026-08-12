@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Resize the window and your programs follow --
 #  SIGWINCH propagates and the emulator reflows."
 # ============================================================
-Sleep 1s
+Sleep 3.33s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.18s
 
 # ============================================================
 # 0:08-0:15  Show current size
@@ -43,7 +43,7 @@ Sleep 3s
 # ============================================================
 Type "echo cols=$(tput cols) rows=$(tput lines)"
 Enter
-Sleep 3s
+Sleep 4.63s
 
 # ============================================================
 # 0:15-0:23  Split a pane
@@ -51,11 +51,11 @@ Sleep 3s
 #  and Rysh sends a SIGWINCH so the shell learns its new size."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 2.17s
 Type "n"
-Sleep 2s
+Sleep 4.33s
 Escape
-Sleep 1s
+Sleep 2.16s
 
 # ============================================================
 # 0:23-0:30  Re-check size in the narrower pane
@@ -64,7 +64,7 @@ Sleep 1s
 # ============================================================
 Type "echo cols=$(tput cols) rows=$(tput lines)"
 Enter
-Sleep 3s
+Sleep 4.63s
 
 # ============================================================
 # 0:30-0:37  Interactive program adapts
@@ -73,12 +73,12 @@ Sleep 3s
 # ============================================================
 Type "htop"
 Enter
-Sleep 4s
+Sleep 4.89s
 Type "q"
-Sleep 2s
+Sleep 2.44s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "Resize freely. Your shells and full-screen apps reflow to fit."
 # ============================================================
-Sleep 3s
+Sleep 3.33s

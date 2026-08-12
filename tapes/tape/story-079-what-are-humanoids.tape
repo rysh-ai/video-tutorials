@@ -25,7 +25,7 @@ Set Shell "bash"
 # "An agent that talks to the outside world --
 #  WhatsApp, Slack, email, phone, chat."
 # ============================================================
-Sleep 1s
+Sleep 3.25s
 
 # ============================================================
 # 0:03-0:09  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 6.13s
 
 # ============================================================
 # 0:09-0:16  Enter rysh mode
@@ -42,13 +42,13 @@ Sleep 3s
 #  through the same channel. Double-Escape into rysh mode to spawn one."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.91s
 Escape
-Sleep 0.3s
+Sleep 0.91s
 Escape
-Sleep 0.3s
+Sleep 0.91s
 Escape
-Sleep 1.5s
+Sleep 4.56s
 
 # ============================================================
 # 0:16-0:26  Spawn a humanoid
@@ -57,7 +57,7 @@ Sleep 1.5s
 # ============================================================
 Type "##humanoid spawn support 'You are a friendly customer support agent. Answer questions clearly.'"
 Enter
-Sleep 3s
+Sleep 3.65s
 
 # ============================================================
 # 0:26-0:36  List humanoids
@@ -66,7 +66,7 @@ Sleep 3s
 # ============================================================
 Type "##humanoid list"
 Enter
-Sleep 3s
+Sleep 9.65s
 
 # ============================================================
 # 0:36-0:47  Prompt it directly
@@ -75,10 +75,10 @@ Sleep 3s
 # ============================================================
 Type "@support how would you greet a new customer?"
 Enter
-Sleep 9s
+Sleep 8.56s
 
 # ============================================================
 # 0:47-0:50  Hold final frame
 # "Humanoids: your AI, reachable wherever your users already are."
 # ============================================================
-Sleep 3s
+Sleep 3.25s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Move by direction, not by order --
 #  Ctrl+Space lets you focus panes with arrows."
 # ============================================================
-Sleep 1s
+Sleep 4.2s
 
 # ============================================================
 # 0:04-0:16  Launch rysh and build a grid
@@ -35,24 +35,24 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.95s
 Ctrl+p
-Sleep 1s
+Sleep 1.32s
 Type "n"
-Sleep 1s
+Sleep 1.32s
 Ctrl+p
-Sleep 1s
+Sleep 1.31s
 Type "v"
-Sleep 2s
+Sleep 2.63s
 Escape
-Sleep 1s
+Sleep 1.31s
 
 # ============================================================
 # 0:16-0:21  Enter navigate mode
 # "Press Ctrl+Space to enter navigate mode."
 # ============================================================
 Ctrl+Space
-Sleep 2s
+Sleep 5.17s
 
 # ============================================================
 # 0:21-0:30  Directional focus with arrows / hjkl
@@ -60,13 +60,13 @@ Sleep 2s
 #  left, down, up, right -- jumping to the pane that's actually there."
 # ============================================================
 Type "h"
-Sleep 1s
+Sleep 1.83s
 Type "l"
-Sleep 1s
+Sleep 1.83s
 Type "j"
-Sleep 1s
+Sleep 1.83s
 Type "k"
-Sleep 2s
+Sleep 3.65s
 
 # ============================================================
 # 0:30-0:36  Exit navigate mode and confirm focus
@@ -74,14 +74,14 @@ Sleep 2s
 #  ready for input."
 # ============================================================
 Escape
-Sleep 1s
+Sleep 1.62s
 Type "echo focused here"
 Enter
-Sleep 2s
+Sleep 3.25s
 
 # ============================================================
 # 0:36-0:40  Hold frame
 # "Tab cycles in order; Ctrl+Space moves by direction.
 #  Pick whichever feels natural."
 # ============================================================
-Sleep 3s
+Sleep 4.2s

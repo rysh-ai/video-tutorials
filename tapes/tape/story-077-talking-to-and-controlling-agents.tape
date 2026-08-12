@@ -25,7 +25,7 @@ Set Shell "bash"
 # "At-name to prompt it,
 #  double-at-name to command it."
 # ============================================================
-Sleep 1s
+Sleep 3.07s
 
 # ============================================================
 # 0:03-0:10  Launch rysh and spawn an agent
@@ -33,18 +33,18 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 0.35s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 1.5s
+Sleep 0.17s
 Type "##agent spawn code-reviewer 'You review code carefully and concisely.'"
 Enter
-Sleep 3s
+Sleep 0.35s
 
 # ============================================================
 # 0:10-0:22  Prompt the agent with @name
@@ -53,7 +53,7 @@ Sleep 3s
 # ============================================================
 Type "@code-reviewer what are the top three things you check in a pull request?"
 Enter
-Sleep 9s
+Sleep 6.74s
 
 # ============================================================
 # 0:22-0:31  Control with @@name deactivate
@@ -62,7 +62,7 @@ Sleep 9s
 # ============================================================
 Type "@@code-reviewer deactivate"
 Enter
-Sleep 3s
+Sleep 7.19s
 
 # ============================================================
 # 0:31-0:38  Reactivate
@@ -70,7 +70,7 @@ Sleep 3s
 # ============================================================
 Type "@@code-reviewer activate"
 Enter
-Sleep 3s
+Sleep 5.3s
 
 # ============================================================
 # 0:38-0:45  Delete the agent
@@ -79,4 +79,4 @@ Sleep 3s
 # ============================================================
 Type "##agent delete code-reviewer"
 Enter
-Sleep 3s
+Sleep 5s

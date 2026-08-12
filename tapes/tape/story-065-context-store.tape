@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Give your agent a memory that survives
 #  across the whole session."
 # ============================================================
-Sleep 1s
+Sleep 3.13s
 
 # ============================================================
 # 0:03-0:08  Launch rysh into prompt mode
@@ -34,11 +34,11 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.66s
 Escape
-Sleep 0.3s
+Sleep 0.27s
 Escape
-Sleep 2s
+Sleep 1.77s
 
 # ============================================================
 # 0:08-0:22  Store a key-value fact
@@ -47,7 +47,7 @@ Sleep 2s
 # ============================================================
 Type "remember that our staging database is db-staging.internal on port 5432"
 Enter
-Sleep 10s
+Sleep 9.29s
 
 # ============================================================
 # 0:22-0:38  Recall it later
@@ -56,11 +56,11 @@ Sleep 10s
 # ============================================================
 Type "what was our staging database host and port?"
 Enter
-Sleep 10s
+Sleep 13.33s
 
 # ============================================================
 # 0:38-0:45  Recap
 # "context_store is durable key-value memory that any prompt
 #  in the session can read and write."
 # ============================================================
-Sleep 4s
+Sleep 7.31s

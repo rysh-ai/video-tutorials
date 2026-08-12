@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Inline prompt or a skill file with a contacts block --
 #  either way, it's one command."
 # ============================================================
-Sleep 1s
+Sleep 0.91s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -33,7 +33,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 1.13s
 
 # ============================================================
 # 0:08-0:18  Write a humanoid skill file
@@ -42,7 +42,7 @@ Sleep 3s
 # ============================================================
 Type "mkdir -p .rysh/humanoids"
 Enter
-Sleep 1s
+Sleep 0.1s
 Type "echo '---' > .rysh/humanoids/support.md"
 Enter
 Type "echo 'name: support' >> .rysh/humanoids/support.md"
@@ -59,7 +59,7 @@ Type "echo '---' >> .rysh/humanoids/support.md"
 Enter
 Type "echo 'You are a customer support agent. Help users professionally.' >> .rysh/humanoids/support.md"
 Enter
-Sleep 2s
+Sleep 0.1s
 
 # ============================================================
 # 0:18-0:28  Show the skill file
@@ -68,7 +68,7 @@ Sleep 2s
 # ============================================================
 Type "cat .rysh/humanoids/support.md"
 Enter
-Sleep 4s
+Sleep 0.69s
 
 # ============================================================
 # 0:28-0:38  Spawn from the file
@@ -76,16 +76,16 @@ Sleep 4s
 #  Rysh wires up every channel in the contacts block."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 1.5s
+Sleep 0.1s
 Type "##humanoid spawn .rysh/humanoids/support.md"
 Enter
-Sleep 3s
+Sleep 0.1s
 
 # ============================================================
 # 0:38-0:45  List with channel info
@@ -93,4 +93,4 @@ Sleep 3s
 # ============================================================
 Type "##humanoid list"
 Enter
-Sleep 3s
+Sleep 0.91s

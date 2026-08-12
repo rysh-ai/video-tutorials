@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Lines starting with double-hash-greater-than bypass the shell
 #  and fly straight to NATS."
 # ============================================================
-Sleep 1s
+Sleep 3.24s
 
 # ============================================================
 # 0:03-0:09  Launch rysh, split a worker pane
@@ -34,13 +34,13 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.52s
 Ctrl+p
-Sleep 1s
+Sleep 0.84s
 Type "n"
-Sleep 2s
+Sleep 1.68s
 Escape
-Sleep 1s
+Sleep 0.84s
 
 # ============================================================
 # 0:09-0:18  Worker listens to the orchestrator
@@ -48,16 +48,16 @@ Sleep 1s
 #  output here. Event payloads arrive without an alias prefix."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.51s
 Escape
-Sleep 0.3s
+Sleep 0.5s
 Escape
-Sleep 0.3s
+Sleep 0.5s
 Escape
-Sleep 1.5s
+Sleep 2.52s
 Type "##pane listen orchestrator"
 Enter
-Sleep 2s
+Sleep 3.36s
 
 # ============================================================
 # 0:18-0:25  Back to orchestrator, switch to rysh mode
@@ -65,15 +65,15 @@ Sleep 2s
 #  so we can emit a pipeline event."
 # ============================================================
 Tab
-Sleep 1.5s
+Sleep 2.76s
 Escape
-Sleep 0.3s
+Sleep 0.56s
 Escape
-Sleep 0.3s
+Sleep 0.55s
 Escape
-Sleep 0.3s
+Sleep 0.55s
 Escape
-Sleep 1.5s
+Sleep 2.76s
 
 # ============================================================
 # 0:25-0:34  Emit a print event
@@ -82,7 +82,7 @@ Sleep 1.5s
 # ============================================================
 Type "##>event:print:Build started at 10:30 AM"
 Enter
-Sleep 3s
+Sleep 6.64s
 
 # ============================================================
 # 0:34-0:42  Emit another event
@@ -91,10 +91,10 @@ Sleep 3s
 # ============================================================
 Type "##>event:print:Compiling module auth"
 Enter
-Sleep 3s
+Sleep 5.86s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "##> is your event bus -- shell-free messages between panes."
 # ============================================================
-Sleep 3s
+Sleep 3.24s

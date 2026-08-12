@@ -26,7 +26,7 @@ Set Shell "bash"
 # "One window, many minds.
 #  Every pane is its own shell and its own AI agent."
 # ============================================================
-Sleep 1s
+Sleep 4.13s
 
 # ============================================================
 # 0:04-0:09  Launch rysh with one pane
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.78s
 
 # ============================================================
 # 0:09-0:16  Create a second pane with Ctrl+N
@@ -43,7 +43,7 @@ Sleep 3s
 #  Instantly you have two independent terminals side by side."
 # ============================================================
 Ctrl+n
-Sleep 2s
+Sleep 7.15s
 
 # ============================================================
 # 0:16-0:23  Create a third pane
@@ -51,7 +51,7 @@ Sleep 2s
 #  directory, its own history, its own AI context."
 # ============================================================
 Ctrl+n
-Sleep 2s
+Sleep 7.15s
 
 # ============================================================
 # 0:23-0:33  Cycle panes with Tab
@@ -59,11 +59,11 @@ Sleep 2s
 #  The focused pane gets a highlighted border."
 # ============================================================
 Tab
-Sleep 2s
+Sleep 3.37s
 Tab
-Sleep 2s
+Sleep 3.36s
 Tab
-Sleep 2s
+Sleep 3.36s
 
 # ============================================================
 # 0:33-0:40  Run something in the focused pane
@@ -72,11 +72,11 @@ Sleep 2s
 # ============================================================
 Type "pwd"
 Enter
-Sleep 3s
+Sleep 6.92s
 
 # ============================================================
 # 0:40-0:45  Recap / hold frame
 # "Ctrl+N to add a pane, Tab to move between them.
 #  That's the foundation of every Rysh layout."
 # ============================================================
-Sleep 4s
+Sleep 5.16s

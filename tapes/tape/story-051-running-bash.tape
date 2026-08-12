@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Ask in plain English, and the agent runs the shell for you --
 #  dangerous patterns ask first."
 # ============================================================
-Sleep 1s
+Sleep 3.45s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -33,16 +33,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.37s
 
 # ============================================================
 # 0:08-0:13  Switch to prompt mode
 # "Double-press Escape for prompt mode."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.73s
 Escape
-Sleep 2s
+Sleep 4.86s
 
 # ============================================================
 # 0:13-0:30  Ask about disk usage
@@ -52,17 +52,17 @@ Sleep 2s
 # ============================================================
 Type "what is my disk usage in this directory"
 Enter
-Sleep 10s
+Sleep 16.53s
 
 # ============================================================
 # 0:30-0:37  Narrate the safety net
 # "That approval gate is what makes the bash tool safe: deletes, force-pushes,
 #  and other risky commands stop and wait for a yes before they ever execute."
 # ============================================================
-Sleep 4s
+Sleep 8.04s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "Natural language in, real shell commands out -- with a safety net."
 # ============================================================
-Sleep 3s
+Sleep 3.45s

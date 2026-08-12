@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Give your humanoid an inbox --
 #  it reads incoming mail and writes the replies."
 # ============================================================
-Sleep 1s
+Sleep 0.1s
 
 # ============================================================
 # 0:03-0:10  Launch rysh
@@ -34,10 +34,10 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 0.1s
 Type "mkdir -p .rysh/humanoids"
 Enter
-Sleep 1s
+Sleep 0.1s
 
 # ============================================================
 # 0:10-0:22  Write and show the email skill file
@@ -66,10 +66,10 @@ Type "echo '---' >> .rysh/humanoids/support.md"
 Enter
 Type "echo 'You answer support email professionally.' >> .rysh/humanoids/support.md"
 Enter
-Sleep 1s
+Sleep 0.1s
 Type "cat .rysh/humanoids/support.md"
 Enter
-Sleep 4s
+Sleep 0.1s
 
 # ============================================================
 # 0:22-0:31  Spawn the humanoid
@@ -77,16 +77,16 @@ Sleep 4s
 #  The humanoid gains email_list, email_read, and email_send tools."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 1.5s
+Sleep 0.1s
 Type "##humanoid spawn .rysh/humanoids/support.md"
 Enter
-Sleep 3s
+Sleep 0.1s
 
 # ============================================================
 # 0:31-0:39  Start the email channel
@@ -95,7 +95,7 @@ Sleep 3s
 # ============================================================
 Type "##humanoid channel start support email"
 Enter
-Sleep 3s
+Sleep 0.1s
 
 # ============================================================
 # 0:39-0:45  Show channels
@@ -103,4 +103,4 @@ Sleep 3s
 # ============================================================
 Type "##humanoid channels support"
 Enter
-Sleep 3s
+Sleep 0.1s

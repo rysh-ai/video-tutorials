@@ -23,7 +23,7 @@ Sleep 1s
 # "Name a session, work in it, then detach --
 #  and it keeps running without you."
 # ============================================================
-Sleep 2s
+Sleep 5s
 
 # ============================================================
 # 0:05-0:13  Start a named session
@@ -32,7 +32,7 @@ Sleep 2s
 # ============================================================
 Type "rysh my-project"
 Enter
-Sleep 3s
+Sleep 6.8s
 
 # ============================================================
 # 0:13-0:21  Do some work
@@ -41,7 +41,7 @@ Sleep 3s
 # ============================================================
 Type "git status"
 Enter
-Sleep 3s
+Sleep 7.17s
 
 # ============================================================
 # 0:21-0:30  Detach with Ctrl+O d
@@ -49,9 +49,9 @@ Sleep 3s
 #  You drop back to your shell, but the session lives on."
 # ============================================================
 Ctrl+o
-Sleep 1s
+Sleep 2.21s
 Type "d"
-Sleep 3s
+Sleep 6.64s
 
 # ============================================================
 # 0:30-0:39  List sessions
@@ -60,7 +60,7 @@ Sleep 3s
 # ============================================================
 Type "rysh list-sessions"
 Enter
-Sleep 4s
+Sleep 7.58s
 
 # ============================================================
 # 0:39-0:50  Reattach
@@ -69,4 +69,4 @@ Sleep 4s
 # ============================================================
 Type "rysh attach my-project"
 Enter
-Sleep 4s
+Sleep 9.28s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "A rysh pane that lives in your browser's side panel
 #  and drives the page."
 # ============================================================
-Sleep 1s
+Sleep 5.1s
 
 # ============================================================
 # 0:05-0:15  The side panel is a pane
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'Chrome side panel = a rysh pane whose target is the browser'"
 Enter
-Sleep 3s
+Sleep 5.17s
 
 # ============================================================
 # 0:15-0:26  How it connects
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Extension <-> session over NATS WebSocket -- same bus as the CLI'"
 Enter
-Sleep 3s
+Sleep 5.82s
 
 # ============================================================
 # 0:26-0:38  Conversation persists across navigation
@@ -54,7 +54,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Navigate to a new page -> the agent keeps the whole conversation'"
 Enter
-Sleep 3s
+Sleep 6.84s
 
 # ============================================================
 # 0:38-0:50  Wrap
@@ -63,4 +63,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'Ask -> the agent acts on the live tab. A browser copilot in rysh.'"
 Enter
-Sleep 4s
+Sleep 6.77s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Keyboard-first, but the mouse is right there
 #  when you want it."
 # ============================================================
-Sleep 1s
+Sleep 3.13s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.85s
 
 # ============================================================
 # 0:08-0:14  Split so there are panes to click
@@ -43,11 +43,11 @@ Sleep 3s
 #  on any pane focuses it instantly."
 # ============================================================
 Ctrl+p
-Sleep 0.5s
+Sleep 0.86s
 Type "n"
-Sleep 1.5s
+Sleep 2.59s
 Escape
-Sleep 1.5s
+Sleep 2.59s
 
 # ============================================================
 # 0:14-0:24  Explain click-drag selection
@@ -57,7 +57,7 @@ Sleep 1.5s
 # ============================================================
 Type "echo 'click a pane to focus -- drag to select -- release to copy'"
 Enter
-Sleep 3s
+Sleep 5.5s
 
 # ============================================================
 # 0:24-0:33  Explain wheel scrolling
@@ -66,11 +66,11 @@ Sleep 3s
 # ============================================================
 Type "seq 1 120"
 Enter
-Sleep 2s
+Sleep 3.09s
 PageUp
-Sleep 1.5s
+Sleep 2.32s
 PageDown
-Sleep 2s
+Sleep 3.09s
 
 # ============================================================
 # 0:33-0:40  Recap and hold
@@ -79,4 +79,4 @@ Sleep 2s
 # ============================================================
 Type "echo 'mouse + keyboard, your choice'"
 Enter
-Sleep 3s
+Sleep 4.54s
