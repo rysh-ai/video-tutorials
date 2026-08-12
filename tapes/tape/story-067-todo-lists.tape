@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Watch your agent break a big job
 #  into tracked, checkable steps."
 # ============================================================
-Sleep 1s
+Sleep 3.14s
 
 # ============================================================
 # 0:03-0:08  Launch rysh into prompt mode
@@ -34,11 +34,11 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.66s
 Escape
-Sleep 0.3s
+Sleep 0.27s
 Escape
-Sleep 2s
+Sleep 1.77s
 
 # ============================================================
 # 0:08-0:24  Give a multi-step task
@@ -47,18 +47,18 @@ Sleep 2s
 # ============================================================
 Type "plan how to add a health-check endpoint: list the steps as a todo list"
 Enter
-Sleep 12s
+Sleep 11.4s
 
 # ============================================================
 # 0:24-0:34  Show progress tracking
 # "The list lives in per-pane JetStream KV. Add, update,
 #  complete, or remove items -- the agent tracks its own work."
 # ============================================================
-Sleep 6s
+Sleep 10.45s
 
 # ============================================================
 # 0:34-0:40  Recap
 # "The todo tool keeps long, multi-step work organized
 #  and visible from start to finish."
 # ============================================================
-Sleep 4s
+Sleep 6.27s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "See everything you're sharing, and pull any of it back
 #  with one command."
 # ============================================================
-Sleep 1s
+Sleep 3.24s
 
 # ============================================================
 # 0:03-0:09  Launch rysh, enter rysh mode, share a pane
@@ -35,18 +35,18 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 1.71s
 Escape
-Sleep 0.3s
+Sleep 0.17s
 Escape
-Sleep 0.3s
+Sleep 0.17s
 Escape
-Sleep 0.3s
+Sleep 0.17s
 Escape
-Sleep 1.5s
+Sleep 0.86s
 Type "##share pane control"
 Enter
-Sleep 2s
+Sleep 1.14s
 
 # ============================================================
 # 0:09-0:18  List all shares
@@ -55,7 +55,7 @@ Sleep 2s
 # ============================================================
 Type "##share list"
 Enter
-Sleep 4s
+Sleep 8.73s
 
 # ============================================================
 # 0:18-0:28  Unshare the pane
@@ -64,7 +64,7 @@ Sleep 4s
 # ============================================================
 Type "##unshare pane"
 Enter
-Sleep 4s
+Sleep 9.66s
 
 # ============================================================
 # 0:28-0:37  Confirm it's gone
@@ -73,11 +73,11 @@ Sleep 4s
 # ============================================================
 Type "##share list"
 Enter
-Sleep 4s
+Sleep 8.73s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "List to audit, unshare to revoke. You stay in control
 #  of what leaves your session."
 # ============================================================
-Sleep 3s
+Sleep 3.24s

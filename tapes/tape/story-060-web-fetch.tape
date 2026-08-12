@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Point the agent at a URL --
 #  web_fetch pulls the page and summarizes it for you."
 # ============================================================
-Sleep 1s
+Sleep 3.51s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -33,16 +33,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.48s
 
 # ============================================================
 # 0:08-0:13  Switch to prompt mode
 # "Double-press Escape for prompt mode."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.74s
 Escape
-Sleep 2s
+Sleep 4.97s
 
 # ============================================================
 # 0:13-0:32  Ask the agent to fetch a URL
@@ -52,17 +52,17 @@ Sleep 2s
 # ============================================================
 Type "fetch https://go.dev and summarize what the page is about"
 Enter
-Sleep 11s
+Sleep 17.9s
 
 # ============================================================
 # 0:32-0:37  Narrate the pairing
 # "Pair web_fetch with web_search and the agent can find a source, open it,
 #  and bring the relevant details back into your terminal -- all from one prompt."
 # ============================================================
-Sleep 4s
+Sleep 5.86s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "Any page on the web, summarized in your pane."
 # ============================================================
-Sleep 3s
+Sleep 3.51s

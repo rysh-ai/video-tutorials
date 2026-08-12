@@ -26,7 +26,7 @@ Set Shell "bash"
 # "In control mode you don't just watch --
 #  you can drive the remote pane yourself."
 # ============================================================
-Sleep 1s
+Sleep 3.45s
 
 # ============================================================
 # 0:03-0:09  Launch rysh, enter rysh mode
@@ -35,15 +35,15 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.46s
 Escape
-Sleep 0.3s
+Sleep 0.35s
 Escape
-Sleep 0.3s
+Sleep 0.35s
 Escape
-Sleep 0.3s
+Sleep 0.34s
 Escape
-Sleep 1.5s
+Sleep 1.73s
 
 # ============================================================
 # 0:09-0:17  Subscribe in control mode
@@ -52,7 +52,7 @@ Sleep 1.5s
 # ============================================================
 Type "##upstream subscribe abc123 control"
 Enter
-Sleep 3s
+Sleep 6.51s
 
 # ============================================================
 # 0:17-0:27  Send a command to the remote pane
@@ -61,7 +61,7 @@ Sleep 3s
 # ============================================================
 Type "##upstream send ls -la"
 Enter
-Sleep 4s
+Sleep 9.79s
 
 # ============================================================
 # 0:27-0:37  Run a rysh command remotely with ####
@@ -70,7 +70,7 @@ Sleep 4s
 # ============================================================
 Type "####pane info"
 Enter
-Sleep 4s
+Sleep 10.46s
 
 # ============================================================
 # 0:37-0:42  Note on approval
@@ -79,11 +79,11 @@ Sleep 4s
 # ============================================================
 Type "##upstream send git status"
 Enter
-Sleep 3s
+Sleep 3.73s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "Control mode turns a remote share into true pair programming --
 #  gated by the owner's rules."
 # ============================================================
-Sleep 3s
+Sleep 3.45s

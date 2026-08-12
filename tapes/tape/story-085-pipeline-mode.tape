@@ -25,7 +25,7 @@ Set Shell "bash"
 # "A tab can become a pipeline. One key flips it on
 #  and your events start flowing."
 # ============================================================
-Sleep 1s
+Sleep 3.25s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.04s
 
 # ============================================================
 # 0:08-0:16  Toggle pipeline mode with Ctrl+P p
@@ -42,9 +42,9 @@ Sleep 3s
 #  pipeline mode for this tab."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 2.84s
 Type "p"
-Sleep 2s
+Sleep 5.68s
 
 # ============================================================
 # 0:16-0:24  Enable via rysh command
@@ -52,16 +52,16 @@ Sleep 2s
 #  then ##tab pipeline enable turns it on explicitly."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.38s
 Escape
-Sleep 0.3s
+Sleep 0.37s
 Escape
-Sleep 0.3s
+Sleep 0.37s
 Escape
-Sleep 1.5s
+Sleep 1.87s
 Type "##tab pipeline enable"
 Enter
-Sleep 3s
+Sleep 3.73s
 
 # ============================================================
 # 0:24-0:32  Confirm with ##tab list
@@ -70,7 +70,7 @@ Sleep 3s
 # ============================================================
 Type "##tab list"
 Enter
-Sleep 3s
+Sleep 7.85s
 
 # ============================================================
 # 0:32-0:40  Disable pipeline mode
@@ -79,11 +79,11 @@ Sleep 3s
 # ============================================================
 Type "##tab pipeline disable"
 Enter
-Sleep 3s
+Sleep 6.95s
 
 # ============================================================
 # 0:40-0:45  Hold final frame
 # "Pipeline mode is the on-switch for event-driven
 #  orchestration across your panes."
 # ============================================================
-Sleep 3s
+Sleep 5.42s

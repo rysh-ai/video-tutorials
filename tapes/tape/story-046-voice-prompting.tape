@@ -27,7 +27,7 @@ Set Shell "bash"
 # "Talk to your terminal. Press Ctrl+R, speak your prompt,
 #  and Rysh transcribes it for you."
 # ============================================================
-Sleep 1s
+Sleep 3.01s
 
 # ============================================================
 # 0:03-0:12  Show the [voice] config
@@ -36,7 +36,7 @@ Sleep 1s
 # ============================================================
 Type "cat ~/.config/rysh/rysh.config"
 Enter
-Sleep 2s
+Sleep 0.1s
 Type "# [voice]"
 Enter
 Type "#   enabled = true"
@@ -45,7 +45,7 @@ Type "#   hotkey  = 'ctrl+r'"
 Enter
 Type "#   recorder = 'auto'   # auto | sox | ffmpeg | afrecord | arecord"
 Enter
-Sleep 4s
+Sleep 0.1s
 
 # ============================================================
 # 0:12-0:20  Launch rysh
@@ -54,7 +54,7 @@ Sleep 4s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 7.65s
 
 # ============================================================
 # 0:20-0:30  Narrate the record flow
@@ -63,7 +63,7 @@ Sleep 3s
 # ============================================================
 Type "# Press Ctrl+R --> footer shows:  the red dot REC 0:04"
 Enter
-Sleep 4s
+Sleep 5.91s
 
 # ============================================================
 # 0:30-0:38  Stop, transcribe, submit
@@ -72,14 +72,14 @@ Sleep 4s
 # ============================================================
 Type "# Press Ctrl+R again --> transcribing... --> text fills the input"
 Enter
-Sleep 2s
+Sleep 0.1s
 Type "# Enter to submit, or Esc while recording to cancel"
 Enter
-Sleep 4s
+Sleep 0.1s
 
 # ============================================================
 # 0:38-0:45  Hold final frame
 # "Because voice just fills the input field, it works everywhere typing does --
 #  even when you're controlling a remote shared pane."
 # ============================================================
-Sleep 3s
+Sleep 7.02s

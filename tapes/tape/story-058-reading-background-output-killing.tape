@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Check on a background job with bash_output,
 #  and shut it down with kill_shell."
 # ============================================================
-Sleep 1s
+Sleep 3.29s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,16 +34,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.1s
 
 # ============================================================
 # 0:08-0:13  Switch to prompt mode
 # "Double-press Escape for prompt mode."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.7s
 Escape
-Sleep 2s
+Sleep 4.63s
 
 # ============================================================
 # 0:13-0:28  Ask to read the background output
@@ -53,7 +53,7 @@ Sleep 2s
 # ============================================================
 Type "list my background sessions and show their latest output"
 Enter
-Sleep 9s
+Sleep 12.15s
 
 # ============================================================
 # 0:28-0:37  Ask to kill the session
@@ -62,12 +62,12 @@ Sleep 9s
 # ============================================================
 Type "kill that background session"
 Enter
-Sleep 6s
+Sleep 5.07s
 Type "y"
-Sleep 3s
+Sleep 2.54s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "Watch it, then end it -- full control over background work."
 # ============================================================
-Sleep 3s
+Sleep 3.29s

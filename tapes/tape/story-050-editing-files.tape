@@ -25,7 +25,7 @@ Set Shell "bash"
 # "When the agent edits a file, you see the diff first --
 #  every write waits for your yes."
 # ============================================================
-Sleep 1s
+Sleep 3.2s
 
 # ============================================================
 # 0:03-0:08  Launch rysh and create a file
@@ -33,7 +33,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.96s
 
 # ============================================================
 # 0:08-0:14  Make a sample file in shell mode
@@ -41,16 +41,16 @@ Sleep 3s
 # ============================================================
 Type "printf 'hello\\nworld\\n' > notes.txt"
 Enter
-Sleep 2s
+Sleep 3.56s
 
 # ============================================================
 # 0:14-0:20  Switch to prompt mode
 # "Double-press Escape to enter prompt mode."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.82s
 Escape
-Sleep 2s
+Sleep 5.44s
 
 # ============================================================
 # 0:20-0:36  Ask the agent to edit the file
@@ -60,7 +60,7 @@ Sleep 2s
 # ============================================================
 Type "in notes.txt change the word world to rysh"
 Enter
-Sleep 9s
+Sleep 13.86s
 
 # ============================================================
 # 0:36-0:45  Approve the edit
@@ -68,10 +68,10 @@ Sleep 9s
 #  capital Y to approve always, n to reject, or capital N to reject with a reason."
 # ============================================================
 Type "y"
-Sleep 4s
+Sleep 9.53s
 
 # ============================================================
 # 0:45-0:50  Hold final frame
 # "Nothing touches your files until you approve the diff."
 # ============================================================
-Sleep 3s
+Sleep 5.34s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Ask rysh about itself -- inspect any pane,
 #  list them all, and replay its history."
 # ============================================================
-Sleep 1s
+Sleep 4.18s
 
 # ============================================================
 # 0:04-0:09  Launch rysh and add a pane
@@ -34,13 +34,13 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 1.99s
 Ctrl+p
-Sleep 1s
+Sleep 0.66s
 Type "n"
-Sleep 2s
+Sleep 1.32s
 Escape
-Sleep 1s
+Sleep 0.66s
 
 # ============================================================
 # 0:09-0:17  ##pane info
@@ -49,7 +49,7 @@ Sleep 1s
 # ============================================================
 Type "##pane info"
 Enter
-Sleep 3s
+Sleep 7.47s
 
 # ============================================================
 # 0:17-0:25  ##pane list
@@ -57,7 +57,7 @@ Sleep 3s
 # ============================================================
 Type "##pane list"
 Enter
-Sleep 3s
+Sleep 7.47s
 
 # ============================================================
 # 0:25-0:34  ##pane history
@@ -66,11 +66,11 @@ Sleep 3s
 # ============================================================
 Type "##pane history shell"
 Enter
-Sleep 3s
+Sleep 7.84s
 
 # ============================================================
 # 0:34-0:40  Hold frame
 # "info, list, history -- everything you need to understand
 #  your panes, right from rysh mode."
 # ============================================================
-Sleep 3s
+Sleep 6.28s

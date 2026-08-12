@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Your agent can read another pane's state and even
 #  type into it -- with approval."
 # ============================================================
-Sleep 1s
+Sleep 3.17s
 
 # ============================================================
 # 0:03-0:09  Launch rysh and split a pane
@@ -35,13 +35,13 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.65s
 Ctrl+p
-Sleep 0.5s
+Sleep 0.44s
 Type "n"
-Sleep 2s
+Sleep 1.77s
 Escape
-Sleep 1s
+Sleep 0.88s
 
 # ============================================================
 # 0:09-0:20  List the workspace agents
@@ -49,12 +49,12 @@ Sleep 1s
 #  The agents_list tool shows every pane and its status."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.18s
 Escape
-Sleep 2s
+Sleep 1.21s
 Type "list all the panes in this workspace and their status"
 Enter
-Sleep 10s
+Sleep 6.04s
 
 # ============================================================
 # 0:20-0:32  Inspect another pane
@@ -63,7 +63,7 @@ Sleep 10s
 # ============================================================
 Type "inspect the other pane and tell me what's running there"
 Enter
-Sleep 10s
+Sleep 8.49s
 
 # ============================================================
 # 0:32-0:42  Send input across panes (approval-gated)
@@ -72,12 +72,12 @@ Sleep 10s
 # ============================================================
 Type "send 'pwd' to the other pane"
 Enter
-Sleep 8s
+Sleep 6.05s
 Type "y"
-Sleep 3s
+Sleep 2.27s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "Inspect, coordinate, and act across panes -- safely."
 # ============================================================
-Sleep 3s
+Sleep 3.17s

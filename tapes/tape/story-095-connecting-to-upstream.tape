@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Point Rysh at a workspace URL and an API key --
 #  now your session can join the hub."
 # ============================================================
-Sleep 1s
+Sleep 3.17s
 
 # ============================================================
 # 0:03-0:11  Show the upstream config block
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "cat rysh.config"
 Enter
-Sleep 4s
+Sleep 7.27s
 
 # ============================================================
 # 0:11-0:19  Launch rysh shared
@@ -43,7 +43,7 @@ Sleep 4s
 # ============================================================
 Type "rysh --shared"
 Enter
-Sleep 3s
+Sleep 7.42s
 
 # ============================================================
 # 0:19-0:28  Check upstream status
@@ -51,16 +51,16 @@ Sleep 3s
 #  configuration and whether the connection is live."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.37s
 Escape
-Sleep 0.3s
+Sleep 0.37s
 Escape
-Sleep 0.3s
+Sleep 0.37s
 Escape
-Sleep 1.5s
+Sleep 1.84s
 Type "##upstream status"
 Enter
-Sleep 4s
+Sleep 4.92s
 
 # ============================================================
 # 0:28-0:38  Show my-shares
@@ -69,7 +69,7 @@ Sleep 4s
 # ============================================================
 Type "##upstream my-shares"
 Enter
-Sleep 4s
+Sleep 9.01s
 
 # ============================================================
 # 0:38-0:46  Note env overrides
@@ -78,11 +78,11 @@ Sleep 4s
 # ============================================================
 Type "##share status"
 Enter
-Sleep 4s
+Sleep 7.34s
 
 # ============================================================
 # 0:46-0:50  Hold final frame
 # "Config or flags, you're connected to the workspace --
 #  ready to share and subscribe."
 # ============================================================
-Sleep 3s
+Sleep 4.23s

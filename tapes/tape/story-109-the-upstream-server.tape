@@ -26,7 +26,7 @@ Set Shell "bash"
 # "rysh-server: the hub that routes shares
 #  between machines."
 # ============================================================
-Sleep 1s
+Sleep 5.1s
 
 # ============================================================
 # 0:05-0:15  What the server is
@@ -35,7 +35,7 @@ Sleep 1s
 # ============================================================
 Type "echo 'rysh-server: collaboration hub -- routes shares across machines'"
 Enter
-Sleep 3s
+Sleep 4.87s
 
 # ============================================================
 # 0:15-0:26  Tech stack
@@ -44,7 +44,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Stack: Go/Gin + PostgreSQL + embedded NATS + nginx'"
 Enter
-Sleep 3s
+Sleep 6.87s
 
 # ============================================================
 # 0:26-0:37  What it manages
@@ -53,7 +53,7 @@ Sleep 3s
 # ============================================================
 Type "echo 'Auth (JWT/Firebase) | workspaces | members | API keys | share routing'"
 Enter
-Sleep 3s
+Sleep 5.45s
 
 # ============================================================
 # 0:37-0:50  Deployment
@@ -62,4 +62,4 @@ Sleep 3s
 # ============================================================
 Type "echo 'Docker Compose: make dev-up (dev) / make prod-up (prod)'"
 Enter
-Sleep 4s
+Sleep 8.54s

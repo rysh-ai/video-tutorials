@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Build any layout from two moves:
 #  split right for columns, split down for rows."
 # ============================================================
-Sleep 1s
+Sleep 4.16s
 
 # ============================================================
 # 0:04-0:09  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.83s
 
 # ============================================================
 # 0:09-0:16  Ctrl+P n -- first split right
@@ -42,9 +42,9 @@ Sleep 3s
 #  and the space divides between them by flex weight."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 2.38s
 Type "n"
-Sleep 2s
+Sleep 4.75s
 
 # ============================================================
 # 0:16-0:23  Ctrl+P n -- third column
@@ -52,9 +52,9 @@ Sleep 2s
 #  width evenly -- a clean three-column layout."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 2.38s
 Type "n"
-Sleep 2s
+Sleep 4.75s
 
 # ============================================================
 # 0:23-0:32  Ctrl+P v -- split down in the active column
@@ -62,9 +62,9 @@ Sleep 2s
 #  row, stacked vertically inside that same column."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 3.07s
 Type "v"
-Sleep 2s
+Sleep 6.14s
 
 # ============================================================
 # 0:32-0:40  One more split down
@@ -72,15 +72,15 @@ Sleep 2s
 #  Columns grow with n, rows grow with v."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 2.03s
 Type "v"
-Sleep 2s
+Sleep 4.05s
 Escape
-Sleep 1s
+Sleep 2.02s
 
 # ============================================================
 # 0:40-0:45  Recap / hold frame
 # "Two keys, endless layouts. Flex weights keep everything
 #  balanced as you build."
 # ============================================================
-Sleep 4s
+Sleep 5.2s

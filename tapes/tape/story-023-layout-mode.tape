@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Ctrl+L is where you shape your workspace --
 #  resize, equalize, swap, and fullscreen."
 # ============================================================
-Sleep 1s
+Sleep 4.18s
 
 # ============================================================
 # 0:04-0:14  Launch rysh and split into columns
@@ -35,17 +35,17 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.23s
 Ctrl+p
-Sleep 1s
+Sleep 1.08s
 Type "n"
-Sleep 1s
+Sleep 1.08s
 Ctrl+p
-Sleep 1s
+Sleep 1.08s
 Type "n"
-Sleep 2s
+Sleep 2.15s
 Escape
-Sleep 1s
+Sleep 1.08s
 
 # ============================================================
 # 0:14-0:20  Enter layout mode
@@ -53,7 +53,7 @@ Sleep 1s
 #  The footer lists every shaping key."
 # ============================================================
 Ctrl+l
-Sleep 2s
+Sleep 6.19s
 
 # ============================================================
 # 0:20-0:28  Arrow keys resize
@@ -61,9 +61,9 @@ Sleep 2s
 #  Right and Left for width, Up and Down for height."
 # ============================================================
 Right
-Sleep 1s
+Sleep 2.74s
 Right
-Sleep 2s
+Sleep 5.47s
 
 # ============================================================
 # 0:28-0:36  Equalize with = and fullscreen with m
@@ -71,9 +71,9 @@ Sleep 2s
 #  and m to fullscreen the active pane."
 # ============================================================
 Type "="
-Sleep 2s
+Sleep 4.11s
 Type "m"
-Sleep 2s
+Sleep 4.1s
 
 # ============================================================
 # 0:36-0:45  Toggle fullscreen off, exit, hold
@@ -81,6 +81,6 @@ Sleep 2s
 #  Resize, equalize, swap, fullscreen -- all under Ctrl+L."
 # ============================================================
 Type "m"
-Sleep 1s
+Sleep 2.31s
 Escape
-Sleep 3s
+Sleep 6.94s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "vim, htop, less, nano --
 #  full-screen programs just work, right inside a Rysh pane."
 # ============================================================
-Sleep 1s
+Sleep 3.2s
 
 # ============================================================
 # 0:03-0:07  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.89s
 
 # ============================================================
 # 0:07-0:14  Open vim
@@ -43,7 +43,7 @@ Sleep 3s
 # ============================================================
 Type "vim hello.go"
 Enter
-Sleep 3s
+Sleep 6.49s
 
 # ============================================================
 # 0:14-0:24  Edit in vim
@@ -51,14 +51,14 @@ Sleep 3s
 #  Insert mode, normal mode -- vim behaves exactly as it should."
 # ============================================================
 Type "i"
-Sleep 1s
+Sleep 2.1s
 Type "package main"
 Enter
 Enter
 Type "func main() {}"
-Sleep 2s
+Sleep 4.21s
 Escape
-Sleep 1s
+Sleep 2.1s
 
 # ============================================================
 # 0:24-0:30  Save and quit
@@ -66,7 +66,7 @@ Sleep 1s
 # ============================================================
 Type ":wq"
 Enter
-Sleep 3s
+Sleep 6.1s
 
 # ============================================================
 # 0:30-0:40  Launch htop
@@ -75,17 +75,17 @@ Sleep 3s
 # ============================================================
 Type "htop"
 Enter
-Sleep 6s
+Sleep 10.29s
 
 # ============================================================
 # 0:40-0:47  Quit htop
 # "Press q to quit htop and return to your shell prompt."
 # ============================================================
 Type "q"
-Sleep 3s
+Sleep 7.39s
 
 # ============================================================
 # 0:47-0:50  Hold final frame
 # "Interactive terminal apps, no configuration, no caveats."
 # ============================================================
-Sleep 3s
+Sleep 3.2s

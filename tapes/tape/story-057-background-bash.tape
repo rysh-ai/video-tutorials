@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Long-running jobs don't block the agent --
 #  bash_background returns a session id and keeps running."
 # ============================================================
-Sleep 1s
+Sleep 3.43s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -33,16 +33,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.34s
 
 # ============================================================
 # 0:08-0:13  Switch to prompt mode
 # "Double-press Escape for prompt mode."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.73s
 Escape
-Sleep 2s
+Sleep 4.84s
 
 # ============================================================
 # 0:13-0:32  Ask the agent to start a background job
@@ -52,9 +52,9 @@ Sleep 2s
 # ============================================================
 Type "start a long-running ping to localhost in the background"
 Enter
-Sleep 9s
+Sleep 12.03s
 Type "y"
-Sleep 4s
+Sleep 5.35s
 
 # ============================================================
 # 0:32-0:42  Narrate the ring buffer
@@ -62,10 +62,10 @@ Sleep 4s
 #  until you kill it or close the pane -- perfect for dev servers, watchers,
 #  and build daemons you want to leave running."
 # ============================================================
-Sleep 4s
+Sleep 11.43s
 
 # ============================================================
 # 0:42-0:45  Hold final frame
 # "Fire it off, get a session id, and move on."
 # ============================================================
-Sleep 3s
+Sleep 3.43s

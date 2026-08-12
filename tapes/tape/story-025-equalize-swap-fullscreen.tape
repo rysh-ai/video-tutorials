@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Three quick moves to reset chaos:
 #  equalize, swap lanes, and go fullscreen."
 # ============================================================
-Sleep 1s
+Sleep 4.13s
 
 # ============================================================
 # 0:04-0:16  Launch rysh and make an uneven layout
@@ -35,21 +35,21 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.14s
 Ctrl+p
-Sleep 1s
+Sleep 1.05s
 Type "n"
-Sleep 1s
+Sleep 1.05s
 Ctrl+p
-Sleep 1s
+Sleep 1.05s
 Type "n"
-Sleep 1s
+Sleep 1.04s
 Ctrl+l
-Sleep 1s
+Sleep 1.04s
 Right
-Sleep 1s
+Sleep 1.04s
 Right
-Sleep 2s
+Sleep 2.09s
 
 # ============================================================
 # 0:16-0:23  h or = equalize widths
@@ -57,21 +57,21 @@ Sleep 2s
 #  the widths -- instantly balanced columns."
 # ============================================================
 Type "="
-Sleep 2s
+Sleep 7.16s
 
 # ============================================================
 # 0:23-0:30  v equalize heights
 # "Press v to equalize heights the same way for stacked rows."
 # ============================================================
 Type "v"
-Sleep 2s
+Sleep 7.16s
 
 # ============================================================
 # 0:30-0:37  s swap lanes
 # "Press s to swap lane positions and reorder your columns."
 # ============================================================
 Type "s"
-Sleep 2s
+Sleep 7.16s
 
 # ============================================================
 # 0:37-0:45  m fullscreen, exit, hold
@@ -79,8 +79,8 @@ Sleep 2s
 #  normal mode. Press it again to restore, Escape to finish."
 # ============================================================
 Type "m"
-Sleep 2s
+Sleep 2.68s
 Type "m"
-Sleep 1s
+Sleep 1.34s
 Escape
-Sleep 3s
+Sleep 4.02s

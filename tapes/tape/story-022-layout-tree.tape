@@ -26,7 +26,7 @@ Set Shell "bash"
 # "See your whole tab at once --
 #  ##pg layout draws the entire structure as a tree."
 # ============================================================
-Sleep 1s
+Sleep 4.2s
 
 # ============================================================
 # 0:04-0:16  Launch rysh and build a richer layout
@@ -36,21 +36,21 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.19s
 Ctrl+p
-Sleep 1s
+Sleep 1.07s
 Type "n"
-Sleep 1s
+Sleep 1.06s
 Ctrl+p
-Sleep 1s
+Sleep 1.06s
 Type "v"
-Sleep 1s
+Sleep 1.06s
 Ctrl+p
-Sleep 1s
+Sleep 1.06s
 Type "s"
-Sleep 2s
+Sleep 2.13s
 Escape
-Sleep 1s
+Sleep 1.06s
 
 # ============================================================
 # 0:16-0:28  ##pg layout
@@ -59,7 +59,7 @@ Sleep 1s
 # ============================================================
 Type "##pg layout"
 Enter
-Sleep 4s
+Sleep 11.69s
 
 # ============================================================
 # 0:28-0:36  ##pg info for the active group
@@ -68,11 +68,11 @@ Sleep 4s
 # ============================================================
 Type "##pg info"
 Enter
-Sleep 3s
+Sleep 7.64s
 
 # ============================================================
 # 0:36-0:40  Hold frame
 # "One command, the whole picture.
 #  ##pg layout is your map of any tab."
 # ============================================================
-Sleep 3s
+Sleep 4.2s

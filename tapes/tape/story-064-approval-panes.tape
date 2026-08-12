@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Route every approval request to one dedicated pane
 #  and triage them in one place."
 # ============================================================
-Sleep 1s
+Sleep 3.27s
 
 # ============================================================
 # 0:03-0:08  Launch rysh and split a pane
@@ -35,13 +35,13 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 2.24s
 Ctrl+p
-Sleep 0.5s
+Sleep 0.37s
 Type "n"
-Sleep 2s
+Sleep 1.49s
 Escape
-Sleep 1s
+Sleep 0.75s
 
 # ============================================================
 # 0:08-0:18  Name this pane the approval pane
@@ -49,14 +49,14 @@ Sleep 1s
 #  pane. Now tool requests from other panes land right here."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.45s
 Escape
-Sleep 0.3s
+Sleep 0.45s
 Escape
-Sleep 2s
+Sleep 2.98s
 Type "##pane approval-pane approvals"
 Enter
-Sleep 3s
+Sleep 4.47s
 
 # ============================================================
 # 0:18-0:30  Manage the approval pane
@@ -65,10 +65,10 @@ Sleep 3s
 # ============================================================
 Type "##pane approval-pane list"
 Enter
-Sleep 3s
+Sleep 4.14s
 Type "##pane approval-pane enable-attention"
 Enter
-Sleep 3s
+Sleep 4.14s
 
 # ============================================================
 # 0:30-0:37  Clear the queue
@@ -76,10 +76,10 @@ Sleep 3s
 # ============================================================
 Type "##pane approval-pane clear"
 Enter
-Sleep 3s
+Sleep 5.61s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "One pane, every decision, no context switching."
 # ============================================================
-Sleep 3s
+Sleep 3.27s

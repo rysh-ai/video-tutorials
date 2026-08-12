@@ -23,7 +23,7 @@ Sleep 1s
 # "Drive a running session from the outside --
 #  no attach required."
 # ============================================================
-Sleep 2s
+Sleep 5s
 
 # ============================================================
 # 0:05-0:15  Send to the active pane
@@ -31,18 +31,18 @@ Sleep 2s
 #  Here we run ls -la in my-session without attaching."
 # ============================================================
 Type "rysh send my-session 'ls -la'"
-Sleep 2s
+Sleep 3.1s
 Enter
-Sleep 3s
+Sleep 4.65s
 
 # ============================================================
 # 0:15-0:24  Target a specific pane
 # "Add --pane with a pane ID to target one exact pane."
 # ============================================================
 Type "rysh send my-session 'go test ./...' --pane abc123"
-Sleep 2s
+Sleep 2.07s
 Enter
-Sleep 3s
+Sleep 3.1s
 
 # ============================================================
 # 0:24-0:34  Send a prompt
@@ -50,9 +50,9 @@ Sleep 3s
 #  the agent in that pane handles it."
 # ============================================================
 Type "rysh send my-session 'summarize the codebase' --mode prompt"
-Sleep 2s
+Sleep 2.2s
 Enter
-Sleep 3s
+Sleep 3.3s
 
 # ============================================================
 # 0:34-0:45  Force shell mode
@@ -60,6 +60,6 @@ Sleep 3s
 #  Omit --mode and Rysh uses the pane's current mode."
 # ============================================================
 Type "rysh send my-session 'make build' --mode shell"
-Sleep 2s
+Sleep 2.49s
 Enter
-Sleep 4s
+Sleep 4.98s

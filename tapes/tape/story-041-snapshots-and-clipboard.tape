@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Grab a pane's output to your clipboard --
 #  raw for you, redacted for sharing."
 # ============================================================
-Sleep 1s
+Sleep 3.25s
 
 # ============================================================
 # 0:03-0:07  Launch rysh
@@ -33,7 +33,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.95s
 
 # ============================================================
 # 0:07-0:13  Produce output
@@ -41,20 +41,20 @@ Sleep 3s
 # ============================================================
 Type "env | head -n 5"
 Enter
-Sleep 3s
+Sleep 5.29s
 
 # ============================================================
 # 0:13-0:18  Enter rysh mode
 # "Double-Escape over to rysh mode for the snapshot commands."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.64s
 Escape
-Sleep 0.3s
+Sleep 0.64s
 Escape
-Sleep 0.3s
+Sleep 0.64s
 Escape
-Sleep 1.5s
+Sleep 3.19s
 
 # ============================================================
 # 0:18-0:25  ##snap
@@ -63,7 +63,7 @@ Sleep 1.5s
 # ============================================================
 Type "##snap"
 Enter
-Sleep 3s
+Sleep 7.05s
 
 # ============================================================
 # 0:25-0:32  ##snap public
@@ -72,7 +72,7 @@ Sleep 3s
 # ============================================================
 Type "##snap public"
 Enter
-Sleep 3s
+Sleep 6.52s
 
 # ============================================================
 # 0:32-0:39  Print commands
@@ -81,13 +81,13 @@ Sleep 3s
 # ============================================================
 Type "##private pane print"
 Enter
-Sleep 2s
+Sleep 1.8s
 Type "##public pane print"
 Enter
-Sleep 3s
+Sleep 2.7s
 
 # ============================================================
 # 0:39-0:45  Hold final frame
 # "Snapshots make it easy to copy, paste, and share -- safely."
 # ============================================================
-Sleep 3s
+Sleep 6.49s

@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Ask the agent to search the web --
 #  web_search hits the Brave Search API, no approval needed."
 # ============================================================
-Sleep 1s
+Sleep 3.58s
 
 # ============================================================
 # 0:03-0:08  Launch rysh
@@ -34,16 +34,16 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 5.6s
 
 # ============================================================
 # 0:08-0:13  Switch to prompt mode
 # "Double-press Escape for prompt mode."
 # ============================================================
 Escape
-Sleep 0.3s
+Sleep 0.76s
 Escape
-Sleep 2s
+Sleep 5.06s
 
 # ============================================================
 # 0:13-0:32  Ask the agent to search
@@ -53,17 +53,17 @@ Sleep 2s
 # ============================================================
 Type "search the web for the latest Go release version"
 Enter
-Sleep 11s
+Sleep 19.03s
 
 # ============================================================
 # 0:32-0:37  Narrate the config
 # "Web search is off until you set brave_api_key in your config, or the
 #  RYSH_BRAVE_API_KEY environment variable -- then every pane can reach the web."
 # ============================================================
-Sleep 4s
+Sleep 5.97s
 
 # ============================================================
 # 0:37-0:40  Hold final frame
 # "The agent's reach extends past your machine -- straight to the web."
 # ============================================================
-Sleep 3s
+Sleep 3.58s

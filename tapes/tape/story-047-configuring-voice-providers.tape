@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Deepgram or Whisper, sox or ffmpeg --
 #  pick your transcription provider and recorder."
 # ============================================================
-Sleep 1s
+Sleep 3.53s
 
 # ============================================================
 # 0:03-0:13  Show the [voice_control] section
@@ -36,14 +36,14 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 1.32s
 Type "echo '[voice_control]'"
 Enter
 Type "echo 'tts_provider_name = deepgram   # or whisper (alias: openai)'"
 Enter
 Type "echo 'api_key = ...'"
 Enter
-Sleep 4s
+Sleep 1.76s
 
 # ============================================================
 # 0:13-0:22  The recorder option
@@ -57,7 +57,7 @@ Type "echo 'recorder    = auto   # sox | ffmpeg | afrecord | arecord'"
 Enter
 Type "echo 'max_seconds = 120'"
 Enter
-Sleep 4s
+Sleep 2.8s
 
 # ============================================================
 # 0:22-0:31  Env overrides + mic permission
@@ -67,14 +67,14 @@ Sleep 4s
 # ============================================================
 Type "echo 'export RYSH_VOICE_ENABLED=true RYSH_VOICE_CONTROL_API_KEY=...'"
 Enter
-Sleep 2s
+Sleep 0.11s
 Type "echo '# macOS: System Settings -> Privacy & Security -> Microphone'"
 Enter
-Sleep 4s
+Sleep 0.22s
 
 # ============================================================
 # 0:31-0:40  Hold final frame
 # "Set the provider, set the recorder, grant the mic --
 #  and your voice becomes just another way to prompt."
 # ============================================================
-Sleep 3s
+Sleep 10.6s

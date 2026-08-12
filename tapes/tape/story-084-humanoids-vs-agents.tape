@@ -25,7 +25,7 @@ Set Shell "bash"
 # "Same brain, same skill format --
 #  agents face inward, humanoids face the world."
 # ============================================================
-Sleep 1s
+Sleep 3.22s
 
 # ============================================================
 # 0:03-0:09  Launch rysh and enter rysh mode
@@ -34,15 +34,15 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 3.2s
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 0.3s
+Sleep 0.32s
 Escape
-Sleep 1.5s
+Sleep 1.6s
 
 # ============================================================
 # 0:09-0:17  Spawn an agent
@@ -51,7 +51,7 @@ Sleep 1.5s
 # ============================================================
 Type "##agent spawn worker 'You are an internal task worker.'"
 Enter
-Sleep 3s
+Sleep 4.38s
 
 # ============================================================
 # 0:17-0:25  Spawn a humanoid
@@ -60,7 +60,7 @@ Sleep 3s
 # ============================================================
 Type "##humanoid spawn support 'You are an external-facing support agent.'"
 Enter
-Sleep 3s
+Sleep 3.4s
 
 # ============================================================
 # 0:25-0:34  Both respond to @ / @@
@@ -69,14 +69,14 @@ Sleep 3s
 # ============================================================
 Type "@@worker deactivate"
 Enter
-Sleep 2s
+Sleep 3.29s
 Type "@@support deactivate"
 Enter
-Sleep 2s
+Sleep 3.28s
 
 # ============================================================
 # 0:34-0:40  Hold final frame
 # "Agents are your internal team; humanoids are your public face.
 #  One format, two reaches."
 # ============================================================
-Sleep 3s
+Sleep 6.43s

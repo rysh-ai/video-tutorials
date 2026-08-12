@@ -23,7 +23,7 @@ Sleep 1s
 # "Create a session attached, or spin one up headless
 #  as a background daemon."
 # ============================================================
-Sleep 2s
+Sleep 5s
 
 # ============================================================
 # 0:05-0:15  Create and attach
@@ -31,15 +31,15 @@ Sleep 2s
 #  and attaches its TUI right away."
 # ============================================================
 Type "rysh create my-session"
-Sleep 2s
+Sleep 2.03s
 Enter
-Sleep 3s
+Sleep 3.05s
 
 # Detach so we can show the headless variant
 Ctrl+o
-Sleep 1s
+Sleep 1.01s
 Type "d"
-Sleep 2s
+Sleep 2.03s
 
 # ============================================================
 # 0:15-0:27  Create detached / headless
@@ -47,9 +47,9 @@ Sleep 2s
 #  headlessly -- no TUI, control returns to your prompt."
 # ============================================================
 Type "rysh create build-bot --detached"
-Sleep 2s
+Sleep 3.81s
 Enter
-Sleep 3s
+Sleep 5.72s
 
 # ============================================================
 # 0:27-0:36  Confirm it's running
@@ -58,7 +58,7 @@ Sleep 3s
 # ============================================================
 Type "rysh list-sessions"
 Enter
-Sleep 4s
+Sleep 7.58s
 
 # ============================================================
 # 0:36-0:45  Attach later
@@ -67,4 +67,4 @@ Sleep 4s
 # ============================================================
 Type "rysh attach build-bot"
 Enter
-Sleep 4s
+Sleep 7.35s

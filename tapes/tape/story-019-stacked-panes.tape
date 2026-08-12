@@ -26,7 +26,7 @@ Set Shell "bash"
 # "Stack panes like a deck of cards --
 #  many terminals in the footprint of one."
 # ============================================================
-Sleep 1s
+Sleep 4.16s
 
 # ============================================================
 # 0:04-0:09  Launch rysh
@@ -34,7 +34,7 @@ Sleep 1s
 # ============================================================
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 4.83s
 
 # ============================================================
 # 0:09-0:17  Ctrl+P s -- first stack
@@ -42,9 +42,9 @@ Sleep 3s
 #  The border title now reads one of two."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 2.72s
 Type "s"
-Sleep 2s
+Sleep 5.45s
 
 # ============================================================
 # 0:17-0:25  Ctrl+P s -- second stack
@@ -52,9 +52,9 @@ Sleep 2s
 #  Only the front pane is full-size."
 # ============================================================
 Ctrl+p
-Sleep 1s
+Sleep 2.72s
 Type "s"
-Sleep 2s
+Sleep 5.45s
 
 # ============================================================
 # 0:25-0:35  Observe grey background title bars
@@ -62,14 +62,14 @@ Sleep 2s
 #  title bars at the bottom -- a deck you flip through."
 # ============================================================
 Escape
-Sleep 1s
+Sleep 2.13s
 Type "echo front of the stack"
 Enter
-Sleep 3s
+Sleep 6.4s
 
 # ============================================================
 # 0:35-0:45  Recap / hold frame
 # "Stacking keeps related terminals together without crowding
 #  your screen. Next up: rotating through the stack."
 # ============================================================
-Sleep 4s
+Sleep 10.4s

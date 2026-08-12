@@ -23,29 +23,29 @@ Sleep 1s
 # "The ##tab command is your tab control center --
 #  list, inspect, delete, and toggle pipelines."
 # ============================================================
-Sleep 2s
+Sleep 0.57s
 
 Type "rysh"
 Enter
-Sleep 3s
+Sleep 0.86s
 
 # Make a couple of tabs to manage
 Ctrl+t
-Sleep 1s
+Sleep 0.29s
 Type "n"
-Sleep 1s
+Sleep 0.29s
 Type "n"
-Sleep 1.5s
+Sleep 0.43s
 Escape
-Sleep 1s
+Sleep 0.29s
 
 # Switch to rysh input mode
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 0.3s
+Sleep 0.1s
 Escape
-Sleep 1s
+Sleep 0.28s
 
 # ============================================================
 # 0:04-0:14  List tabs
@@ -53,9 +53,9 @@ Sleep 1s
 #  and how many panes it holds."
 # ============================================================
 Type "##tab list"
-Sleep 2s
+Sleep 3.78s
 Enter
-Sleep 3s
+Sleep 5.66s
 
 # ============================================================
 # 0:14-0:23  List panes in a tab
@@ -63,18 +63,18 @@ Sleep 3s
 #  and lists the panes inside it."
 # ============================================================
 Type "##tab list-panes"
-Sleep 2s
+Sleep 3.18s
 Enter
-Sleep 3s
+Sleep 4.78s
 
 # ============================================================
 # 0:23-0:31  Delete a tab
 # "##tab delete with an ID removes a tab you no longer need."
 # ============================================================
 Type "##tab delete 3"
-Sleep 2s
+Sleep 2.84s
 Enter
-Sleep 3s
+Sleep 4.25s
 
 # ============================================================
 # 0:31-0:40  Pipeline toggle
@@ -82,6 +82,6 @@ Sleep 3s
 #  for the tab; disable turns it back off."
 # ============================================================
 Type "##tab pipeline enable"
-Sleep 2s
+Sleep 2.53s
 Enter
-Sleep 4s
+Sleep 5.06s
