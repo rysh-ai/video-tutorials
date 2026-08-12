@@ -1,0 +1,4 @@
+tape	static_budget_s	wall_s	real_duration_s	drift_ratio	load_before	load_after	rc
+story-019-stacked-panes	20.550	239	2.000000	0.097	63.28	131.13	0
+story-050-editing-files	30.975	278	4.400000	0.142	140.15	140.79	0
+story-001-what-is-rysh	37.600	175	10.480000	0.279	128.23	53.42	0
