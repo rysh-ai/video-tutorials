@@ -1,0 +1,34 @@
+# Demo 2 — narration. One cue per `# @section N` in demo.tape.
+
+[1]
+Detaching from a session already keeps your agents running, because the daemon
+owns them, not your terminal. The harder case is stopping the session outright.
+So: two stacked panes, and Claude Code started in the first one with hash hash
+claude.
+
+[2]
+The second pane gets Codex, the same way. Two different agents, two panes, one
+session. Rysh pins each one to the pane it started in, and remembers which
+conversation belongs where.
+
+[3]
+Now something to prove it by. Each agent is told a codeword and nothing else.
+Only these two running conversations know it. Nothing on disk in this project
+mentions either word.
+
+[4]
+And now the session is stopped. Not detached — stopped. The daemon exits, every
+pane shell is killed, and both agent processes go with it. The session is still
+listed, but nothing of it is running.
+
+[5]
+Start it again, and the layout comes back — which multiplexers have always
+done. Watch the panes though. Rysh replays each agent's own resume line, so
+Claude and Codex restart by themselves, in the right directories, unattended
+and without being prompted.
+
+[6]
+The real question is whether the conversation came back or just the process. So
+ask. Each one answers with the codeword it was told before the stop, which
+means these are the same two conversations, continued, not two fresh agents
+that happen to be sitting in the same panes.

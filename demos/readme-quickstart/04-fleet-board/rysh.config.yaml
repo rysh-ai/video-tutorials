@@ -1,0 +1,37 @@
+# 04-fleet-board — its own session, its own bus, its own state.
+#
+# Copied into the workspace by setup.sh, because `rysh create` reads this file
+# from the CURRENT directory and the workspace is /tmp/rysh-demo-4.
+
+rysh:
+    session_name: "fleetboard"
+    upgrade_on_attach: "off"
+    working_directory: "."
+
+nats:
+    mode: "embedded"
+    # MUST be unique on this machine. At a port something else already holds,
+    # this daemon does not fail — it quietly joins that server as a CLIENT, so
+    # two sessions share one bus and the demo dies when the other one stops.
+    # 24242 is the founder's live session; 24343, 24344 and 24345 are already held
+    # by other rysh sessions on this box. setup.sh asserts we are the LISTENER, which
+    # is how 24345 was caught: the daemon reported the right port and was a client on it.
+    port: 24350
+    data_dir: ".rysh/nats"
+
+provider:
+    name: "claude"
+    command: "claude"
+    model: "claude-sonnet-5"
+    max_tokens: 4096
+
+ui:
+    shell: "/bin/bash"
+    initial_tabs: 1
+    initial_panes: 1
+
+logging:
+    log_level: "off"
+
+upstream:
+    enabled: false

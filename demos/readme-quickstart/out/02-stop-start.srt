@@ -1,0 +1,112 @@
+1
+00:00:00,320 --> 00:00:02,347
+Detaching from a session already
+keeps your agents running,
+
+2
+00:00:02,347 --> 00:00:04,107
+because the daemon owns
+them, not your terminal.
+
+3
+00:00:04,213 --> 00:00:05,867
+The harder case is stopping
+the session outright.
+
+4
+00:00:05,867 --> 00:00:07,893
+So: two stacked panes,
+and Claude Code started
+
+5
+00:00:07,893 --> 00:00:09,280
+in the first one with hash hash claude.
+
+6
+00:00:10,923 --> 00:00:12,790
+The second pane gets Codex, the same way.
+
+7
+00:00:12,843 --> 00:00:14,657
+Two different agents,
+two panes, one session.
+
+8
+00:00:14,657 --> 00:00:16,577
+Rysh pins each one to
+the pane it started in,
+
+9
+00:00:16,577 --> 00:00:18,123
+and remembers which
+conversation belongs where.
+
+10
+00:00:19,173 --> 00:00:22,107
+Now something to prove it by. Each agent
+is told a codeword and nothing else.
+
+11
+00:00:22,213 --> 00:00:23,920
+Only these two running
+conversations know it.
+
+12
+00:00:24,187 --> 00:00:25,947
+Nothing on disk in this
+project mentions either word.
+
+13
+00:01:07,693 --> 00:01:10,307
+And now the session is stopped.
+Not detached — stopped.
+
+14
+00:01:10,413 --> 00:01:13,827
+The daemon exits, every pane shell is
+killed, and both agent processes go with it.
+
+15
+00:01:13,880 --> 00:01:15,747
+The session is still listed,
+but nothing of it is running.
+
+16
+00:01:17,983 --> 00:01:20,703
+Start it again, and the layout comes back
+— which multiplexers have always done.
+
+17
+00:01:21,290 --> 00:01:22,143
+Watch the panes though.
+
+18
+00:01:22,143 --> 00:01:25,653
+Rysh replays each agent's own resume line,
+so Claude and Codex restart by themselves,
+
+19
+00:01:25,653 --> 00:01:27,573
+in the right directories, unattended
+and without being prompted.
+
+20
+00:01:48,777 --> 00:01:51,497
+The real question is whether the
+conversation came back or just the process.
+
+21
+00:01:51,870 --> 00:01:55,390
+So ask. Each one answers with the
+codeword it was told before the stop,
+
+22
+00:01:55,390 --> 00:01:56,777
+which means these are the
+same two conversations,
+
+23
+00:01:56,777 --> 00:01:59,620
+continued, not two fresh agents that
+happen to be sitting in the same panes.
+

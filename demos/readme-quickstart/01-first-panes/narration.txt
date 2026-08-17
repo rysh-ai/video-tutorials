@@ -1,0 +1,40 @@
+# Demo 1 — narration. One cue per `# @section N` in demo.tape.
+#
+# Lines starting with # are dropped. Everything else under a [n] marker is
+# spoken as one paragraph, so write it the way it should sound, not the way it
+# would be laid out on a page.
+
+[1]
+Rysh is a terminal multiplexer built for coding agents. One Go binary, and you
+install it the usual way. That's the open source build, straight from the
+public module, and it lands on your path as rysh.
+
+[2]
+Start a session by name. Rysh runs it in a background daemon, which is the
+detail everything else in this video rests on. The session is not your
+terminal. Your terminal is just a window onto it.
+
+[3]
+Inside a session, work is organised in tabs. New tab, and you get one. Name it
+whatever the work is called, and the name is what you'll navigate by later.
+
+[4]
+A tab splits into lanes. A lane is a vertical column of the tab, and it's the
+unit you group related work into. Here's a second one, next to the first.
+
+[5]
+Inside a lane, panes stack. New stack, two, and now there are three panes in
+this lane, one on top of the other, each with its own shell. Stacking is how
+you keep several things open without shrinking any of them to nothing.
+
+[6]
+And now the point of all of it. Type hash hash claude in a pane, and Claude
+Code starts right there, with its conversation pinned to that pane. Control S
+and a number moves down the stack, so the second pane gets its own Claude — a
+separate process, a separate conversation, nothing shared between them.
+
+[7]
+Once more for the third. Then back to the top of the stack, where the first one
+is still sitting exactly as you left it. Three panes, three independent Claude
+sessions, all running at the same time in a single terminal window — and none
+of them tied to this terminal, which is what the next video is about.

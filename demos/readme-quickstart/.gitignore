@@ -1,0 +1,15 @@
+# Renders are NOT committed — the repo keeps the recipe, not the film
+# (design 025 §8a, and the same rule the sibling demos follow). Rebuild with
+# ./make-demo.sh <demo>; the .srt files ARE kept, because they are text, they are
+# what gets attached to a YouTube upload as the caption track, and they are the
+# only artefact here a reviewer can read in a diff.
+out/**/*.mp4
+
+# scratch
+.build/
+.smoke/
+*.log
+
+# _bin/rysh is a symlink to an absolute path on the machine that recorded, so it
+# cannot be committed usefully. make-demo.sh recreates it if it is missing.
+_bin/
