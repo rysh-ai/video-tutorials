@@ -1,0 +1,125 @@
+1
+00:00:00,587 --> 00:00:03,147
+Rysh is a terminal multiplexer
+built for coding agents.
+
+2
+00:00:03,253 --> 00:00:06,240
+One Go binary, and you install it the
+usual way. That's the open source build,
+
+3
+00:00:06,293 --> 00:00:10,121
+straight from the public module,
+and it lands on your path as rysh.
+
+4
+00:00:11,870 --> 00:00:15,017
+Start a session by name. Rysh
+runs it in a background daemon,
+
+5
+00:00:15,017 --> 00:00:17,043
+which is the detail everything
+else in this video rests on.
+
+6
+00:00:17,267 --> 00:00:19,827
+The session is not your terminal. Your
+terminal is just a window onto it.
+
+7
+00:00:20,787 --> 00:00:24,200
+Inside a session, work is organised
+in tabs. New tab, and you get one.
+
+8
+00:00:24,200 --> 00:00:26,493
+Name it whatever the work is called, and
+the name is what you'll navigate by later.
+
+9
+00:00:28,250 --> 00:00:31,130
+A tab splits into lanes. A lane
+is a vertical column of the tab,
+
+10
+00:00:31,130 --> 00:00:32,783
+and it's the unit you
+group related work into.
+
+11
+00:00:33,103 --> 00:00:34,383
+Here's a second one, next to the first.
+
+12
+00:00:35,513 --> 00:00:37,007
+Inside a lane, panes stack.
+
+13
+00:00:37,060 --> 00:00:39,407
+New stack, two, and now there
+are three panes in this lane,
+
+14
+00:00:39,407 --> 00:00:41,220
+one on top of the other,
+each with its own shell.
+
+15
+00:00:41,647 --> 00:00:43,087
+Stacking is how you keep several things open
+
+16
+00:00:43,087 --> 00:00:44,207
+without shrinking any of them to nothing.
+
+17
+00:00:45,543 --> 00:00:46,610
+And now the point of all of it.
+
+18
+00:00:46,610 --> 00:00:48,850
+Type hash hash claude in a
+pane, and Claude Code starts
+
+19
+00:00:48,850 --> 00:00:51,197
+right there, with its
+conversation pinned to that pane.
+
+20
+00:00:51,463 --> 00:00:54,489
+Control S and a number moves down the stack,
+so the second pane gets its own Claude
+
+21
+00:00:54,489 --> 00:00:57,600
+— a separate process, a separate
+conversation, nothing shared between them.
+
+22
+00:01:08,330 --> 00:01:11,210
+Once more for the third. Then
+back to the top of the stack,
+
+23
+00:01:11,260 --> 00:01:13,500
+where the first one is still
+sitting exactly as you left it.
+
+24
+00:01:13,713 --> 00:01:15,847
+Three panes, three
+independent Claude sessions,
+
+25
+00:01:15,900 --> 00:01:17,980
+all running at the same time in
+a single terminal window — and
+
+26
+00:01:17,980 --> 00:01:20,327
+none of them tied to this terminal,
+which is what the next video is about.
+

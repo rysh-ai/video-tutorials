@@ -1,0 +1,88 @@
+1
+00:00:00,533 --> 00:00:02,240
+Rysh doesn't care which
+agent you run, or how many.
+
+2
+00:00:02,347 --> 00:00:05,120
+New stack two, and this lane now
+holds three panes in one group.
+
+3
+00:00:05,173 --> 00:00:06,880
+Stacked, Zellij style: one open,
+
+4
+00:00:06,880 --> 00:00:08,747
+the others collapsed to a title
+bar with their number on it.
+
+5
+00:00:09,957 --> 00:00:10,757
+Now fill them.
+
+6
+00:00:10,863 --> 00:00:14,010
+Control S and a digit jumps straight to
+a pane, so pane one gets Claude Code.
+
+7
+00:00:14,010 --> 00:00:15,823
+Pane two gets Codex instead
+— a different vendor,
+
+8
+00:00:15,823 --> 00:00:18,330
+a different process, in the same
+session. Pane three gets a second Claude.
+
+9
+00:00:48,497 --> 00:00:50,897
+Each one gets its own instruction,
+typed straight into its pane.
+
+10
+00:00:51,280 --> 00:00:54,107
+There is no orchestrator here and
+no shared queue — every pane is just
+
+11
+00:00:54,107 --> 00:00:56,507
+an agent, being told what to do by
+the person sitting in front of it.
+
+12
+00:01:35,223 --> 00:01:38,157
+And now flip through the stack.
+All three are working at once.
+
+13
+00:01:38,317 --> 00:01:39,810
+You see one at a time
+because they're stacked,
+
+14
+00:01:39,810 --> 00:01:41,953
+but nothing is waiting its
+turn — three agent processes,
+
+15
+00:01:42,060 --> 00:01:45,420
+each with its own shell and its own
+conversation, running side by side underneath.
+
+16
+00:01:57,227 --> 00:02:00,000
+Three files, written by three
+agents, in parallel, in one session.
+
+17
+00:02:00,107 --> 00:02:01,707
+Everything in this video
+came out of a single terminal
+
+18
+00:02:01,707 --> 00:02:03,520
+window and a binary you
+install with one command.
+

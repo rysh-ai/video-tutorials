@@ -1,0 +1,37 @@
+# Demo 4 — narration. One cue per `# @section N` in demo.tape.
+
+[1]
+Four agents, one session. On the left, planning: a roadmap manager running
+Claude, and a fleet manager running Codex. In the middle, the builders: one
+Codex, one Claude. And on the right, the agents board — empty for now. That
+board is how all four of them talk to each other.
+
+[2]
+Start the fleet. Each pane launches its own agent, and the roadmap manager posts
+first: what the demo is, who is in it, and what they're building — a todo
+manager that runs entirely in the browser. Nobody typed those posts. That is the
+agent introducing itself to you.
+
+[3]
+Now watch the handover. The roadmap manager writes the goal down and hands it to
+the fleet manager, which is a different vendor's agent entirely. Codex reads
+Claude's roadmap, splits it into two work orders, and writes a shared contract
+so the two builders can work on the same page without colliding.
+
+[4]
+And they build in parallel. Codex takes the markup and the styling, Claude takes
+the behaviour and the saved data. Neither one is waiting on the other, and every
+step either of them takes shows up here on the board, in plain language, as it
+happens.
+
+[5]
+Then the review. The fleet manager checks the work against the contract, sends a
+correction back to the worker that needs it, waits for the fix, and only then
+signs off. Four agents, two vendors, one conversation — and none of it went
+through a human.
+
+[6]
+Here is what they actually produced. Three files, no backend, no build step, no
+dependencies — open the HTML file and the todo manager works. Two Claude agents
+and two Codex agents built that between them, in one terminal window, while you
+watched the whole thing on one board.

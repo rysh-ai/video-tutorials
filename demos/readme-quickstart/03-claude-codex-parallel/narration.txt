@@ -1,0 +1,27 @@
+# Demo 3 — narration. One cue per `# @section N` in demo.tape.
+
+[1]
+Rysh doesn't care which agent you run, or how many. New stack two, and this lane
+now holds three panes in one group. Stacked, Zellij style: one open, the others
+collapsed to a title bar with their number on it.
+
+[2]
+Now fill them. Control S and a digit jumps straight to a pane, so pane one gets
+Claude Code. Pane two gets Codex instead — a different vendor, a different
+process, in the same session. Pane three gets a second Claude.
+
+[3]
+Each one gets its own instruction, typed straight into its pane. There is no
+orchestrator here and no shared queue — every pane is just an agent, being told
+what to do by the person sitting in front of it.
+
+[4]
+And now flip through the stack. All three are working at once. You see one at a
+time because they're stacked, but nothing is waiting its turn — three agent
+processes, each with its own shell and its own conversation, running side by
+side underneath.
+
+[5]
+Three files, written by three agents, in parallel, in one session. Everything in
+this video came out of a single terminal window and a binary you install with
+one command.

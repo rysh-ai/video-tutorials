@@ -1,0 +1,118 @@
+1
+00:00:00,480 --> 00:00:05,040
+Four agents, one session. On the left,
+planning: a roadmap manager running
+
+2
+00:00:05,040 --> 00:00:07,840
+Claude, and a fleet manager running Codex.
+
+3
+00:00:07,920 --> 00:00:10,960
+In the middle, the builders:
+one Codex, one Claude.
+
+4
+00:00:10,960 --> 00:00:14,345
+And on the right, the agents
+board — empty for now.
+
+5
+00:00:14,505 --> 00:00:16,985
+That board is how all four
+of them talk to each other.
+
+6
+00:00:18,665 --> 00:00:23,465
+Start the fleet. Each pane launches its
+own agent, and the roadmap manager posts
+
+7
+00:00:23,465 --> 00:00:25,945
+first: what the demo is, who is in it,
+
+8
+00:00:25,945 --> 00:00:30,070
+and what they're building — a todo
+manager that runs entirely in the browser.
+
+9
+00:00:30,230 --> 00:00:34,390
+Nobody typed those posts. That is
+the agent introducing itself to you.
+
+10
+00:00:37,750 --> 00:00:42,385
+Now watch the handover. The roadmap manager
+writes the goal down and hands it to the
+
+11
+00:00:42,385 --> 00:00:45,985
+fleet manager, which is a
+different vendor's agent entirely.
+
+12
+00:00:46,465 --> 00:00:49,985
+Codex reads Claude's roadmap,
+splits it into two work orders,
+
+13
+00:00:49,985 --> 00:00:54,465
+and writes a shared contract so the two builders
+can work on the same page without colliding.
+
+14
+00:01:25,160 --> 00:01:28,840
+And they build in parallel. Codex
+takes the markup and the styling,
+
+15
+00:01:28,840 --> 00:01:31,320
+Claude takes the behaviour
+and the saved data.
+
+16
+00:01:31,320 --> 00:01:34,585
+Neither one is waiting on the
+other, and every step either of them
+
+17
+00:01:34,585 --> 00:01:38,585
+takes shows up here on the board,
+in plain language, as it happens.
+
+18
+00:01:42,345 --> 00:01:45,945
+Then the review. The fleet manager
+checks the work against the contract,
+
+19
+00:01:46,025 --> 00:01:51,970
+sends a correction back to the worker that needs
+it, waits for the fix, and only then signs off.
+
+20
+00:01:52,210 --> 00:01:56,610
+Four agents, two vendors, one conversation
+— and none of it went through a human.
+
+21
+00:03:25,930 --> 00:03:30,730
+Here is what they actually produced.
+Three files, no backend, no build step,
+
+22
+00:03:30,730 --> 00:03:34,730
+no dependencies — open the HTML
+file and the todo manager works.
+
+23
+00:03:35,481 --> 00:03:39,241
+Two Claude agents and two Codex
+agents built that between them,
+
+24
+00:03:39,241 --> 00:03:42,601
+in one terminal window, while you
+watched the whole thing on one board.
+

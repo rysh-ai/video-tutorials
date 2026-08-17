@@ -1,0 +1,439 @@
+1
+00:00:00,450 --> 00:00:04,610
+Multi-agent systems usually fail for a
+reason that has nothing to do with the
+
+2
+00:00:04,690 --> 00:00:07,970
+model. They fail because
+the organization is wrong.
+
+3
+00:00:08,050 --> 00:00:12,661
+Every framework hands you one architecture,
+and every problem gets bent to fit
+
+4
+00:00:12,741 --> 00:00:15,461
+it. But work has a shape of its own.
+
+5
+00:00:15,781 --> 00:00:18,021
+Graph engineering designs that shape.
+
+6
+00:00:19,776 --> 00:00:22,096
+So treat the organization as a graph.
+
+7
+00:00:22,576 --> 00:00:28,256
+Agents and humans are nodes. Delegation,
+review and escalation are typed edges.
+
+8
+00:00:28,576 --> 00:00:30,816
+What you engineer is the topology.
+
+9
+00:00:31,136 --> 00:00:36,105
+And the absence of an edge is a
+design decision, not an omission —
+
+10
+00:00:36,185 --> 00:00:39,185
+what is disconnected carries as
+much intent as what is connected.
+
+11
+00:00:40,950 --> 00:00:44,390
+Every topology answers
+the same ten questions.
+
+12
+00:00:44,470 --> 00:00:47,519
+Who does the work. Who can talk to whom.
+
+13
+00:00:47,599 --> 00:00:51,199
+Who can command whom. Where
+iteration is allowed.
+
+14
+00:00:51,359 --> 00:00:55,199
+Who approves progression.
+Where a human is required.
+
+15
+00:00:55,359 --> 00:00:56,879
+And when the work is finished.
+
+16
+00:00:58,804 --> 00:01:03,444
+The paper maps fifteen patterns,
+one per organizational problem.
+
+17
+00:01:03,684 --> 00:01:06,124
+The patterns are not inventions —
+
+18
+00:01:06,204 --> 00:01:11,303
+directed workflows, actor systems and
+supervisor trees predate this by decades.
+
+19
+00:01:11,623 --> 00:01:13,383
+The contribution is the mapping:
+
+20
+00:01:13,463 --> 00:01:18,023
+which shape answers which problem, and that
+choosing it belongs to the organization,
+
+21
+00:01:18,103 --> 00:01:19,303
+not the vendor.
+
+22
+00:01:20,578 --> 00:01:25,058
+Two of them, side by side. Pattern
+six is a hypothesis swarm:
+
+23
+00:01:25,138 --> 00:01:29,058
+several agents, each assigned a different
+explanation, feeding evidence to a
+
+24
+00:01:29,138 --> 00:01:31,298
+verifier whose job is to falsify.
+
+25
+00:01:31,378 --> 00:01:35,673
+Look at what is missing. There is
+no edge between the investigators —
+
+26
+00:01:35,753 --> 00:01:39,233
+because two agents that can talk
+can converge on each other's error.
+
+27
+00:01:39,473 --> 00:01:42,033
+Now pattern five, incident command.
+
+28
+00:01:42,193 --> 00:01:46,593
+Same blocks, and every edge runs both ways,
+because a commander needs one coherent
+
+29
+00:01:46,673 --> 00:01:50,227
+picture in real time. More
+communication is not better.
+
+30
+00:01:50,467 --> 00:01:51,907
+Correct communication is.
+
+31
+00:01:53,872 --> 00:01:56,352
+Pattern ten is the one that scales.
+
+32
+00:01:56,592 --> 00:02:02,545
+A chief executive agent, a coordinator,
+fleet managers under that, bounded worker
+
+33
+00:02:02,625 --> 00:02:06,065
+fleets under them, reports
+compressed on the way up.
+
+34
+00:02:06,305 --> 00:02:09,585
+The chief executive does not
+communicate with fifty workers.
+
+35
+00:02:09,905 --> 00:02:12,545
+That is coordination cost, compressed.
+
+36
+00:02:14,550 --> 00:02:19,830
+Pattern ten, instantiated. Four Claude
+sessions, each in its own pane, and a
+
+37
+00:02:19,910 --> 00:02:22,310
+fifth pane that is the
+board they report to.
+
+38
+00:02:22,630 --> 00:02:27,750
+Watch the shape of it. The chief executive
+posts the aim, then sends exactly
+
+39
+00:02:27,830 --> 00:02:31,775
+one message — down, to
+its one direct report.
+
+40
+00:02:31,935 --> 00:02:35,535
+The fleet manager splits the
+work and sends two orders down.
+
+41
+00:02:35,855 --> 00:02:39,855
+The workers never talk to each other,
+because they have no edge to talk over.
+
+42
+00:02:40,095 --> 00:02:42,095
+And nothing reports back by message:
+
+43
+00:02:42,495 --> 00:02:46,583
+every result goes onto the board, because
+a message can be missed and a post
+
+44
+00:02:46,663 --> 00:02:50,583
+cannot. That is about a minute
+of real time, sped up here.
+
+45
+00:02:52,268 --> 00:02:55,068
+Here is that same run as
+the board recorded it.
+
+46
+00:02:55,148 --> 00:02:57,708
+One line per post, seconds from the first.
+
+47
+00:02:57,788 --> 00:02:59,948
+The chief executive opens the board.
+
+48
+00:03:00,028 --> 00:03:02,588
+Within ten seconds all
+three have checked in.
+
+49
+00:03:02,668 --> 00:03:04,828
+The order goes down one tier, then two.
+
+50
+00:03:05,283 --> 00:03:09,403
+Both workers report verified within
+a few seconds of each other —
+
+51
+00:03:09,483 --> 00:03:12,803
+independently, which is the whole
+point of giving them no edge.
+
+52
+00:03:13,043 --> 00:03:16,643
+The manager certifies, and only then
+does the chief executive close it.
+
+53
+00:03:17,201 --> 00:03:21,361
+About a minute, end to end. And what
+those two workers checked were two claims
+
+54
+00:03:21,441 --> 00:03:26,161
+this video makes: that the cap is three, and
+that the catalogue has fifteen patterns.
+
+55
+00:03:28,066 --> 00:03:31,746
+So build that shape against
+rysh's own roadmap.
+
+56
+00:03:31,906 --> 00:03:34,146
+Five epics become five units.
+
+57
+00:03:34,306 --> 00:03:39,746
+The template lays a roadmap manager over
+a chief executive, a fleet manager per
+
+58
+00:03:39,826 --> 00:03:42,129
+unit, three workers under each.
+
+59
+00:03:42,609 --> 00:03:44,849
+Twenty-two agents, four tiers.
+
+60
+00:03:45,169 --> 00:03:50,129
+And this is a dry run — the count arrives
+before anything opens, and before anything
+
+61
+00:03:50,209 --> 00:03:51,409
+is spent.
+
+62
+00:03:52,344 --> 00:03:54,584
+Now scale out instead of down.
+
+63
+00:03:54,984 --> 00:03:59,864
+One fleet per epic, twenty-two of them,
+registered against a live session.
+
+64
+00:04:00,184 --> 00:04:04,565
+Every one of those registrations opened
+exactly nothing, and the command says
+
+65
+00:04:04,645 --> 00:04:08,165
+so itself. A registered fleet is metadata:
+
+66
+00:04:08,325 --> 00:04:12,005
+a name, a state, a board, a member list.
+
+67
+00:04:13,670 --> 00:04:16,070
+Because running is the
+part that is bounded.
+
+68
+00:04:16,230 --> 00:04:18,950
+The registry caps
+concurrent fleets at three.
+
+69
+00:04:19,030 --> 00:04:20,790
+Promote three and they go up.
+
+70
+00:04:21,030 --> 00:04:23,790
+Ask for a fourth and it is refused —
+
+71
+00:04:23,870 --> 00:04:27,445
+and the refusal names the three already
+running, instead of queueing quietly
+
+72
+00:04:27,525 --> 00:04:30,485
+and looking like success. Two precisions.
+
+73
+00:04:30,805 --> 00:04:34,165
+This recording moves registry
+state and launches no agents.
+
+74
+00:04:34,405 --> 00:04:38,885
+The measured run did: on the eleventh of
+August, twenty twenty-six, twenty-two
+
+75
+00:04:38,965 --> 00:04:43,220
+fleets registered, three
+brought up, four agents each —
+
+76
+00:04:43,300 --> 00:04:48,100
+twelve live Claude sessions, twelve
+git worktrees, zero failures —
+
+77
+00:04:48,180 --> 00:04:50,300
+and nineteen refused by this same cap.
+
+78
+00:04:50,380 --> 00:04:53,980
+And the cap is a constant in the
+registry, not a rule in the driver.
+
+79
+00:04:55,788 --> 00:05:00,268
+That is the general move, and it is why
+topology deserves the same review rigour
+
+80
+00:05:00,348 --> 00:05:05,148
+as code. Structure gives guarantees that
+hold even when an agent misbehaves.
+
+81
+00:05:05,308 --> 00:05:09,849
+An agent with no edge to production cannot
+deploy, however convinced it is that
+
+82
+00:05:09,929 --> 00:05:14,249
+it should. Parallel nodes with no lateral
+edge cannot contaminate each other's
+
+83
+00:05:14,329 --> 00:05:17,289
+thinking. None of it depends
+on a model behaving well.
+
+84
+00:05:19,114 --> 00:05:21,834
+And now the part that
+usually goes missing.
+
+85
+00:05:21,994 --> 00:05:26,034
+Rysh's worktree isolation is
+file isolation on your machine —
+
+86
+00:05:26,114 --> 00:05:29,914
+not containers, not sandboxes,
+not remote execution.
+
+87
+00:05:30,074 --> 00:05:33,354
+The board is a monitoring
+view, not an audit log.
+
+88
+00:05:33,754 --> 00:05:38,419
+The chart arranging agents into a chief
+executive, managers and workers is in-house
+
+89
+00:05:38,499 --> 00:05:42,019
+tooling on shipped primitives,
+not a shipped orchestrator.
+
+90
+00:05:42,419 --> 00:05:46,259
+The registry and the fleet commands you
+just watched are merged on the development
+
+91
+00:05:46,339 --> 00:05:48,834
+branch, not in a numbered release.
+
+92
+00:05:49,074 --> 00:05:52,834
+And we do not claim fully
+autonomous multi-agent delivery.
+
+93
+00:05:53,154 --> 00:05:57,034
+These patterns make an agent
+organization governable —
+
+94
+00:05:57,114 --> 00:05:58,754
+a different promise from unattended.
+

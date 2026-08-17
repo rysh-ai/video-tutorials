@@ -1,0 +1,112 @@
+1
+00:00:00,480 --> 00:00:03,520
+Detaching from a session already
+keeps your agents running,
+
+2
+00:00:03,520 --> 00:00:06,160
+because the daemon owns
+them, not your terminal.
+
+3
+00:00:06,320 --> 00:00:08,800
+The harder case is stopping
+the session outright.
+
+4
+00:00:08,800 --> 00:00:11,840
+So: two stacked panes,
+and Claude Code started
+
+5
+00:00:11,840 --> 00:00:13,920
+in the first one with hash hash claude.
+
+6
+00:00:16,385 --> 00:00:19,185
+The second pane gets Codex, the same way.
+
+7
+00:00:19,265 --> 00:00:21,985
+Two different agents,
+two panes, one session.
+
+8
+00:00:21,985 --> 00:00:24,865
+Rysh pins each one to
+the pane it started in,
+
+9
+00:00:24,865 --> 00:00:27,185
+and remembers which
+conversation belongs where.
+
+10
+00:00:28,760 --> 00:00:33,160
+Now something to prove it by. Each agent
+is told a codeword and nothing else.
+
+11
+00:00:33,320 --> 00:00:35,880
+Only these two running
+conversations know it.
+
+12
+00:00:36,280 --> 00:00:38,920
+Nothing on disk in this
+project mentions either word.
+
+13
+00:01:41,540 --> 00:01:45,460
+And now the session is stopped.
+Not detached — stopped.
+
+14
+00:01:45,620 --> 00:01:50,740
+The daemon exits, every pane shell is
+killed, and both agent processes go with it.
+
+15
+00:01:50,820 --> 00:01:53,620
+The session is still listed,
+but nothing of it is running.
+
+16
+00:01:56,975 --> 00:02:01,055
+Start it again, and the layout comes back
+— which multiplexers have always done.
+
+17
+00:02:01,935 --> 00:02:03,215
+Watch the panes though.
+
+18
+00:02:03,215 --> 00:02:08,480
+Rysh replays each agent's own resume line,
+so Claude and Codex restart by themselves,
+
+19
+00:02:08,480 --> 00:02:11,360
+in the right directories, unattended
+and without being prompted.
+
+20
+00:02:43,165 --> 00:02:47,245
+The real question is whether the
+conversation came back or just the process.
+
+21
+00:02:47,805 --> 00:02:53,085
+So ask. Each one answers with the
+codeword it was told before the stop,
+
+22
+00:02:53,085 --> 00:02:55,165
+which means these are the
+same two conversations,
+
+23
+00:02:55,165 --> 00:02:59,430
+continued, not two fresh agents that
+happen to be sitting in the same panes.
+
