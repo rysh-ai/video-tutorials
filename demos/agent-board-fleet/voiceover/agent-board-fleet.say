@@ -1,0 +1,76 @@
+# Story: A fleet of agents and the board they report to (209s)
+# Hook: Four Claude agents build a web app in one session — and every one of them reports to a shared board.
+# Duration: 209s
+# Source: ../out/agent-board-fleet.mp4  (take 1, 2026-08-15, 209.4s)
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Gaps between entries are silent — the viewer is reading the board.
+#
+# HOW THESE CUES WERE DERIVED. Not from the tape's Sleep lines: VHS drops frames
+# unevenly under load, so tape time is not video time. They were read off the
+# FRAMES — six crops of the board pane at t=25/50/75/120/160/200 (_run/contact.png),
+# each giving the newest post visible and therefore a wall-clock bracket. Two of
+# those brackets are one post wide, and together they fix the mapping at
+#
+#     video_t  =  wall_clock - 15:13:47
+#
+# which happens to be 1:1 here: this take was captured in real time. Every cue
+# below is a board timestamp put through that line. If the video is ever
+# re-recorded, these cues are wrong until they are re-derived the same way.
+#
+# BUDGET: windows are sized at 11-13 characters per second. OpenAI nova at
+# speed 1.0 runs about 15 ch/s, so every line has headroom. This matters more
+# than it looks — tts_openai.py advances its cursor by the ACTUAL audio length,
+# so one overflowing segment shifts every segment after it, and the drift is
+# silent.
+#
+# Total segments: 16
+
+[00:00.5 --> 00:07.5]
+One rysh session. In a moment, four Claude agents will go to work inside it.
+
+[00:08.0 --> 00:15.5]
+Three lanes: planning on the left, the builders in the middle, the shared board on the right.
+
+[00:18.5 --> 00:26.0]
+The roadmap agent goes first, and its very first act is to tell the board what this demo is.
+
+[00:26.5 --> 00:34.0]
+Then the other three check in. Standing by. Nobody has been given any work yet.
+
+[00:35.0 --> 00:45.0]
+The roadmap writes the goal down: a todo manager that runs entirely in the browser. No backend, no build step, no dependencies.
+
+[00:47.0 --> 00:56.0]
+It posts the deliverable, then hands the whole thing to the fleet manager. That is the last order it gives.
+
+[01:00.0 --> 01:10.0]
+The manager splits the work by layer. Worker one takes the markup and the styling, worker two takes all of the logic.
+
+[01:12.0 --> 01:24.0]
+But first it writes a contract: the six element ids both halves must agree on. That is what stops two parallel agents from colliding.
+
+[01:26.0 --> 01:36.0]
+Contract posted. Now the work orders go out, one to each worker, and the build starts.
+
+[01:38.0 --> 01:50.0]
+Watch the middle lane. Both workers are running at once, and neither has read the other's file. The contract is the only thing holding them together.
+
+[01:58.0 --> 02:08.0]
+Worker one is done: the page and the stylesheet, checked back against the contract, id by id.
+
+[02:25.0 --> 02:37.0]
+Worker two finishes the logic. Add, toggle, delete, clear completed, a live count, and the list persisted to local storage.
+
+[02:42.0 --> 02:56.0]
+Notice that neither worker reported back by message. They posted to the board, and the manager has been watching it, because a post cannot be missed and a message can.
+
+[02:57.0 --> 03:10.0]
+Now the manager verifies for itself. Every id lines up, the page loads both files, the syntax is clean. Then it signs off.
+
+[03:13.0 --> 03:25.0]
+The roadmap checks the work against its own acceptance list and closes the demo. Four agents, one board, a working app.
+
+[03:25.5 --> 03:29.0]
+And all four have signed off.

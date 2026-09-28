@@ -1,0 +1,3344 @@
+{
+  "metadata": {
+    "transaction_key": "deprecated",
+    "request_id": "01a00655-e4db-7eb2-ae1b-18c2632646aa",
+    "sha256": "fe8371ace7e36930c9c270316c5b5493c33df08bb80df3da594bce76fdd0443e",
+    "created": "2026-08-15T16:51:30.785Z",
+    "duration": 374.04,
+    "channels": 1,
+    "models": [
+      "2187e11a-3532-4498-b076-81fa530bdd49"
+    ],
+    "model_info": {
+      "2187e11a-3532-4498-b076-81fa530bdd49": {
+        "name": "general-nova-3",
+        "version": "2025-07-31.0",
+        "arch": "nova-3"
+      }
+    }
+  },
+  "results": {
+    "channels": [
+      {
+        "alternatives": [
+          {
+            "transcript": "One Rish session. In a moment, four Codex agents will go to work inside it. Three lanes. Planning on the left, the builders in the middle, the shared board on the right. The road map agent goes first, and its very first act is to tell the board what this demo is. Then the other three check-in, standing by, no work yet, every one of them will report to this board from here to the end. The road map writes the goal down, a to do manager that runs entirely in the browser. No back end, no build step, no dependencies. It waits until all three have checked in before handing over. A message sent to an agent that has not booted yet is simply lost. Handed to the fleet manager. That is the last order the road map gives. The build is not its job. The manager splits the work by layer. Worker one takes the page and the styling. Worker two takes all the behavior. But first, it writes a contract. Every shared ID, the markup of one to do item, and which file owns what. Two agents are about to build one page in parallel, and this is the only thing holding them together. Contract posted. The work orders go out, one to each worker, and the build starts. Watch the middle lane. Both workers are running at once, and neither has read the other's file. The board is the only thing they share. No shared memory, no lock file, no messages between them, just posts. Worker two's logic lands first, then worker one's page and stylesheet. Both sign off on the board. Neither reported back by message. The manager has been watching the board because a post cannot be missed and a message can. The manager now checks the real thing rather than the reports. Does every ID the script looks up actually exist in the markup? Now the interesting part. Verifying the manager finds a real defect. The remaining count is written twice on the page. It does not fix it itself. It names the mismatch, sends the file back to worker two, and posts that it is blocked. Worker two corrects it and signs off again. The manager rechecks, and this time, everything lines up. Every shared ID matches. Both files load. The syntax is clean. The manager signs off. The road map checks the finished app against its own acceptance list. Every action, the live count, and persistence across a reload. Four agents, one board, a working app, and all four have signed off.",
+            "confidence": 1.0,
+            "words": [
+              {
+                "word": "one",
+                "start": 0.96,
+                "end": 1.28,
+                "confidence": 0.9951172,
+                "punctuated_word": "One"
+              },
+              {
+                "word": "rish",
+                "start": 1.28,
+                "end": 1.5999999,
+                "confidence": 0.73828125,
+                "punctuated_word": "Rish"
+              },
+              {
+                "word": "session",
+                "start": 1.5999999,
+                "end": 2.24,
+                "confidence": 0.9941406,
+                "punctuated_word": "session."
+              },
+              {
+                "word": "in",
+                "start": 2.24,
+                "end": 2.48,
+                "confidence": 1.0,
+                "punctuated_word": "In"
+              },
+              {
+                "word": "a",
+                "start": 2.48,
+                "end": 2.56,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "moment",
+                "start": 2.56,
+                "end": 2.96,
+                "confidence": 0.99853516,
+                "punctuated_word": "moment,"
+              },
+              {
+                "word": "four",
+                "start": 2.96,
+                "end": 3.1999998,
+                "confidence": 0.99902344,
+                "punctuated_word": "four"
+              },
+              {
+                "word": "codex",
+                "start": 3.1999998,
+                "end": 3.6799998,
+                "confidence": 0.92822266,
+                "punctuated_word": "Codex"
+              },
+              {
+                "word": "agents",
+                "start": 3.6799998,
+                "end": 4.0,
+                "confidence": 0.9980469,
+                "punctuated_word": "agents"
+              },
+              {
+                "word": "will",
+                "start": 4.0,
+                "end": 4.24,
+                "confidence": 1.0,
+                "punctuated_word": "will"
+              },
+              {
+                "word": "go",
+                "start": 4.24,
+                "end": 4.4,
+                "confidence": 1.0,
+                "punctuated_word": "go"
+              },
+              {
+                "word": "to",
+                "start": 4.4,
+                "end": 4.56,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "work",
+                "start": 4.56,
+                "end": 4.72,
+                "confidence": 1.0,
+                "punctuated_word": "work"
+              },
+              {
+                "word": "inside",
+                "start": 4.72,
+                "end": 5.12,
+                "confidence": 1.0,
+                "punctuated_word": "inside"
+              },
+              {
+                "word": "it",
+                "start": 5.12,
+                "end": 5.6,
+                "confidence": 1.0,
+                "punctuated_word": "it."
+              },
+              {
+                "word": "three",
+                "start": 9.5199995,
+                "end": 9.84,
+                "confidence": 1.0,
+                "punctuated_word": "Three"
+              },
+              {
+                "word": "lanes",
+                "start": 9.84,
+                "end": 10.559999,
+                "confidence": 0.74401855,
+                "punctuated_word": "lanes."
+              },
+              {
+                "word": "planning",
+                "start": 10.639999,
+                "end": 10.96,
+                "confidence": 0.99902344,
+                "punctuated_word": "Planning"
+              },
+              {
+                "word": "on",
+                "start": 10.96,
+                "end": 11.28,
+                "confidence": 0.99902344,
+                "punctuated_word": "on"
+              },
+              {
+                "word": "the",
+                "start": 11.28,
+                "end": 11.36,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "left",
+                "start": 11.36,
+                "end": 11.999999,
+                "confidence": 0.9951172,
+                "punctuated_word": "left,"
+              },
+              {
+                "word": "the",
+                "start": 12.08,
+                "end": 12.24,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "builders",
+                "start": 12.24,
+                "end": 12.639999,
+                "confidence": 0.9970703,
+                "punctuated_word": "builders"
+              },
+              {
+                "word": "in",
+                "start": 12.639999,
+                "end": 12.88,
+                "confidence": 1.0,
+                "punctuated_word": "in"
+              },
+              {
+                "word": "the",
+                "start": 12.88,
+                "end": 12.96,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "middle",
+                "start": 12.96,
+                "end": 13.599999,
+                "confidence": 1.0,
+                "punctuated_word": "middle,"
+              },
+              {
+                "word": "the",
+                "start": 13.599999,
+                "end": 13.759999,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "shared",
+                "start": 13.759999,
+                "end": 14.08,
+                "confidence": 0.99902344,
+                "punctuated_word": "shared"
+              },
+              {
+                "word": "board",
+                "start": 14.08,
+                "end": 14.4,
+                "confidence": 1.0,
+                "punctuated_word": "board"
+              },
+              {
+                "word": "on",
+                "start": 14.4,
+                "end": 14.559999,
+                "confidence": 1.0,
+                "punctuated_word": "on"
+              },
+              {
+                "word": "the",
+                "start": 14.559999,
+                "end": 14.719999,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "right",
+                "start": 14.719999,
+                "end": 14.96,
+                "confidence": 0.9995117,
+                "punctuated_word": "right."
+              },
+              {
+                "word": "the",
+                "start": 33.87,
+                "end": 34.19,
+                "confidence": 0.99902344,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "road",
+                "start": 34.19,
+                "end": 34.43,
+                "confidence": 0.8569336,
+                "punctuated_word": "road"
+              },
+              {
+                "word": "map",
+                "start": 34.43,
+                "end": 34.67,
+                "confidence": 1.0,
+                "punctuated_word": "map"
+              },
+              {
+                "word": "agent",
+                "start": 34.67,
+                "end": 34.989998,
+                "confidence": 1.0,
+                "punctuated_word": "agent"
+              },
+              {
+                "word": "goes",
+                "start": 34.989998,
+                "end": 35.309998,
+                "confidence": 1.0,
+                "punctuated_word": "goes"
+              },
+              {
+                "word": "first",
+                "start": 35.309998,
+                "end": 36.03,
+                "confidence": 0.9890137,
+                "punctuated_word": "first,"
+              },
+              {
+                "word": "and",
+                "start": 36.03,
+                "end": 36.19,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "its",
+                "start": 36.19,
+                "end": 36.43,
+                "confidence": 0.9873047,
+                "punctuated_word": "its"
+              },
+              {
+                "word": "very",
+                "start": 36.43,
+                "end": 36.59,
+                "confidence": 1.0,
+                "punctuated_word": "very"
+              },
+              {
+                "word": "first",
+                "start": 36.59,
+                "end": 36.829998,
+                "confidence": 1.0,
+                "punctuated_word": "first"
+              },
+              {
+                "word": "act",
+                "start": 36.829998,
+                "end": 37.15,
+                "confidence": 1.0,
+                "punctuated_word": "act"
+              },
+              {
+                "word": "is",
+                "start": 37.15,
+                "end": 37.309998,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "to",
+                "start": 37.309998,
+                "end": 37.47,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "tell",
+                "start": 37.47,
+                "end": 37.71,
+                "confidence": 1.0,
+                "punctuated_word": "tell"
+              },
+              {
+                "word": "the",
+                "start": 37.71,
+                "end": 37.87,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "board",
+                "start": 37.87,
+                "end": 38.03,
+                "confidence": 0.99902344,
+                "punctuated_word": "board"
+              },
+              {
+                "word": "what",
+                "start": 38.03,
+                "end": 38.35,
+                "confidence": 1.0,
+                "punctuated_word": "what"
+              },
+              {
+                "word": "this",
+                "start": 38.35,
+                "end": 38.59,
+                "confidence": 1.0,
+                "punctuated_word": "this"
+              },
+              {
+                "word": "demo",
+                "start": 38.59,
+                "end": 38.91,
+                "confidence": 1.0,
+                "punctuated_word": "demo"
+              },
+              {
+                "word": "is",
+                "start": 38.91,
+                "end": 39.149998,
+                "confidence": 1.0,
+                "punctuated_word": "is."
+              },
+              {
+                "word": "then",
+                "start": 45.004997,
+                "end": 45.245,
+                "confidence": 1.0,
+                "punctuated_word": "Then"
+              },
+              {
+                "word": "the",
+                "start": 45.245,
+                "end": 45.405,
+                "confidence": 0.9980469,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "other",
+                "start": 45.405,
+                "end": 45.644997,
+                "confidence": 1.0,
+                "punctuated_word": "other"
+              },
+              {
+                "word": "three",
+                "start": 45.644997,
+                "end": 45.885,
+                "confidence": 1.0,
+                "punctuated_word": "three"
+              },
+              {
+                "word": "check-in",
+                "start": 45.885,
+                "end": 46.765,
+                "confidence": 0.9893799,
+                "punctuated_word": "check-in,"
+              },
+              {
+                "word": "standing",
+                "start": 46.844997,
+                "end": 47.245,
+                "confidence": 1.0,
+                "punctuated_word": "standing"
+              },
+              {
+                "word": "by",
+                "start": 47.245,
+                "end": 47.804996,
+                "confidence": 0.9885254,
+                "punctuated_word": "by,"
+              },
+              {
+                "word": "no",
+                "start": 47.804996,
+                "end": 48.045,
+                "confidence": 1.0,
+                "punctuated_word": "no"
+              },
+              {
+                "word": "work",
+                "start": 48.045,
+                "end": 48.284996,
+                "confidence": 1.0,
+                "punctuated_word": "work"
+              },
+              {
+                "word": "yet",
+                "start": 48.284996,
+                "end": 48.925,
+                "confidence": 0.7553711,
+                "punctuated_word": "yet,"
+              },
+              {
+                "word": "every",
+                "start": 49.004997,
+                "end": 49.324997,
+                "confidence": 0.9667969,
+                "punctuated_word": "every"
+              },
+              {
+                "word": "one",
+                "start": 49.324997,
+                "end": 49.484997,
+                "confidence": 1.0,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "of",
+                "start": 49.484997,
+                "end": 49.644997,
+                "confidence": 1.0,
+                "punctuated_word": "of"
+              },
+              {
+                "word": "them",
+                "start": 49.644997,
+                "end": 50.045,
+                "confidence": 1.0,
+                "punctuated_word": "them"
+              },
+              {
+                "word": "will",
+                "start": 50.045,
+                "end": 50.364998,
+                "confidence": 0.99609375,
+                "punctuated_word": "will"
+              },
+              {
+                "word": "report",
+                "start": 50.364998,
+                "end": 50.765,
+                "confidence": 1.0,
+                "punctuated_word": "report"
+              },
+              {
+                "word": "to",
+                "start": 50.765,
+                "end": 50.925,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "this",
+                "start": 50.925,
+                "end": 51.085,
+                "confidence": 1.0,
+                "punctuated_word": "this"
+              },
+              {
+                "word": "board",
+                "start": 51.085,
+                "end": 51.405,
+                "confidence": 1.0,
+                "punctuated_word": "board"
+              },
+              {
+                "word": "from",
+                "start": 51.405,
+                "end": 51.644997,
+                "confidence": 1.0,
+                "punctuated_word": "from"
+              },
+              {
+                "word": "here",
+                "start": 51.644997,
+                "end": 51.885,
+                "confidence": 1.0,
+                "punctuated_word": "here"
+              },
+              {
+                "word": "to",
+                "start": 51.885,
+                "end": 52.125,
+                "confidence": 0.9980469,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "the",
+                "start": 52.125,
+                "end": 52.204998,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "end",
+                "start": 52.204998,
+                "end": 52.524998,
+                "confidence": 0.9980469,
+                "punctuated_word": "end."
+              },
+              {
+                "word": "the",
+                "start": 63.92,
+                "end": 64.159996,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "road",
+                "start": 64.159996,
+                "end": 64.32,
+                "confidence": 0.8359375,
+                "punctuated_word": "road"
+              },
+              {
+                "word": "map",
+                "start": 64.32,
+                "end": 64.56,
+                "confidence": 1.0,
+                "punctuated_word": "map"
+              },
+              {
+                "word": "writes",
+                "start": 64.56,
+                "end": 64.8,
+                "confidence": 0.9941406,
+                "punctuated_word": "writes"
+              },
+              {
+                "word": "the",
+                "start": 64.8,
+                "end": 64.96,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "goal",
+                "start": 64.96,
+                "end": 65.2,
+                "confidence": 0.9980469,
+                "punctuated_word": "goal"
+              },
+              {
+                "word": "down",
+                "start": 65.2,
+                "end": 65.76,
+                "confidence": 0.8088379,
+                "punctuated_word": "down,"
+              },
+              {
+                "word": "a",
+                "start": 65.84,
+                "end": 66.0,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "to",
+                "start": 66.0,
+                "end": 66.159996,
+                "confidence": 0.99121094,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "do",
+                "start": 66.159996,
+                "end": 66.32,
+                "confidence": 0.99902344,
+                "punctuated_word": "do"
+              },
+              {
+                "word": "manager",
+                "start": 66.32,
+                "end": 66.64,
+                "confidence": 1.0,
+                "punctuated_word": "manager"
+              },
+              {
+                "word": "that",
+                "start": 66.64,
+                "end": 66.8,
+                "confidence": 1.0,
+                "punctuated_word": "that"
+              },
+              {
+                "word": "runs",
+                "start": 66.8,
+                "end": 67.119995,
+                "confidence": 1.0,
+                "punctuated_word": "runs"
+              },
+              {
+                "word": "entirely",
+                "start": 67.119995,
+                "end": 67.52,
+                "confidence": 1.0,
+                "punctuated_word": "entirely"
+              },
+              {
+                "word": "in",
+                "start": 67.52,
+                "end": 67.76,
+                "confidence": 1.0,
+                "punctuated_word": "in"
+              },
+              {
+                "word": "the",
+                "start": 67.76,
+                "end": 67.84,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "browser",
+                "start": 67.84,
+                "end": 68.24,
+                "confidence": 0.9448242,
+                "punctuated_word": "browser."
+              },
+              {
+                "word": "no",
+                "start": 68.465004,
+                "end": 68.785,
+                "confidence": 1.0,
+                "punctuated_word": "No"
+              },
+              {
+                "word": "back",
+                "start": 68.785,
+                "end": 69.025,
+                "confidence": 0.96972656,
+                "punctuated_word": "back"
+              },
+              {
+                "word": "end",
+                "start": 69.025,
+                "end": 69.345,
+                "confidence": 0.8220215,
+                "punctuated_word": "end,"
+              },
+              {
+                "word": "no",
+                "start": 69.345,
+                "end": 69.505005,
+                "confidence": 1.0,
+                "punctuated_word": "no"
+              },
+              {
+                "word": "build",
+                "start": 69.505005,
+                "end": 69.745,
+                "confidence": 0.9980469,
+                "punctuated_word": "build"
+              },
+              {
+                "word": "step",
+                "start": 69.745,
+                "end": 70.145004,
+                "confidence": 0.99365234,
+                "punctuated_word": "step,"
+              },
+              {
+                "word": "no",
+                "start": 70.145004,
+                "end": 70.385,
+                "confidence": 1.0,
+                "punctuated_word": "no"
+              },
+              {
+                "word": "dependencies",
+                "start": 70.385,
+                "end": 71.345,
+                "confidence": 1.0,
+                "punctuated_word": "dependencies."
+              },
+              {
+                "word": "it",
+                "start": 78.945,
+                "end": 79.265,
+                "confidence": 1.0,
+                "punctuated_word": "It"
+              },
+              {
+                "word": "waits",
+                "start": 79.265,
+                "end": 79.585,
+                "confidence": 1.0,
+                "punctuated_word": "waits"
+              },
+              {
+                "word": "until",
+                "start": 79.585,
+                "end": 79.905,
+                "confidence": 1.0,
+                "punctuated_word": "until"
+              },
+              {
+                "word": "all",
+                "start": 79.905,
+                "end": 80.145004,
+                "confidence": 1.0,
+                "punctuated_word": "all"
+              },
+              {
+                "word": "three",
+                "start": 80.145004,
+                "end": 80.305,
+                "confidence": 1.0,
+                "punctuated_word": "three"
+              },
+              {
+                "word": "have",
+                "start": 80.305,
+                "end": 80.545,
+                "confidence": 1.0,
+                "punctuated_word": "have"
+              },
+              {
+                "word": "checked",
+                "start": 80.545,
+                "end": 80.785,
+                "confidence": 1.0,
+                "punctuated_word": "checked"
+              },
+              {
+                "word": "in",
+                "start": 80.785,
+                "end": 80.945,
+                "confidence": 0.99902344,
+                "punctuated_word": "in"
+              },
+              {
+                "word": "before",
+                "start": 80.945,
+                "end": 81.345,
+                "confidence": 1.0,
+                "punctuated_word": "before"
+              },
+              {
+                "word": "handing",
+                "start": 81.345,
+                "end": 81.665,
+                "confidence": 1.0,
+                "punctuated_word": "handing"
+              },
+              {
+                "word": "over",
+                "start": 81.665,
+                "end": 81.905,
+                "confidence": 0.9980469,
+                "punctuated_word": "over."
+              },
+              {
+                "word": "a",
+                "start": 82.3,
+                "end": 82.62,
+                "confidence": 1.0,
+                "punctuated_word": "A"
+              },
+              {
+                "word": "message",
+                "start": 82.62,
+                "end": 82.86,
+                "confidence": 1.0,
+                "punctuated_word": "message"
+              },
+              {
+                "word": "sent",
+                "start": 82.86,
+                "end": 83.26,
+                "confidence": 1.0,
+                "punctuated_word": "sent"
+              },
+              {
+                "word": "to",
+                "start": 83.26,
+                "end": 83.42,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "an",
+                "start": 83.42,
+                "end": 83.58,
+                "confidence": 1.0,
+                "punctuated_word": "an"
+              },
+              {
+                "word": "agent",
+                "start": 83.58,
+                "end": 83.9,
+                "confidence": 1.0,
+                "punctuated_word": "agent"
+              },
+              {
+                "word": "that",
+                "start": 83.9,
+                "end": 84.06,
+                "confidence": 1.0,
+                "punctuated_word": "that"
+              },
+              {
+                "word": "has",
+                "start": 84.06,
+                "end": 84.3,
+                "confidence": 1.0,
+                "punctuated_word": "has"
+              },
+              {
+                "word": "not",
+                "start": 84.3,
+                "end": 84.46,
+                "confidence": 1.0,
+                "punctuated_word": "not"
+              },
+              {
+                "word": "booted",
+                "start": 84.46,
+                "end": 84.78,
+                "confidence": 0.9995117,
+                "punctuated_word": "booted"
+              },
+              {
+                "word": "yet",
+                "start": 84.78,
+                "end": 85.02,
+                "confidence": 1.0,
+                "punctuated_word": "yet"
+              },
+              {
+                "word": "is",
+                "start": 85.02,
+                "end": 85.34,
+                "confidence": 0.99902344,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "simply",
+                "start": 85.34,
+                "end": 85.659996,
+                "confidence": 1.0,
+                "punctuated_word": "simply"
+              },
+              {
+                "word": "lost",
+                "start": 85.659996,
+                "end": 86.14,
+                "confidence": 0.98950195,
+                "punctuated_word": "lost."
+              },
+              {
+                "word": "handed",
+                "start": 95.994995,
+                "end": 96.395,
+                "confidence": 0.91015625,
+                "punctuated_word": "Handed"
+              },
+              {
+                "word": "to",
+                "start": 96.395,
+                "end": 96.555,
+                "confidence": 0.99902344,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "the",
+                "start": 96.555,
+                "end": 96.635,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "fleet",
+                "start": 96.635,
+                "end": 96.955,
+                "confidence": 1.0,
+                "punctuated_word": "fleet"
+              },
+              {
+                "word": "manager",
+                "start": 96.955,
+                "end": 97.674995,
+                "confidence": 0.9980469,
+                "punctuated_word": "manager."
+              },
+              {
+                "word": "that",
+                "start": 97.994995,
+                "end": 98.235,
+                "confidence": 1.0,
+                "punctuated_word": "That"
+              },
+              {
+                "word": "is",
+                "start": 98.235,
+                "end": 98.395,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "the",
+                "start": 98.395,
+                "end": 98.555,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "last",
+                "start": 98.555,
+                "end": 98.795,
+                "confidence": 1.0,
+                "punctuated_word": "last"
+              },
+              {
+                "word": "order",
+                "start": 98.795,
+                "end": 99.115,
+                "confidence": 1.0,
+                "punctuated_word": "order"
+              },
+              {
+                "word": "the",
+                "start": 99.115,
+                "end": 99.275,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "road",
+                "start": 99.275,
+                "end": 99.515,
+                "confidence": 0.9091797,
+                "punctuated_word": "road"
+              },
+              {
+                "word": "map",
+                "start": 99.515,
+                "end": 99.674995,
+                "confidence": 1.0,
+                "punctuated_word": "map"
+              },
+              {
+                "word": "gives",
+                "start": 99.674995,
+                "end": 100.235,
+                "confidence": 0.9951172,
+                "punctuated_word": "gives."
+              },
+              {
+                "word": "the",
+                "start": 100.235,
+                "end": 100.315,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "build",
+                "start": 100.315,
+                "end": 100.635,
+                "confidence": 0.9951172,
+                "punctuated_word": "build"
+              },
+              {
+                "word": "is",
+                "start": 100.635,
+                "end": 100.795,
+                "confidence": 0.99902344,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "not",
+                "start": 100.795,
+                "end": 100.955,
+                "confidence": 1.0,
+                "punctuated_word": "not"
+              },
+              {
+                "word": "its",
+                "start": 100.955,
+                "end": 101.195,
+                "confidence": 0.99902344,
+                "punctuated_word": "its"
+              },
+              {
+                "word": "job",
+                "start": 101.195,
+                "end": 101.515,
+                "confidence": 1.0,
+                "punctuated_word": "job."
+              },
+              {
+                "word": "the",
+                "start": 112.89,
+                "end": 113.21,
+                "confidence": 0.9980469,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "manager",
+                "start": 113.21,
+                "end": 113.61,
+                "confidence": 0.9980469,
+                "punctuated_word": "manager"
+              },
+              {
+                "word": "splits",
+                "start": 113.61,
+                "end": 114.17,
+                "confidence": 1.0,
+                "punctuated_word": "splits"
+              },
+              {
+                "word": "the",
+                "start": 114.17,
+                "end": 114.33,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "work",
+                "start": 114.33,
+                "end": 114.57,
+                "confidence": 1.0,
+                "punctuated_word": "work"
+              },
+              {
+                "word": "by",
+                "start": 114.57,
+                "end": 114.81,
+                "confidence": 1.0,
+                "punctuated_word": "by"
+              },
+              {
+                "word": "layer",
+                "start": 114.81,
+                "end": 115.45,
+                "confidence": 0.9975586,
+                "punctuated_word": "layer."
+              },
+              {
+                "word": "worker",
+                "start": 115.45,
+                "end": 115.77,
+                "confidence": 0.9995117,
+                "punctuated_word": "Worker"
+              },
+              {
+                "word": "one",
+                "start": 115.77,
+                "end": 116.009995,
+                "confidence": 1.0,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "takes",
+                "start": 116.009995,
+                "end": 116.33,
+                "confidence": 1.0,
+                "punctuated_word": "takes"
+              },
+              {
+                "word": "the",
+                "start": 116.33,
+                "end": 116.49,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "page",
+                "start": 116.49,
+                "end": 116.729996,
+                "confidence": 1.0,
+                "punctuated_word": "page"
+              },
+              {
+                "word": "and",
+                "start": 116.729996,
+                "end": 116.97,
+                "confidence": 0.94921875,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "the",
+                "start": 116.97,
+                "end": 117.049995,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "styling",
+                "start": 117.049995,
+                "end": 117.85,
+                "confidence": 0.9527995,
+                "punctuated_word": "styling."
+              },
+              {
+                "word": "worker",
+                "start": 117.85,
+                "end": 118.25,
+                "confidence": 0.9995117,
+                "punctuated_word": "Worker"
+              },
+              {
+                "word": "two",
+                "start": 118.25,
+                "end": 118.649994,
+                "confidence": 1.0,
+                "punctuated_word": "two"
+              },
+              {
+                "word": "takes",
+                "start": 118.649994,
+                "end": 118.97,
+                "confidence": 1.0,
+                "punctuated_word": "takes"
+              },
+              {
+                "word": "all",
+                "start": 118.97,
+                "end": 119.21,
+                "confidence": 1.0,
+                "punctuated_word": "all"
+              },
+              {
+                "word": "the",
+                "start": 119.21,
+                "end": 119.369995,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "behavior",
+                "start": 119.369995,
+                "end": 119.77,
+                "confidence": 1.0,
+                "punctuated_word": "behavior."
+              },
+              {
+                "word": "but",
+                "start": 139.97,
+                "end": 140.20999,
+                "confidence": 0.9980469,
+                "punctuated_word": "But"
+              },
+              {
+                "word": "first",
+                "start": 140.20999,
+                "end": 140.61,
+                "confidence": 0.95410156,
+                "punctuated_word": "first,"
+              },
+              {
+                "word": "it",
+                "start": 140.61,
+                "end": 140.69,
+                "confidence": 1.0,
+                "punctuated_word": "it"
+              },
+              {
+                "word": "writes",
+                "start": 140.69,
+                "end": 140.93,
+                "confidence": 0.99902344,
+                "punctuated_word": "writes"
+              },
+              {
+                "word": "a",
+                "start": 140.93,
+                "end": 141.17,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "contract",
+                "start": 141.17,
+                "end": 141.89,
+                "confidence": 0.8557129,
+                "punctuated_word": "contract."
+              },
+              {
+                "word": "every",
+                "start": 142.12999,
+                "end": 142.37,
+                "confidence": 0.99902344,
+                "punctuated_word": "Every"
+              },
+              {
+                "word": "shared",
+                "start": 142.37,
+                "end": 142.76999,
+                "confidence": 0.9980469,
+                "punctuated_word": "shared"
+              },
+              {
+                "word": "id",
+                "start": 142.76999,
+                "end": 143.33,
+                "confidence": 0.8449707,
+                "punctuated_word": "ID,"
+              },
+              {
+                "word": "the",
+                "start": 143.33,
+                "end": 143.56999,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "markup",
+                "start": 143.56999,
+                "end": 143.97,
+                "confidence": 0.9692383,
+                "punctuated_word": "markup"
+              },
+              {
+                "word": "of",
+                "start": 143.97,
+                "end": 144.12999,
+                "confidence": 0.99902344,
+                "punctuated_word": "of"
+              },
+              {
+                "word": "one",
+                "start": 144.12999,
+                "end": 144.37,
+                "confidence": 0.99902344,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "to",
+                "start": 144.37,
+                "end": 144.53,
+                "confidence": 0.99609375,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "do",
+                "start": 144.53,
+                "end": 144.69,
+                "confidence": 0.99902344,
+                "punctuated_word": "do"
+              },
+              {
+                "word": "item",
+                "start": 144.69,
+                "end": 145.41,
+                "confidence": 0.9707031,
+                "punctuated_word": "item,"
+              },
+              {
+                "word": "and",
+                "start": 145.48999,
+                "end": 145.65,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "which",
+                "start": 145.65,
+                "end": 145.97,
+                "confidence": 1.0,
+                "punctuated_word": "which"
+              },
+              {
+                "word": "file",
+                "start": 145.97,
+                "end": 146.29,
+                "confidence": 1.0,
+                "punctuated_word": "file"
+              },
+              {
+                "word": "owns",
+                "start": 146.29,
+                "end": 146.61,
+                "confidence": 1.0,
+                "punctuated_word": "owns"
+              },
+              {
+                "word": "what",
+                "start": 146.61,
+                "end": 146.93,
+                "confidence": 0.99560547,
+                "punctuated_word": "what."
+              },
+              {
+                "word": "two",
+                "start": 147.625,
+                "end": 147.865,
+                "confidence": 1.0,
+                "punctuated_word": "Two"
+              },
+              {
+                "word": "agents",
+                "start": 147.865,
+                "end": 148.18501,
+                "confidence": 1.0,
+                "punctuated_word": "agents"
+              },
+              {
+                "word": "are",
+                "start": 148.18501,
+                "end": 148.425,
+                "confidence": 1.0,
+                "punctuated_word": "are"
+              },
+              {
+                "word": "about",
+                "start": 148.425,
+                "end": 148.66501,
+                "confidence": 1.0,
+                "punctuated_word": "about"
+              },
+              {
+                "word": "to",
+                "start": 148.66501,
+                "end": 148.74501,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "build",
+                "start": 148.74501,
+                "end": 148.985,
+                "confidence": 1.0,
+                "punctuated_word": "build"
+              },
+              {
+                "word": "one",
+                "start": 148.985,
+                "end": 149.225,
+                "confidence": 1.0,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "page",
+                "start": 149.225,
+                "end": 149.54501,
+                "confidence": 1.0,
+                "punctuated_word": "page"
+              },
+              {
+                "word": "in",
+                "start": 149.54501,
+                "end": 149.705,
+                "confidence": 0.99902344,
+                "punctuated_word": "in"
+              },
+              {
+                "word": "parallel",
+                "start": 149.705,
+                "end": 150.265,
+                "confidence": 0.9863281,
+                "punctuated_word": "parallel,"
+              },
+              {
+                "word": "and",
+                "start": 150.265,
+                "end": 150.425,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "this",
+                "start": 150.425,
+                "end": 150.585,
+                "confidence": 1.0,
+                "punctuated_word": "this"
+              },
+              {
+                "word": "is",
+                "start": 150.585,
+                "end": 150.66501,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "the",
+                "start": 150.66501,
+                "end": 150.82501,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "only",
+                "start": 150.82501,
+                "end": 150.985,
+                "confidence": 1.0,
+                "punctuated_word": "only"
+              },
+              {
+                "word": "thing",
+                "start": 150.985,
+                "end": 151.225,
+                "confidence": 1.0,
+                "punctuated_word": "thing"
+              },
+              {
+                "word": "holding",
+                "start": 151.225,
+                "end": 151.54501,
+                "confidence": 1.0,
+                "punctuated_word": "holding"
+              },
+              {
+                "word": "them",
+                "start": 151.54501,
+                "end": 151.785,
+                "confidence": 1.0,
+                "punctuated_word": "them"
+              },
+              {
+                "word": "together",
+                "start": 151.785,
+                "end": 152.50502,
+                "confidence": 1.0,
+                "punctuated_word": "together."
+              },
+              {
+                "word": "contract",
+                "start": 158.10501,
+                "end": 158.505,
+                "confidence": 0.99902344,
+                "punctuated_word": "Contract"
+              },
+              {
+                "word": "posted",
+                "start": 158.505,
+                "end": 159.38501,
+                "confidence": 0.9921875,
+                "punctuated_word": "posted."
+              },
+              {
+                "word": "the",
+                "start": 159.625,
+                "end": 159.865,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "work",
+                "start": 159.865,
+                "end": 160.10501,
+                "confidence": 1.0,
+                "punctuated_word": "work"
+              },
+              {
+                "word": "orders",
+                "start": 160.10501,
+                "end": 160.345,
+                "confidence": 1.0,
+                "punctuated_word": "orders"
+              },
+              {
+                "word": "go",
+                "start": 160.345,
+                "end": 160.585,
+                "confidence": 1.0,
+                "punctuated_word": "go"
+              },
+              {
+                "word": "out",
+                "start": 160.585,
+                "end": 160.905,
+                "confidence": 0.8400879,
+                "punctuated_word": "out,"
+              },
+              {
+                "word": "one",
+                "start": 160.905,
+                "end": 161.065,
+                "confidence": 1.0,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "to",
+                "start": 161.065,
+                "end": 161.225,
+                "confidence": 0.99902344,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "each",
+                "start": 161.225,
+                "end": 161.38501,
+                "confidence": 1.0,
+                "punctuated_word": "each"
+              },
+              {
+                "word": "worker",
+                "start": 161.38501,
+                "end": 161.785,
+                "confidence": 0.9707031,
+                "punctuated_word": "worker,"
+              },
+              {
+                "word": "and",
+                "start": 161.785,
+                "end": 161.865,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "the",
+                "start": 161.865,
+                "end": 162.02501,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "build",
+                "start": 162.02501,
+                "end": 162.265,
+                "confidence": 0.9980469,
+                "punctuated_word": "build"
+              },
+              {
+                "word": "starts",
+                "start": 162.265,
+                "end": 162.66501,
+                "confidence": 1.0,
+                "punctuated_word": "starts."
+              },
+              {
+                "word": "watch",
+                "start": 172.04001,
+                "end": 172.36,
+                "confidence": 1.0,
+                "punctuated_word": "Watch"
+              },
+              {
+                "word": "the",
+                "start": 172.36,
+                "end": 172.52,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "middle",
+                "start": 172.52,
+                "end": 172.84,
+                "confidence": 1.0,
+                "punctuated_word": "middle"
+              },
+              {
+                "word": "lane",
+                "start": 172.84,
+                "end": 173.4,
+                "confidence": 0.9785156,
+                "punctuated_word": "lane."
+              },
+              {
+                "word": "both",
+                "start": 173.4,
+                "end": 173.64,
+                "confidence": 1.0,
+                "punctuated_word": "Both"
+              },
+              {
+                "word": "workers",
+                "start": 173.64,
+                "end": 173.96,
+                "confidence": 1.0,
+                "punctuated_word": "workers"
+              },
+              {
+                "word": "are",
+                "start": 173.96,
+                "end": 174.12,
+                "confidence": 1.0,
+                "punctuated_word": "are"
+              },
+              {
+                "word": "running",
+                "start": 174.12,
+                "end": 174.36,
+                "confidence": 1.0,
+                "punctuated_word": "running"
+              },
+              {
+                "word": "at",
+                "start": 174.36,
+                "end": 174.52,
+                "confidence": 0.99902344,
+                "punctuated_word": "at"
+              },
+              {
+                "word": "once",
+                "start": 174.52,
+                "end": 175.08,
+                "confidence": 0.8486328,
+                "punctuated_word": "once,"
+              },
+              {
+                "word": "and",
+                "start": 175.08,
+                "end": 175.16,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "neither",
+                "start": 175.16,
+                "end": 175.48,
+                "confidence": 1.0,
+                "punctuated_word": "neither"
+              },
+              {
+                "word": "has",
+                "start": 175.48,
+                "end": 175.72,
+                "confidence": 1.0,
+                "punctuated_word": "has"
+              },
+              {
+                "word": "read",
+                "start": 175.72,
+                "end": 175.88,
+                "confidence": 1.0,
+                "punctuated_word": "read"
+              },
+              {
+                "word": "the",
+                "start": 175.88,
+                "end": 176.04001,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "other's",
+                "start": 176.04001,
+                "end": 176.36,
+                "confidence": 0.96240234,
+                "punctuated_word": "other's"
+              },
+              {
+                "word": "file",
+                "start": 176.36,
+                "end": 176.68001,
+                "confidence": 1.0,
+                "punctuated_word": "file."
+              },
+              {
+                "word": "the",
+                "start": 191.9,
+                "end": 192.14,
+                "confidence": 0.99902344,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "board",
+                "start": 192.14,
+                "end": 192.45999,
+                "confidence": 0.99902344,
+                "punctuated_word": "board"
+              },
+              {
+                "word": "is",
+                "start": 192.45999,
+                "end": 192.62,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "the",
+                "start": 192.62,
+                "end": 192.78,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "only",
+                "start": 192.78,
+                "end": 193.01999,
+                "confidence": 1.0,
+                "punctuated_word": "only"
+              },
+              {
+                "word": "thing",
+                "start": 193.01999,
+                "end": 193.26,
+                "confidence": 1.0,
+                "punctuated_word": "thing"
+              },
+              {
+                "word": "they",
+                "start": 193.26,
+                "end": 193.5,
+                "confidence": 1.0,
+                "punctuated_word": "they"
+              },
+              {
+                "word": "share",
+                "start": 193.5,
+                "end": 194.14,
+                "confidence": 0.99609375,
+                "punctuated_word": "share."
+              },
+              {
+                "word": "no",
+                "start": 194.22,
+                "end": 194.45999,
+                "confidence": 1.0,
+                "punctuated_word": "No"
+              },
+              {
+                "word": "shared",
+                "start": 194.45999,
+                "end": 194.78,
+                "confidence": 1.0,
+                "punctuated_word": "shared"
+              },
+              {
+                "word": "memory",
+                "start": 194.78,
+                "end": 195.34,
+                "confidence": 0.84814453,
+                "punctuated_word": "memory,"
+              },
+              {
+                "word": "no",
+                "start": 195.34,
+                "end": 195.5,
+                "confidence": 1.0,
+                "punctuated_word": "no"
+              },
+              {
+                "word": "lock",
+                "start": 195.5,
+                "end": 195.73999,
+                "confidence": 0.9370117,
+                "punctuated_word": "lock"
+              },
+              {
+                "word": "file",
+                "start": 195.73999,
+                "end": 196.14,
+                "confidence": 0.9875488,
+                "punctuated_word": "file,"
+              },
+              {
+                "word": "no",
+                "start": 196.14,
+                "end": 196.29999,
+                "confidence": 1.0,
+                "punctuated_word": "no"
+              },
+              {
+                "word": "messages",
+                "start": 196.29999,
+                "end": 196.7,
+                "confidence": 1.0,
+                "punctuated_word": "messages"
+              },
+              {
+                "word": "between",
+                "start": 196.7,
+                "end": 197.09999,
+                "confidence": 1.0,
+                "punctuated_word": "between"
+              },
+              {
+                "word": "them",
+                "start": 197.09999,
+                "end": 197.57999,
+                "confidence": 0.8491211,
+                "punctuated_word": "them,"
+              },
+              {
+                "word": "just",
+                "start": 197.57999,
+                "end": 197.81999,
+                "confidence": 1.0,
+                "punctuated_word": "just"
+              },
+              {
+                "word": "posts",
+                "start": 197.81999,
+                "end": 198.29999,
+                "confidence": 0.99902344,
+                "punctuated_word": "posts."
+              },
+              {
+                "word": "worker",
+                "start": 213.03499,
+                "end": 213.435,
+                "confidence": 0.99853516,
+                "punctuated_word": "Worker"
+              },
+              {
+                "word": "two's",
+                "start": 213.435,
+                "end": 213.83499,
+                "confidence": 0.9995117,
+                "punctuated_word": "two's"
+              },
+              {
+                "word": "logic",
+                "start": 213.83499,
+                "end": 214.075,
+                "confidence": 0.99902344,
+                "punctuated_word": "logic"
+              },
+              {
+                "word": "lands",
+                "start": 214.075,
+                "end": 214.39499,
+                "confidence": 0.99902344,
+                "punctuated_word": "lands"
+              },
+              {
+                "word": "first",
+                "start": 214.39499,
+                "end": 214.95499,
+                "confidence": 0.89746094,
+                "punctuated_word": "first,"
+              },
+              {
+                "word": "then",
+                "start": 214.95499,
+                "end": 215.03499,
+                "confidence": 0.9980469,
+                "punctuated_word": "then"
+              },
+              {
+                "word": "worker",
+                "start": 215.03499,
+                "end": 215.355,
+                "confidence": 0.99121094,
+                "punctuated_word": "worker"
+              },
+              {
+                "word": "one's",
+                "start": 215.355,
+                "end": 215.75499,
+                "confidence": 1.0,
+                "punctuated_word": "one's"
+              },
+              {
+                "word": "page",
+                "start": 215.75499,
+                "end": 215.995,
+                "confidence": 1.0,
+                "punctuated_word": "page"
+              },
+              {
+                "word": "and",
+                "start": 215.995,
+                "end": 216.155,
+                "confidence": 0.9589844,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "stylesheet",
+                "start": 216.155,
+                "end": 216.795,
+                "confidence": 0.87768555,
+                "punctuated_word": "stylesheet."
+              },
+              {
+                "word": "both",
+                "start": 229.895,
+                "end": 230.375,
+                "confidence": 0.99609375,
+                "punctuated_word": "Both"
+              },
+              {
+                "word": "sign",
+                "start": 230.375,
+                "end": 230.775,
+                "confidence": 0.9951172,
+                "punctuated_word": "sign"
+              },
+              {
+                "word": "off",
+                "start": 230.775,
+                "end": 231.015,
+                "confidence": 1.0,
+                "punctuated_word": "off"
+              },
+              {
+                "word": "on",
+                "start": 231.015,
+                "end": 231.415,
+                "confidence": 1.0,
+                "punctuated_word": "on"
+              },
+              {
+                "word": "the",
+                "start": 231.415,
+                "end": 231.575,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "board",
+                "start": 231.575,
+                "end": 232.215,
+                "confidence": 0.7661133,
+                "punctuated_word": "board."
+              },
+              {
+                "word": "neither",
+                "start": 232.215,
+                "end": 232.535,
+                "confidence": 0.99902344,
+                "punctuated_word": "Neither"
+              },
+              {
+                "word": "reported",
+                "start": 232.535,
+                "end": 232.935,
+                "confidence": 0.99902344,
+                "punctuated_word": "reported"
+              },
+              {
+                "word": "back",
+                "start": 232.935,
+                "end": 233.25499,
+                "confidence": 1.0,
+                "punctuated_word": "back"
+              },
+              {
+                "word": "by",
+                "start": 233.25499,
+                "end": 233.415,
+                "confidence": 1.0,
+                "punctuated_word": "by"
+              },
+              {
+                "word": "message",
+                "start": 233.415,
+                "end": 234.05501,
+                "confidence": 0.9995117,
+                "punctuated_word": "message."
+              },
+              {
+                "word": "the",
+                "start": 234.215,
+                "end": 234.375,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "manager",
+                "start": 234.375,
+                "end": 234.775,
+                "confidence": 1.0,
+                "punctuated_word": "manager"
+              },
+              {
+                "word": "has",
+                "start": 234.775,
+                "end": 235.015,
+                "confidence": 1.0,
+                "punctuated_word": "has"
+              },
+              {
+                "word": "been",
+                "start": 235.015,
+                "end": 235.25499,
+                "confidence": 1.0,
+                "punctuated_word": "been"
+              },
+              {
+                "word": "watching",
+                "start": 235.25499,
+                "end": 235.575,
+                "confidence": 1.0,
+                "punctuated_word": "watching"
+              },
+              {
+                "word": "the",
+                "start": 235.575,
+                "end": 235.735,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "board",
+                "start": 235.735,
+                "end": 236.215,
+                "confidence": 1.0,
+                "punctuated_word": "board"
+              },
+              {
+                "word": "because",
+                "start": 236.215,
+                "end": 236.535,
+                "confidence": 0.9741211,
+                "punctuated_word": "because"
+              },
+              {
+                "word": "a",
+                "start": 236.535,
+                "end": 236.775,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "post",
+                "start": 236.775,
+                "end": 237.095,
+                "confidence": 1.0,
+                "punctuated_word": "post"
+              },
+              {
+                "word": "cannot",
+                "start": 237.095,
+                "end": 237.575,
+                "confidence": 1.0,
+                "punctuated_word": "cannot"
+              },
+              {
+                "word": "be",
+                "start": 237.575,
+                "end": 237.815,
+                "confidence": 1.0,
+                "punctuated_word": "be"
+              },
+              {
+                "word": "missed",
+                "start": 237.815,
+                "end": 238.135,
+                "confidence": 1.0,
+                "punctuated_word": "missed"
+              },
+              {
+                "word": "and",
+                "start": 238.135,
+                "end": 238.455,
+                "confidence": 0.7944336,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "a",
+                "start": 238.455,
+                "end": 238.61499,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "message",
+                "start": 238.61499,
+                "end": 238.935,
+                "confidence": 1.0,
+                "punctuated_word": "message"
+              },
+              {
+                "word": "can",
+                "start": 238.935,
+                "end": 239.25499,
+                "confidence": 0.99609375,
+                "punctuated_word": "can."
+              },
+              {
+                "word": "the",
+                "start": 251.91,
+                "end": 252.23,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "manager",
+                "start": 252.23,
+                "end": 252.55,
+                "confidence": 0.99902344,
+                "punctuated_word": "manager"
+              },
+              {
+                "word": "now",
+                "start": 252.55,
+                "end": 252.87,
+                "confidence": 1.0,
+                "punctuated_word": "now"
+              },
+              {
+                "word": "checks",
+                "start": 252.87,
+                "end": 253.11,
+                "confidence": 1.0,
+                "punctuated_word": "checks"
+              },
+              {
+                "word": "the",
+                "start": 253.11,
+                "end": 253.26999,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "real",
+                "start": 253.26999,
+                "end": 253.51,
+                "confidence": 1.0,
+                "punctuated_word": "real"
+              },
+              {
+                "word": "thing",
+                "start": 253.51,
+                "end": 253.75,
+                "confidence": 1.0,
+                "punctuated_word": "thing"
+              },
+              {
+                "word": "rather",
+                "start": 253.75,
+                "end": 254.15,
+                "confidence": 0.9526367,
+                "punctuated_word": "rather"
+              },
+              {
+                "word": "than",
+                "start": 254.15,
+                "end": 254.39,
+                "confidence": 1.0,
+                "punctuated_word": "than"
+              },
+              {
+                "word": "the",
+                "start": 254.39,
+                "end": 254.55,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "reports",
+                "start": 254.55,
+                "end": 254.87,
+                "confidence": 0.9995117,
+                "punctuated_word": "reports."
+              },
+              {
+                "word": "does",
+                "start": 255.345,
+                "end": 255.66501,
+                "confidence": 1.0,
+                "punctuated_word": "Does"
+              },
+              {
+                "word": "every",
+                "start": 255.66501,
+                "end": 255.985,
+                "confidence": 1.0,
+                "punctuated_word": "every"
+              },
+              {
+                "word": "id",
+                "start": 255.985,
+                "end": 256.305,
+                "confidence": 0.9970703,
+                "punctuated_word": "ID"
+              },
+              {
+                "word": "the",
+                "start": 256.305,
+                "end": 256.545,
+                "confidence": 0.9951172,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "script",
+                "start": 256.545,
+                "end": 256.785,
+                "confidence": 0.99902344,
+                "punctuated_word": "script"
+              },
+              {
+                "word": "looks",
+                "start": 256.785,
+                "end": 257.025,
+                "confidence": 1.0,
+                "punctuated_word": "looks"
+              },
+              {
+                "word": "up",
+                "start": 257.025,
+                "end": 257.265,
+                "confidence": 1.0,
+                "punctuated_word": "up"
+              },
+              {
+                "word": "actually",
+                "start": 257.265,
+                "end": 257.585,
+                "confidence": 0.99902344,
+                "punctuated_word": "actually"
+              },
+              {
+                "word": "exist",
+                "start": 257.585,
+                "end": 257.98502,
+                "confidence": 0.99609375,
+                "punctuated_word": "exist"
+              },
+              {
+                "word": "in",
+                "start": 257.98502,
+                "end": 258.145,
+                "confidence": 1.0,
+                "punctuated_word": "in"
+              },
+              {
+                "word": "the",
+                "start": 258.145,
+                "end": 258.305,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "markup",
+                "start": 258.305,
+                "end": 258.705,
+                "confidence": 0.99332684,
+                "punctuated_word": "markup?"
+              },
+              {
+                "word": "now",
+                "start": 272.96,
+                "end": 273.19998,
+                "confidence": 0.99902344,
+                "punctuated_word": "Now"
+              },
+              {
+                "word": "the",
+                "start": 273.19998,
+                "end": 273.43997,
+                "confidence": 0.9970703,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "interesting",
+                "start": 273.43997,
+                "end": 273.84,
+                "confidence": 1.0,
+                "punctuated_word": "interesting"
+              },
+              {
+                "word": "part",
+                "start": 273.84,
+                "end": 274.47998,
+                "confidence": 0.7841797,
+                "punctuated_word": "part."
+              },
+              {
+                "word": "verifying",
+                "start": 274.71997,
+                "end": 275.36,
+                "confidence": 0.9970703,
+                "punctuated_word": "Verifying"
+              },
+              {
+                "word": "the",
+                "start": 275.36,
+                "end": 275.68,
+                "confidence": 0.54248047,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "manager",
+                "start": 275.68,
+                "end": 276.08,
+                "confidence": 1.0,
+                "punctuated_word": "manager"
+              },
+              {
+                "word": "finds",
+                "start": 276.08,
+                "end": 276.4,
+                "confidence": 1.0,
+                "punctuated_word": "finds"
+              },
+              {
+                "word": "a",
+                "start": 276.4,
+                "end": 276.56,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "real",
+                "start": 276.56,
+                "end": 276.8,
+                "confidence": 1.0,
+                "punctuated_word": "real"
+              },
+              {
+                "word": "defect",
+                "start": 276.8,
+                "end": 277.6,
+                "confidence": 0.9655762,
+                "punctuated_word": "defect."
+              },
+              {
+                "word": "the",
+                "start": 277.68,
+                "end": 277.91998,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "remaining",
+                "start": 277.91998,
+                "end": 278.31998,
+                "confidence": 1.0,
+                "punctuated_word": "remaining"
+              },
+              {
+                "word": "count",
+                "start": 278.31998,
+                "end": 278.56,
+                "confidence": 1.0,
+                "punctuated_word": "count"
+              },
+              {
+                "word": "is",
+                "start": 278.56,
+                "end": 278.8,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "written",
+                "start": 278.8,
+                "end": 279.03998,
+                "confidence": 1.0,
+                "punctuated_word": "written"
+              },
+              {
+                "word": "twice",
+                "start": 279.03998,
+                "end": 279.43997,
+                "confidence": 1.0,
+                "punctuated_word": "twice"
+              },
+              {
+                "word": "on",
+                "start": 279.43997,
+                "end": 279.59998,
+                "confidence": 1.0,
+                "punctuated_word": "on"
+              },
+              {
+                "word": "the",
+                "start": 279.59998,
+                "end": 279.75998,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "page",
+                "start": 279.75998,
+                "end": 280.08,
+                "confidence": 1.0,
+                "punctuated_word": "page."
+              },
+              {
+                "word": "it",
+                "start": 285.935,
+                "end": 286.255,
+                "confidence": 1.0,
+                "punctuated_word": "It"
+              },
+              {
+                "word": "does",
+                "start": 286.255,
+                "end": 286.49503,
+                "confidence": 1.0,
+                "punctuated_word": "does"
+              },
+              {
+                "word": "not",
+                "start": 286.49503,
+                "end": 286.655,
+                "confidence": 1.0,
+                "punctuated_word": "not"
+              },
+              {
+                "word": "fix",
+                "start": 286.655,
+                "end": 286.975,
+                "confidence": 1.0,
+                "punctuated_word": "fix"
+              },
+              {
+                "word": "it",
+                "start": 286.975,
+                "end": 287.135,
+                "confidence": 0.99609375,
+                "punctuated_word": "it"
+              },
+              {
+                "word": "itself",
+                "start": 287.135,
+                "end": 287.45502,
+                "confidence": 0.99560547,
+                "punctuated_word": "itself."
+              },
+              {
+                "word": "it",
+                "start": 287.45502,
+                "end": 287.61502,
+                "confidence": 1.0,
+                "punctuated_word": "It"
+              },
+              {
+                "word": "names",
+                "start": 287.61502,
+                "end": 287.855,
+                "confidence": 1.0,
+                "punctuated_word": "names"
+              },
+              {
+                "word": "the",
+                "start": 287.855,
+                "end": 288.015,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "mismatch",
+                "start": 288.015,
+                "end": 288.73502,
+                "confidence": 0.99853516,
+                "punctuated_word": "mismatch,"
+              },
+              {
+                "word": "sends",
+                "start": 288.73502,
+                "end": 289.05502,
+                "confidence": 1.0,
+                "punctuated_word": "sends"
+              },
+              {
+                "word": "the",
+                "start": 289.05502,
+                "end": 289.21503,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "file",
+                "start": 289.21503,
+                "end": 289.45502,
+                "confidence": 1.0,
+                "punctuated_word": "file"
+              },
+              {
+                "word": "back",
+                "start": 289.45502,
+                "end": 289.695,
+                "confidence": 1.0,
+                "punctuated_word": "back"
+              },
+              {
+                "word": "to",
+                "start": 289.695,
+                "end": 289.855,
+                "confidence": 1.0,
+                "punctuated_word": "to"
+              },
+              {
+                "word": "worker",
+                "start": 289.855,
+                "end": 290.17502,
+                "confidence": 0.98828125,
+                "punctuated_word": "worker"
+              },
+              {
+                "word": "two",
+                "start": 290.17502,
+                "end": 290.575,
+                "confidence": 0.970459,
+                "punctuated_word": "two,"
+              },
+              {
+                "word": "and",
+                "start": 290.575,
+                "end": 290.655,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "posts",
+                "start": 290.655,
+                "end": 291.05502,
+                "confidence": 0.99902344,
+                "punctuated_word": "posts"
+              },
+              {
+                "word": "that",
+                "start": 291.05502,
+                "end": 291.295,
+                "confidence": 1.0,
+                "punctuated_word": "that"
+              },
+              {
+                "word": "it",
+                "start": 291.295,
+                "end": 291.45502,
+                "confidence": 1.0,
+                "punctuated_word": "it"
+              },
+              {
+                "word": "is",
+                "start": 291.45502,
+                "end": 291.61502,
+                "confidence": 0.99902344,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "blocked",
+                "start": 291.61502,
+                "end": 292.015,
+                "confidence": 1.0,
+                "punctuated_word": "blocked."
+              },
+              {
+                "word": "worker",
+                "start": 300.03,
+                "end": 300.43,
+                "confidence": 0.99902344,
+                "punctuated_word": "Worker"
+              },
+              {
+                "word": "two",
+                "start": 300.43,
+                "end": 300.59,
+                "confidence": 1.0,
+                "punctuated_word": "two"
+              },
+              {
+                "word": "corrects",
+                "start": 300.59,
+                "end": 301.07,
+                "confidence": 0.99902344,
+                "punctuated_word": "corrects"
+              },
+              {
+                "word": "it",
+                "start": 301.07,
+                "end": 301.15,
+                "confidence": 1.0,
+                "punctuated_word": "it"
+              },
+              {
+                "word": "and",
+                "start": 301.15,
+                "end": 301.31,
+                "confidence": 0.9980469,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "signs",
+                "start": 301.31,
+                "end": 301.63,
+                "confidence": 1.0,
+                "punctuated_word": "signs"
+              },
+              {
+                "word": "off",
+                "start": 301.63,
+                "end": 301.87,
+                "confidence": 1.0,
+                "punctuated_word": "off"
+              },
+              {
+                "word": "again",
+                "start": 301.87,
+                "end": 302.43,
+                "confidence": 0.99902344,
+                "punctuated_word": "again."
+              },
+              {
+                "word": "the",
+                "start": 302.43,
+                "end": 302.67,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "manager",
+                "start": 302.67,
+                "end": 302.99002,
+                "confidence": 1.0,
+                "punctuated_word": "manager"
+              },
+              {
+                "word": "rechecks",
+                "start": 302.99002,
+                "end": 303.63,
+                "confidence": 0.9189453,
+                "punctuated_word": "rechecks,"
+              },
+              {
+                "word": "and",
+                "start": 303.63,
+                "end": 303.79,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "this",
+                "start": 303.79,
+                "end": 303.95,
+                "confidence": 0.99609375,
+                "punctuated_word": "this"
+              },
+              {
+                "word": "time",
+                "start": 303.95,
+                "end": 304.27002,
+                "confidence": 0.7536621,
+                "punctuated_word": "time,"
+              },
+              {
+                "word": "everything",
+                "start": 304.27002,
+                "end": 304.51,
+                "confidence": 1.0,
+                "punctuated_word": "everything"
+              },
+              {
+                "word": "lines",
+                "start": 304.51,
+                "end": 304.91,
+                "confidence": 0.99902344,
+                "punctuated_word": "lines"
+              },
+              {
+                "word": "up",
+                "start": 304.91,
+                "end": 305.15,
+                "confidence": 1.0,
+                "punctuated_word": "up."
+              },
+              {
+                "word": "every",
+                "start": 315.95502,
+                "end": 316.275,
+                "confidence": 0.99902344,
+                "punctuated_word": "Every"
+              },
+              {
+                "word": "shared",
+                "start": 316.275,
+                "end": 316.595,
+                "confidence": 0.97802734,
+                "punctuated_word": "shared"
+              },
+              {
+                "word": "id",
+                "start": 316.595,
+                "end": 316.915,
+                "confidence": 0.6748047,
+                "punctuated_word": "ID"
+              },
+              {
+                "word": "matches",
+                "start": 316.915,
+                "end": 317.555,
+                "confidence": 0.73779297,
+                "punctuated_word": "matches."
+              },
+              {
+                "word": "both",
+                "start": 317.555,
+                "end": 317.715,
+                "confidence": 1.0,
+                "punctuated_word": "Both"
+              },
+              {
+                "word": "files",
+                "start": 317.715,
+                "end": 318.035,
+                "confidence": 1.0,
+                "punctuated_word": "files"
+              },
+              {
+                "word": "load",
+                "start": 318.035,
+                "end": 318.435,
+                "confidence": 0.98339844,
+                "punctuated_word": "load."
+              },
+              {
+                "word": "the",
+                "start": 318.435,
+                "end": 318.595,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "syntax",
+                "start": 318.595,
+                "end": 318.995,
+                "confidence": 0.9996745,
+                "punctuated_word": "syntax"
+              },
+              {
+                "word": "is",
+                "start": 318.995,
+                "end": 319.155,
+                "confidence": 1.0,
+                "punctuated_word": "is"
+              },
+              {
+                "word": "clean",
+                "start": 319.155,
+                "end": 319.555,
+                "confidence": 0.99072266,
+                "punctuated_word": "clean."
+              },
+              {
+                "word": "the",
+                "start": 319.555,
+                "end": 319.715,
+                "confidence": 1.0,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "manager",
+                "start": 319.715,
+                "end": 320.035,
+                "confidence": 1.0,
+                "punctuated_word": "manager"
+              },
+              {
+                "word": "signs",
+                "start": 320.035,
+                "end": 320.435,
+                "confidence": 1.0,
+                "punctuated_word": "signs"
+              },
+              {
+                "word": "off",
+                "start": 320.435,
+                "end": 320.755,
+                "confidence": 1.0,
+                "punctuated_word": "off."
+              },
+              {
+                "word": "the",
+                "start": 335.905,
+                "end": 336.145,
+                "confidence": 0.99902344,
+                "punctuated_word": "The"
+              },
+              {
+                "word": "road",
+                "start": 336.145,
+                "end": 336.465,
+                "confidence": 0.9394531,
+                "punctuated_word": "road"
+              },
+              {
+                "word": "map",
+                "start": 336.465,
+                "end": 336.705,
+                "confidence": 1.0,
+                "punctuated_word": "map"
+              },
+              {
+                "word": "checks",
+                "start": 336.705,
+                "end": 337.185,
+                "confidence": 1.0,
+                "punctuated_word": "checks"
+              },
+              {
+                "word": "the",
+                "start": 337.185,
+                "end": 337.425,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "finished",
+                "start": 337.425,
+                "end": 337.825,
+                "confidence": 1.0,
+                "punctuated_word": "finished"
+              },
+              {
+                "word": "app",
+                "start": 337.825,
+                "end": 338.145,
+                "confidence": 1.0,
+                "punctuated_word": "app"
+              },
+              {
+                "word": "against",
+                "start": 338.145,
+                "end": 338.625,
+                "confidence": 1.0,
+                "punctuated_word": "against"
+              },
+              {
+                "word": "its",
+                "start": 338.625,
+                "end": 338.865,
+                "confidence": 1.0,
+                "punctuated_word": "its"
+              },
+              {
+                "word": "own",
+                "start": 338.865,
+                "end": 339.105,
+                "confidence": 1.0,
+                "punctuated_word": "own"
+              },
+              {
+                "word": "acceptance",
+                "start": 339.105,
+                "end": 339.585,
+                "confidence": 0.9980469,
+                "punctuated_word": "acceptance"
+              },
+              {
+                "word": "list",
+                "start": 339.585,
+                "end": 340.30502,
+                "confidence": 0.7524414,
+                "punctuated_word": "list."
+              },
+              {
+                "word": "every",
+                "start": 340.385,
+                "end": 340.705,
+                "confidence": 1.0,
+                "punctuated_word": "Every"
+              },
+              {
+                "word": "action",
+                "start": 340.705,
+                "end": 341.345,
+                "confidence": 0.9995117,
+                "punctuated_word": "action,"
+              },
+              {
+                "word": "the",
+                "start": 341.345,
+                "end": 341.425,
+                "confidence": 1.0,
+                "punctuated_word": "the"
+              },
+              {
+                "word": "live",
+                "start": 341.425,
+                "end": 341.745,
+                "confidence": 0.9980469,
+                "punctuated_word": "live"
+              },
+              {
+                "word": "count",
+                "start": 341.745,
+                "end": 342.305,
+                "confidence": 0.99560547,
+                "punctuated_word": "count,"
+              },
+              {
+                "word": "and",
+                "start": 342.305,
+                "end": 342.385,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "persistence",
+                "start": 342.385,
+                "end": 342.945,
+                "confidence": 1.0,
+                "punctuated_word": "persistence"
+              },
+              {
+                "word": "across",
+                "start": 342.945,
+                "end": 343.425,
+                "confidence": 1.0,
+                "punctuated_word": "across"
+              },
+              {
+                "word": "a",
+                "start": 343.425,
+                "end": 343.585,
+                "confidence": 0.99902344,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "reload",
+                "start": 343.585,
+                "end": 343.985,
+                "confidence": 0.99560547,
+                "punctuated_word": "reload."
+              },
+              {
+                "word": "four",
+                "start": 360.895,
+                "end": 361.295,
+                "confidence": 0.9980469,
+                "punctuated_word": "Four"
+              },
+              {
+                "word": "agents",
+                "start": 361.295,
+                "end": 361.935,
+                "confidence": 0.9875488,
+                "punctuated_word": "agents,"
+              },
+              {
+                "word": "one",
+                "start": 361.935,
+                "end": 362.095,
+                "confidence": 1.0,
+                "punctuated_word": "one"
+              },
+              {
+                "word": "board",
+                "start": 362.095,
+                "end": 362.495,
+                "confidence": 0.9848633,
+                "punctuated_word": "board,"
+              },
+              {
+                "word": "a",
+                "start": 362.495,
+                "end": 362.575,
+                "confidence": 1.0,
+                "punctuated_word": "a"
+              },
+              {
+                "word": "working",
+                "start": 362.575,
+                "end": 362.895,
+                "confidence": 1.0,
+                "punctuated_word": "working"
+              },
+              {
+                "word": "app",
+                "start": 362.895,
+                "end": 363.455,
+                "confidence": 0.9975586,
+                "punctuated_word": "app,"
+              },
+              {
+                "word": "and",
+                "start": 363.455,
+                "end": 363.535,
+                "confidence": 1.0,
+                "punctuated_word": "and"
+              },
+              {
+                "word": "all",
+                "start": 363.535,
+                "end": 363.775,
+                "confidence": 1.0,
+                "punctuated_word": "all"
+              },
+              {
+                "word": "four",
+                "start": 363.775,
+                "end": 364.015,
+                "confidence": 1.0,
+                "punctuated_word": "four"
+              },
+              {
+                "word": "have",
+                "start": 364.015,
+                "end": 364.255,
+                "confidence": 1.0,
+                "punctuated_word": "have"
+              },
+              {
+                "word": "signed",
+                "start": 364.255,
+                "end": 364.495,
+                "confidence": 1.0,
+                "punctuated_word": "signed"
+              },
+              {
+                "word": "off",
+                "start": 364.495,
+                "end": 364.815,
+                "confidence": 1.0,
+                "punctuated_word": "off."
+              }
+            ],
+            "paragraphs": {
+              "transcript": "\nOne Rish session. In a moment, four Codex agents will go to work inside it. Three lanes. Planning on the left, the builders in the middle, the shared board on the right. The road map agent goes first, and its very first act is to tell the board what this demo is.\n\nThen the other three check-in, standing by, no work yet, every one of them will report to this board from here to the end. The road map writes the goal down, a to do manager that runs entirely in the browser. No back end, no build step, no dependencies. It waits until all three have checked in before handing over. A message sent to an agent that has not booted yet is simply lost.\n\nHanded to the fleet manager. That is the last order the road map gives. The build is not its job. The manager splits the work by layer. Worker one takes the page and the styling.\n\nWorker two takes all the behavior. But first, it writes a contract. Every shared ID, the markup of one to do item, and which file owns what. Two agents are about to build one page in parallel, and this is the only thing holding them together. Contract posted.\n\nThe work orders go out, one to each worker, and the build starts. Watch the middle lane. Both workers are running at once, and neither has read the other's file. The board is the only thing they share. No shared memory, no lock file, no messages between them, just posts.\n\nWorker two's logic lands first, then worker one's page and stylesheet. Both sign off on the board. Neither reported back by message. The manager has been watching the board because a post cannot be missed and a message can. The manager now checks the real thing rather than the reports.\n\nDoes every ID the script looks up actually exist in the markup? Now the interesting part. Verifying the manager finds a real defect. The remaining count is written twice on the page. It does not fix it itself.\n\nIt names the mismatch, sends the file back to worker two, and posts that it is blocked. Worker two corrects it and signs off again. The manager rechecks, and this time, everything lines up. Every shared ID matches. Both files load.\n\nThe syntax is clean. The manager signs off. The road map checks the finished app against its own acceptance list. Every action, the live count, and persistence across a reload. Four agents, one board, a working app, and all four have signed off.",
+              "paragraphs": [
+                {
+                  "sentences": [
+                    {
+                      "text": "One Rish session.",
+                      "start": 0.96,
+                      "end": 2.24
+                    },
+                    {
+                      "text": "In a moment, four Codex agents will go to work inside it.",
+                      "start": 2.24,
+                      "end": 5.6
+                    },
+                    {
+                      "text": "Three lanes.",
+                      "start": 9.5199995,
+                      "end": 10.559999
+                    },
+                    {
+                      "text": "Planning on the left, the builders in the middle, the shared board on the right.",
+                      "start": 10.639999,
+                      "end": 14.96
+                    },
+                    {
+                      "text": "The road map agent goes first, and its very first act is to tell the board what this demo is.",
+                      "start": 33.87,
+                      "end": 39.149998
+                    }
+                  ],
+                  "num_words": 52,
+                  "start": 0.96,
+                  "end": 39.149998
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Then the other three check-in, standing by, no work yet, every one of them will report to this board from here to the end.",
+                      "start": 45.004997,
+                      "end": 52.524998
+                    },
+                    {
+                      "text": "The road map writes the goal down, a to do manager that runs entirely in the browser.",
+                      "start": 63.92,
+                      "end": 68.24
+                    },
+                    {
+                      "text": "No back end, no build step, no dependencies.",
+                      "start": 68.465004,
+                      "end": 71.345
+                    },
+                    {
+                      "text": "It waits until all three have checked in before handing over.",
+                      "start": 78.945,
+                      "end": 81.905
+                    },
+                    {
+                      "text": "A message sent to an agent that has not booted yet is simply lost.",
+                      "start": 82.3,
+                      "end": 86.14
+                    }
+                  ],
+                  "num_words": 74,
+                  "start": 45.004997,
+                  "end": 86.14
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Handed to the fleet manager.",
+                      "start": 95.994995,
+                      "end": 97.674995
+                    },
+                    {
+                      "text": "That is the last order the road map gives.",
+                      "start": 97.994995,
+                      "end": 100.235
+                    },
+                    {
+                      "text": "The build is not its job.",
+                      "start": 100.235,
+                      "end": 101.515
+                    },
+                    {
+                      "text": "The manager splits the work by layer.",
+                      "start": 112.89,
+                      "end": 115.45
+                    },
+                    {
+                      "text": "Worker one takes the page and the styling.",
+                      "start": 115.45,
+                      "end": 117.85
+                    }
+                  ],
+                  "num_words": 35,
+                  "start": 95.994995,
+                  "end": 117.85
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Worker two takes all the behavior.",
+                      "start": 117.85,
+                      "end": 119.77
+                    },
+                    {
+                      "text": "But first, it writes a contract.",
+                      "start": 139.97,
+                      "end": 141.89
+                    },
+                    {
+                      "text": "Every shared ID, the markup of one to do item, and which file owns what.",
+                      "start": 142.12999,
+                      "end": 146.93
+                    },
+                    {
+                      "text": "Two agents are about to build one page in parallel, and this is the only thing holding them together.",
+                      "start": 147.625,
+                      "end": 152.50502
+                    },
+                    {
+                      "text": "Contract posted.",
+                      "start": 158.10501,
+                      "end": 159.38501
+                    }
+                  ],
+                  "num_words": 48,
+                  "start": 117.85,
+                  "end": 159.38501
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "The work orders go out, one to each worker, and the build starts.",
+                      "start": 159.625,
+                      "end": 162.66501
+                    },
+                    {
+                      "text": "Watch the middle lane.",
+                      "start": 172.04001,
+                      "end": 173.4
+                    },
+                    {
+                      "text": "Both workers are running at once, and neither has read the other's file.",
+                      "start": 173.4,
+                      "end": 176.68001
+                    },
+                    {
+                      "text": "The board is the only thing they share.",
+                      "start": 191.9,
+                      "end": 194.14
+                    },
+                    {
+                      "text": "No shared memory, no lock file, no messages between them, just posts.",
+                      "start": 194.22,
+                      "end": 198.29999
+                    }
+                  ],
+                  "num_words": 50,
+                  "start": 159.625,
+                  "end": 198.29999
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Worker two's logic lands first, then worker one's page and stylesheet.",
+                      "start": 213.03499,
+                      "end": 216.795
+                    },
+                    {
+                      "text": "Both sign off on the board.",
+                      "start": 229.895,
+                      "end": 232.215
+                    },
+                    {
+                      "text": "Neither reported back by message.",
+                      "start": 232.215,
+                      "end": 234.05501
+                    },
+                    {
+                      "text": "The manager has been watching the board because a post cannot be missed and a message can.",
+                      "start": 234.215,
+                      "end": 239.25499
+                    },
+                    {
+                      "text": "The manager now checks the real thing rather than the reports.",
+                      "start": 251.91,
+                      "end": 254.87
+                    }
+                  ],
+                  "num_words": 50,
+                  "start": 213.03499,
+                  "end": 254.87
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "Does every ID the script looks up actually exist in the markup?",
+                      "start": 255.345,
+                      "end": 258.705
+                    },
+                    {
+                      "text": "Now the interesting part.",
+                      "start": 272.96,
+                      "end": 274.47998
+                    },
+                    {
+                      "text": "Verifying the manager finds a real defect.",
+                      "start": 274.71997,
+                      "end": 277.6
+                    },
+                    {
+                      "text": "The remaining count is written twice on the page.",
+                      "start": 277.68,
+                      "end": 280.08
+                    },
+                    {
+                      "text": "It does not fix it itself.",
+                      "start": 285.935,
+                      "end": 287.45502
+                    }
+                  ],
+                  "num_words": 38,
+                  "start": 255.345,
+                  "end": 287.45502
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "It names the mismatch, sends the file back to worker two, and posts that it is blocked.",
+                      "start": 287.45502,
+                      "end": 292.015
+                    },
+                    {
+                      "text": "Worker two corrects it and signs off again.",
+                      "start": 300.03,
+                      "end": 302.43
+                    },
+                    {
+                      "text": "The manager rechecks, and this time, everything lines up.",
+                      "start": 302.43,
+                      "end": 305.15
+                    },
+                    {
+                      "text": "Every shared ID matches.",
+                      "start": 315.95502,
+                      "end": 317.555
+                    },
+                    {
+                      "text": "Both files load.",
+                      "start": 317.555,
+                      "end": 318.435
+                    }
+                  ],
+                  "num_words": 41,
+                  "start": 287.45502,
+                  "end": 318.435
+                },
+                {
+                  "sentences": [
+                    {
+                      "text": "The syntax is clean.",
+                      "start": 318.435,
+                      "end": 319.555
+                    },
+                    {
+                      "text": "The manager signs off.",
+                      "start": 319.555,
+                      "end": 320.755
+                    },
+                    {
+                      "text": "The road map checks the finished app against its own acceptance list.",
+                      "start": 335.905,
+                      "end": 340.30502
+                    },
+                    {
+                      "text": "Every action, the live count, and persistence across a reload.",
+                      "start": 340.385,
+                      "end": 343.985
+                    },
+                    {
+                      "text": "Four agents, one board, a working app, and all four have signed off.",
+                      "start": 360.895,
+                      "end": 364.815
+                    }
+                  ],
+                  "num_words": 43,
+                  "start": 318.435,
+                  "end": 364.815
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

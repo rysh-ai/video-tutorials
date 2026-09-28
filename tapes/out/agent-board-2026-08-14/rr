@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# rr — run the DEMO rysh, isolated from the operator's live session (pattern: rr.sh).
+# Scrub inherited RYSH_*/CLAUDE_* FIRST: env beats the config file. ANTHROPIC_* is kept.
+set -euo pipefail
+D=/private/tmp/claude-501/-Users-halilagin-root-github-agentic-zellij/806c7c22-04a1-4a4c-babb-528c5fbb8219/scratchpad/boarddemo
+for v in $(env | awk -F= '/^(RYSH|CLAUDE|CLAUDECODE)_?/{print $1}'); do unset "$v"; done
+unset CLAUDECODE 2>/dev/null || true
+exec /Users/halilagin/.local/bin/rysh_local --config "$D/rysh.config.yaml" "$@"

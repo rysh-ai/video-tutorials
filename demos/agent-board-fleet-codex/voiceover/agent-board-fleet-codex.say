@@ -1,0 +1,97 @@
+# Story: A fleet of Codex agents and the board they report to (377s)
+# Hook: Four Codex agents build a web app in one session — and the manager catches a real defect on camera.
+# Duration: 377s
+# Source: ../out/agent-board-fleet-codex.mp4  (2026-08-15, 377.4s)
+#
+# Voiceover script with timing cues.
+# Format: [START --> END] narration text
+# Gaps between entries are silent — the viewer is reading the board.
+#
+# HOW THESE CUES WERE DERIVED, AND WHY THIS TAKE NEEDED MORE THAN AN OFFSET
+# -------------------------------------------------------------------------
+# Read off the FRAMES, never the tape's Sleep lines: six crops of the board pane
+# at t=30/90/150/230/300/370 (_run/contact.png), each giving the newest post
+# visible and therefore a wall-clock bracket.
+#
+# The claude version of this demo came out 1:1 with wall clock and needed only
+# an offset. THIS ONE DOES NOT, and assuming it did would have put every cue
+# progressively earlier: no single offset satisfies all six brackets — the early
+# frames imply ~17:38:11 and the late ones ~17:38:21. VHS dropped frames
+# unevenly over a longer capture, so the video runs about 5% slow against the
+# clock. Fitting the two best-separated anchors instead:
+#
+#     video_t  =  0.9502 * (wall_seconds_after_17:38:00)  -  5.02
+#
+# which lands inside every one of the six brackets. If the video is ever
+# re-recorded, these cues are wrong until they are re-derived the same way —
+# including the scale factor, which is a property of that capture, not a constant.
+#
+# BUDGET: windows are sized at 11-13 characters per second. OpenAI nova at
+# speed 1.0 runs about 15 ch/s, so every line has headroom. tts_openai.py
+# advances its cursor by the ACTUAL audio length, so one overflowing segment
+# shifts every segment after it, silently.
+#
+# Total segments: 21
+
+[00:01.0 --> 00:09.0]
+One rysh session. In a moment, four Codex agents will go to work inside it.
+
+[00:09.5 --> 00:17.5]
+Three lanes: planning on the left, the builders in the middle, the shared board on the right.
+
+[00:34.0 --> 00:42.0]
+The roadmap agent goes first, and its very first act is to tell the board what this demo is.
+
+[00:45.0 --> 00:59.0]
+Then the other three check in — standing by, no work yet. Every one of them will report to this board from here to the end.
+
+[01:04.0 --> 01:16.0]
+The roadmap writes the goal down: a todo manager that runs entirely in the browser. No backend, no build step, no dependencies.
+
+[01:19.0 --> 01:32.0]
+It waits until all three have checked in before handing over. A message sent to an agent that has not booted yet is simply lost.
+
+[01:36.0 --> 01:48.0]
+Handed to the fleet manager. That is the last order the roadmap gives — the build is not its job.
+
+[01:53.0 --> 02:05.0]
+The manager splits the work by layer. Worker one takes the page and the styling, worker two takes all the behaviour.
+
+[02:20.0 --> 02:36.0]
+But first it writes a contract: every shared id, the markup of one todo item, and which file owns what. Two agents are about to build one page in parallel, and this is the only thing holding them together.
+
+[02:38.0 --> 02:50.0]
+Contract posted. The work orders go out, one to each worker, and the build starts.
+
+[02:52.0 --> 03:06.0]
+Watch the middle lane. Both workers are running at once, and neither has read the other's file.
+
+[03:12.0 --> 03:26.0]
+The board is the only thing they share. No shared memory, no lock file, no messages between them — just posts.
+
+[03:33.0 --> 03:45.0]
+Worker two's logic lands first, then worker one's page and stylesheet.
+
+[03:50.0 --> 04:06.0]
+Both sign off on the board. Neither reported back by message: the manager has been watching the board, because a post cannot be missed and a message can.
+
+[04:12.0 --> 04:26.0]
+The manager now checks the real thing rather than the reports. Does every id the script looks up actually exist in the markup?
+
+[04:33.0 --> 04:45.0]
+Now the interesting part. Verifying, the manager finds a real defect — the remaining count is written twice on the page.
+
+[04:46.0 --> 04:58.0]
+It does not fix it itself. It names the mismatch, sends the file back to worker two, and posts that it is blocked.
+
+[05:00.0 --> 05:12.0]
+Worker two corrects it and signs off again. The manager re-checks, and this time everything lines up.
+
+[05:16.0 --> 05:28.0]
+Every shared id matches, both files load, the syntax is clean. The manager signs off.
+
+[05:36.0 --> 05:52.0]
+The roadmap checks the finished app against its own acceptance list — every action, the live count, and persistence across a reload.
+
+[06:01.0 --> 06:13.0]
+Four agents, one board, a working app. And all four have signed off.

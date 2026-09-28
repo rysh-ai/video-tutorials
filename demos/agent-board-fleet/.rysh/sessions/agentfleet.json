@@ -1,0 +1,16 @@
+{
+  "name": "agentfleet",
+  "path": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/agent-board-fleet",
+  "state": "running",
+  "pid": 34911,
+  "tui_pids": [
+    36674
+  ],
+  "nats_port": 24343,
+  "updated_at": "2026-08-15T14:14:02.112901Z",
+  "version": "v0.2.5-130-g87837e4",
+  "bin_hash": "dd1768d1fed8",
+  "config_file": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/agent-board-fleet/rysh.config.yaml",
+  "rysh_dir": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/agent-board-fleet/.rysh",
+  "source": "cli"
+}

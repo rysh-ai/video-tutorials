@@ -1,0 +1,16 @@
+{
+  "name": "codexfleet",
+  "path": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/agent-board-fleet-codex",
+  "state": "running",
+  "pid": 92980,
+  "tui_pids": [
+    94551
+  ],
+  "nats_port": 24344,
+  "updated_at": "2026-08-15T16:38:37.921782Z",
+  "version": "v0.2.5-130-g87837e4",
+  "bin_hash": "dd1768d1fed8",
+  "config_file": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/agent-board-fleet-codex/rysh.config.yaml",
+  "rysh_dir": "/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/agent-board-fleet-codex/.rysh",
+  "source": "cli"
+}

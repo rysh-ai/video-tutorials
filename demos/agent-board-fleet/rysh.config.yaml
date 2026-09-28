@@ -1,0 +1,36 @@
+# agent-board-fleet demo — its own session, its own state.
+#
+# Everything this demo creates (.rysh/, the todo app, the session's KV) lives
+# under this directory, so a render never touches the founder's live session.
+
+rysh:
+    session_name: "agentfleet"
+    upgrade_on_attach: "off"
+    working_directory: "."
+
+nats:
+    mode: "embedded"
+    # MUST NOT be 24242. With the default port the demo daemon finds the
+    # founder's live session already listening there and joins it as a CLIENT
+    # instead of starting its own server — one bus, two sessions, and the demo
+    # dies the moment the live session is stopped. Verified with `lsof -iTCP
+    # -sTCP:LISTEN`: the demon must appear as a LISTENER on this port.
+    port: 24343
+    data_dir: ".rysh/nats"
+
+provider:
+    name: "claude"
+    command: "claude"
+    model: "claude-sonnet-5"
+    max_tokens: 4096
+
+ui:
+    shell: "/bin/bash"
+    initial_tabs: 1
+    initial_panes: 1
+
+logging:
+    log_level: "off"
+
+upstream:
+    enabled: false

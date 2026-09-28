@@ -1,0 +1,22 @@
+rysh:
+    session_name: "boarddemo"
+    upgrade_on_attach: "off"
+    working_directory: "/private/tmp/claude-501/-Users-halilagin-root-github-agentic-zellij/806c7c22-04a1-4a4c-babb-528c5fbb8219/scratchpad/boarddemo"
+nats:
+    mode: "embedded"
+    port: 24951
+    data_dir: "/private/tmp/claude-501/-Users-halilagin-root-github-agentic-zellij/806c7c22-04a1-4a4c-babb-528c5fbb8219/scratchpad/boarddemo/nats"
+provider:
+    name: "claude"
+    command: "claude"
+    model: "claude-opus-4-8"
+    api_key: ""
+    max_tokens: 4096
+ui:
+    shell: ""
+    initial_tabs: 1
+    initial_panes: 1
+web:
+    port: 23951
+logging:
+    level: "off"

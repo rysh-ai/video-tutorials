@@ -1,0 +1,1 @@
+P=3abd6029-dc4f-4f24-8f3d-6e10af75bc0a|CWD=/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/agent-board-fleet|RYSH=/Users/halilagin/root/github/agentic-zellij/video-tutorials/demos/agent-board-fleet/_bin/rysh|CLAUDE=/Users/halilagin/.local/bin/claude|SHELL=/bin/bash
