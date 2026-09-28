@@ -1,0 +1,193 @@
+1
+00:00:00,960 --> 00:00:05,600
+One rysh session. In a moment, four
+Codex agents will go to work inside it.
+
+2
+00:00:09,520 --> 00:00:12,000
+Three lanes: planning on the left,
+
+3
+00:00:12,080 --> 00:00:14,960
+the builders in the middle,
+the shared board on the right.
+
+4
+00:00:33,870 --> 00:00:36,030
+The roadmap agent goes first,
+
+5
+00:00:36,030 --> 00:00:39,150
+and its very first act is to
+tell the board what this demo is.
+
+6
+00:00:45,005 --> 00:00:48,925
+Then the other three check in
+— standing by, no work yet.
+
+7
+00:00:49,005 --> 00:00:52,525
+Every one of them will report to
+this board from here to the end.
+
+8
+00:01:03,920 --> 00:01:08,240
+The roadmap writes the goal down: a todo
+manager that runs entirely in the browser.
+
+9
+00:01:08,465 --> 00:01:11,345
+No backend, no build step, no dependencies.
+
+10
+00:01:18,945 --> 00:01:21,905
+It waits until all three have
+checked in before handing over.
+
+11
+00:01:22,300 --> 00:01:26,140
+A message sent to an agent that
+has not booted yet is simply lost.
+
+12
+00:01:35,995 --> 00:01:37,675
+Handed to the fleet manager.
+
+13
+00:01:37,995 --> 00:01:41,515
+That is the last order the roadmap
+gives — the build is not its job.
+
+14
+00:01:52,890 --> 00:01:57,850
+The manager splits the work by layer.
+Worker one takes the page and the styling,
+
+15
+00:01:57,850 --> 00:02:09,670
+worker two takes all the behaviour.
+
+16
+00:02:19,970 --> 00:02:21,890
+But first it writes a contract:
+
+17
+00:02:22,130 --> 00:02:26,930
+every shared id, the markup of one
+todo item, and which file owns what.
+
+18
+00:02:27,625 --> 00:02:30,265
+Two agents are about to
+build one page in parallel,
+
+19
+00:02:30,265 --> 00:02:32,505
+and this is the only thing
+holding them together.
+
+20
+00:02:38,105 --> 00:02:42,665
+Contract posted. The work orders go out,
+one to each worker, and the build starts.
+
+21
+00:02:52,040 --> 00:02:53,400
+Watch the middle lane.
+
+22
+00:02:53,400 --> 00:02:56,680
+Both workers are running at once, and
+neither has read the other's file.
+
+23
+00:03:11,900 --> 00:03:14,140
+The board is the only thing they share.
+
+24
+00:03:14,220 --> 00:03:18,300
+No shared memory, no lock file, no
+messages between them — just posts.
+
+25
+00:03:33,035 --> 00:03:36,795
+Worker two's logic lands first, then
+worker one's page and stylesheet.
+
+26
+00:03:49,895 --> 00:03:52,215
+Both sign off on the board.
+
+27
+00:03:52,215 --> 00:03:55,575
+Neither reported back by message:
+the manager has been watching
+
+28
+00:03:55,575 --> 00:03:59,255
+the board, because a post cannot
+be missed and a message can.
+
+29
+00:04:11,910 --> 00:04:14,870
+The manager now checks the real
+thing rather than the reports.
+
+30
+00:04:15,345 --> 00:04:18,705
+Does every id the script looks
+up actually exist in the markup?
+
+31
+00:04:32,960 --> 00:04:37,920
+Now the interesting part. Verifying,
+the manager finds a real defect — the
+
+32
+00:04:37,920 --> 00:04:40,080
+remaining count is
+written twice on the page.
+
+33
+00:04:45,935 --> 00:04:49,855
+It does not fix it itself. It names
+the mismatch, sends the file back to
+
+34
+00:04:49,855 --> 00:04:52,015
+worker two, and posts that it is blocked.
+
+35
+00:05:00,030 --> 00:05:02,430
+Worker two corrects it and signs off again.
+
+36
+00:05:02,430 --> 00:05:05,150
+The manager re-checks, and
+this time everything lines up.
+
+37
+00:05:15,955 --> 00:05:19,555
+Every shared id matches, both
+files load, the syntax is clean.
+
+38
+00:05:19,555 --> 00:05:20,755
+The manager signs off.
+
+39
+00:05:35,905 --> 00:05:40,305
+The roadmap checks the finished
+app against its own acceptance list
+
+40
+00:05:40,305 --> 00:05:43,985
+— every action, the live count,
+and persistence across a reload.
+
+41
+00:06:00,895 --> 00:06:04,815
+Four agents, one board, a working
+app. And all four have signed off.
+

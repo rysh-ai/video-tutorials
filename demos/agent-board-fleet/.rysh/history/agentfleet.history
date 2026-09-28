@@ -1,0 +1,4 @@
+./agent.sh roadmap
+./agent.sh fleet-manager
+./agent.sh worker-1
+./agent.sh worker-2

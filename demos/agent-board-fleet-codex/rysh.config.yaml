@@ -1,0 +1,36 @@
+# agent-board-fleet-codex demo — its own session, its own state.
+#
+# Everything this demo creates (.rysh/, the todo app, the session's KV) lives
+# under this directory, so a render never touches the founder's live session or
+# the claude version of this demo next door.
+
+rysh:
+    session_name: "codexfleet"
+    upgrade_on_attach: "off"
+    working_directory: "."
+
+nats:
+    mode: "embedded"
+    # MUST be unique on this machine. With a port something else already holds,
+    # this daemon finds that server listening and joins it as a CLIENT instead
+    # of starting its own — one bus, two sessions. 24242 is the founder's live
+    # session and 24343 is the claude version of this demo, so this one takes
+    # 24344. setup-session.sh asserts the daemon is the LISTENER on this port.
+    port: 24344
+    data_dir: ".rysh/nats"
+
+provider:
+    name: "claude"
+    command: "claude"
+    max_tokens: 4096
+
+ui:
+    shell: "/bin/bash"
+    initial_tabs: 1
+    initial_panes: 1
+
+logging:
+    log_level: "off"
+
+upstream:
+    enabled: false
