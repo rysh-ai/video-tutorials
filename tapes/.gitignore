@@ -17,3 +17,5 @@ render-control.log
 # Isolated rysh state + renders from render_control_isolated.sh (WO-2): never commit
 out/iso-home/
 out/control-arm64/
+out/wo3a-raw.tsv
+out/wo3a-wait.log
