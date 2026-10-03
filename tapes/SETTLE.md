@@ -205,3 +205,64 @@ tick slower than 25 fps.
 about 6 % short. Story-019's August tape is 18.0 s Sleep out of 20.55 s, and its §2a ratio was
 0.928–0.950, which is consistent. A 6 % post-hoc stretch holds frames for about 1/16 longer.
 That is nothing like T2's 6–14× stretch.
+
+---
+
+## §3a — does TOOLCHAIN hold under load? (WO-3a, 2026-10-03)
+
+**The clock.** It started at **2026-10-03 16:03:55 BST**, when the §1 housekeeping finished.
+The deadline was 19:03:55 BST. The run ended at **19:04:28 BST** (`DEADLINE: 1 qualifying runs`).
+
+**Method.** I used the same August control, `control-aug/story-019-stacked-panes.tape` (sha256
+`0f690b6d…3f6b`, budget 20.550 s). `wait_load_render.sh` read `sysctl -n vm.loadavg` once a
+minute and generated no load of its own. When the 1-minute load was **≥ 60** it ran one
+`render_control_isolated.sh render <tape> 1`. That repeats the isolation proof every time: the
+live list was identical before and after the proof, and still unchanged at the end of the render.
+The poll log is `out/wo3a-wait.log` and the raw row is `out/wo3a-raw.tsv`, both gitignored.
+
+**Load over the window.** There were **179 polls**. The highest 1-minute load was **62.57**,
+reached once, at 16:27:19. Every other poll was below 60, and most of the window ran at load
+2–10. The box never got back to 60 after 16:28.
+
+**Result** (appended to `control-arm64-results.tsv` as `story-019-stacked-panes(wo3a)`):
+
+| run | budget_s | nb_frames | duration_s | ratio | r_frame_rate | wall_s | load_before | mp4 sha256 |
+|---|---|---|---|---|---|---|---|---|
+| 1 | 20.550 | 434 | 17.360 | **0.845** | 25/1 | 55.0 | 63.08 | `a56e1060…af54f` |
+
+The render path is
+`/Users/halilagin/root/github/rysh-ai/worktrees/video-tutorials-e5-settle/tapes/out/control-arm64/story-019-stacked-panes-wo3a-run1.mp4`.
+A frame at 12 s shows the real rysh TUI: session `story-019`, three stacked panes, and
+`echo front of the stack` already run. In the WO-2a low-load run, that frame still showed it
+being typed, which fits a shorter render.
+
+### Verdict: **INCONCLUSIVE (load not reached)**
+
+Only one of the three required runs met load ≥ 60 within 3 hours. By the rule for that run
+alone, it would still be inconclusive: **0.845** is just under the 0.85 "holds" line and far
+above the 0.40 "load-sensitive" line.
+
+**What the one run shows, and only that:**
+
+| condition | ratio |
+|---|---|
+| arm64, load 17–23 (§2a, n=3) | 0.928–0.950 |
+| arm64, load 63 (this run, n=1) | 0.845 |
+| Rosetta, load 55–63 (August, n=2) | 0.097–0.164 |
+
+Load costs about 0.09 here, against about 0.8 for the toolchain. Even n=1 points to the
+toolchain as the dominant cause. But one run is not evidence that "holds" applies.
+
+**To settle it:** two more runs at load ≥ 60. These should come either from a window when the
+box is naturally busy, or from a human decision to allow load to be generated, which this WO
+forbids.
+
+**Incident, recorded rather than buried.** Before this fix, `render_control_isolated.sh` named
+its renders `<base>-run<N>.mp4`. So this WO-3a render **overwrote the WO-2a run-1 render** at
+`out/control-arm64/story-019-stacked-panes-run1.mp4`.
+- The WO-2a row's sha256 `c529432a…54b5f9` remains in the TSV as the record of what was
+  measured. **That file no longer exists.**
+- WO-2a runs 2 and 3 are intact. Their sha256s were re-verified: `553434ca…21ac` and
+  `04a91c77…6343`.
+- The WO-3a render was renamed to `…-wo3a-run1.mp4`.
+- The script now names renders `<base>-<YYYYmmddTHHMMSS>-run<N>.mp4`, so this cannot recur.
