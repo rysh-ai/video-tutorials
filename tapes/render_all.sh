@@ -1,4 +1,12 @@
 #!/usr/bin/env bash
+#
+# !!! UNSAFE ON A MACHINE RUNNING A LIVE rysh SESSION (WO-5, 2026-10-03) !!!
+# This script runs `rysh delete-session "$sess"` (lines 54, 67) and
+# `rysh delete-session default` (line 68) against whatever rysh the ambient
+# environment reaches — the live session included. Use
+# render_control_isolated.sh instead (RENDERING.md §8). Kept unedited below
+# this banner because its history is evidence.
+#
 # Batch-render Rysh tutorial tapes with VHS.
 #
 # Each tape is rendered in a sandbox working directory with a UNIQUE rysh

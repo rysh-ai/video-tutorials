@@ -265,7 +265,7 @@ tested whether one fixed factor corrects the whole corpus.
 `render_control.sh:71,83,84` (lines 64/76/77 before its WO-4 warning banner) runs
 `delete-session "$sess"` and **`delete-session default`** against whatever rysh the ambient
 environment reaches. On a machine running the human's live session, that is the live session.
-`render_all.sh:46,59,60` has the same pattern. It is not edited here, and it is equally unsafe.
+`render_all.sh:54,67,68` (lines 46/59/60 before its WO-5 warning banner) has the same pattern and is equally unsafe; it carries the same banner and is otherwise unedited. (§4's `render_all.sh:26` uses the pre-banner numbering; that `cp -f` is now `:34`.)
 
 `render_control_isolated.sh` instead:
 
