@@ -18,12 +18,17 @@
 # Usage:
 #   ./render_settle.sh            # n=3 each, ABABAB
 #   N=5 ./render_settle.sh
+#   SUFFIX=-40 ./render_settle.sh # the 40 s pair, settle/settle-{sleep,type}-40.tape (WO-2b)
+#
+# Rows are APPENDED; the header is written only when the TSV is empty, so a
+# second budget never overwrites the first one's evidence.
 set -uo pipefail
 
 TAPES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 OUT_DIR="$TAPES_DIR/out/settle"
 RESULTS="${RESULTS:-$TAPES_DIR/settle-results.tsv}"
 N="${N:-3}"
+SUFFIX="${SUFFIX:-}"
 mkdir -p "$OUT_DIR"
 
 VHS="$(command -v vhs)" || { echo "FATAL: vhs not on PATH"; exit 1; }
@@ -33,23 +38,23 @@ vhs_ver=$(vhs --version 2>&1 | head -1)
 load1() { sysctl -n vm.loadavg | awk '{print $2}'; }
 now()   { python3 -c 'import time;print(f"{time.time():.3f}")'; }
 
-printf 'tape\trun\tbudget_s\tnb_frames\tduration_s\tratio\tr_frame_rate\tavg_frame_rate\twall_s\tload_before\tvhs_version\tvhs_sha256\tmp4_path\tmp4_sha256\n' > "$RESULTS"
+[ -s "$RESULTS" ] || printf 'tape\trun\tbudget_s\tnb_frames\tduration_s\tratio\tr_frame_rate\tavg_frame_rate\twall_s\tload_before\tvhs_version\tvhs_sha256\tmp4_path\tmp4_sha256\n' > "$RESULTS"
 
 for run in $(seq 1 "$N"); do
   for arm in sleep type; do
-    tape="$TAPES_DIR/settle/settle-$arm.tape"
-    out="$OUT_DIR/settle-$arm-run$run.mp4"
+    tape="$TAPES_DIR/settle/settle-$arm$SUFFIX.tape"
+    out="$OUT_DIR/settle-$arm$SUFFIX-run$run.mp4"
     rm -f "$out"
     budget=$(python3 "$TAPES_DIR/tape_budget.py" "$tape" --tsv | awk 'NR==2{print $5}')
     lb=$(load1)
     t0=$(now)
-    ( cd "$OUT_DIR" && vhs -o "$out" "$tape" ) >"$OUT_DIR/settle-$arm-run$run.log" 2>&1
+    ( cd "$OUT_DIR" && vhs -o "$out" "$tape" ) >"$OUT_DIR/settle-$arm$SUFFIX-run$run.log" 2>&1
     rc=$?
     t1=$(now)
     wall=$(python3 -c "print(f'{$t1-$t0:.1f}')")
     if [ "$rc" -ne 0 ] || [ ! -s "$out" ]; then
-      echo "FAIL: $arm run$run rc=$rc (log: $OUT_DIR/settle-$arm-run$run.log)"
-      printf '%s\t%s\t%s\tFAIL\t\t\t\t\t%s\t%s\t%s\t%s\t%s\t\n' "settle-$arm" "$run" "$budget" "$wall" "$lb" "$vhs_ver" "$vhs_sha" "$out" >> "$RESULTS"
+      echo "FAIL: $arm run$run rc=$rc (log: $OUT_DIR/settle-$arm$SUFFIX-run$run.log)"
+      printf '%s\t%s\t%s\tFAIL\t\t\t\t\t%s\t%s\t%s\t%s\t%s\t\n' "settle-$arm$SUFFIX" "$run" "$budget" "$wall" "$lb" "$vhs_ver" "$vhs_sha" "$out" >> "$RESULTS"
       continue
     fi
     # nb_frames counted by decoding (-count_frames), not read from the header.
@@ -59,8 +64,8 @@ for run in $(seq 1 "$N"); do
     ratio=$(python3 -c "print(f'{$dur/$budget:.3f}')")
     sha=$(shasum -a 256 "$out" | cut -d' ' -f1)
     printf '%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' \
-      "settle-$arm" "$run" "$budget" "$nbf" "$dur" "$ratio" "$rfr" "$afr" "$wall" "$lb" "$vhs_ver" "$vhs_sha" "$out" "$sha" >> "$RESULTS"
-    echo "settle-$arm run$run: frames=$nbf duration=${dur}s ratio=$ratio wall=${wall}s load=$lb"
+      "settle-$arm$SUFFIX" "$run" "$budget" "$nbf" "$dur" "$ratio" "$rfr" "$afr" "$wall" "$lb" "$vhs_ver" "$vhs_sha" "$out" "$sha" >> "$RESULTS"
+    echo "settle-$arm$SUFFIX run$run: frames=$nbf duration=${dur}s ratio=$ratio wall=${wall}s load=$lb"
   done
 done
 echo "results: $RESULTS"
