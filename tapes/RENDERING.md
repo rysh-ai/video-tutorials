@@ -212,3 +212,76 @@ measured. It is the only cheap option that attacks the mechanism.
 - Tapes needing Slack tokens, an upstream, or a live API key. All three controls
   are self-contained; `render-ad07.sh` documents what the Slack ones additionally
   need and none of it was exercised.
+
+## 8. The arm64 toolchain (added 2026-10-03, WO-4)
+
+§1–§7 above describe the **August** toolchain: x86_64 vhs under Rosetta on an M1, at load
+55–140. They are left as written because they are the evidence. This section describes the
+toolchain renders now run on, and what it measures.
+
+### 8.1 Toolchain
+
+Measured on `macminim5` (Apple Silicon, arm64). Everything is native arm64, with no Rosetta.
+
+| tool | version | install | binary sha256 |
+|---|---|---|---|
+| vhs | 0.12.1 | `brew install vhs` (arm64 bottle) | `4814a1a32b34640947efb7180124517fca84fca2fc14f99f2808cd3a207a7ca5` (`/opt/homebrew/Cellar/vhs/0.12.1/bin/vhs`) |
+| ttyd | 1.7.7 | pulled in by `brew install vhs` | `bbf9481101b139101d06846f161ceb477cee3a3f5b98528524df2ed3466a6337` (`/opt/homebrew/Cellar/ttyd/1.7.7_13/bin/ttyd`) |
+| ffmpeg / ffprobe | 9.0.2 | Homebrew | — |
+| rysh | `v0.2.10-99-ga53bf8c` | built from `rysh-cli` dev `a53bf8c` | `2ba398d33b068974a743da43e34d45efda29eaa38c56714e16140841f7363f72` |
+
+`./check_render_prereqs.sh` passes unpatched. Its one WARN is the JetBrains Mono font, and it
+makes no Rosetta assumption.
+
+### 8.2 What it measures (every number is from `ffprobe`)
+
+| test | source | ratio (duration ÷ budget) | load |
+|---|---|---|---|
+| bash, still screen, 20 s, n=3 | `settle-results.tsv`, `SETTLE.md` §3 | 0.934–0.948 | 59–187 |
+| bash, typing, 20 s, n=3 | same | 0.990–0.994 | 59–187 |
+| bash, still screen, 40 s, n=3 | `settle-results.tsv`, `SETTLE.md` §2b | 0.944 (944 frames, all 3 runs) | 15–28 |
+| bash, typing, 40 s, n=3 | same | 0.987–0.995 | 15–23 |
+| **rysh TUI, August story-019 tape (20.55 s), n=3** | `control-arm64-results.tsv`, `SETTLE.md` §2a | **0.928–0.950** | 17–23 |
+| rysh TUI, same tape, n=1 | `control-arm64-results.tsv` (`(wo3a)` row), `SETTLE.md` §3a | 0.845 | 63 |
+| *for comparison:* rysh TUI, same tape, August Rosetta, n=2 | §5 above (`render-control-results.tsv`, `render-repeat-019.tsv`) | 0.097 / 0.164 | 55–63 |
+
+**Reading.** The August shortfall was the **toolchain** (`SETTLE.md` §2a). On arm64 the same
+rysh tape comes out within 5–7 % of budget. Load looks second-order: about 0.09 at load 63,
+from **n=1**, recorded as a reading and not a verdict (`SETTLE.md` §3a). Every new render's TSV
+row carries `load_before`.
+
+**The 0.944 still-screen factor.** Idle screen time is captured at about **94 %** of real time.
+The shortfall is proportional, not fixed: 1.17 s at 20 s and 2.24 s at 40 s
+(`SETTLE.md` §2b). A tape that is mostly `Sleep` therefore comes out about 6 % short. Typing
+loses about 1 %.
+
+The factor is a **model** and must be labelled as one wherever it is applied. Nobody has
+tested whether one fixed factor corrects the whole corpus.
+
+### 8.3 How to render a rysh tape on a machine running live rysh
+
+**`render_control_isolated.sh` is the only sanctioned way.**
+
+`render_control.sh:71,83,84` (lines 64/76/77 before its WO-4 warning banner) runs
+`delete-session "$sess"` and **`delete-session default`** against whatever rysh the ambient
+environment reaches. On a machine running the human's live session, that is the live session.
+`render_all.sh:46,59,60` has the same pattern. It is not edited here, and it is equally unsafe.
+
+`render_control_isolated.sh` instead:
+
+- points `HOME` and `RYSH_DIR` at a fresh `out/iso-home/run-*` and exits 2 unless `RYSH_DIR`
+  resolves under it;
+- unsets every inherited `RYSH_*` variable (a pane's `RYSH_SESSION`/`RYSH_PANE` would otherwise
+  address the live session);
+- writes an isolated `rysh.config.yaml` with embedded NATS on `port: 0`, the recipe from
+  `rysh-cli/internal/daemontest`;
+- never calls `delete-session default`, and stops only daemons it started (matched by name
+  **and** a cwd under its iso dir);
+- **proves the isolation before every render**: it records the live `list-sessions`, creates
+  and deletes a throwaway session in isolation, and records the live list again. It refuses to
+  render unless the two lists are identical, and it re-checks at the end;
+- timestamps its render names, so a later run never overwrites an earlier cited render. One
+  did, once, before this fix (`SETTLE.md` §3a).
+
+Usage: `./render_control_isolated.sh prove`, then
+`./render_control_isolated.sh render <tape> <n>`. Results go to `control-arm64-results.tsv`.
