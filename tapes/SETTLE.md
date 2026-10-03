@@ -86,3 +86,69 @@ The renders are gitignored. Each is cited by its absolute path and sha256 in the
 - n = 3. Load fell steadily across the run, from 187 to 59. The type arm stayed flat (0.990 to
   0.994) over that whole range, which is itself evidence that load does not drive the ratio on
   this toolchain.
+
+---
+
+## §2a — the deciding render: is it the toolchain or rysh? (WO-2a, 2026-10-03)
+
+§4.3 above left a confound open. The August renders differed from the settle renders in two
+ways at once: x86_64 vhs under Rosetta versus native arm64, and a rysh TUI tape versus bare
+bash. This render separates the two. It is the same content as August on the new toolchain.
+
+**Control.** `control-aug/story-019-stacked-panes.tape` is the August tape **byte-for-byte**.
+It was extracted with `git show e1a33be^:tapes/tape/story-019-stacked-panes.tape`, where
+`e1a33be^` = `ce07e02`, the parent of the T1 re-time. Its sha256 is `0f690b6d…3f6b` and
+`tape_budget.py` gives **20.550 s**, the August budget exactly. The tape now at
+`tapes/tape/story-019-stacked-panes.tape` was re-timed by T1 to 46.810 s, so it is *not* the
+August control and was not used.
+
+**Environment.** vhs 0.12.1 native arm64 (sha256 `4814a1a3…a7ca5`). rysh `v0.2.10-99-ga53bf8c`
+(commit `a53bf8c`, the current `rysh-cli` dev; sha256 `2ba398d3…3f72`). Renders were run through
+`render_control_isolated.sh`: a separate rysh daemon, with HOME, RYSH_DIR, JetStream state and the
+session registry all under `tapes/out/iso-home/run-*/`. Its NATS port was kernel-assigned
+(`port: 0`). Every inherited `RYSH_*` variable except RYSH_DIR was unset. The live session list
+was identical before the proof, after the proof and at the end of the renders. Proof log:
+see the WO-2 report.
+
+**Results** (`tapes/control-arm64-results.tsv`; every number is from `ffprobe` or a clock):
+
+| run | budget_s | nb_frames | duration_s | ratio | r_frame_rate | wall_s | load_before |
+|---|---|---|---|---|---|---|---|
+| 1 | 20.550 | 488 | 19.520 | **0.950** | 25/1 | 43.0 | 16.69 |
+| 2 | 20.550 | 487 | 19.480 | **0.948** | 25/1 | 47.8 | 17.44 |
+| 3 | 20.550 | 477 | 19.080 | **0.928** | 25/1 | 41.7 | 22.58 |
+
+**The renders really show rysh.** I checked frames pulled at 12 s and 17 s of run 1. They show
+session `story-019`, tab-1, three stacked panes `[1/3] [2/3] [3/3]`, the rysh status bar, and
+`echo front of the stack` running in pane 3/3. There is no "command not found". The tape's typed
+`rysh` resolves to a real binary, so this run raised no D-8 issue.
+
+**Compared with August** (x86_64 vhs under Rosetta, the same tape):
+
+| source | row | ratio | frames | wall | load |
+|---|---|---|---|---|---|
+| `RENDERING.md:114` / `render-control-results.tsv` row 2 | story-019 | **0.097** | 50 | 239 s | 63.3 |
+| `RENDERING.md:117` / `render-repeat-019.tsv` row 2 | story-019 repeat | **0.164** | 84 | 121 s | 55.5 |
+| this run, n=3 | story-019 | **0.928–0.950** | 477–488 | 42–48 s | 17–23 |
+
+### Verdict: **TOOLCHAIN**
+
+By the work order's rule, all three runs are ≥ 0.85 (0.928, 0.948, 0.950). Rendering the
+same rysh TUI tape on native arm64 vhs 0.12.1 comes out within 5–7 % of its budget. On the
+x86_64/Rosetta toolchain it came out at 10–16 %.
+
+The ~1 s shortfall that remains is about the same as the sleep arm's in §3. That fits the same
+small idle-time loss, not the August deficit.
+
+**Caveat, stated rather than rounded away.** These renders ran at load **17–23**. August ran at
+load **55–140**. The settle tapes (§3) show load does not move the ratio for *bash* on this
+toolchain, up to load 187. **For the rysh TUI under high load there is no measurement yet.** So
+this verdict does not rule out "the rysh TUI at high load". It rules out the claim that rysh
+content alone explains the deficit.
+
+To close the caveat cheaply: render the same control while the box is loaded (≥ 60), n=3.
+
+**What this changes, offered for the lead to rule on, not decided here.** New renders on this
+toolchain come out at about the right length without T2's post-hoc re-time. T2's
+frame-holding, at 1.8–4.1 effective fps, was the cost of the old toolchain. That cost does not
+attach to renders made here.
