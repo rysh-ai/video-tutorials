@@ -152,3 +152,56 @@ To close the caveat cheaply: render the same control while the box is loaded (�
 toolchain come out at about the right length without T2's post-hoc re-time. T2's
 frame-holding, at 1.8–4.1 effective fps, was the cost of the old toolchain. That cost does not
 attach to renders made here.
+
+---
+
+## §2b — does the Sleep loss grow with idle time? (WO-2b, 2026-10-03)
+
+The 40 s pair is built the same way as the 20 s pair in §2, with the same terminal settings,
+`TypingSpeed 100ms` and no `Set Framerate`:
+
+| Tape | Budget arithmetic (`tape_budget.py`) |
+|---|---|
+| `settle/settle-sleep-40.tape` | `Type "echo settle"` 11 × 0.1 = 1.1 s, `Enter` = 0.1 s, `Sleep 38.8s` → **40.0 s** |
+| `settle/settle-type-40.tape` | 400 chars × 0.1 s = **40.0 s**. TypingSpeed = 40.0 s / 400 chars = 100 ms |
+
+Rendered with `SUFFIX=-40 ./render_settle.sh`, n=3, alternating ABABAB. Rows were appended to
+`settle-results.tsv`; the six WO-1 rows were checked unchanged by `diff` after the run.
+
+| tape | run | budget_s | nb_frames | duration_s | ratio | short by | wall_s | load_before |
+|---|---|---|---|---|---|---|---|---|
+| settle-sleep-40 | 1 | 40.000 | 944 | 37.760 | 0.944 | 2.24 s | 46.5 | 15.04 |
+| settle-type-40  | 1 | 40.000 | 987 | 39.480 | 0.987 | 0.52 s | 50.2 | 15.07 |
+| settle-sleep-40 | 2 | 40.000 | 944 | 37.760 | 0.944 | 2.24 s | 46.8 | 27.96 |
+| settle-type-40  | 2 | 40.000 | 989 | 39.560 | 0.989 | 0.44 s | 48.6 | 22.78 |
+| settle-sleep-40 | 3 | 40.000 | 944 | 37.760 | 0.944 | 2.24 s | 45.7 | 22.14 |
+| settle-type-40  | 3 | 40.000 | 995 | 39.800 | 0.995 | 0.20 s | 49.3 | 15.61 |
+
+**Side by side with the 20 s pair (§3):**
+
+| arm | 20 s: short by (mean) | 20 s ratio | 40 s: short by (mean) | 40 s ratio |
+|---|---|---|---|---|
+| sleep | 1.04 / 1.32 / 1.16 s (**1.17 s**) | 0.934–0.948 | 2.24 / 2.24 / 2.24 s (**2.24 s**) | 0.944 (all three) |
+| type  | 0.12 / 0.20 / 0.20 s (0.17 s) | 0.990–0.994 | 0.52 / 0.44 / 0.20 s (0.39 s) | 0.987–0.995 |
+
+### Verdict: **PROPORTIONAL**
+
+The sleep shortfall doubled when the budget doubled: from 1.17 s to 2.24 s, a factor of
+**1.9×**. A fixed loss would have stayed near 1.2 s. The ratio held at about **0.94** across
+both budgets (0.934–0.948 at 20 s; 0.944 at 40 s). In other words, idle screen time is
+captured at about 94 % of real time, roughly 23.6 frames per second against 25.
+
+The type arm also loses a little, about 1 %, and its loss also roughly doubled, from 0.17 s
+to 0.39 s mean. It is about five times smaller than the sleep arm's.
+
+**Observed, not explained.** All three 40 s sleep renders came out at **exactly 944 frames**,
+at load 15–28. That is the opposite of August's behaviour, where the same tape rendered twice
+gave 50 frames and then 84. On this toolchain, a still screen's loss looks **stable** at
+n=3. This run does not test whether a stable ~6 % loss can be corrected with a fixed factor.
+It also cannot say what causes the loss, for example vhs dropping identical frames or a capture
+tick slower than 25 fps.
+
+**What it implies, offered for the lead to rule on.** A tape that is mostly Sleep will come out
+about 6 % short. Story-019's August tape is 18.0 s Sleep out of 20.55 s, and its §2a ratio was
+0.928–0.950, which is consistent. A 6 % post-hoc stretch holds frames for about 1/16 longer.
+That is nothing like T2's 6–14× stretch.
