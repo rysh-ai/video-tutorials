@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 #
+# !!! UNSAFE ON A MACHINE RUNNING A LIVE rysh SESSION (WO-4, 2026-10-03) !!!
+# This script runs `"$RYSH_BIN" delete-session "$sess"` and
+# `"$RYSH_BIN" delete-session default` against whatever rysh the ambient
+# environment reaches — the live session included. Use
+# render_control_isolated.sh instead (RENDERING.md §8). Kept unedited below
+# this banner because its history is the August evidence.
+#
 # render_control.sh — render named tapes UNMODIFIED and measure what came out.
 #
 # This is the T2 calibration harness. render_all.sh renders the whole corpus and
