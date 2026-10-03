@@ -147,14 +147,17 @@ now()   { python3 -c 'import time;print(f"{time.time():.3f}")'; }
 
 for run in $(seq 1 "$n"); do
   write_cfg "$sess"
-  out="$OUT_DIR/$base-run$run.mp4"; rm -f "$out"
+  # Timestamped so a later invocation never overwrites an earlier one's cited render
+  # (WO-3a overwrote WO-2a run1 when names were just <base>-run<N>.mp4).
+  stamp="$(date +%Y%m%dT%H%M%S)"
+  out="$OUT_DIR/$base-$stamp-run$run.mp4"
   lb=$(load1); t0=$(now)
-  ( cd "$ISO" && vhs -o "$out" "$tape" ) > "$OUT_DIR/$base-run$run.log" 2>&1
+  ( cd "$ISO" && vhs -o "$out" "$tape" ) > "$OUT_DIR/$base-$stamp-run$run.log" 2>&1
   rc=$?; t1=$(now)
   wall=$(python3 -c "print(f'{$t1-$t0:.1f}')")
   teardown "$sess"
   if [ "$rc" -ne 0 ] || [ ! -s "$out" ]; then
-    echo "FAIL run$run rc=$rc (log $OUT_DIR/$base-run$run.log)"
+    echo "FAIL run$run rc=$rc (log $OUT_DIR/$base-$stamp-run$run.log)"
     printf '%s\t%s\t%s\tFAIL\t\t\t\t%s\t%s\t%s\t%s\t%s\t%s\t\n' "$base" "$run" "$budget" "$wall" "$lb" "$vhs_sha" "$rysh_sha" "$tape_sha" "$out" >> "$RESULTS"
     continue
   fi
